@@ -1,0 +1,43 @@
+{
+  "algorithm": "K-Means",
+  "vectorizer": "Embedding-MiniLM-L6-v2",
+  "n_samples": 516,
+  "k_discovered": 4,
+  "noise_count": 0,
+  "noise_ratio": 0.0,
+  "silhouette_score": 0.4037405252456665,
+  "ari_all": 0.22392913175219584,
+  "nmi_all": 0.4882226699583788,
+  "ari_clean": 0.22392913175219584,
+  "nmi_clean": 0.4882226699583788,
+  "homogeneity": 0.36305462721883325,
+  "completeness": 0.7451092705774487,
+  "v_measure": 0.4882226699583788,
+  "purity_real_experience": 0.8723897911832946,
+  "cluster_purity_details": {
+    "0": {
+      "size": 198,
+      "success": 160,
+      "negative": 38,
+      "purity": 0.8080808080808081
+    },
+    "1": {
+      "size": 105,
+      "success": 97,
+      "negative": 8,
+      "purity": 0.9238095238095239
+    },
+    "2": {
+      "size": 37,
+      "success": 34,
+      "negative": 3,
+      "purity": 0.918918918918919
+    },
+    "3": {
+      "size": 91,
+      "success": 85,
+      "negative": 6,
+      "purity": 0.9340659340659341
+    }
+  }
+}

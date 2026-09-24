@@ -1,0 +1,157 @@
+{
+  "algorithm": "HDBSCAN",
+  "vectorizer": "Embedding-MiniLM-L6-v2",
+  "n_samples": 516,
+  "k_discovered": 26,
+  "noise_count": 124,
+  "noise_ratio": 0.24031007751937986,
+  "silhouette_score": 0.5425573587417603,
+  "ari_all": 0.24801540860644727,
+  "nmi_all": 0.5946808172708388,
+  "ari_clean": 0.41476418602207304,
+  "nmi_clean": 0.7027057208423708,
+  "homogeneity": 0.8087211224509356,
+  "completeness": 0.6212640955783792,
+  "v_measure": 0.7027057208423707,
+  "purity_real_experience": 0.9267515923566879,
+  "cluster_purity_details": {
+    "0": {
+      "size": 47,
+      "success": 41,
+      "negative": 6,
+      "purity": 0.8723404255319149
+    },
+    "1": {
+      "size": 9,
+      "success": 3,
+      "negative": 6,
+      "purity": 0.6666666666666666
+    },
+    "2": {
+      "size": 9,
+      "success": 9,
+      "negative": 0,
+      "purity": 1.0
+    },
+    "3": {
+      "size": 2,
+      "success": 0,
+      "negative": 2,
+      "purity": 1.0
+    },
+    "5": {
+      "size": 23,
+      "success": 23,
+      "negative": 0,
+      "purity": 1.0
+    },
+    "6": {
+      "size": 11,
+      "success": 11,
+      "negative": 0,
+      "purity": 1.0
+    },
+    "7": {
+      "size": 14,
+      "success": 14,
+      "negative": 0,
+      "purity": 1.0
+    },
+    "8": {
+      "size": 7,
+      "success": 6,
+      "negative": 1,
+      "purity": 0.8571428571428571
+    },
+    "9": {
+      "size": 27,
+      "success": 25,
+      "negative": 2,
+      "purity": 0.9259259259259259
+    },
+    "10": {
+      "size": 9,
+      "success": 9,
+      "negative": 0,
+      "purity": 1.0
+    },
+    "11": {
+      "size": 32,
+      "success": 29,
+      "negative": 3,
+      "purity": 0.90625
+    },
+    "12": {
+      "size": 9,
+      "success": 8,
+      "negative": 1,
+      "purity": 0.8888888888888888
+    },
+    "13": {
+      "size": 6,
+      "success": 6,
+      "negative": 0,
+      "purity": 1.0
+    },
+    "14": {
+      "size": 12,
+      "success": 11,
+      "negative": 1,
+      "purity": 0.9166666666666666
+    },
+    "15": {
+      "size": 7,
+      "success": 0,
+      "negative": 7,
+      "purity": 1.0
+    },
+    "18": {
+      "size": 2,
+      "success": 0,
+      "negative": 2,
+      "purity": 1.0
+    },
+    "19": {
+      "size": 7,
+      "success": 7,
+      "negative": 0,
+      "purity": 1.0
+    },
+    "20": {
+      "size": 6,
+      "success": 5,
+      "negative": 1,
+      "purity": 0.8333333333333334
+    },
+    "21": {
+      "size": 12,
+      "success": 11,
+      "negative": 1,
+      "purity": 0.9166666666666666
+    },
+    "22": {
+      "size": 9,
+      "success": 9,
+      "negative": 0,
+      "purity": 1.0
+    },
+    "23": {
+      "size": 30,
+      "success": 26,
+      "negative": 4,
+      "purity": 0.8666666666666667
+    },
+    "24": {
+      "size": 15,
+      "success": 15,
+      "negative": 0,
+      "purity": 1.0
+    },
+    "25": {
+      "size": 9,
+      "success": 9,
+      "negative": 0,
+      "purity": 1.0
+    }
+  }
+}

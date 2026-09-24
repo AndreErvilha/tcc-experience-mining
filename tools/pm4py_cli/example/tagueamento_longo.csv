@@ -1,0 +1,591 @@
+cd_sessao,cd_produto,cd_sub_produto,page_name,cd_evento_tipo,button_text,timestamp
+SESS_001,Global,Home,home_banco,page_view,,2026-08-01 09:12:00
+SESS_001,Global,Home,home_banco,click_button,Cartoes,2026-08-01 09:12:03
+SESS_001,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 09:12:06
+SESS_001,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 09:12:07
+SESS_001,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 09:12:09
+SESS_001,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Voltar,2026-08-01 09:12:10
+SESS_001,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 09:12:11
+SESS_001,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 09:12:14
+SESS_001,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 09:12:15
+SESS_001,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 09:12:18
+SESS_001,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 09:12:22
+SESS_001,Cartoes,Aquisicao_Cartao,form_renda,click_button,Voltar,2026-08-01 09:12:23
+SESS_001,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 09:12:24
+SESS_001,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 09:12:25
+SESS_001,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 09:12:27
+SESS_001,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 09:12:28
+SESS_001,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 09:12:29
+SESS_001,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 09:12:32
+SESS_001,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 09:12:34
+SESS_001,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 09:12:52
+SESS_002,Global,Home,home_banco,page_view,,2026-08-01 10:52:00
+SESS_002,Global,Home,home_banco,click_button,Cartoes,2026-08-01 10:52:02
+SESS_002,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 10:52:05
+SESS_002,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 10:52:06
+SESS_002,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 10:52:08
+SESS_002,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Voltar,2026-08-01 10:52:11
+SESS_002,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 10:52:15
+SESS_002,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 10:52:17
+SESS_002,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 10:52:20
+SESS_002,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 10:52:21
+SESS_002,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 10:52:23
+SESS_002,Cartoes,Aquisicao_Cartao,form_renda,click_button,Voltar,2026-08-01 10:52:25
+SESS_002,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 10:52:26
+SESS_002,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 10:52:27
+SESS_002,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 10:52:31
+SESS_002,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 10:52:32
+SESS_002,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 10:52:35
+SESS_002,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 10:52:37
+SESS_002,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 10:52:40
+SESS_002,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 10:52:53
+SESS_003,Global,Home,home_banco,page_view,,2026-08-01 16:52:00
+SESS_003,Global,Home,home_banco,click_button,Cartoes,2026-08-01 16:52:02
+SESS_003,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 16:52:03
+SESS_003,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 16:52:06
+SESS_003,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 16:52:09
+SESS_003,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 16:52:12
+SESS_003,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 16:52:15
+SESS_003,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 16:52:18
+SESS_003,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 16:52:20
+SESS_003,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 16:52:23
+SESS_003,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 16:52:24
+SESS_003,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 16:52:40
+SESS_004,Global,Home,home_banco,page_view,,2026-08-01 09:40:00
+SESS_004,Global,Home,home_banco,click_button,Cartoes,2026-08-01 09:40:01
+SESS_004,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 09:40:02
+SESS_004,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 09:40:04
+SESS_004,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 09:40:07
+SESS_004,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 09:40:09
+SESS_004,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 09:40:12
+SESS_004,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 09:40:13
+SESS_004,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 09:40:16
+SESS_004,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 09:40:18
+SESS_004,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 09:40:20
+SESS_005,Global,Home,home_banco,page_view,,2026-08-01 14:49:00
+SESS_005,Global,Home,home_banco,click_button,Cartoes,2026-08-01 14:49:03
+SESS_005,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 14:49:04
+SESS_005,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 14:49:07
+SESS_005,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 14:49:09
+SESS_006,Global,Home,home_banco,page_view,,2026-08-01 12:14:00
+SESS_006,Global,Home,home_banco,click_button,Cartoes,2026-08-01 12:14:02
+SESS_006,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 12:14:04
+SESS_006,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 12:14:07
+SESS_006,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 12:14:10
+SESS_006,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 12:14:11
+SESS_006,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 12:14:13
+SESS_006,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 12:14:14
+SESS_006,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 12:14:17
+SESS_006,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 12:14:19
+SESS_006,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 12:14:22
+SESS_006,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 12:14:31
+SESS_007,Global,Home,home_banco,page_view,,2026-08-01 11:41:00
+SESS_008,Global,Home,home_banco,page_view,,2026-08-01 16:48:00
+SESS_008,Global,Home,home_banco,click_button,Cartoes,2026-08-01 16:48:03
+SESS_008,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 16:48:07
+SESS_008,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Ver Beneficios,2026-08-01 16:48:08
+SESS_008,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 16:48:11
+SESS_008,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 16:48:12
+SESS_008,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 16:48:14
+SESS_008,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 16:48:17
+SESS_008,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 16:48:20
+SESS_008,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 16:48:23
+SESS_008,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 16:48:27
+SESS_008,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 16:48:30
+SESS_008,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 16:48:34
+SESS_008,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 16:48:44
+SESS_009,Global,Home,home_banco,page_view,,2026-08-01 09:46:00
+SESS_009,Global,Home,home_banco,click_button,Cartoes,2026-08-01 09:46:01
+SESS_009,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 09:46:02
+SESS_009,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 09:46:03
+SESS_009,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 09:46:05
+SESS_009,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Voltar,2026-08-01 09:46:08
+SESS_009,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 09:46:12
+SESS_009,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 09:46:15
+SESS_009,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 09:46:16
+SESS_009,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 09:46:18
+SESS_009,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 09:46:22
+SESS_009,Cartoes,Aquisicao_Cartao,form_renda,click_button,Voltar,2026-08-01 09:46:25
+SESS_009,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 09:46:29
+SESS_009,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 09:46:32
+SESS_009,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 09:46:35
+SESS_009,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 09:46:38
+SESS_009,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 09:46:39
+SESS_009,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 09:46:42
+SESS_009,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 09:46:43
+SESS_009,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 09:46:59
+SESS_010,Global,Home,home_banco,page_view,,2026-08-01 11:54:00
+SESS_010,Global,Home,home_banco,click_button,Cartoes,2026-08-01 11:54:01
+SESS_010,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 11:54:04
+SESS_010,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 11:54:06
+SESS_010,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 11:54:08
+SESS_011,Investimentos,Home,home_investimentos,page_view,,2026-08-01 16:28:00
+SESS_011,Investimentos,Home,home_investimentos,click_button,Cartoes,2026-08-01 16:28:03
+SESS_011,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 16:28:06
+SESS_011,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 16:28:09
+SESS_011,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 16:28:11
+SESS_011,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 16:28:14
+SESS_011,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 16:28:15
+SESS_011,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 16:28:18
+SESS_011,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 16:28:21
+SESS_011,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 16:28:24
+SESS_011,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 16:28:26
+SESS_011,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 16:28:37
+SESS_012,Global,Home,home_banco,page_view,,2026-08-01 15:38:00
+SESS_012,Global,Home,home_banco,click_button,Cartoes,2026-08-01 15:38:03
+SESS_012,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 15:38:04
+SESS_012,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 15:38:07
+SESS_012,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 15:38:10
+SESS_012,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Voltar,2026-08-01 15:38:12
+SESS_012,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 15:38:13
+SESS_012,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 15:38:14
+SESS_012,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 15:38:17
+SESS_012,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 15:38:19
+SESS_012,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 15:38:21
+SESS_012,Cartoes,Aquisicao_Cartao,form_renda,click_button,Voltar,2026-08-01 15:38:22
+SESS_012,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 15:38:24
+SESS_012,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 15:38:27
+SESS_012,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 15:38:28
+SESS_012,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 15:38:29
+SESS_012,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 15:38:33
+SESS_012,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 15:38:34
+SESS_012,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 15:38:36
+SESS_012,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 15:38:52
+SESS_013,Global,Home,home_banco,page_view,,2026-08-01 10:24:00
+SESS_014,Investimentos,Home,home_investimentos,page_view,,2026-08-01 16:55:00
+SESS_014,Investimentos,Home,home_investimentos,click_button,Cartoes,2026-08-01 16:55:03
+SESS_014,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 16:55:05
+SESS_014,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 16:55:08
+SESS_014,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 16:55:11
+SESS_014,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 16:55:13
+SESS_014,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 16:55:16
+SESS_014,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 16:55:18
+SESS_014,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 16:55:22
+SESS_014,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 16:55:23
+SESS_014,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 16:55:25
+SESS_014,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 16:55:32
+SESS_015,Global,Home,home_banco,page_view,,2026-08-01 13:43:00
+SESS_015,Global,Home,home_banco,click_button,Cartoes,2026-08-01 13:43:01
+SESS_015,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 13:43:03
+SESS_015,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 13:43:04
+SESS_015,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 13:43:05
+SESS_015,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 13:43:08
+SESS_015,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 13:43:09
+SESS_015,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 13:43:10
+SESS_015,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 13:43:11
+SESS_015,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 13:43:12
+SESS_015,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 13:43:15
+SESS_015,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 13:43:29
+SESS_016,Global,Home,home_banco,page_view,,2026-08-01 13:08:00
+SESS_016,Global,Home,home_banco,click_button,Cartoes,2026-08-01 13:08:01
+SESS_016,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 13:08:03
+SESS_016,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 13:08:06
+SESS_016,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 13:08:10
+SESS_016,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 13:08:11
+SESS_016,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 13:08:15
+SESS_016,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 13:08:17
+SESS_016,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 13:08:19
+SESS_016,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 13:08:20
+SESS_016,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 13:08:21
+SESS_016,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 13:08:35
+SESS_017,Global,Home,home_banco,page_view,,2026-08-01 12:59:00
+SESS_017,Global,Home,home_banco,click_button,Cartoes,2026-08-01 12:59:03
+SESS_017,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 12:59:04
+SESS_017,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Ver Beneficios,2026-08-01 12:59:07
+SESS_017,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 12:59:08
+SESS_017,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 12:59:09
+SESS_017,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 12:59:13
+SESS_017,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 12:59:16
+SESS_017,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 12:59:19
+SESS_017,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 12:59:20
+SESS_017,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 12:59:22
+SESS_017,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 12:59:23
+SESS_017,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 12:59:25
+SESS_017,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 12:59:40
+SESS_018,Global,Home,home_banco,page_view,,2026-08-01 11:22:00
+SESS_018,Global,Home,home_banco,click_button,Cartoes,2026-08-01 11:22:02
+SESS_018,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 11:22:04
+SESS_018,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Ver Beneficios,2026-08-01 11:22:05
+SESS_018,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 11:22:09
+SESS_018,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 11:22:12
+SESS_018,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 11:22:13
+SESS_018,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 11:22:14
+SESS_018,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 11:22:15
+SESS_018,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 11:22:16
+SESS_018,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 11:22:18
+SESS_018,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 11:22:19
+SESS_018,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 11:22:23
+SESS_018,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 11:22:37
+SESS_019,Global,Home,home_banco,page_view,,2026-08-01 16:42:00
+SESS_020,Global,Home,home_banco,page_view,,2026-08-01 12:19:00
+SESS_020,Global,Home,home_banco,click_button,Cartoes,2026-08-01 12:19:02
+SESS_020,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 12:19:06
+SESS_020,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Ver Beneficios,2026-08-01 12:19:08
+SESS_020,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 12:19:12
+SESS_020,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 12:19:15
+SESS_020,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 12:19:19
+SESS_020,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 12:19:20
+SESS_020,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 12:19:22
+SESS_020,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 12:19:24
+SESS_020,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 12:19:26
+SESS_020,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 12:19:27
+SESS_020,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 12:19:28
+SESS_020,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 12:19:41
+SESS_021,Global,Home,home_banco,page_view,,2026-08-01 13:04:00
+SESS_021,Global,Home,home_banco,click_button,Cartoes,2026-08-01 13:04:03
+SESS_021,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 13:04:05
+SESS_021,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 13:04:06
+SESS_021,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 13:04:07
+SESS_021,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 13:04:08
+SESS_021,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 13:04:09
+SESS_021,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 13:04:12
+SESS_021,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 13:04:13
+SESS_021,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 13:04:16
+SESS_021,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 13:04:18
+SESS_021,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 13:04:26
+SESS_022,Global,Home,home_banco,page_view,,2026-08-01 14:04:00
+SESS_022,Global,Home,home_banco,click_button,Cartoes,2026-08-01 14:04:01
+SESS_022,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 14:04:02
+SESS_022,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 14:04:04
+SESS_022,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 14:04:07
+SESS_022,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 14:04:09
+SESS_022,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 14:04:11
+SESS_022,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 14:04:14
+SESS_022,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 14:04:17
+SESS_022,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 14:04:18
+SESS_022,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 14:04:21
+SESS_022,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 14:04:30
+SESS_023,Global,Home,home_banco,page_view,,2026-08-01 12:54:00
+SESS_023,Global,Home,home_banco,click_button,Cartoes,2026-08-01 12:54:02
+SESS_023,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 12:54:03
+SESS_023,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 12:54:04
+SESS_023,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 12:54:08
+SESS_023,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Voltar,2026-08-01 12:54:11
+SESS_023,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 12:54:12
+SESS_023,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 12:54:13
+SESS_023,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 12:54:15
+SESS_023,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 12:54:18
+SESS_023,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 12:54:21
+SESS_023,Cartoes,Aquisicao_Cartao,form_renda,click_button,Voltar,2026-08-01 12:54:22
+SESS_023,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 12:54:25
+SESS_023,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 12:54:26
+SESS_023,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 12:54:28
+SESS_023,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 12:54:30
+SESS_023,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 12:54:33
+SESS_023,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 12:54:34
+SESS_023,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 12:54:38
+SESS_023,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 12:54:50
+SESS_024,Investimentos,Home,home_investimentos,page_view,,2026-08-01 15:53:00
+SESS_024,Investimentos,Home,home_investimentos,click_button,Cartoes,2026-08-01 15:53:03
+SESS_024,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 15:53:04
+SESS_024,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 15:53:07
+SESS_024,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 15:53:10
+SESS_024,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 15:53:13
+SESS_024,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 15:53:14
+SESS_024,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 15:53:15
+SESS_024,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 15:53:18
+SESS_024,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 15:53:19
+SESS_024,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 15:53:20
+SESS_024,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 15:53:36
+SESS_025,Global,Home,home_banco,page_view,,2026-08-01 14:09:00
+SESS_025,Global,Home,home_banco,click_button,Cartoes,2026-08-01 14:09:01
+SESS_025,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 14:09:04
+SESS_025,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 14:09:05
+SESS_025,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 14:09:08
+SESS_025,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 14:09:11
+SESS_025,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 14:09:15
+SESS_025,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 14:09:17
+SESS_025,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 14:09:18
+SESS_025,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 14:09:19
+SESS_025,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 14:09:23
+SESS_025,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 14:09:30
+SESS_026,Global,Home,home_banco,page_view,,2026-08-01 10:06:00
+SESS_026,Global,Home,home_banco,click_button,Cartoes,2026-08-01 10:06:03
+SESS_026,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 10:06:06
+SESS_026,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 10:06:07
+SESS_026,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 10:06:11
+SESS_026,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 10:06:14
+SESS_026,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 10:06:18
+SESS_026,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 10:06:21
+SESS_026,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 10:06:22
+SESS_026,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 10:06:23
+SESS_026,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 10:06:24
+SESS_026,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 10:06:34
+SESS_027,Global,Home,home_banco,page_view,,2026-08-01 12:09:00
+SESS_027,Global,Home,home_banco,click_button,Cartoes,2026-08-01 12:09:03
+SESS_027,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 12:09:05
+SESS_027,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 12:09:07
+SESS_027,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 12:09:09
+SESS_027,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 12:09:10
+SESS_027,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 12:09:13
+SESS_027,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 12:09:15
+SESS_027,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 12:09:16
+SESS_027,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 12:09:18
+SESS_027,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 12:09:20
+SESS_027,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 12:09:31
+SESS_028,Global,Home,home_banco,page_view,,2026-08-01 15:39:00
+SESS_028,Global,Home,home_banco,click_button,Cartoes,2026-08-01 15:39:03
+SESS_028,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 15:39:07
+SESS_028,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 15:39:10
+SESS_028,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 15:39:12
+SESS_028,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 15:39:13
+SESS_028,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 15:39:15
+SESS_028,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 15:39:16
+SESS_028,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 15:39:20
+SESS_028,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 15:39:21
+SESS_028,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 15:39:23
+SESS_028,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 15:39:36
+SESS_029,Global,Home,home_banco,page_view,,2026-08-01 16:22:00
+SESS_029,Global,Home,home_banco,click_button,Cartoes,2026-08-01 16:22:03
+SESS_029,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 16:22:05
+SESS_029,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 16:22:07
+SESS_029,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 16:22:09
+SESS_029,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 16:22:12
+SESS_029,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 16:22:13
+SESS_029,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 16:22:15
+SESS_029,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 16:22:16
+SESS_029,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 16:22:18
+SESS_029,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 16:22:20
+SESS_030,Global,Home,home_banco,page_view,,2026-08-01 11:59:00
+SESS_031,Global,Home,home_banco,page_view,,2026-08-01 14:37:00
+SESS_031,Global,Home,home_banco,click_button,Cartoes,2026-08-01 14:37:01
+SESS_031,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 14:37:05
+SESS_031,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 14:37:07
+SESS_031,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 14:37:10
+SESS_031,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 14:37:11
+SESS_031,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 14:37:14
+SESS_031,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 14:37:16
+SESS_031,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 14:37:20
+SESS_031,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 14:37:23
+SESS_031,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 14:37:26
+SESS_031,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 14:37:33
+SESS_032,Global,Home,home_banco,page_view,,2026-08-01 11:15:00
+SESS_032,Global,Home,home_banco,click_button,Cartoes,2026-08-01 11:15:01
+SESS_032,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 11:15:02
+SESS_032,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 11:15:05
+SESS_032,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 11:15:09
+SESS_032,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 11:15:11
+SESS_032,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 11:15:14
+SESS_032,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 11:15:16
+SESS_032,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 11:15:17
+SESS_032,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 11:15:19
+SESS_032,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 11:15:21
+SESS_032,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 11:15:28
+SESS_033,Global,Home,home_banco,page_view,,2026-08-01 13:26:00
+SESS_033,Global,Home,home_banco,click_button,Cartoes,2026-08-01 13:26:03
+SESS_033,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 13:26:05
+SESS_033,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Ver Beneficios,2026-08-01 13:26:07
+SESS_033,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 13:26:11
+SESS_033,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 13:26:12
+SESS_033,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 13:26:15
+SESS_033,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 13:26:18
+SESS_033,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 13:26:21
+SESS_033,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 13:26:24
+SESS_033,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 13:26:25
+SESS_033,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 13:26:28
+SESS_033,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 13:26:31
+SESS_033,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 13:26:43
+SESS_034,Global,Home,home_banco,page_view,,2026-08-01 12:26:00
+SESS_034,Global,Home,home_banco,click_button,Cartoes,2026-08-01 12:26:03
+SESS_034,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 12:26:06
+SESS_034,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Ver Beneficios,2026-08-01 12:26:09
+SESS_034,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 12:26:11
+SESS_034,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 12:26:12
+SESS_034,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 12:26:16
+SESS_034,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 12:26:19
+SESS_034,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 12:26:23
+SESS_034,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 12:26:26
+SESS_034,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 12:26:28
+SESS_034,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 12:26:31
+SESS_034,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 12:26:34
+SESS_034,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 12:26:49
+SESS_035,Global,Home,home_banco,page_view,,2026-08-01 10:47:00
+SESS_035,Global,Home,home_banco,click_button,Cartoes,2026-08-01 10:47:02
+SESS_035,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 10:47:05
+SESS_035,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 10:47:07
+SESS_035,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 10:47:11
+SESS_035,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 10:47:13
+SESS_035,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 10:47:15
+SESS_035,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 10:47:18
+SESS_035,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 10:47:22
+SESS_035,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 10:47:25
+SESS_035,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 10:47:27
+SESS_035,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 10:47:36
+SESS_036,Global,Home,home_banco,page_view,,2026-08-01 14:24:00
+SESS_036,Global,Home,home_banco,click_button,Cartoes,2026-08-01 14:24:03
+SESS_036,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 14:24:06
+SESS_036,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 14:24:07
+SESS_036,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 14:24:09
+SESS_036,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Voltar,2026-08-01 14:24:12
+SESS_036,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 14:24:15
+SESS_036,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 14:24:16
+SESS_036,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 14:24:18
+SESS_036,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 14:24:19
+SESS_036,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 14:24:20
+SESS_036,Cartoes,Aquisicao_Cartao,form_renda,click_button,Voltar,2026-08-01 14:24:21
+SESS_036,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 14:24:23
+SESS_036,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 14:24:25
+SESS_036,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 14:24:26
+SESS_036,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 14:24:28
+SESS_036,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 14:24:32
+SESS_036,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 14:24:35
+SESS_036,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 14:24:37
+SESS_036,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 14:24:51
+SESS_037,Global,Home,home_banco,page_view,,2026-08-01 10:15:00
+SESS_037,Global,Home,home_banco,click_button,Cartoes,2026-08-01 10:15:03
+SESS_037,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 10:15:04
+SESS_037,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Ver Beneficios,2026-08-01 10:15:05
+SESS_037,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 10:15:09
+SESS_037,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 10:15:10
+SESS_037,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 10:15:12
+SESS_037,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 10:15:15
+SESS_037,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 10:15:19
+SESS_037,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 10:15:20
+SESS_037,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 10:15:22
+SESS_037,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 10:15:23
+SESS_037,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 10:15:27
+SESS_037,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 10:15:40
+SESS_038,Global,Home,home_banco,page_view,,2026-08-01 13:46:00
+SESS_038,Global,Home,home_banco,click_button,Cartoes,2026-08-01 13:46:03
+SESS_038,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 13:46:06
+SESS_038,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 13:46:08
+SESS_038,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 13:46:12
+SESS_038,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Voltar,2026-08-01 13:46:15
+SESS_038,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 13:46:19
+SESS_038,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 13:46:20
+SESS_038,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 13:46:24
+SESS_038,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 13:46:26
+SESS_038,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 13:46:29
+SESS_038,Cartoes,Aquisicao_Cartao,form_renda,click_button,Voltar,2026-08-01 13:46:30
+SESS_038,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 13:46:33
+SESS_038,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 13:46:36
+SESS_038,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 13:46:40
+SESS_038,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 13:46:43
+SESS_038,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 13:46:45
+SESS_038,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 13:46:47
+SESS_038,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 13:46:51
+SESS_038,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 13:47:01
+SESS_039,Global,Home,home_banco,page_view,,2026-08-01 11:43:00
+SESS_039,Global,Home,home_banco,click_button,Cartoes,2026-08-01 11:43:03
+SESS_039,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 11:43:04
+SESS_039,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 11:43:05
+SESS_039,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 11:43:07
+SESS_039,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 11:43:08
+SESS_039,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 11:43:12
+SESS_039,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 11:43:15
+SESS_039,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 11:43:17
+SESS_039,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 11:43:20
+SESS_039,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 11:43:22
+SESS_039,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 11:43:34
+SESS_040,Global,Home,home_banco,page_view,,2026-08-01 12:58:00
+SESS_040,Global,Home,home_banco,click_button,Cartoes,2026-08-01 12:58:02
+SESS_040,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 12:58:03
+SESS_040,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 12:58:04
+SESS_040,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 12:58:08
+SESS_040,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 12:58:10
+SESS_040,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 12:58:11
+SESS_040,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 12:58:14
+SESS_040,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 12:58:18
+SESS_040,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 12:58:20
+SESS_040,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 12:58:21
+SESS_040,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 12:58:32
+SESS_041,Global,Home,home_banco,page_view,,2026-08-01 16:07:00
+SESS_042,Global,Home,home_banco,page_view,,2026-08-01 11:19:00
+SESS_042,Global,Home,home_banco,click_button,Cartoes,2026-08-01 11:19:02
+SESS_042,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 11:19:06
+SESS_042,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Ver Beneficios,2026-08-01 11:19:07
+SESS_042,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 11:19:11
+SESS_042,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 11:19:13
+SESS_042,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 11:19:17
+SESS_042,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 11:19:20
+SESS_042,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 11:19:22
+SESS_042,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 11:19:24
+SESS_042,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 11:19:26
+SESS_042,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 11:19:29
+SESS_042,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 11:19:30
+SESS_042,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 11:19:46
+SESS_043,Global,Home,home_banco,page_view,,2026-08-01 09:42:00
+SESS_043,Global,Home,home_banco,click_button,Cartoes,2026-08-01 09:42:03
+SESS_043,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 09:42:07
+SESS_043,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 09:42:08
+SESS_043,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 09:42:12
+SESS_044,Global,Home,home_banco,page_view,,2026-08-01 11:47:00
+SESS_044,Global,Home,home_banco,click_button,Cartoes,2026-08-01 11:47:01
+SESS_044,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 11:47:05
+SESS_044,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 11:47:07
+SESS_044,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 11:47:10
+SESS_044,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 11:47:12
+SESS_044,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 11:47:15
+SESS_044,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 11:47:17
+SESS_044,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 11:47:20
+SESS_044,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 11:47:21
+SESS_044,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 11:47:25
+SESS_044,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 11:47:39
+SESS_045,Investimentos,Home,home_investimentos,page_view,,2026-08-01 11:59:00
+SESS_045,Investimentos,Home,home_investimentos,click_button,Cartoes,2026-08-01 11:59:01
+SESS_045,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 11:59:02
+SESS_045,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 11:59:05
+SESS_045,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 11:59:06
+SESS_045,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 11:59:07
+SESS_045,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 11:59:09
+SESS_045,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 11:59:10
+SESS_045,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 11:59:11
+SESS_045,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 11:59:14
+SESS_045,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 11:59:16
+SESS_045,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 11:59:24
+SESS_046,Global,Home,home_banco,page_view,,2026-08-01 13:48:00
+SESS_046,Global,Home,home_banco,click_button,Cartoes,2026-08-01 13:48:01
+SESS_046,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 13:48:05
+SESS_046,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 13:48:08
+SESS_046,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 13:48:11
+SESS_047,Global,Home,home_banco,page_view,,2026-08-01 15:22:00
+SESS_047,Global,Home,home_banco,click_button,Cartoes,2026-08-01 15:22:03
+SESS_047,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 15:22:04
+SESS_047,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 15:22:05
+SESS_047,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 15:22:08
+SESS_047,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Voltar,2026-08-01 15:22:09
+SESS_047,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 15:22:10
+SESS_047,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 15:22:12
+SESS_047,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 15:22:16
+SESS_047,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 15:22:18
+SESS_047,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 15:22:20
+SESS_047,Cartoes,Aquisicao_Cartao,form_renda,click_button,Voltar,2026-08-01 15:22:21
+SESS_047,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 15:22:23
+SESS_047,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 15:22:24
+SESS_047,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 15:22:27
+SESS_047,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 15:22:30
+SESS_047,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 15:22:31
+SESS_047,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 15:22:34
+SESS_047,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 15:22:35
+SESS_047,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 15:22:50
+SESS_048,Global,Home,home_banco,page_view,,2026-08-01 09:35:00
+SESS_048,Global,Home,home_banco,click_button,Cartoes,2026-08-01 09:35:03
+SESS_048,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 09:35:06
+SESS_048,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 09:35:07
+SESS_048,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 09:35:11
+SESS_049,Global,Home,home_banco,page_view,,2026-08-01 12:05:00
+SESS_049,Global,Home,home_banco,click_button,Cartoes,2026-08-01 12:05:03
+SESS_049,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 12:05:07
+SESS_049,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Ver Beneficios,2026-08-01 12:05:10
+SESS_049,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 12:05:12
+SESS_049,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 12:05:14
+SESS_049,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 12:05:16
+SESS_049,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 12:05:19
+SESS_049,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 12:05:22
+SESS_049,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 12:05:25
+SESS_049,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 12:05:29
+SESS_049,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 12:05:31
+SESS_049,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 12:05:35
+SESS_049,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 12:05:52
+SESS_050,Global,Home,home_banco,page_view,,2026-08-01 11:05:00
+SESS_050,Global,Home,home_banco,click_button,Cartoes,2026-08-01 11:05:01
+SESS_050,Cartoes,Aquisicao_Cartao,hub_cartoes,page_view,,2026-08-01 11:05:04
+SESS_050,Cartoes,Aquisicao_Cartao,hub_cartoes,click_button,Solicitar Cartao,2026-08-01 11:05:06
+SESS_050,Cartoes,Aquisicao_Cartao,form_dados_pessoais,page_view,,2026-08-01 11:05:08
+SESS_050,Cartoes,Aquisicao_Cartao,form_dados_pessoais,click_button,Continuar,2026-08-01 11:05:10
+SESS_050,Cartoes,Aquisicao_Cartao,form_renda,page_view,,2026-08-01 11:05:14
+SESS_050,Cartoes,Aquisicao_Cartao,form_renda,click_button,Continuar,2026-08-01 11:05:16
+SESS_050,Cartoes,Aquisicao_Cartao,form_endereco,page_view,,2026-08-01 11:05:17
+SESS_050,Cartoes,Aquisicao_Cartao,form_endereco,click_button,Confirmar,2026-08-01 11:05:19
+SESS_050,Cartoes,Aquisicao_Cartao,analise_credito,page_view,,2026-08-01 11:05:22
+SESS_050,Cartoes,Aquisicao_Cartao,sucesso_solicitacao,page_view,,2026-08-01 11:05:35

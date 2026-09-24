@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1785722375.6599364" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1785722375.6599364</text>
+    </name>
+    <page id="n0">
+      <place id="p_11">
+        <name>
+          <text>p_11</text>
+        </name>
+      </place>
+      <place id="p_12">
+        <name>
+          <text>p_12</text>
+        </name>
+      </place>
+      <place id="p_13">
+        <name>
+          <text>p_13</text>
+        </name>
+      </place>
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      </place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      </place>
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      </place>
+      <place id="p_6">
+        <name>
+          <text>p_6</text>
+        </name>
+      </place>
+      <place id="p_7">
+        <name>
+          <text>p_7</text>
+        </name>
+      </place>
+      <place id="p_8">
+        <name>
+          <text>p_8</text>
+        </name>
+      </place>
+      <place id="p_9">
+        <name>
+          <text>p_9</text>
+        </name>
+      </place>
+      <transition id="9246b8a2-eadf-45ec-a8bd-59e996caf7fa">
+        <name>
+          <text>[Cartoes:Aquisicao_Cartao:form_endereco].page_view()</text>
+        </name>
+      </transition>
+      <transition id="846f67c1-9f5f-4c61-92fe-36c939c228fa">
+        <name>
+          <text>[Cartoes:Aquisicao_Cartao:sucesso_solicitacao].page_view()</text>
+        </name>
+      </transition>
+      <transition id="0bfac293-3b3c-4584-ab99-2f40cf5808c3">
+        <name>
+          <text>[Cartoes:Aquisicao_Cartao:form_dados_pessoais].click_button(Continuar)</text>
+        </name>
+      </transition>
+      <transition id="a4db25d3-ca22-46d5-9557-bda5ad99d7a9">
+        <name>
+          <text>[Global:Home:home_banco].page_view()</text>
+        </name>
+      </transition>
+      <transition id="26b1ca0f-53f1-4929-9bb3-a4ebfc32279b">
+        <name>
+          <text>[Global:Home:home_banco].click_button(Cartões)</text>
+        </name>
+      </transition>
+      <transition id="3915f38a-0404-4885-8eb3-065d3941d6f0">
+        <name>
+          <text>[Cartoes:Aquisicao_Cartao:hub_cartoes].page_view()</text>
+        </name>
+      </transition>
+      <transition id="4ba8da4f-2e67-4016-83fa-7dac29abe32d">
+        <name>
+          <text>[Cartoes:Aquisicao_Cartao:hub_cartoes].click_button(Solicitar Novo Cartão)</text>
+        </name>
+      </transition>
+      <transition id="3e6ae227-fda0-460a-8b56-cded17fca331">
+        <name>
+          <text>[Cartoes:Aquisicao_Cartao:form_dados_pessoais].page_view()</text>
+        </name>
+      </transition>
+      <transition id="fecc41e3-e4a0-4963-991d-0f2fdabb009b">
+        <name>
+          <text>[Cartoes:Aquisicao_Cartao:form_dados_pessoais].click_button(Voltar)</text>
+        </name>
+      </transition>
+      <transition id="skip_3">
+        <name>
+          <text>skip_3</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="20e8861e-243d-4cdf-a024-baa73d69e50c"/>
+      </transition>
+      <transition id="skip_4">
+        <name>
+          <text>skip_4</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="12e10523-a0b5-43b0-a36a-a9820e0f62e5"/>
+      </transition>
+      <transition id="966afe9b-4c0a-4551-9629-cefbdcd04bcb">
+        <name>
+          <text>[Cartoes:Aquisicao_Cartao:form_endereco].click_button(Confirmar)</text>
+        </name>
+      </transition>
+      <arc id="2885102773520" source="p_7" target="fecc41e3-e4a0-4963-991d-0f2fdabb009b"/>
+      <arc id="2885102774160" source="p_7" target="skip_3"/>
+      <arc id="2885102687376" source="source" target="a4db25d3-ca22-46d5-9557-bda5ad99d7a9"/>
+      <arc id="2885102687632" source="a4db25d3-ca22-46d5-9557-bda5ad99d7a9" target="p_3"/>
+      <arc id="2885102777360" source="fecc41e3-e4a0-4963-991d-0f2fdabb009b" target="p_6"/>
+      <arc id="2885102769552" source="p_3" target="26b1ca0f-53f1-4929-9bb3-a4ebfc32279b"/>
+      <arc id="2885102771984" source="p_6" target="3915f38a-0404-4885-8eb3-065d3941d6f0"/>
+      <arc id="2885102772112" source="3915f38a-0404-4885-8eb3-065d3941d6f0" target="p_8"/>
+      <arc id="2885102774288" source="skip_3" target="p_5"/>
+      <arc id="2885102776528" source="p_12" target="966afe9b-4c0a-4551-9629-cefbdcd04bcb"/>
+      <arc id="2885102776656" source="966afe9b-4c0a-4551-9629-cefbdcd04bcb" target="p_13"/>
+      <arc id="2885102776912" source="p_13" target="846f67c1-9f5f-4c61-92fe-36c939c228fa"/>
+      <arc id="2885102777040" source="846f67c1-9f5f-4c61-92fe-36c939c228fa" target="sink"/>
+      <arc id="2885102775312" source="p_5" target="0bfac293-3b3c-4584-ab99-2f40cf5808c3"/>
+      <arc id="2885102775440" source="0bfac293-3b3c-4584-ab99-2f40cf5808c3" target="p_11"/>
+      <arc id="2885102772944" source="p_9" target="3e6ae227-fda0-460a-8b56-cded17fca331"/>
+      <arc id="2885102773072" source="3e6ae227-fda0-460a-8b56-cded17fca331" target="p_7"/>
+      <arc id="2885102777168" source="26b1ca0f-53f1-4929-9bb3-a4ebfc32279b" target="p_6"/>
+      <arc id="2885102772560" source="p_8" target="4ba8da4f-2e67-4016-83fa-7dac29abe32d"/>
+      <arc id="2885102772688" source="4ba8da4f-2e67-4016-83fa-7dac29abe32d" target="p_9"/>
+      <arc id="2885102774736" source="p_5" target="skip_4"/>
+      <arc id="2885102774864" source="skip_4" target="sink"/>
+      <arc id="2885102775888" source="p_11" target="9246b8a2-eadf-45ec-a8bd-59e996caf7fa"/>
+      <arc id="2885102776016" source="9246b8a2-eadf-45ec-a8bd-59e996caf7fa" target="p_12"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

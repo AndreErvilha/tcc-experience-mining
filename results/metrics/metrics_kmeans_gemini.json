@@ -1,0 +1,55 @@
+{
+  "algorithm": "K-Means",
+  "vectorizer": "Embedding-Gemini-001",
+  "n_samples": 516,
+  "k_discovered": 6,
+  "noise_count": 0,
+  "noise_ratio": 0.0,
+  "silhouette_score": 0.2942400872707367,
+  "ari_all": 0.4213237030874778,
+  "nmi_all": 0.6173322202042513,
+  "ari_clean": 0.4213237030874778,
+  "nmi_clean": 0.6173322202042513,
+  "homogeneity": 0.5234352105768036,
+  "completeness": 0.752280984471871,
+  "v_measure": 0.6173322202042512,
+  "purity_real_experience": 0.9164733178654292,
+  "cluster_purity_details": {
+    "0": {
+      "size": 140,
+      "success": 130,
+      "negative": 10,
+      "purity": 0.9285714285714286
+    },
+    "1": {
+      "size": 59,
+      "success": 54,
+      "negative": 5,
+      "purity": 0.9152542372881356
+    },
+    "2": {
+      "size": 48,
+      "success": 45,
+      "negative": 3,
+      "purity": 0.9375
+    },
+    "3": {
+      "size": 106,
+      "success": 102,
+      "negative": 4,
+      "purity": 0.9622641509433962
+    },
+    "4": {
+      "size": 41,
+      "success": 11,
+      "negative": 30,
+      "purity": 0.7317073170731707
+    },
+    "5": {
+      "size": 37,
+      "success": 34,
+      "negative": 3,
+      "purity": 0.918918918918919
+    }
+  }
+}

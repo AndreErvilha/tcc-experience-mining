@@ -1,0 +1,5 @@
+cd_sessao,fitness_score,is_conformant,missing_tokens,consumed_tokens,remaining_tokens,produced_tokens
+SESS_001,1.0,True,0,11,0,11
+SESS_002,1.0,True,0,15,0,15
+SESS_003,1.0,True,0,8,0,8
+SESS_004,1.0,True,0,11,0,11

@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text></text>
+    </name>
+    <page id="n0">
+      <place id="intplace_[cartoes:fatura:fatura_atual].page_view()">
+        <name>
+          <text>intplace_[cartoes:fatura:fatura_atual].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[cartoes:pagamento:opcoes_pagamento].page_view()">
+        <name>
+          <text>intplace_[cartoes:pagamento:opcoes_pagamento].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:pagamento:opcoes_pagamento].page_view()">
+        <name>
+          <text>pre_[cartoes:pagamento:opcoes_pagamento].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[canais:home:menu_produtos].page_view()">
+        <name>
+          <text>pre_[canais:home:menu_produtos].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[canais:home:home].page_view()">
+        <name>
+          <text>pre_[canais:home:home].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:fatura:fatura_atual].page_view()">
+        <name>
+          <text>pre_[cartoes:fatura:fatura_atual].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[cartoes:home_cartoes:home_cartoes].page_view()">
+        <name>
+          <text>intplace_[cartoes:home_cartoes:home_cartoes].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:pagamento:comprovante_pagamento].click_button(fechar)">
+        <name>
+          <text>pre_[cartoes:pagamento:comprovante_pagamento].click_button(fechar)</text>
+        </name>
+      </place>
+      <place id="source0">
+        <name>
+          <text>source0</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="sink0">
+        <name>
+          <text>sink0</text>
+        </name>
+      </place>
+      <place id="pre_[canais:home:menu_produtos].click_button(cartoes)">
+        <name>
+          <text>pre_[canais:home:menu_produtos].click_button(cartoes)</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:home_cartoes:home_cartoes].page_view()">
+        <name>
+          <text>pre_[cartoes:home_cartoes:home_cartoes].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[canais:home:home].page_view()">
+        <name>
+          <text>intplace_[canais:home:home].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:pagamento:comprovante_pagamento].page_view()">
+        <name>
+          <text>pre_[cartoes:pagamento:comprovante_pagamento].page_view()</text>
+        </name>
+      </place>
+      <transition id="[cartoes:pagamento:opcoes_pagamento].click_button(voltar)">
+        <name>
+          <text>[cartoes:pagamento:opcoes_pagamento].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:menu_produtos].page_view()">
+        <name>
+          <text>[canais:home:menu_produtos].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:home].page_view()">
+        <name>
+          <text>[canais:home:home].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:menu_produtos].click_button(cartoes)">
+        <name>
+          <text>[canais:home:menu_produtos].click_button(cartoes)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:pagamento:opcoes_pagamento].click_button(pagar_com_saldo)">
+        <name>
+          <text>[cartoes:pagamento:opcoes_pagamento].click_button(pagar_com_saldo)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:pagamento:comprovante_pagamento].click_button(fechar)">
+        <name>
+          <text>[cartoes:pagamento:comprovante_pagamento].click_button(fechar)</text>
+        </name>
+      </transition>
+      <transition id="hid_9">
+        <name>
+          <text>hid_9</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="30345fea-fef6-4752-bd3f-5a3d5ed1a4b5"/>
+      </transition>
+      <transition id="[cartoes:fatura:fatura_atual].page_view()">
+        <name>
+          <text>[cartoes:fatura:fatura_atual].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:fatura:fatura_atual].click_button(voltar)">
+        <name>
+          <text>[cartoes:fatura:fatura_atual].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:home].click_button(menu_produtos)">
+        <name>
+          <text>[canais:home:home].click_button(menu_produtos)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:home_cartoes:home_cartoes].page_view()">
+        <name>
+          <text>[cartoes:home_cartoes:home_cartoes].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:home_cartoes:home_cartoes].click_button(fatura_atual)">
+        <name>
+          <text>[cartoes:home_cartoes:home_cartoes].click_button(fatura_atual)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:home_cartoes:home_cartoes].click_button(voltar)">
+        <name>
+          <text>[cartoes:home_cartoes:home_cartoes].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)">
+        <name>
+          <text>[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:pagamento:opcoes_pagamento].page_view()">
+        <name>
+          <text>[cartoes:pagamento:opcoes_pagamento].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:pagamento:comprovante_pagamento].page_view()">
+        <name>
+          <text>[cartoes:pagamento:comprovante_pagamento].page_view()</text>
+        </name>
+      </transition>
+      <transition id="hid_2">
+        <name>
+          <text>hid_2</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d64e37c3-eeda-4c76-a4bf-28942ec1f6db"/>
+      </transition>
+      <arc id="2066684837456" source="pre_[cartoes:pagamento:comprovante_pagamento].page_view()" target="[cartoes:pagamento:comprovante_pagamento].page_view()"/>
+      <arc id="2066684632656" source="intplace_[canais:home:home].page_view()" target="[canais:home:home].click_button(menu_produtos)"/>
+      <arc id="2066684628688" source="[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)" target="pre_[cartoes:pagamento:opcoes_pagamento].page_view()"/>
+      <arc id="2066684630928" source="[cartoes:fatura:fatura_atual].page_view()" target="intplace_[cartoes:fatura:fatura_atual].page_view()"/>
+      <arc id="2066684628944" source="[cartoes:pagamento:opcoes_pagamento].click_button(pagar_com_saldo)" target="pre_[cartoes:pagamento:comprovante_pagamento].page_view()"/>
+      <arc id="2066684634128" source="intplace_[cartoes:home_cartoes:home_cartoes].page_view()" target="[cartoes:home_cartoes:home_cartoes].click_button(voltar)"/>
+      <arc id="2066684826640" source="pre_[canais:home:menu_produtos].click_button(cartoes)" target="[canais:home:menu_produtos].click_button(cartoes)"/>
+      <arc id="2066684827152" source="pre_[canais:home:home].page_view()" target="[canais:home:home].page_view()"/>
+      <arc id="2066684828304" source="source0" target="hid_2"/>
+      <arc id="2066684828432" source="hid_2" target="pre_[canais:home:home].page_view()"/>
+      <arc id="2066684634000" source="intplace_[cartoes:pagamento:opcoes_pagamento].page_view()" target="[cartoes:pagamento:opcoes_pagamento].click_button(voltar)"/>
+      <arc id="2066684633488" source="intplace_[cartoes:pagamento:opcoes_pagamento].page_view()" target="[cartoes:pagamento:opcoes_pagamento].click_button(pagar_com_saldo)"/>
+      <arc id="2066684832784" source="pre_[cartoes:pagamento:opcoes_pagamento].page_view()" target="[cartoes:pagamento:opcoes_pagamento].page_view()"/>
+      <arc id="2066684624976" source="[canais:home:home].click_button(menu_produtos)" target="pre_[canais:home:menu_produtos].page_view()"/>
+      <arc id="2066684627216" source="[cartoes:home_cartoes:home_cartoes].page_view()" target="intplace_[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="2066684629072" source="[cartoes:pagamento:opcoes_pagamento].page_view()" target="intplace_[cartoes:pagamento:opcoes_pagamento].page_view()"/>
+      <arc id="2066684633552" source="intplace_[cartoes:fatura:fatura_atual].page_view()" target="[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)"/>
+      <arc id="2066684625744" source="[canais:home:home].page_view()" target="intplace_[canais:home:home].page_view()"/>
+      <arc id="2066684836880" source="pre_[cartoes:pagamento:comprovante_pagamento].click_button(fechar)" target="[cartoes:pagamento:comprovante_pagamento].click_button(fechar)"/>
+      <arc id="2066684626896" source="hid_9" target="sink0"/>
+      <arc id="2066684632720" source="[cartoes:fatura:fatura_atual].click_button(voltar)" target="pre_[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="2066684632848" source="[cartoes:home_cartoes:home_cartoes].click_button(fatura_atual)" target="pre_[cartoes:fatura:fatura_atual].page_view()"/>
+      <arc id="2066684626768" source="intplace_[canais:home:home].page_view()" target="hid_9"/>
+      <arc id="2066684632976" source="[cartoes:pagamento:opcoes_pagamento].click_button(voltar)" target="pre_[cartoes:fatura:fatura_atual].page_view()"/>
+      <arc id="2066684826064" source="pre_[canais:home:menu_produtos].page_view()" target="[canais:home:menu_produtos].page_view()"/>
+      <arc id="2066684828752" source="pre_[cartoes:home_cartoes:home_cartoes].page_view()" target="[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="2066684633104" source="[cartoes:pagamento:comprovante_pagamento].click_button(fechar)" target="pre_[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="2066684625168" source="[canais:home:menu_produtos].page_view()" target="pre_[canais:home:menu_produtos].click_button(cartoes)"/>
+      <arc id="2066684633232" source="[canais:home:menu_produtos].click_button(cartoes)" target="pre_[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="2066684625296" source="[cartoes:home_cartoes:home_cartoes].click_button(voltar)" target="pre_[canais:home:home].page_view()"/>
+      <arc id="2066684633744" source="intplace_[cartoes:home_cartoes:home_cartoes].page_view()" target="[cartoes:home_cartoes:home_cartoes].click_button(fatura_atual)"/>
+      <arc id="2066684633872" source="intplace_[cartoes:fatura:fatura_atual].page_view()" target="[cartoes:fatura:fatura_atual].click_button(voltar)"/>
+      <arc id="2066684632272" source="[cartoes:pagamento:comprovante_pagamento].page_view()" target="pre_[cartoes:pagamento:comprovante_pagamento].click_button(fechar)"/>
+      <arc id="2066684835088" source="pre_[cartoes:fatura:fatura_atual].page_view()" target="[cartoes:fatura:fatura_atual].page_view()"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink0">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

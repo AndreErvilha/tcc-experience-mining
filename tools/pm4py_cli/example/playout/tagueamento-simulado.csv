@@ -1,0 +1,925 @@
+cd_sessao,cd_produto,cd_sub_produto,cd_evento_tipo,button_text,page_name,timestamp
+SESS_001,Global,Home,page_view,,home_banco,1970-04-26 14:46:40+00:00
+SESS_001,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:46:41+00:00
+SESS_001,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:46:42+00:00
+SESS_001,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:46:43+00:00
+SESS_001,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:46:44+00:00
+SESS_001,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:46:45+00:00
+SESS_001,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:46:46+00:00
+SESS_001,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:46:47+00:00
+SESS_001,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:46:48+00:00
+SESS_002,Global,Home,page_view,,home_banco,1970-04-26 14:46:49+00:00
+SESS_002,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:46:50+00:00
+SESS_002,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:46:51+00:00
+SESS_002,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:46:52+00:00
+SESS_002,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:46:53+00:00
+SESS_002,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:46:54+00:00
+SESS_002,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:46:55+00:00
+SESS_002,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:46:56+00:00
+SESS_002,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:46:57+00:00
+SESS_003,Global,Home,page_view,,home_banco,1970-04-26 14:46:58+00:00
+SESS_003,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:46:59+00:00
+SESS_003,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:47:00+00:00
+SESS_003,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:47:01+00:00
+SESS_003,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:47:02+00:00
+SESS_003,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:47:03+00:00
+SESS_003,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:47:04+00:00
+SESS_003,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:47:05+00:00
+SESS_003,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:47:06+00:00
+SESS_004,Global,Home,page_view,,home_banco,1970-04-26 14:47:07+00:00
+SESS_004,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:47:08+00:00
+SESS_004,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:47:09+00:00
+SESS_004,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:47:10+00:00
+SESS_004,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:47:11+00:00
+SESS_004,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:47:12+00:00
+SESS_004,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:47:13+00:00
+SESS_004,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:47:14+00:00
+SESS_004,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:47:15+00:00
+SESS_005,Global,Home,page_view,,home_banco,1970-04-26 14:47:16+00:00
+SESS_005,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:47:17+00:00
+SESS_005,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:47:18+00:00
+SESS_005,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:47:19+00:00
+SESS_005,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:47:20+00:00
+SESS_006,Global,Home,page_view,,home_banco,1970-04-26 14:47:21+00:00
+SESS_006,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:47:22+00:00
+SESS_006,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:47:23+00:00
+SESS_006,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:47:24+00:00
+SESS_006,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:47:25+00:00
+SESS_007,Global,Home,page_view,,home_banco,1970-04-26 14:47:26+00:00
+SESS_007,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:47:27+00:00
+SESS_007,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:47:28+00:00
+SESS_007,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:47:29+00:00
+SESS_007,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:47:30+00:00
+SESS_007,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:47:31+00:00
+SESS_007,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:47:32+00:00
+SESS_007,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:47:33+00:00
+SESS_007,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:47:34+00:00
+SESS_008,Global,Home,page_view,,home_banco,1970-04-26 14:47:35+00:00
+SESS_008,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:47:36+00:00
+SESS_008,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:47:37+00:00
+SESS_008,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:47:38+00:00
+SESS_008,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:47:39+00:00
+SESS_008,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:47:40+00:00
+SESS_008,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:47:41+00:00
+SESS_008,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:47:42+00:00
+SESS_008,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:47:43+00:00
+SESS_009,Global,Home,page_view,,home_banco,1970-04-26 14:47:44+00:00
+SESS_009,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:47:45+00:00
+SESS_009,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:47:46+00:00
+SESS_009,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:47:47+00:00
+SESS_009,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:47:48+00:00
+SESS_009,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:47:49+00:00
+SESS_009,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:47:50+00:00
+SESS_009,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:47:51+00:00
+SESS_009,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:47:52+00:00
+SESS_009,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:47:53+00:00
+SESS_009,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:47:54+00:00
+SESS_009,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:47:55+00:00
+SESS_009,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:47:56+00:00
+SESS_010,Global,Home,page_view,,home_banco,1970-04-26 14:47:57+00:00
+SESS_010,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:47:58+00:00
+SESS_010,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:47:59+00:00
+SESS_010,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:48:00+00:00
+SESS_010,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:48:01+00:00
+SESS_011,Global,Home,page_view,,home_banco,1970-04-26 14:48:02+00:00
+SESS_011,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:48:03+00:00
+SESS_011,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:48:04+00:00
+SESS_011,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:48:05+00:00
+SESS_011,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:48:06+00:00
+SESS_012,Global,Home,page_view,,home_banco,1970-04-26 14:48:07+00:00
+SESS_012,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:48:08+00:00
+SESS_012,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:48:09+00:00
+SESS_012,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:48:10+00:00
+SESS_012,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:48:11+00:00
+SESS_012,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:48:12+00:00
+SESS_012,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:48:13+00:00
+SESS_012,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:48:14+00:00
+SESS_012,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:48:15+00:00
+SESS_012,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:48:16+00:00
+SESS_012,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:48:17+00:00
+SESS_012,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:48:18+00:00
+SESS_012,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:48:19+00:00
+SESS_013,Global,Home,page_view,,home_banco,1970-04-26 14:48:20+00:00
+SESS_013,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:48:21+00:00
+SESS_013,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:48:22+00:00
+SESS_013,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:48:23+00:00
+SESS_013,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:48:24+00:00
+SESS_013,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:48:25+00:00
+SESS_013,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:48:26+00:00
+SESS_013,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:48:27+00:00
+SESS_013,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:48:28+00:00
+SESS_014,Global,Home,page_view,,home_banco,1970-04-26 14:48:29+00:00
+SESS_014,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:48:30+00:00
+SESS_014,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:48:31+00:00
+SESS_014,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:48:32+00:00
+SESS_014,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:48:33+00:00
+SESS_014,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:48:34+00:00
+SESS_014,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:48:35+00:00
+SESS_014,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:48:36+00:00
+SESS_014,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:48:37+00:00
+SESS_015,Global,Home,page_view,,home_banco,1970-04-26 14:48:38+00:00
+SESS_015,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:48:39+00:00
+SESS_015,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:48:40+00:00
+SESS_015,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:48:41+00:00
+SESS_015,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:48:42+00:00
+SESS_015,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:48:43+00:00
+SESS_015,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:48:44+00:00
+SESS_015,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:48:45+00:00
+SESS_015,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:48:46+00:00
+SESS_015,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:48:47+00:00
+SESS_015,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:48:48+00:00
+SESS_015,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:48:49+00:00
+SESS_015,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:48:50+00:00
+SESS_016,Global,Home,page_view,,home_banco,1970-04-26 14:48:51+00:00
+SESS_016,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:48:52+00:00
+SESS_016,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:48:53+00:00
+SESS_016,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:48:54+00:00
+SESS_016,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:48:55+00:00
+SESS_016,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:48:56+00:00
+SESS_016,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:48:57+00:00
+SESS_016,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:48:58+00:00
+SESS_016,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:48:59+00:00
+SESS_017,Global,Home,page_view,,home_banco,1970-04-26 14:49:00+00:00
+SESS_017,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:49:01+00:00
+SESS_017,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:49:02+00:00
+SESS_017,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:49:03+00:00
+SESS_017,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:49:04+00:00
+SESS_017,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:49:05+00:00
+SESS_017,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:49:06+00:00
+SESS_017,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:49:07+00:00
+SESS_017,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:49:08+00:00
+SESS_018,Global,Home,page_view,,home_banco,1970-04-26 14:49:09+00:00
+SESS_018,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:49:10+00:00
+SESS_018,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:49:11+00:00
+SESS_018,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:49:12+00:00
+SESS_018,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:49:13+00:00
+SESS_018,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:49:14+00:00
+SESS_018,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:49:15+00:00
+SESS_018,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:49:16+00:00
+SESS_018,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:49:17+00:00
+SESS_018,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:49:18+00:00
+SESS_018,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:49:19+00:00
+SESS_018,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:49:20+00:00
+SESS_018,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:49:21+00:00
+SESS_019,Global,Home,page_view,,home_banco,1970-04-26 14:49:22+00:00
+SESS_019,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:49:23+00:00
+SESS_019,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:49:24+00:00
+SESS_019,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:49:25+00:00
+SESS_019,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:49:26+00:00
+SESS_019,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:49:27+00:00
+SESS_019,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:49:28+00:00
+SESS_019,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:49:29+00:00
+SESS_019,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:49:30+00:00
+SESS_020,Global,Home,page_view,,home_banco,1970-04-26 14:49:31+00:00
+SESS_020,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:49:32+00:00
+SESS_020,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:49:33+00:00
+SESS_020,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:49:34+00:00
+SESS_020,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:49:35+00:00
+SESS_020,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:49:36+00:00
+SESS_020,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:49:37+00:00
+SESS_020,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:49:38+00:00
+SESS_020,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:49:39+00:00
+SESS_021,Global,Home,page_view,,home_banco,1970-04-26 14:49:40+00:00
+SESS_021,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:49:41+00:00
+SESS_021,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:49:42+00:00
+SESS_021,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:49:43+00:00
+SESS_021,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:49:44+00:00
+SESS_021,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:49:45+00:00
+SESS_021,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:49:46+00:00
+SESS_021,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:49:47+00:00
+SESS_021,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:49:48+00:00
+SESS_022,Global,Home,page_view,,home_banco,1970-04-26 14:49:49+00:00
+SESS_022,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:49:50+00:00
+SESS_022,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:49:51+00:00
+SESS_022,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:49:52+00:00
+SESS_022,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:49:53+00:00
+SESS_022,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:49:54+00:00
+SESS_022,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:49:55+00:00
+SESS_022,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:49:56+00:00
+SESS_022,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:49:57+00:00
+SESS_023,Global,Home,page_view,,home_banco,1970-04-26 14:49:58+00:00
+SESS_023,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:49:59+00:00
+SESS_023,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:50:00+00:00
+SESS_023,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:50:01+00:00
+SESS_023,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:50:02+00:00
+SESS_024,Global,Home,page_view,,home_banco,1970-04-26 14:50:03+00:00
+SESS_024,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:50:04+00:00
+SESS_024,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:50:05+00:00
+SESS_024,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:50:06+00:00
+SESS_024,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:50:07+00:00
+SESS_024,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:50:08+00:00
+SESS_024,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:50:09+00:00
+SESS_024,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:50:10+00:00
+SESS_024,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:50:11+00:00
+SESS_025,Global,Home,page_view,,home_banco,1970-04-26 14:50:12+00:00
+SESS_025,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:50:13+00:00
+SESS_025,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:50:14+00:00
+SESS_025,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:50:15+00:00
+SESS_025,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:50:16+00:00
+SESS_025,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:50:17+00:00
+SESS_025,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:50:18+00:00
+SESS_025,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:50:19+00:00
+SESS_025,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:50:20+00:00
+SESS_026,Global,Home,page_view,,home_banco,1970-04-26 14:50:21+00:00
+SESS_026,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:50:22+00:00
+SESS_026,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:50:23+00:00
+SESS_026,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:50:24+00:00
+SESS_026,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:50:25+00:00
+SESS_026,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:50:26+00:00
+SESS_026,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:50:27+00:00
+SESS_026,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:50:28+00:00
+SESS_026,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:50:29+00:00
+SESS_027,Global,Home,page_view,,home_banco,1970-04-26 14:50:30+00:00
+SESS_027,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:50:31+00:00
+SESS_027,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:50:32+00:00
+SESS_027,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:50:33+00:00
+SESS_027,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:50:34+00:00
+SESS_027,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:50:35+00:00
+SESS_027,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:50:36+00:00
+SESS_027,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:50:37+00:00
+SESS_027,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:50:38+00:00
+SESS_028,Global,Home,page_view,,home_banco,1970-04-26 14:50:39+00:00
+SESS_028,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:50:40+00:00
+SESS_028,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:50:41+00:00
+SESS_028,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:50:42+00:00
+SESS_028,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:50:43+00:00
+SESS_028,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:50:44+00:00
+SESS_028,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:50:45+00:00
+SESS_028,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:50:46+00:00
+SESS_028,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:50:47+00:00
+SESS_029,Global,Home,page_view,,home_banco,1970-04-26 14:50:48+00:00
+SESS_029,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:50:49+00:00
+SESS_029,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:50:50+00:00
+SESS_029,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:50:51+00:00
+SESS_029,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:50:52+00:00
+SESS_029,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:50:53+00:00
+SESS_029,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:50:54+00:00
+SESS_029,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:50:55+00:00
+SESS_029,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:50:56+00:00
+SESS_029,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:50:57+00:00
+SESS_029,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:50:58+00:00
+SESS_029,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:50:59+00:00
+SESS_029,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:51:00+00:00
+SESS_030,Global,Home,page_view,,home_banco,1970-04-26 14:51:01+00:00
+SESS_030,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:51:02+00:00
+SESS_030,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:51:03+00:00
+SESS_030,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:51:04+00:00
+SESS_030,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:51:05+00:00
+SESS_030,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:51:06+00:00
+SESS_030,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:51:07+00:00
+SESS_030,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:51:08+00:00
+SESS_030,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:51:09+00:00
+SESS_031,Global,Home,page_view,,home_banco,1970-04-26 14:51:10+00:00
+SESS_031,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:51:11+00:00
+SESS_031,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:51:12+00:00
+SESS_031,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:51:13+00:00
+SESS_031,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:51:14+00:00
+SESS_031,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:51:15+00:00
+SESS_031,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:51:16+00:00
+SESS_031,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:51:17+00:00
+SESS_031,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:51:18+00:00
+SESS_032,Global,Home,page_view,,home_banco,1970-04-26 14:51:19+00:00
+SESS_032,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:51:20+00:00
+SESS_032,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:51:21+00:00
+SESS_032,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:51:22+00:00
+SESS_032,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:51:23+00:00
+SESS_032,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:51:24+00:00
+SESS_032,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:51:25+00:00
+SESS_032,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:51:26+00:00
+SESS_032,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:51:27+00:00
+SESS_033,Global,Home,page_view,,home_banco,1970-04-26 14:51:28+00:00
+SESS_033,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:51:29+00:00
+SESS_033,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:51:30+00:00
+SESS_033,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:51:31+00:00
+SESS_033,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:51:32+00:00
+SESS_033,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:51:33+00:00
+SESS_033,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:51:34+00:00
+SESS_033,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:51:35+00:00
+SESS_033,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:51:36+00:00
+SESS_033,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:51:37+00:00
+SESS_033,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:51:38+00:00
+SESS_033,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:51:39+00:00
+SESS_033,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:51:40+00:00
+SESS_033,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:51:41+00:00
+SESS_033,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:51:42+00:00
+SESS_033,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:51:43+00:00
+SESS_033,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:51:44+00:00
+SESS_034,Global,Home,page_view,,home_banco,1970-04-26 14:51:45+00:00
+SESS_034,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:51:46+00:00
+SESS_034,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:51:47+00:00
+SESS_034,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:51:48+00:00
+SESS_034,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:51:49+00:00
+SESS_034,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:51:50+00:00
+SESS_034,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:51:51+00:00
+SESS_034,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:51:52+00:00
+SESS_034,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:51:53+00:00
+SESS_034,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:51:54+00:00
+SESS_034,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:51:55+00:00
+SESS_034,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:51:56+00:00
+SESS_034,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:51:57+00:00
+SESS_035,Global,Home,page_view,,home_banco,1970-04-26 14:51:58+00:00
+SESS_035,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:51:59+00:00
+SESS_035,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:52:00+00:00
+SESS_035,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:52:01+00:00
+SESS_035,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:52:02+00:00
+SESS_036,Global,Home,page_view,,home_banco,1970-04-26 14:52:03+00:00
+SESS_036,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:52:04+00:00
+SESS_036,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:52:05+00:00
+SESS_036,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:52:06+00:00
+SESS_036,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:52:07+00:00
+SESS_036,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:52:08+00:00
+SESS_036,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:52:09+00:00
+SESS_036,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:52:10+00:00
+SESS_036,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:52:11+00:00
+SESS_036,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:52:12+00:00
+SESS_036,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:52:13+00:00
+SESS_036,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:52:14+00:00
+SESS_036,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:52:15+00:00
+SESS_037,Global,Home,page_view,,home_banco,1970-04-26 14:52:16+00:00
+SESS_037,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:52:17+00:00
+SESS_037,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:52:18+00:00
+SESS_037,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:52:19+00:00
+SESS_037,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:52:20+00:00
+SESS_037,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:52:21+00:00
+SESS_037,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:52:22+00:00
+SESS_037,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:52:23+00:00
+SESS_037,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:52:24+00:00
+SESS_038,Global,Home,page_view,,home_banco,1970-04-26 14:52:25+00:00
+SESS_038,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:52:26+00:00
+SESS_038,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:52:27+00:00
+SESS_038,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:52:28+00:00
+SESS_038,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:52:29+00:00
+SESS_038,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:52:30+00:00
+SESS_038,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:52:31+00:00
+SESS_038,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:52:32+00:00
+SESS_038,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:52:33+00:00
+SESS_039,Global,Home,page_view,,home_banco,1970-04-26 14:52:34+00:00
+SESS_039,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:52:35+00:00
+SESS_039,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:52:36+00:00
+SESS_039,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:52:37+00:00
+SESS_039,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:52:38+00:00
+SESS_040,Global,Home,page_view,,home_banco,1970-04-26 14:52:39+00:00
+SESS_040,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:52:40+00:00
+SESS_040,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:52:41+00:00
+SESS_040,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:52:42+00:00
+SESS_040,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:52:43+00:00
+SESS_040,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:52:44+00:00
+SESS_040,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:52:45+00:00
+SESS_040,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:52:46+00:00
+SESS_040,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:52:47+00:00
+SESS_041,Global,Home,page_view,,home_banco,1970-04-26 14:52:48+00:00
+SESS_041,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:52:49+00:00
+SESS_041,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:52:50+00:00
+SESS_041,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:52:51+00:00
+SESS_041,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:52:52+00:00
+SESS_041,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:52:53+00:00
+SESS_041,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:52:54+00:00
+SESS_041,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:52:55+00:00
+SESS_041,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:52:56+00:00
+SESS_042,Global,Home,page_view,,home_banco,1970-04-26 14:52:57+00:00
+SESS_042,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:52:58+00:00
+SESS_042,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:52:59+00:00
+SESS_042,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:53:00+00:00
+SESS_042,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:53:01+00:00
+SESS_043,Global,Home,page_view,,home_banco,1970-04-26 14:53:02+00:00
+SESS_043,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:53:03+00:00
+SESS_043,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:53:04+00:00
+SESS_043,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:53:05+00:00
+SESS_043,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:53:06+00:00
+SESS_043,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:53:07+00:00
+SESS_043,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:53:08+00:00
+SESS_043,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:53:09+00:00
+SESS_043,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:53:10+00:00
+SESS_044,Global,Home,page_view,,home_banco,1970-04-26 14:53:11+00:00
+SESS_044,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:53:12+00:00
+SESS_044,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:53:13+00:00
+SESS_044,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:53:14+00:00
+SESS_044,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:53:15+00:00
+SESS_044,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:53:16+00:00
+SESS_044,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:53:17+00:00
+SESS_044,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:53:18+00:00
+SESS_044,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:53:19+00:00
+SESS_045,Global,Home,page_view,,home_banco,1970-04-26 14:53:20+00:00
+SESS_045,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:53:21+00:00
+SESS_045,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:53:22+00:00
+SESS_045,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:53:23+00:00
+SESS_045,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:53:24+00:00
+SESS_045,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:53:25+00:00
+SESS_045,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:53:26+00:00
+SESS_045,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:53:27+00:00
+SESS_045,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:53:28+00:00
+SESS_046,Global,Home,page_view,,home_banco,1970-04-26 14:53:29+00:00
+SESS_046,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:53:30+00:00
+SESS_046,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:53:31+00:00
+SESS_046,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:53:32+00:00
+SESS_046,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:53:33+00:00
+SESS_046,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:53:34+00:00
+SESS_046,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:53:35+00:00
+SESS_046,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:53:36+00:00
+SESS_046,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:53:37+00:00
+SESS_046,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:53:38+00:00
+SESS_046,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:53:39+00:00
+SESS_046,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:53:40+00:00
+SESS_046,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:53:41+00:00
+SESS_046,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:53:42+00:00
+SESS_046,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:53:43+00:00
+SESS_046,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:53:44+00:00
+SESS_046,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:53:45+00:00
+SESS_047,Global,Home,page_view,,home_banco,1970-04-26 14:53:46+00:00
+SESS_047,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:53:47+00:00
+SESS_047,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:53:48+00:00
+SESS_047,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:53:49+00:00
+SESS_047,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:53:50+00:00
+SESS_047,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:53:51+00:00
+SESS_047,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:53:52+00:00
+SESS_047,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:53:53+00:00
+SESS_047,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:53:54+00:00
+SESS_048,Global,Home,page_view,,home_banco,1970-04-26 14:53:55+00:00
+SESS_048,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:53:56+00:00
+SESS_048,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:53:57+00:00
+SESS_048,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:53:58+00:00
+SESS_048,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:53:59+00:00
+SESS_048,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:54:00+00:00
+SESS_048,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:54:01+00:00
+SESS_048,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:54:02+00:00
+SESS_048,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:54:03+00:00
+SESS_049,Global,Home,page_view,,home_banco,1970-04-26 14:54:04+00:00
+SESS_049,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:54:05+00:00
+SESS_049,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:54:06+00:00
+SESS_049,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:54:07+00:00
+SESS_049,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:54:08+00:00
+SESS_049,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:54:09+00:00
+SESS_049,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:54:10+00:00
+SESS_049,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:54:11+00:00
+SESS_049,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:54:12+00:00
+SESS_050,Global,Home,page_view,,home_banco,1970-04-26 14:54:13+00:00
+SESS_050,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:54:14+00:00
+SESS_050,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:54:15+00:00
+SESS_050,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:54:16+00:00
+SESS_050,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:54:17+00:00
+SESS_050,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:54:18+00:00
+SESS_050,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:54:19+00:00
+SESS_050,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:54:20+00:00
+SESS_050,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:54:21+00:00
+SESS_051,Global,Home,page_view,,home_banco,1970-04-26 14:54:22+00:00
+SESS_051,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:54:23+00:00
+SESS_051,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:54:24+00:00
+SESS_051,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:54:25+00:00
+SESS_051,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:54:26+00:00
+SESS_051,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:54:27+00:00
+SESS_051,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:54:28+00:00
+SESS_051,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:54:29+00:00
+SESS_051,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:54:30+00:00
+SESS_052,Global,Home,page_view,,home_banco,1970-04-26 14:54:31+00:00
+SESS_052,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:54:32+00:00
+SESS_052,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:54:33+00:00
+SESS_052,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:54:34+00:00
+SESS_052,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:54:35+00:00
+SESS_052,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:54:36+00:00
+SESS_052,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:54:37+00:00
+SESS_052,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:54:38+00:00
+SESS_052,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:54:39+00:00
+SESS_053,Global,Home,page_view,,home_banco,1970-04-26 14:54:40+00:00
+SESS_053,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:54:41+00:00
+SESS_053,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:54:42+00:00
+SESS_053,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:54:43+00:00
+SESS_053,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:54:44+00:00
+SESS_053,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:54:45+00:00
+SESS_053,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:54:46+00:00
+SESS_053,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:54:47+00:00
+SESS_053,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:54:48+00:00
+SESS_054,Global,Home,page_view,,home_banco,1970-04-26 14:54:49+00:00
+SESS_054,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:54:50+00:00
+SESS_054,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:54:51+00:00
+SESS_054,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:54:52+00:00
+SESS_054,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:54:53+00:00
+SESS_055,Global,Home,page_view,,home_banco,1970-04-26 14:54:54+00:00
+SESS_055,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:54:55+00:00
+SESS_055,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:54:56+00:00
+SESS_055,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:54:57+00:00
+SESS_055,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:54:58+00:00
+SESS_055,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:54:59+00:00
+SESS_055,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:55:00+00:00
+SESS_055,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:55:01+00:00
+SESS_055,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:55:02+00:00
+SESS_056,Global,Home,page_view,,home_banco,1970-04-26 14:55:03+00:00
+SESS_056,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:55:04+00:00
+SESS_056,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:55:05+00:00
+SESS_056,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:55:06+00:00
+SESS_056,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:55:07+00:00
+SESS_056,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:55:08+00:00
+SESS_056,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:55:09+00:00
+SESS_056,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:55:10+00:00
+SESS_056,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:55:11+00:00
+SESS_057,Global,Home,page_view,,home_banco,1970-04-26 14:55:12+00:00
+SESS_057,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:55:13+00:00
+SESS_057,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:55:14+00:00
+SESS_057,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:55:15+00:00
+SESS_057,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:55:16+00:00
+SESS_057,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:55:17+00:00
+SESS_057,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:55:18+00:00
+SESS_057,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:55:19+00:00
+SESS_057,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:55:20+00:00
+SESS_058,Global,Home,page_view,,home_banco,1970-04-26 14:55:21+00:00
+SESS_058,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:55:22+00:00
+SESS_058,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:55:23+00:00
+SESS_058,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:55:24+00:00
+SESS_058,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:55:25+00:00
+SESS_058,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:55:26+00:00
+SESS_058,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:55:27+00:00
+SESS_058,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:55:28+00:00
+SESS_058,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:55:29+00:00
+SESS_058,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:55:30+00:00
+SESS_058,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:55:31+00:00
+SESS_058,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:55:32+00:00
+SESS_058,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:55:33+00:00
+SESS_058,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:55:34+00:00
+SESS_058,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:55:35+00:00
+SESS_058,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:55:36+00:00
+SESS_058,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:55:37+00:00
+SESS_059,Global,Home,page_view,,home_banco,1970-04-26 14:55:38+00:00
+SESS_059,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:55:39+00:00
+SESS_059,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:55:40+00:00
+SESS_059,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:55:41+00:00
+SESS_059,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:55:42+00:00
+SESS_059,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:55:43+00:00
+SESS_059,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:55:44+00:00
+SESS_059,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:55:45+00:00
+SESS_059,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:55:46+00:00
+SESS_059,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:55:47+00:00
+SESS_059,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:55:48+00:00
+SESS_059,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:55:49+00:00
+SESS_059,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:55:50+00:00
+SESS_059,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:55:51+00:00
+SESS_059,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:55:52+00:00
+SESS_059,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:55:53+00:00
+SESS_059,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:55:54+00:00
+SESS_060,Global,Home,page_view,,home_banco,1970-04-26 14:55:55+00:00
+SESS_060,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:55:56+00:00
+SESS_060,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:55:57+00:00
+SESS_060,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:55:58+00:00
+SESS_060,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:55:59+00:00
+SESS_060,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:56:00+00:00
+SESS_060,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:56:01+00:00
+SESS_060,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:56:02+00:00
+SESS_060,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:56:03+00:00
+SESS_060,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:56:04+00:00
+SESS_060,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:56:05+00:00
+SESS_060,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:56:06+00:00
+SESS_060,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:56:07+00:00
+SESS_061,Global,Home,page_view,,home_banco,1970-04-26 14:56:08+00:00
+SESS_061,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:56:09+00:00
+SESS_061,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:56:10+00:00
+SESS_061,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:56:11+00:00
+SESS_061,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:56:12+00:00
+SESS_061,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:56:13+00:00
+SESS_061,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:56:14+00:00
+SESS_061,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:56:15+00:00
+SESS_061,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:56:16+00:00
+SESS_062,Global,Home,page_view,,home_banco,1970-04-26 14:56:17+00:00
+SESS_062,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:56:18+00:00
+SESS_062,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:56:19+00:00
+SESS_062,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:56:20+00:00
+SESS_062,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:56:21+00:00
+SESS_062,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:56:22+00:00
+SESS_062,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:56:23+00:00
+SESS_062,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:56:24+00:00
+SESS_062,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:56:25+00:00
+SESS_063,Global,Home,page_view,,home_banco,1970-04-26 14:56:26+00:00
+SESS_063,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:56:27+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:56:28+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:56:29+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:56:30+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:56:31+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:56:32+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:56:33+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:56:34+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:56:35+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:56:36+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:56:37+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:56:38+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:56:39+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:56:40+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:56:41+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:56:42+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:56:43+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:56:44+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:56:45+00:00
+SESS_063,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:56:46+00:00
+SESS_064,Global,Home,page_view,,home_banco,1970-04-26 14:56:47+00:00
+SESS_064,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:56:48+00:00
+SESS_064,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:56:49+00:00
+SESS_064,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:56:50+00:00
+SESS_064,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:56:51+00:00
+SESS_064,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:56:52+00:00
+SESS_064,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:56:53+00:00
+SESS_064,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:56:54+00:00
+SESS_064,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:56:55+00:00
+SESS_065,Global,Home,page_view,,home_banco,1970-04-26 14:56:56+00:00
+SESS_065,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:56:57+00:00
+SESS_065,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:56:58+00:00
+SESS_065,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:56:59+00:00
+SESS_065,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:57:00+00:00
+SESS_066,Global,Home,page_view,,home_banco,1970-04-26 14:57:01+00:00
+SESS_066,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:57:02+00:00
+SESS_066,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:57:03+00:00
+SESS_066,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:57:04+00:00
+SESS_066,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:57:05+00:00
+SESS_066,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:57:06+00:00
+SESS_066,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:57:07+00:00
+SESS_066,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:57:08+00:00
+SESS_066,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:57:09+00:00
+SESS_067,Global,Home,page_view,,home_banco,1970-04-26 14:57:10+00:00
+SESS_067,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:57:11+00:00
+SESS_067,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:57:12+00:00
+SESS_067,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:57:13+00:00
+SESS_067,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:57:14+00:00
+SESS_068,Global,Home,page_view,,home_banco,1970-04-26 14:57:15+00:00
+SESS_068,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:57:16+00:00
+SESS_068,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:57:17+00:00
+SESS_068,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:57:18+00:00
+SESS_068,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:57:19+00:00
+SESS_068,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:57:20+00:00
+SESS_068,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:57:21+00:00
+SESS_068,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:57:22+00:00
+SESS_068,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:57:23+00:00
+SESS_069,Global,Home,page_view,,home_banco,1970-04-26 14:57:24+00:00
+SESS_069,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:57:25+00:00
+SESS_069,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:57:26+00:00
+SESS_069,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:57:27+00:00
+SESS_069,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:57:28+00:00
+SESS_069,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:57:29+00:00
+SESS_069,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:57:30+00:00
+SESS_069,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:57:31+00:00
+SESS_069,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:57:32+00:00
+SESS_070,Global,Home,page_view,,home_banco,1970-04-26 14:57:33+00:00
+SESS_070,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:57:34+00:00
+SESS_070,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:57:35+00:00
+SESS_070,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:57:36+00:00
+SESS_070,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:57:37+00:00
+SESS_070,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:57:38+00:00
+SESS_070,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:57:39+00:00
+SESS_070,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:57:40+00:00
+SESS_070,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:57:41+00:00
+SESS_071,Global,Home,page_view,,home_banco,1970-04-26 14:57:42+00:00
+SESS_071,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:57:43+00:00
+SESS_071,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:57:44+00:00
+SESS_071,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:57:45+00:00
+SESS_071,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:57:46+00:00
+SESS_071,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:57:47+00:00
+SESS_071,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:57:48+00:00
+SESS_071,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:57:49+00:00
+SESS_071,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:57:50+00:00
+SESS_071,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:57:51+00:00
+SESS_071,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:57:52+00:00
+SESS_071,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:57:53+00:00
+SESS_071,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:57:54+00:00
+SESS_072,Global,Home,page_view,,home_banco,1970-04-26 14:57:55+00:00
+SESS_072,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:57:56+00:00
+SESS_072,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:57:57+00:00
+SESS_072,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:57:58+00:00
+SESS_072,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:57:59+00:00
+SESS_072,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:58:00+00:00
+SESS_072,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:58:01+00:00
+SESS_072,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:58:02+00:00
+SESS_072,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:58:03+00:00
+SESS_073,Global,Home,page_view,,home_banco,1970-04-26 14:58:04+00:00
+SESS_073,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:58:05+00:00
+SESS_073,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:58:06+00:00
+SESS_073,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:58:07+00:00
+SESS_073,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:58:08+00:00
+SESS_073,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:58:09+00:00
+SESS_073,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:58:10+00:00
+SESS_073,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:58:11+00:00
+SESS_073,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:58:12+00:00
+SESS_074,Global,Home,page_view,,home_banco,1970-04-26 14:58:13+00:00
+SESS_074,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:58:14+00:00
+SESS_074,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:58:15+00:00
+SESS_074,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:58:16+00:00
+SESS_074,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:58:17+00:00
+SESS_074,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:58:18+00:00
+SESS_074,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:58:19+00:00
+SESS_074,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:58:20+00:00
+SESS_074,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:58:21+00:00
+SESS_075,Global,Home,page_view,,home_banco,1970-04-26 14:58:22+00:00
+SESS_075,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:58:23+00:00
+SESS_075,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:58:24+00:00
+SESS_075,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:58:25+00:00
+SESS_075,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:58:26+00:00
+SESS_075,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:58:27+00:00
+SESS_075,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:58:28+00:00
+SESS_075,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:58:29+00:00
+SESS_075,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:58:30+00:00
+SESS_076,Global,Home,page_view,,home_banco,1970-04-26 14:58:31+00:00
+SESS_076,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:58:32+00:00
+SESS_076,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:58:33+00:00
+SESS_076,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:58:34+00:00
+SESS_076,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:58:35+00:00
+SESS_077,Global,Home,page_view,,home_banco,1970-04-26 14:58:36+00:00
+SESS_077,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:58:37+00:00
+SESS_077,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:58:38+00:00
+SESS_077,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:58:39+00:00
+SESS_077,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:58:40+00:00
+SESS_077,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:58:41+00:00
+SESS_077,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:58:42+00:00
+SESS_077,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:58:43+00:00
+SESS_077,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:58:44+00:00
+SESS_078,Global,Home,page_view,,home_banco,1970-04-26 14:58:45+00:00
+SESS_078,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:58:46+00:00
+SESS_078,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:58:47+00:00
+SESS_078,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:58:48+00:00
+SESS_078,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:58:49+00:00
+SESS_078,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:58:50+00:00
+SESS_078,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:58:51+00:00
+SESS_078,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:58:52+00:00
+SESS_078,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:58:53+00:00
+SESS_079,Global,Home,page_view,,home_banco,1970-04-26 14:58:54+00:00
+SESS_079,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:58:55+00:00
+SESS_079,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:58:56+00:00
+SESS_079,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:58:57+00:00
+SESS_079,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:58:58+00:00
+SESS_079,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:58:59+00:00
+SESS_079,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:59:00+00:00
+SESS_079,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:59:01+00:00
+SESS_079,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:59:02+00:00
+SESS_080,Global,Home,page_view,,home_banco,1970-04-26 14:59:03+00:00
+SESS_080,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:59:04+00:00
+SESS_080,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:59:05+00:00
+SESS_080,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:59:06+00:00
+SESS_080,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:59:07+00:00
+SESS_081,Global,Home,page_view,,home_banco,1970-04-26 14:59:08+00:00
+SESS_081,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:59:09+00:00
+SESS_081,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:59:10+00:00
+SESS_081,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:59:11+00:00
+SESS_081,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:59:12+00:00
+SESS_081,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:59:13+00:00
+SESS_081,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:59:14+00:00
+SESS_081,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:59:15+00:00
+SESS_081,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:59:16+00:00
+SESS_082,Global,Home,page_view,,home_banco,1970-04-26 14:59:17+00:00
+SESS_082,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:59:18+00:00
+SESS_082,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:59:19+00:00
+SESS_082,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:59:20+00:00
+SESS_082,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:59:21+00:00
+SESS_082,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:59:22+00:00
+SESS_082,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:59:23+00:00
+SESS_082,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:59:24+00:00
+SESS_082,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:59:25+00:00
+SESS_083,Global,Home,page_view,,home_banco,1970-04-26 14:59:26+00:00
+SESS_083,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:59:27+00:00
+SESS_083,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:59:28+00:00
+SESS_083,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:59:29+00:00
+SESS_083,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:59:30+00:00
+SESS_083,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:59:31+00:00
+SESS_083,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:59:32+00:00
+SESS_083,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:59:33+00:00
+SESS_083,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:59:34+00:00
+SESS_084,Global,Home,page_view,,home_banco,1970-04-26 14:59:35+00:00
+SESS_084,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:59:36+00:00
+SESS_084,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:59:37+00:00
+SESS_084,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:59:38+00:00
+SESS_084,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:59:39+00:00
+SESS_084,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 14:59:40+00:00
+SESS_084,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:59:41+00:00
+SESS_084,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:59:42+00:00
+SESS_084,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:59:43+00:00
+SESS_085,Global,Home,page_view,,home_banco,1970-04-26 14:59:44+00:00
+SESS_085,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:59:45+00:00
+SESS_085,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:59:46+00:00
+SESS_085,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:59:47+00:00
+SESS_085,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:59:48+00:00
+SESS_085,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:59:49+00:00
+SESS_085,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:59:50+00:00
+SESS_085,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 14:59:51+00:00
+SESS_085,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 14:59:52+00:00
+SESS_086,Global,Home,page_view,,home_banco,1970-04-26 14:59:53+00:00
+SESS_086,Global,Home,click_button,Cartões,home_banco,1970-04-26 14:59:54+00:00
+SESS_086,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 14:59:55+00:00
+SESS_086,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 14:59:56+00:00
+SESS_086,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 14:59:57+00:00
+SESS_086,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 14:59:58+00:00
+SESS_086,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 14:59:59+00:00
+SESS_086,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 15:00:00+00:00
+SESS_086,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 15:00:01+00:00
+SESS_087,Global,Home,page_view,,home_banco,1970-04-26 15:00:02+00:00
+SESS_087,Global,Home,click_button,Cartões,home_banco,1970-04-26 15:00:03+00:00
+SESS_087,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 15:00:04+00:00
+SESS_087,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 15:00:05+00:00
+SESS_087,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 15:00:06+00:00
+SESS_087,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 15:00:07+00:00
+SESS_087,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 15:00:08+00:00
+SESS_087,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 15:00:09+00:00
+SESS_087,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 15:00:10+00:00
+SESS_088,Global,Home,page_view,,home_banco,1970-04-26 15:00:11+00:00
+SESS_088,Global,Home,click_button,Cartões,home_banco,1970-04-26 15:00:12+00:00
+SESS_088,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 15:00:13+00:00
+SESS_088,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 15:00:14+00:00
+SESS_088,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 15:00:15+00:00
+SESS_088,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 15:00:16+00:00
+SESS_088,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 15:00:17+00:00
+SESS_088,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 15:00:18+00:00
+SESS_088,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 15:00:19+00:00
+SESS_089,Global,Home,page_view,,home_banco,1970-04-26 15:00:20+00:00
+SESS_089,Global,Home,click_button,Cartões,home_banco,1970-04-26 15:00:21+00:00
+SESS_089,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 15:00:22+00:00
+SESS_089,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 15:00:23+00:00
+SESS_089,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 15:00:24+00:00
+SESS_090,Global,Home,page_view,,home_banco,1970-04-26 15:00:25+00:00
+SESS_090,Global,Home,click_button,Cartões,home_banco,1970-04-26 15:00:26+00:00
+SESS_090,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 15:00:27+00:00
+SESS_090,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 15:00:28+00:00
+SESS_090,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 15:00:29+00:00
+SESS_090,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 15:00:30+00:00
+SESS_090,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 15:00:31+00:00
+SESS_090,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 15:00:32+00:00
+SESS_090,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 15:00:33+00:00
+SESS_091,Global,Home,page_view,,home_banco,1970-04-26 15:00:34+00:00
+SESS_091,Global,Home,click_button,Cartões,home_banco,1970-04-26 15:00:35+00:00
+SESS_091,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 15:00:36+00:00
+SESS_091,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 15:00:37+00:00
+SESS_091,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 15:00:38+00:00
+SESS_091,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 15:00:39+00:00
+SESS_091,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 15:00:40+00:00
+SESS_091,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 15:00:41+00:00
+SESS_091,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 15:00:42+00:00
+SESS_092,Global,Home,page_view,,home_banco,1970-04-26 15:00:43+00:00
+SESS_092,Global,Home,click_button,Cartões,home_banco,1970-04-26 15:00:44+00:00
+SESS_092,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 15:00:45+00:00
+SESS_092,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 15:00:46+00:00
+SESS_092,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 15:00:47+00:00
+SESS_092,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 15:00:48+00:00
+SESS_092,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 15:00:49+00:00
+SESS_092,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 15:00:50+00:00
+SESS_092,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 15:00:51+00:00
+SESS_092,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 15:00:52+00:00
+SESS_092,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 15:00:53+00:00
+SESS_092,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 15:00:54+00:00
+SESS_092,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 15:00:55+00:00
+SESS_093,Global,Home,page_view,,home_banco,1970-04-26 15:00:56+00:00
+SESS_093,Global,Home,click_button,Cartões,home_banco,1970-04-26 15:00:57+00:00
+SESS_093,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 15:00:58+00:00
+SESS_093,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 15:00:59+00:00
+SESS_093,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 15:01:00+00:00
+SESS_093,Cartoes,Aquisicao_Cartao,click_button,Voltar,form_dados_pessoais,1970-04-26 15:01:01+00:00
+SESS_093,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 15:01:02+00:00
+SESS_093,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 15:01:03+00:00
+SESS_093,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 15:01:04+00:00
+SESS_093,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 15:01:05+00:00
+SESS_093,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 15:01:06+00:00
+SESS_093,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 15:01:07+00:00
+SESS_093,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 15:01:08+00:00
+SESS_094,Global,Home,page_view,,home_banco,1970-04-26 15:01:09+00:00
+SESS_094,Global,Home,click_button,Cartões,home_banco,1970-04-26 15:01:10+00:00
+SESS_094,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 15:01:11+00:00
+SESS_094,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 15:01:12+00:00
+SESS_094,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 15:01:13+00:00
+SESS_094,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 15:01:14+00:00
+SESS_094,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 15:01:15+00:00
+SESS_094,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 15:01:16+00:00
+SESS_094,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 15:01:17+00:00
+SESS_095,Global,Home,page_view,,home_banco,1970-04-26 15:01:18+00:00
+SESS_095,Global,Home,click_button,Cartões,home_banco,1970-04-26 15:01:19+00:00
+SESS_095,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 15:01:20+00:00
+SESS_095,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 15:01:21+00:00
+SESS_095,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 15:01:22+00:00
+SESS_095,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 15:01:23+00:00
+SESS_095,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 15:01:24+00:00
+SESS_095,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 15:01:25+00:00
+SESS_095,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 15:01:26+00:00
+SESS_096,Global,Home,page_view,,home_banco,1970-04-26 15:01:27+00:00
+SESS_096,Global,Home,click_button,Cartões,home_banco,1970-04-26 15:01:28+00:00
+SESS_096,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 15:01:29+00:00
+SESS_096,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 15:01:30+00:00
+SESS_096,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 15:01:31+00:00
+SESS_096,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 15:01:32+00:00
+SESS_096,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 15:01:33+00:00
+SESS_096,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 15:01:34+00:00
+SESS_096,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 15:01:35+00:00
+SESS_097,Global,Home,page_view,,home_banco,1970-04-26 15:01:36+00:00
+SESS_097,Global,Home,click_button,Cartões,home_banco,1970-04-26 15:01:37+00:00
+SESS_097,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 15:01:38+00:00
+SESS_097,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 15:01:39+00:00
+SESS_097,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 15:01:40+00:00
+SESS_098,Global,Home,page_view,,home_banco,1970-04-26 15:01:41+00:00
+SESS_098,Global,Home,click_button,Cartões,home_banco,1970-04-26 15:01:42+00:00
+SESS_098,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 15:01:43+00:00
+SESS_098,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 15:01:44+00:00
+SESS_098,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 15:01:45+00:00
+SESS_098,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 15:01:46+00:00
+SESS_098,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 15:01:47+00:00
+SESS_098,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 15:01:48+00:00
+SESS_098,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 15:01:49+00:00
+SESS_099,Global,Home,page_view,,home_banco,1970-04-26 15:01:50+00:00
+SESS_099,Global,Home,click_button,Cartões,home_banco,1970-04-26 15:01:51+00:00
+SESS_099,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 15:01:52+00:00
+SESS_099,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 15:01:53+00:00
+SESS_099,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 15:01:54+00:00
+SESS_099,Cartoes,Aquisicao_Cartao,click_button,Continuar,form_dados_pessoais,1970-04-26 15:01:55+00:00
+SESS_099,Cartoes,Aquisicao_Cartao,page_view,,form_endereco,1970-04-26 15:01:56+00:00
+SESS_099,Cartoes,Aquisicao_Cartao,click_button,Confirmar,form_endereco,1970-04-26 15:01:57+00:00
+SESS_099,Cartoes,Aquisicao_Cartao,page_view,,sucesso_solicitacao,1970-04-26 15:01:58+00:00
+SESS_100,Global,Home,page_view,,home_banco,1970-04-26 15:01:59+00:00
+SESS_100,Global,Home,click_button,Cartões,home_banco,1970-04-26 15:02:00+00:00
+SESS_100,Cartoes,Aquisicao_Cartao,page_view,,hub_cartoes,1970-04-26 15:02:01+00:00
+SESS_100,Cartoes,Aquisicao_Cartao,click_button,Solicitar Novo Cartão,hub_cartoes,1970-04-26 15:02:02+00:00
+SESS_100,Cartoes,Aquisicao_Cartao,page_view,,form_dados_pessoais,1970-04-26 15:02:03+00:00

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jornada_ux"
+version = "0.1.0"
+description = "Ferramenta de CLI para Process Mining, simulação e análise de jornadas de usuários."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas>=2.0.0",
+    "pm4py>=2.7.0",
+    "numpy>=1.20.0"
+]
+
+[project.scripts]
+pm4py-cli = "jornada_ux.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

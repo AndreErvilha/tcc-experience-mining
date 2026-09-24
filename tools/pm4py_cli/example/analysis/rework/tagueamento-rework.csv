@@ -1,0 +1,4 @@
+atividade,casos_com_retrabalho,total_casos_presente,taxa_retrabalho_casos_pct,total_ocorrencias_absolutas
+[Cartoes:Aquisicao_Cartao:hub_cartoes].page_view(),1,4,25.0,5
+[Cartoes:Aquisicao_Cartao:hub_cartoes].click_button(Solicitar Novo Cartão),1,4,25.0,5
+[Cartoes:Aquisicao_Cartao:form_dados_pessoais].page_view(),1,4,25.0,5

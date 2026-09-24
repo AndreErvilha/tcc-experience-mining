@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text></text>
+    </name>
+    <page id="n0">
+      <place id="intplace_[cartoes:historico:detalhe_fatura].page_view()">
+        <name>
+          <text>intplace_[cartoes:historico:detalhe_fatura].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[cartoes:historico:historico_faturas].page_view()">
+        <name>
+          <text>intplace_[cartoes:historico:historico_faturas].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:historico:detalhe_fatura].page_view()">
+        <name>
+          <text>pre_[cartoes:historico:detalhe_fatura].page_view()</text>
+        </name>
+      </place>
+      <place id="source0">
+        <name>
+          <text>source0</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="sink0">
+        <name>
+          <text>sink0</text>
+        </name>
+      </place>
+      <place id="pre_[canais:home:menu_produtos].click_button(cartoes)">
+        <name>
+          <text>pre_[canais:home:menu_produtos].click_button(cartoes)</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:home_cartoes:home_cartoes].page_view()">
+        <name>
+          <text>pre_[cartoes:home_cartoes:home_cartoes].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:historico:visualizacao_pdf].page_view()">
+        <name>
+          <text>pre_[cartoes:historico:visualizacao_pdf].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[canais:home:home].page_view()">
+        <name>
+          <text>intplace_[canais:home:home].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[cartoes:home_cartoes:home_cartoes].page_view()">
+        <name>
+          <text>intplace_[cartoes:home_cartoes:home_cartoes].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:historico:visualizacao_pdf].click_button(voltar)">
+        <name>
+          <text>pre_[cartoes:historico:visualizacao_pdf].click_button(voltar)</text>
+        </name>
+      </place>
+      <place id="pre_[canais:home:menu_produtos].page_view()">
+        <name>
+          <text>pre_[canais:home:menu_produtos].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[canais:home:home].page_view()">
+        <name>
+          <text>pre_[canais:home:home].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:historico:historico_faturas].page_view()">
+        <name>
+          <text>pre_[cartoes:historico:historico_faturas].page_view()</text>
+        </name>
+      </place>
+      <transition id="hid_2">
+        <name>
+          <text>hid_2</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="ed7144a8-1efb-4146-afc1-eda9e919c465"/>
+      </transition>
+      <transition id="[cartoes:historico:historico_faturas].click_button(mes_anterior)">
+        <name>
+          <text>[cartoes:historico:historico_faturas].click_button(mes_anterior)</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:menu_produtos].page_view()">
+        <name>
+          <text>[canais:home:menu_produtos].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:menu_produtos].click_button(cartoes)">
+        <name>
+          <text>[canais:home:menu_produtos].click_button(cartoes)</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:home].page_view()">
+        <name>
+          <text>[canais:home:home].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:home_cartoes:home_cartoes].click_button(voltar)">
+        <name>
+          <text>[cartoes:home_cartoes:home_cartoes].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:historico:detalhe_fatura].click_button(gerar_pdf)">
+        <name>
+          <text>[cartoes:historico:detalhe_fatura].click_button(gerar_pdf)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:historico:visualizacao_pdf].page_view()">
+        <name>
+          <text>[cartoes:historico:visualizacao_pdf].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:historico:historico_faturas].click_button(voltar)">
+        <name>
+          <text>[cartoes:historico:historico_faturas].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:historico:detalhe_fatura].page_view()">
+        <name>
+          <text>[cartoes:historico:detalhe_fatura].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:historico:historico_faturas].page_view()">
+        <name>
+          <text>[cartoes:historico:historico_faturas].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:historico:detalhe_fatura].click_button(voltar)">
+        <name>
+          <text>[cartoes:historico:detalhe_fatura].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:home].click_button(menu_produtos)">
+        <name>
+          <text>[canais:home:home].click_button(menu_produtos)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:home_cartoes:home_cartoes].page_view()">
+        <name>
+          <text>[cartoes:home_cartoes:home_cartoes].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:home_cartoes:home_cartoes].click_button(historico_faturas)">
+        <name>
+          <text>[cartoes:home_cartoes:home_cartoes].click_button(historico_faturas)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:historico:visualizacao_pdf].click_button(voltar)">
+        <name>
+          <text>[cartoes:historico:visualizacao_pdf].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="hid_10">
+        <name>
+          <text>hid_10</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="3f1c1ed6-1933-4113-b10c-680aaae8d639"/>
+      </transition>
+      <arc id="2045516453392" source="[cartoes:historico:visualizacao_pdf].click_button(voltar)" target="pre_[cartoes:historico:detalhe_fatura].page_view()"/>
+      <arc id="2045516449296" source="[cartoes:historico:visualizacao_pdf].page_view()" target="pre_[cartoes:historico:visualizacao_pdf].click_button(voltar)"/>
+      <arc id="2045516398160" source="hid_10" target="sink0"/>
+      <arc id="2045516453520" source="[cartoes:historico:historico_faturas].click_button(voltar)" target="pre_[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="2045516451664" source="[cartoes:historico:detalhe_fatura].page_view()" target="intplace_[cartoes:historico:detalhe_fatura].page_view()"/>
+      <arc id="2045516453776" source="[cartoes:historico:detalhe_fatura].click_button(voltar)" target="pre_[cartoes:historico:historico_faturas].page_view()"/>
+      <arc id="2045516396432" source="[canais:home:menu_produtos].page_view()" target="pre_[canais:home:menu_produtos].click_button(cartoes)"/>
+      <arc id="2045516389904" source="pre_[cartoes:historico:visualizacao_pdf].page_view()" target="[cartoes:historico:visualizacao_pdf].page_view()"/>
+      <arc id="2045516454800" source="intplace_[cartoes:historico:historico_faturas].page_view()" target="[cartoes:historico:historico_faturas].click_button(voltar)"/>
+      <arc id="2045516454672" source="intplace_[cartoes:home_cartoes:home_cartoes].page_view()" target="[cartoes:home_cartoes:home_cartoes].click_button(voltar)"/>
+      <arc id="2045516454544" source="intplace_[cartoes:historico:detalhe_fatura].page_view()" target="[cartoes:historico:detalhe_fatura].click_button(voltar)"/>
+      <arc id="2045516384272" source="pre_[canais:home:menu_produtos].click_button(cartoes)" target="[canais:home:menu_produtos].click_button(cartoes)"/>
+      <arc id="2045516454416" source="intplace_[cartoes:home_cartoes:home_cartoes].page_view()" target="[cartoes:home_cartoes:home_cartoes].click_button(historico_faturas)"/>
+      <arc id="2045516454160" source="intplace_[cartoes:historico:detalhe_fatura].page_view()" target="[cartoes:historico:detalhe_fatura].click_button(gerar_pdf)"/>
+      <arc id="2045516386448" source="pre_[cartoes:home_cartoes:home_cartoes].page_view()" target="[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="2045516453648" source="[cartoes:home_cartoes:home_cartoes].click_button(voltar)" target="pre_[canais:home:home].page_view()"/>
+      <arc id="2045516453904" source="[cartoes:historico:historico_faturas].click_button(mes_anterior)" target="pre_[cartoes:historico:detalhe_fatura].page_view()"/>
+      <arc id="2045516394576" source="pre_[cartoes:historico:detalhe_fatura].page_view()" target="[cartoes:historico:detalhe_fatura].page_view()"/>
+      <arc id="2045516449936" source="[cartoes:historico:historico_faturas].page_view()" target="intplace_[cartoes:historico:historico_faturas].page_view()"/>
+      <arc id="2045516396944" source="[canais:home:home].page_view()" target="intplace_[canais:home:home].page_view()"/>
+      <arc id="2045516396240" source="[canais:home:home].click_button(menu_produtos)" target="pre_[canais:home:menu_produtos].page_view()"/>
+      <arc id="2045516398480" source="[cartoes:home_cartoes:home_cartoes].page_view()" target="intplace_[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="2045516390864" source="intplace_[cartoes:historico:historico_faturas].page_view()" target="[cartoes:historico:historico_faturas].click_button(mes_anterior)"/>
+      <arc id="2045516384848" source="pre_[canais:home:home].page_view()" target="[canais:home:home].page_view()"/>
+      <arc id="2045516383312" source="pre_[canais:home:menu_produtos].page_view()" target="[canais:home:menu_produtos].page_view()"/>
+      <arc id="2045516386000" source="source0" target="hid_2"/>
+      <arc id="2045516386128" source="hid_2" target="pre_[canais:home:home].page_view()"/>
+      <arc id="2045516453072" source="[canais:home:menu_produtos].click_button(cartoes)" target="pre_[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="2045516390480" source="pre_[cartoes:historico:visualizacao_pdf].click_button(voltar)" target="[cartoes:historico:visualizacao_pdf].click_button(voltar)"/>
+      <arc id="2045516391632" source="pre_[cartoes:historico:historico_faturas].page_view()" target="[cartoes:historico:historico_faturas].page_view()"/>
+      <arc id="2045516454224" source="intplace_[canais:home:home].page_view()" target="[canais:home:home].click_button(menu_produtos)"/>
+      <arc id="2045516453264" source="[cartoes:home_cartoes:home_cartoes].click_button(historico_faturas)" target="pre_[cartoes:historico:historico_faturas].page_view()"/>
+      <arc id="2045516449168" source="[cartoes:historico:detalhe_fatura].click_button(gerar_pdf)" target="pre_[cartoes:historico:visualizacao_pdf].page_view()"/>
+      <arc id="2045516398032" source="intplace_[canais:home:home].page_view()" target="hid_10"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink0">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

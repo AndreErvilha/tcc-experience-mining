@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text></text>
+    </name>
+    <page id="n0">
+      <place id="pre_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()">
+        <name>
+          <text>pre_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[investimentos:resgate:detalhe_posicao_cdb].page_view()">
+        <name>
+          <text>pre_[investimentos:resgate:detalhe_posicao_cdb].page_view()</text>
+        </name>
+      </place>
+      <place id="sink0">
+        <name>
+          <text>sink0</text>
+        </name>
+      </place>
+      <place id="pre_[canais:home:menu_produtos].click_button(investimentos)">
+        <name>
+          <text>pre_[canais:home:menu_produtos].click_button(investimentos)</text>
+        </name>
+      </place>
+      <place id="pre_[investimentos:home_investimentos:home_investimentos].page_view()">
+        <name>
+          <text>pre_[investimentos:home_investimentos:home_investimentos].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[investimentos:resgate:input_valor_resgate].page_view()">
+        <name>
+          <text>pre_[investimentos:resgate:input_valor_resgate].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[investimentos:resgate:comprovante_resgate].click_button(fechar)">
+        <name>
+          <text>pre_[investimentos:resgate:comprovante_resgate].click_button(fechar)</text>
+        </name>
+      </place>
+      <place id="intplace_[investimentos:resgate:detalhe_posicao_cdb].page_view()">
+        <name>
+          <text>intplace_[investimentos:resgate:detalhe_posicao_cdb].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[investimentos:resgate:input_valor_resgate].page_view()">
+        <name>
+          <text>intplace_[investimentos:resgate:input_valor_resgate].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()">
+        <name>
+          <text>intplace_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()</text>
+        </name>
+      </place>
+      <place id="source0">
+        <name>
+          <text>source0</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="pre_[canais:home:menu_produtos].page_view()">
+        <name>
+          <text>pre_[canais:home:menu_produtos].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[canais:home:home].page_view()">
+        <name>
+          <text>pre_[canais:home:home].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[investimentos:resgate:comprovante_resgate].page_view()">
+        <name>
+          <text>pre_[investimentos:resgate:comprovante_resgate].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[investimentos:home_investimentos:home_investimentos].page_view()">
+        <name>
+          <text>intplace_[investimentos:home_investimentos:home_investimentos].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[canais:home:home].page_view()">
+        <name>
+          <text>intplace_[canais:home:home].page_view()</text>
+        </name>
+      </place>
+      <transition id="hid_2">
+        <name>
+          <text>hid_2</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="79d6dada-26f1-4e2d-90b4-1bcf2ad2325c"/>
+      </transition>
+      <transition id="hid_11">
+        <name>
+          <text>hid_11</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="aa59e3fe-104d-44ec-8856-402606832e9f"/>
+      </transition>
+      <transition id="[investimentos:resgate:detalhe_posicao_cdb].click_button(resgatar)">
+        <name>
+          <text>[investimentos:resgate:detalhe_posicao_cdb].click_button(resgatar)</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:resgate:input_valor_resgate].page_view()">
+        <name>
+          <text>[investimentos:resgate:input_valor_resgate].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:resgate:input_valor_resgate].click_button(voltar)">
+        <name>
+          <text>[investimentos:resgate:input_valor_resgate].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:home].click_button(menu_produtos)">
+        <name>
+          <text>[canais:home:home].click_button(menu_produtos)</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:home].page_view()">
+        <name>
+          <text>[canais:home:home].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:home_investimentos:home_investimentos].page_view()">
+        <name>
+          <text>[investimentos:home_investimentos:home_investimentos].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:meus_investimentos:home_investimentos].click_button(ver_posicao)">
+        <name>
+          <text>[investimentos:meus_investimentos:home_investimentos].click_button(ver_posicao)</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:meus_investimentos:carteira_renda_fixa].page_view()">
+        <name>
+          <text>[investimentos:meus_investimentos:carteira_renda_fixa].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:meus_investimentos:carteira_renda_fixa].click_button(voltar)">
+        <name>
+          <text>[investimentos:meus_investimentos:carteira_renda_fixa].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:resgate:comprovante_resgate].page_view()">
+        <name>
+          <text>[investimentos:resgate:comprovante_resgate].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:resgate:detalhe_posicao_cdb].click_button(voltar)">
+        <name>
+          <text>[investimentos:resgate:detalhe_posicao_cdb].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:menu_produtos].page_view()">
+        <name>
+          <text>[canais:home:menu_produtos].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:menu_produtos].click_button(investimentos)">
+        <name>
+          <text>[canais:home:menu_produtos].click_button(investimentos)</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:home_investimentos:home_investimentos].click_button(voltar)">
+        <name>
+          <text>[investimentos:home_investimentos:home_investimentos].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)">
+        <name>
+          <text>[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:resgate:detalhe_posicao_cdb].page_view()">
+        <name>
+          <text>[investimentos:resgate:detalhe_posicao_cdb].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:resgate:comprovante_resgate].click_button(fechar)">
+        <name>
+          <text>[investimentos:resgate:comprovante_resgate].click_button(fechar)</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:resgate:input_valor_resgate].click_button(confirmar_resgate)">
+        <name>
+          <text>[investimentos:resgate:input_valor_resgate].click_button(confirmar_resgate)</text>
+        </name>
+      </transition>
+      <arc id="2661793618960" source="[canais:home:home].page_view()" target="intplace_[canais:home:home].page_view()"/>
+      <arc id="2661793627664" source="[canais:home:menu_produtos].click_button(investimentos)" target="pre_[investimentos:home_investimentos:home_investimentos].page_view()"/>
+      <arc id="2661793620048" source="intplace_[canais:home:home].page_view()" target="hid_11"/>
+      <arc id="2661793661008" source="[investimentos:meus_investimentos:carteira_renda_fixa].click_button(voltar)" target="pre_[investimentos:home_investimentos:home_investimentos].page_view()"/>
+      <arc id="2661793611856" source="pre_[investimentos:resgate:detalhe_posicao_cdb].page_view()" target="[investimentos:resgate:detalhe_posicao_cdb].page_view()"/>
+      <arc id="2661794415184" source="intplace_[investimentos:resgate:detalhe_posicao_cdb].page_view()" target="[investimentos:resgate:detalhe_posicao_cdb].click_button(voltar)"/>
+      <arc id="2661793618512" source="[canais:home:menu_produtos].page_view()" target="pre_[canais:home:menu_produtos].click_button(investimentos)"/>
+      <arc id="2661793662032" source="intplace_[investimentos:resgate:input_valor_resgate].page_view()" target="[investimentos:resgate:input_valor_resgate].click_button(confirmar_resgate)"/>
+      <arc id="2661793707664" source="pre_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()" target="[investimentos:meus_investimentos:carteira_renda_fixa].page_view()"/>
+      <arc id="2661793702032" source="pre_[canais:home:menu_produtos].click_button(investimentos)" target="[canais:home:menu_produtos].click_button(investimentos)"/>
+      <arc id="2661793623696" source="[investimentos:resgate:detalhe_posicao_cdb].click_button(resgatar)" target="pre_[investimentos:resgate:input_valor_resgate].page_view()"/>
+      <arc id="2661793627792" source="[investimentos:resgate:detalhe_posicao_cdb].click_button(voltar)" target="pre_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()"/>
+      <arc id="2661793615568" source="pre_[investimentos:resgate:comprovante_resgate].click_button(fechar)" target="[investimentos:resgate:comprovante_resgate].click_button(fechar)"/>
+      <arc id="2661793620176" source="hid_11" target="sink0"/>
+      <arc id="2661793661648" source="intplace_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()" target="[investimentos:meus_investimentos:carteira_renda_fixa].click_button(voltar)"/>
+      <arc id="2661793662160" source="intplace_[canais:home:home].page_view()" target="[canais:home:home].click_button(menu_produtos)"/>
+      <arc id="2661793625808" source="[investimentos:resgate:input_valor_resgate].click_button(confirmar_resgate)" target="pre_[investimentos:resgate:comprovante_resgate].page_view()"/>
+      <arc id="2661793661136" source="[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)" target="pre_[investimentos:resgate:detalhe_posicao_cdb].page_view()"/>
+      <arc id="2661793702608" source="pre_[canais:home:home].page_view()" target="[canais:home:home].page_view()"/>
+      <arc id="2661793622224" source="[investimentos:meus_investimentos:carteira_renda_fixa].page_view()" target="intplace_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()"/>
+      <arc id="2661793701136" source="pre_[canais:home:menu_produtos].page_view()" target="[canais:home:menu_produtos].page_view()"/>
+      <arc id="2661793704208" source="pre_[investimentos:home_investimentos:home_investimentos].page_view()" target="[investimentos:home_investimentos:home_investimentos].page_view()"/>
+      <arc id="2661793623824" source="[investimentos:resgate:detalhe_posicao_cdb].page_view()" target="intplace_[investimentos:resgate:detalhe_posicao_cdb].page_view()"/>
+      <arc id="2661793616144" source="pre_[investimentos:resgate:comprovante_resgate].page_view()" target="[investimentos:resgate:comprovante_resgate].page_view()"/>
+      <arc id="2661793627920" source="[investimentos:resgate:comprovante_resgate].click_button(fechar)" target="pre_[investimentos:home_investimentos:home_investimentos].page_view()"/>
+      <arc id="2661793662288" source="intplace_[investimentos:resgate:detalhe_posicao_cdb].page_view()" target="[investimentos:resgate:detalhe_posicao_cdb].click_button(resgatar)"/>
+      <arc id="2661793616720" source="pre_[investimentos:resgate:input_valor_resgate].page_view()" target="[investimentos:resgate:input_valor_resgate].page_view()"/>
+      <arc id="2661793661776" source="intplace_[investimentos:home_investimentos:home_investimentos].page_view()" target="[investimentos:meus_investimentos:home_investimentos].click_button(ver_posicao)"/>
+      <arc id="2661793661264" source="[investimentos:resgate:input_valor_resgate].click_button(voltar)" target="pre_[investimentos:resgate:detalhe_posicao_cdb].page_view()"/>
+      <arc id="2661793625936" source="[investimentos:resgate:input_valor_resgate].page_view()" target="intplace_[investimentos:resgate:input_valor_resgate].page_view()"/>
+      <arc id="2661793703760" source="source0" target="hid_2"/>
+      <arc id="2661793620496" source="[investimentos:home_investimentos:home_investimentos].page_view()" target="intplace_[investimentos:home_investimentos:home_investimentos].page_view()"/>
+      <arc id="2661793628048" source="[investimentos:home_investimentos:home_investimentos].click_button(voltar)" target="pre_[canais:home:home].page_view()"/>
+      <arc id="2661793618320" source="[canais:home:home].click_button(menu_produtos)" target="pre_[canais:home:menu_produtos].page_view()"/>
+      <arc id="2661793661840" source="intplace_[investimentos:home_investimentos:home_investimentos].page_view()" target="[investimentos:home_investimentos:home_investimentos].click_button(voltar)"/>
+      <arc id="2661793661520" source="intplace_[investimentos:resgate:input_valor_resgate].page_view()" target="[investimentos:resgate:input_valor_resgate].click_button(voltar)"/>
+      <arc id="2661793625552" source="[investimentos:resgate:comprovante_resgate].page_view()" target="pre_[investimentos:resgate:comprovante_resgate].click_button(fechar)"/>
+      <arc id="2661793703888" source="hid_2" target="pre_[canais:home:home].page_view()"/>
+      <arc id="2661793662416" source="intplace_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()" target="[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)"/>
+      <arc id="2661794110416" source="[investimentos:meus_investimentos:home_investimentos].click_button(ver_posicao)" target="pre_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink0">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

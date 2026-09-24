@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text></text>
+    </name>
+    <page id="n0">
+      <place id="pre_[open_finance:trazer_dinheiro:comprovante_pix_open_finance].click_button(fechar)">
+        <name>
+          <text>pre_[open_finance:trazer_dinheiro:comprovante_pix_open_finance].click_button(fechar)</text>
+        </name>
+      </place>
+      <place id="intplace_[canais:home:home].page_view()">
+        <name>
+          <text>intplace_[canais:home:home].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[cartoes:fatura:fatura_atual].page_view()">
+        <name>
+          <text>intplace_[cartoes:fatura:fatura_atual].page_view()</text>
+        </name>
+      </place>
+      <place id="sink0">
+        <name>
+          <text>sink0</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:home_cartoes:home_cartoes].page_view()">
+        <name>
+          <text>pre_[cartoes:home_cartoes:home_cartoes].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[canais:home:menu_produtos].page_view()">
+        <name>
+          <text>intplace_[canais:home:menu_produtos].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[open_finance:home:home_open_finance].page_view()">
+        <name>
+          <text>intplace_[open_finance:home:home_open_finance].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[open_finance:trazer_dinheiro:resumo_transacao_open_finance].page_view()">
+        <name>
+          <text>pre_[open_finance:trazer_dinheiro:resumo_transacao_open_finance].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[open_finance:trazer_dinheiro:resumo_transacao_open_finance].page_view()">
+        <name>
+          <text>intplace_[open_finance:trazer_dinheiro:resumo_transacao_open_finance].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:pagamento:opcoes_pagamento].page_view()">
+        <name>
+          <text>pre_[cartoes:pagamento:opcoes_pagamento].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[cartoes:home_cartoes:home_cartoes].page_view()">
+        <name>
+          <text>intplace_[cartoes:home_cartoes:home_cartoes].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:fatura:fatura_atual].page_view()">
+        <name>
+          <text>pre_[cartoes:fatura:fatura_atual].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[open_finance:home:home_open_finance].page_view()">
+        <name>
+          <text>pre_[open_finance:home:home_open_finance].page_view()</text>
+        </name>
+      </place>
+      <place id="source0">
+        <name>
+          <text>source0</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="pre_[canais:home:menu_produtos].page_view()">
+        <name>
+          <text>pre_[canais:home:menu_produtos].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[canais:home:home].page_view()">
+        <name>
+          <text>pre_[canais:home:home].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:pagamento:comprovante_pagamento].click_button(voltar)">
+        <name>
+          <text>pre_[cartoes:pagamento:comprovante_pagamento].click_button(voltar)</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:pagamento:comprovante_pagamento].page_view()">
+        <name>
+          <text>pre_[cartoes:pagamento:comprovante_pagamento].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[cartoes:pagamento:opcoes_pagamento].page_view()">
+        <name>
+          <text>intplace_[cartoes:pagamento:opcoes_pagamento].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[open_finance:trazer_dinheiro:selecao_banco_consentido].page_view()">
+        <name>
+          <text>pre_[open_finance:trazer_dinheiro:selecao_banco_consentido].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[open_finance:trazer_dinheiro:selecao_banco_consentido].page_view()">
+        <name>
+          <text>intplace_[open_finance:trazer_dinheiro:selecao_banco_consentido].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()">
+        <name>
+          <text>pre_[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()</text>
+        </name>
+      </place>
+      <transition id="[open_finance:trazer_dinheiro:selecao_banco_consentido].page_view()">
+        <name>
+          <text>[open_finance:trazer_dinheiro:selecao_banco_consentido].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[open_finance:trazer_dinheiro:selecao_banco_consentido].click_button(confirmar_banco_origem)">
+        <name>
+          <text>[open_finance:trazer_dinheiro:selecao_banco_consentido].click_button(confirmar_banco_origem)</text>
+        </name>
+      </transition>
+      <transition id="[open_finance:trazer_dinheiro:selecao_banco_consentido].click_button(voltar)">
+        <name>
+          <text>[open_finance:trazer_dinheiro:selecao_banco_consentido].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[open_finance:trazer_dinheiro:comprovante_pix_open_finance].click_button(fechar)">
+        <name>
+          <text>[open_finance:trazer_dinheiro:comprovante_pix_open_finance].click_button(fechar)</text>
+        </name>
+      </transition>
+      <transition id="[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()">
+        <name>
+          <text>[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[open_finance:trazer_dinheiro:resumo_transacao_open_finance].click_button(voltar)">
+        <name>
+          <text>[open_finance:trazer_dinheiro:resumo_transacao_open_finance].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="hid_18">
+        <name>
+          <text>hid_18</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="a4748338-61c4-43ba-8b94-7b3cd6391371"/>
+      </transition>
+      <transition id="[open_finance:trazer_dinheiro:resumo_transacao_open_finance].click_button(confirmar_transferencia)">
+        <name>
+          <text>[open_finance:trazer_dinheiro:resumo_transacao_open_finance].click_button(confirmar_transferencia)</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:menu_produtos].click_button(cartoes)">
+        <name>
+          <text>[canais:home:menu_produtos].click_button(cartoes)</text>
+        </name>
+      </transition>
+      <transition id="hid_3">
+        <name>
+          <text>hid_3</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="febaf382-b835-4b90-9a36-85a4d406a404"/>
+      </transition>
+      <transition id="[open_finance:trazer_dinheiro:resumo_transacao_open_finance].page_view()">
+        <name>
+          <text>[open_finance:trazer_dinheiro:resumo_transacao_open_finance].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:home_cartoes:home_cartoes].page_view()">
+        <name>
+          <text>[cartoes:home_cartoes:home_cartoes].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:home_cartoes:home_cartoes].click_button(fatura_atual)">
+        <name>
+          <text>[cartoes:home_cartoes:home_cartoes].click_button(fatura_atual)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)">
+        <name>
+          <text>[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:pagamento:opcoes_pagamento].page_view()">
+        <name>
+          <text>[cartoes:pagamento:opcoes_pagamento].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:pagamento:comprovante_pagamento].click_button(voltar)">
+        <name>
+          <text>[cartoes:pagamento:comprovante_pagamento].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:pagamento:comprovante_pagamento].page_view()">
+        <name>
+          <text>[cartoes:pagamento:comprovante_pagamento].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:pagamento:opcoes_pagamento].click_button(pagar_com_saldo)">
+        <name>
+          <text>[cartoes:pagamento:opcoes_pagamento].click_button(pagar_com_saldo)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:pagamento:opcoes_pagamento].click_button(voltar)">
+        <name>
+          <text>[cartoes:pagamento:opcoes_pagamento].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:home].click_button(menu_produtos)">
+        <name>
+          <text>[canais:home:home].click_button(menu_produtos)</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:home].page_view()">
+        <name>
+          <text>[canais:home:home].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:menu_produtos].page_view()">
+        <name>
+          <text>[canais:home:menu_produtos].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:menu_produtos].click_button(open_finance)">
+        <name>
+          <text>[canais:home:menu_produtos].click_button(open_finance)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:home_cartoes:home_cartoes].click_button(voltar)">
+        <name>
+          <text>[cartoes:home_cartoes:home_cartoes].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[open_finance:home:home_open_finance].page_view()">
+        <name>
+          <text>[open_finance:home:home_open_finance].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[open_finance:home:home_open_finance].click_button(trazer_dinheiro)">
+        <name>
+          <text>[open_finance:home:home_open_finance].click_button(trazer_dinheiro)</text>
+        </name>
+      </transition>
+      <transition id="[open_finance:home:home_open_finance].click_button(voltar)">
+        <name>
+          <text>[open_finance:home:home_open_finance].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:fatura:fatura_atual].click_button(voltar)">
+        <name>
+          <text>[cartoes:fatura:fatura_atual].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:fatura:fatura_atual].page_view()">
+        <name>
+          <text>[cartoes:fatura:fatura_atual].page_view()</text>
+        </name>
+      </transition>
+      <arc id="1981071752208" source="intplace_[canais:home:home].page_view()" target="hid_18"/>
+      <arc id="1981071774736" source="[cartoes:pagamento:comprovante_pagamento].page_view()" target="pre_[cartoes:pagamento:comprovante_pagamento].click_button(voltar)"/>
+      <arc id="1981071776528" source="[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()" target="pre_[open_finance:trazer_dinheiro:comprovante_pix_open_finance].click_button(fechar)"/>
+      <arc id="1981071778768" source="[open_finance:home:home_open_finance].click_button(trazer_dinheiro)" target="pre_[open_finance:trazer_dinheiro:selecao_banco_consentido].page_view()"/>
+      <arc id="1981071635536" source="pre_[open_finance:home:home_open_finance].page_view()" target="[open_finance:home:home_open_finance].page_view()"/>
+      <arc id="1981071781456" source="intplace_[open_finance:trazer_dinheiro:selecao_banco_consentido].page_view()" target="[open_finance:trazer_dinheiro:selecao_banco_consentido].click_button(confirmar_banco_origem)"/>
+      <arc id="1981071779408" source="[canais:home:menu_produtos].click_button(open_finance)" target="pre_[open_finance:home:home_open_finance].page_view()"/>
+      <arc id="1981071780944" source="intplace_[open_finance:trazer_dinheiro:resumo_transacao_open_finance].page_view()" target="[open_finance:trazer_dinheiro:resumo_transacao_open_finance].click_button(voltar)"/>
+      <arc id="1981071780432" source="intplace_[canais:home:menu_produtos].page_view()" target="[canais:home:menu_produtos].click_button(cartoes)"/>
+      <arc id="1981071737424" source="intplace_[cartoes:pagamento:opcoes_pagamento].page_view()" target="[cartoes:pagamento:opcoes_pagamento].click_button(pagar_com_saldo)"/>
+      <arc id="1981071632528" source="pre_[cartoes:home_cartoes:home_cartoes].page_view()" target="[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="1981071751312" source="[canais:home:home].page_view()" target="intplace_[canais:home:home].page_view()"/>
+      <arc id="1981071752336" source="hid_18" target="sink0"/>
+      <arc id="1981071748752" source="pre_[open_finance:trazer_dinheiro:resumo_transacao_open_finance].page_view()" target="[open_finance:trazer_dinheiro:resumo_transacao_open_finance].page_view()"/>
+      <arc id="1981071773904" source="[cartoes:fatura:fatura_atual].page_view()" target="intplace_[cartoes:fatura:fatura_atual].page_view()"/>
+      <arc id="1981071776656" source="[open_finance:trazer_dinheiro:resumo_transacao_open_finance].click_button(confirmar_transferencia)" target="pre_[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()"/>
+      <arc id="1981071778896" source="[open_finance:trazer_dinheiro:resumo_transacao_open_finance].click_button(voltar)" target="pre_[open_finance:trazer_dinheiro:selecao_banco_consentido].page_view()"/>
+      <arc id="1981071777168" source="[open_finance:trazer_dinheiro:resumo_transacao_open_finance].page_view()" target="intplace_[open_finance:trazer_dinheiro:resumo_transacao_open_finance].page_view()"/>
+      <arc id="1981071781584" source="intplace_[cartoes:fatura:fatura_atual].page_view()" target="[cartoes:fatura:fatura_atual].click_button(voltar)"/>
+      <arc id="1981071781072" source="intplace_[canais:home:menu_produtos].page_view()" target="[canais:home:menu_produtos].click_button(open_finance)"/>
+      <arc id="1981071779024" source="[cartoes:home_cartoes:home_cartoes].click_button(voltar)" target="pre_[canais:home:home].page_view()"/>
+      <arc id="1981071780560" source="intplace_[cartoes:home_cartoes:home_cartoes].page_view()" target="[cartoes:home_cartoes:home_cartoes].click_button(fatura_atual)"/>
+      <arc id="1981071632080" source="source0" target="hid_3"/>
+      <arc id="1981071779536" source="[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)" target="pre_[cartoes:pagamento:opcoes_pagamento].page_view()"/>
+      <arc id="1981071779920" source="[open_finance:trazer_dinheiro:selecao_banco_consentido].click_button(voltar)" target="pre_[open_finance:home:home_open_finance].page_view()"/>
+      <arc id="1981071628048" source="pre_[canais:home:menu_produtos].page_view()" target="[canais:home:menu_produtos].page_view()"/>
+      <arc id="1981071748880" source="[canais:home:home].click_button(menu_produtos)" target="pre_[canais:home:menu_produtos].page_view()"/>
+      <arc id="1981071741712" source="pre_[cartoes:fatura:fatura_atual].page_view()" target="[cartoes:fatura:fatura_atual].page_view()"/>
+      <arc id="1981071778512" source="[cartoes:fatura:fatura_atual].click_button(voltar)" target="pre_[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="1981071781712" source="intplace_[cartoes:pagamento:opcoes_pagamento].page_view()" target="[cartoes:pagamento:opcoes_pagamento].click_button(voltar)"/>
+      <arc id="1981071749456" source="[canais:home:menu_produtos].page_view()" target="intplace_[canais:home:menu_produtos].page_view()"/>
+      <arc id="1981071780688" source="intplace_[cartoes:fatura:fatura_atual].page_view()" target="[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)"/>
+      <arc id="1981071738192" source="pre_[cartoes:pagamento:opcoes_pagamento].page_view()" target="[cartoes:pagamento:opcoes_pagamento].page_view()"/>
+      <arc id="1981071779664" source="[cartoes:pagamento:opcoes_pagamento].click_button(voltar)" target="pre_[cartoes:fatura:fatura_atual].page_view()"/>
+      <arc id="1981071632208" source="hid_3" target="pre_[canais:home:home].page_view()"/>
+      <arc id="1981071630160" source="pre_[canais:home:home].page_view()" target="[canais:home:home].page_view()"/>
+      <arc id="1981071779152" source="[open_finance:home:home_open_finance].click_button(voltar)" target="pre_[canais:home:home].page_view()"/>
+      <arc id="1981071747408" source="pre_[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()" target="[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()"/>
+      <arc id="1981071744336" source="pre_[open_finance:trazer_dinheiro:selecao_banco_consentido].page_view()" target="[open_finance:trazer_dinheiro:selecao_banco_consentido].page_view()"/>
+      <arc id="1981071772112" source="[cartoes:pagamento:opcoes_pagamento].click_button(pagar_com_saldo)" target="pre_[cartoes:pagamento:comprovante_pagamento].page_view()"/>
+      <arc id="1981071746960" source="pre_[open_finance:trazer_dinheiro:comprovante_pix_open_finance].click_button(fechar)" target="[open_finance:trazer_dinheiro:comprovante_pix_open_finance].click_button(fechar)"/>
+      <arc id="1981071743888" source="pre_[cartoes:pagamento:comprovante_pagamento].page_view()" target="[cartoes:pagamento:comprovante_pagamento].page_view()"/>
+      <arc id="1981071752592" source="[cartoes:home_cartoes:home_cartoes].page_view()" target="intplace_[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="1981071781264" source="intplace_[open_finance:home:home_open_finance].page_view()" target="[open_finance:home:home_open_finance].click_button(trazer_dinheiro)"/>
+      <arc id="1981071775120" source="[open_finance:trazer_dinheiro:selecao_banco_consentido].page_view()" target="intplace_[open_finance:trazer_dinheiro:selecao_banco_consentido].page_view()"/>
+      <arc id="1981071778640" source="[cartoes:pagamento:comprovante_pagamento].click_button(voltar)" target="pre_[cartoes:pagamento:opcoes_pagamento].page_view()"/>
+      <arc id="1981071770576" source="[open_finance:home:home_open_finance].page_view()" target="intplace_[open_finance:home:home_open_finance].page_view()"/>
+      <arc id="1981071779280" source="[cartoes:home_cartoes:home_cartoes].click_button(fatura_atual)" target="pre_[cartoes:fatura:fatura_atual].page_view()"/>
+      <arc id="1981071780304" source="intplace_[cartoes:home_cartoes:home_cartoes].page_view()" target="[cartoes:home_cartoes:home_cartoes].click_button(voltar)"/>
+      <arc id="1981071781840" source="intplace_[open_finance:trazer_dinheiro:selecao_banco_consentido].page_view()" target="[open_finance:trazer_dinheiro:selecao_banco_consentido].click_button(voltar)"/>
+      <arc id="1981071780816" source="intplace_[canais:home:home].page_view()" target="[canais:home:home].click_button(menu_produtos)"/>
+      <arc id="1981071779792" source="[open_finance:trazer_dinheiro:comprovante_pix_open_finance].click_button(fechar)" target="pre_[open_finance:home:home_open_finance].page_view()"/>
+      <arc id="1981071780176" source="intplace_[open_finance:trazer_dinheiro:resumo_transacao_open_finance].page_view()" target="[open_finance:trazer_dinheiro:resumo_transacao_open_finance].click_button(confirmar_transferencia)"/>
+      <arc id="1981071743440" source="pre_[cartoes:pagamento:comprovante_pagamento].click_button(voltar)" target="[cartoes:pagamento:comprovante_pagamento].click_button(voltar)"/>
+      <arc id="1981071772240" source="[cartoes:pagamento:opcoes_pagamento].page_view()" target="intplace_[cartoes:pagamento:opcoes_pagamento].page_view()"/>
+      <arc id="1981073382352" source="[canais:home:menu_produtos].click_button(cartoes)" target="pre_[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="1981071774992" source="[open_finance:trazer_dinheiro:selecao_banco_consentido].click_button(confirmar_banco_origem)" target="pre_[open_finance:trazer_dinheiro:resumo_transacao_open_finance].page_view()"/>
+      <arc id="1981071781200" source="intplace_[open_finance:home:home_open_finance].page_view()" target="[open_finance:home:home_open_finance].click_button(voltar)"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink0">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

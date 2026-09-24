@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software, dataset or research findings, please cite it as below."
+authors:
+  - family-names: "Ervilha"
+    given-names: "André Eduardo Ribeiro"
+    affiliation: "Escola Superior de Agricultura 'Luiz de Queiroz', Universidade de São Paulo (USP/ESALQ)"
+title: "Experience Mining: Mineração de Experiência do Usuário em Ecossistemas Digitais via Agrupamento Não-Supervisionado e XAI"
+version: 1.0.0
+date-released: 2026-09-14
+url: "https://github.com/AndreErvilha/tcc-experience-mining"
+keywords:
+  - "process mining"
+  - "experience mining"
+  - "petri nets"
+  - "embeddings"
+  - "foundation models"
+  - "hdbscan"
+  - "explainable ai"
+  - "shap"
+  - "customer experience digital twin"
+preferred-citation:
+  type: thesis
+  authors:
+    - family-names: "Ervilha"
+      given-names: "André Eduardo Ribeiro"
+  title: "Mineração de Experiência do Usuário em Ecossistemas Digitais via Agrupamento Não-Supervisionado e XAI"
+  year: 2026
+  thesis-type: "Trabalho de Conclusão de Curso (MBA em Gestão de Negócios Digitais e Inteligência Artificial)"
+  institution:
+    name: "Universidade de São Paulo (USP / ESALQ)"
+    city: "Piracicaba"
+    country: "BR"

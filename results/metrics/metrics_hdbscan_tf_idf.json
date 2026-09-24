@@ -1,0 +1,85 @@
+{
+  "algorithm": "HDBSCAN",
+  "vectorizer": "TF-IDF",
+  "n_samples": 516,
+  "k_discovered": 14,
+  "noise_count": 139,
+  "noise_ratio": 0.2693798449612403,
+  "silhouette_score": 0.6477351188659668,
+  "ari_all": 0.42001745788273376,
+  "nmi_all": 0.7403896187436716,
+  "ari_clean": 0.7468816518485927,
+  "nmi_clean": 0.8885786767913925,
+  "homogeneity": 0.9045773988861648,
+  "completeness": 0.8731360393110962,
+  "v_measure": 0.8885786767913925,
+  "purity_real_experience": 0.9561128526645768,
+  "cluster_purity_details": {
+    "0": {
+      "size": 47,
+      "success": 41,
+      "negative": 6,
+      "purity": 0.8723404255319149
+    },
+    "1": {
+      "size": 42,
+      "success": 37,
+      "negative": 5,
+      "purity": 0.8809523809523809
+    },
+    "2": {
+      "size": 29,
+      "success": 28,
+      "negative": 1,
+      "purity": 0.9655172413793104
+    },
+    "3": {
+      "size": 15,
+      "success": 0,
+      "negative": 15,
+      "purity": 1.0
+    },
+    "4": {
+      "size": 10,
+      "success": 10,
+      "negative": 0,
+      "purity": 1.0
+    },
+    "5": {
+      "size": 63,
+      "success": 61,
+      "negative": 2,
+      "purity": 0.9682539682539683
+    },
+    "6": {
+      "size": 31,
+      "success": 31,
+      "negative": 0,
+      "purity": 1.0
+    },
+    "7": {
+      "size": 18,
+      "success": 18,
+      "negative": 0,
+      "purity": 1.0
+    },
+    "8": {
+      "size": 13,
+      "success": 13,
+      "negative": 0,
+      "purity": 1.0
+    },
+    "9": {
+      "size": 16,
+      "success": 16,
+      "negative": 0,
+      "purity": 1.0
+    },
+    "10": {
+      "size": 35,
+      "success": 35,
+      "negative": 0,
+      "purity": 1.0
+    }
+  }
+}

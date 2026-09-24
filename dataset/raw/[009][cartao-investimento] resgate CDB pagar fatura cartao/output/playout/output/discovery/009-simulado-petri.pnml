@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text></text>
+    </name>
+    <page id="n0">
+      <place id="intplace_[investimentos:resgate:detalhe_posicao_cdb].page_view()">
+        <name>
+          <text>intplace_[investimentos:resgate:detalhe_posicao_cdb].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[investimentos:resgate:comprovante_resgate].click_button(fechar)">
+        <name>
+          <text>pre_[investimentos:resgate:comprovante_resgate].click_button(fechar)</text>
+        </name>
+      </place>
+      <place id="pre_[investimentos:home_investimentos:home_investimentos].page_view()">
+        <name>
+          <text>pre_[investimentos:home_investimentos:home_investimentos].page_view()</text>
+        </name>
+      </place>
+      <place id="source0">
+        <name>
+          <text>source0</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="sink0">
+        <name>
+          <text>sink0</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:home_cartoes:home_cartoes].page_view()">
+        <name>
+          <text>pre_[cartoes:home_cartoes:home_cartoes].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:pagamento:comprovante_pagamento].page_view()">
+        <name>
+          <text>pre_[cartoes:pagamento:comprovante_pagamento].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[canais:home:home].page_view()">
+        <name>
+          <text>intplace_[canais:home:home].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[cartoes:home_cartoes:home_cartoes].page_view()">
+        <name>
+          <text>intplace_[cartoes:home_cartoes:home_cartoes].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[canais:home:menu_produtos].page_view()">
+        <name>
+          <text>intplace_[canais:home:menu_produtos].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:fatura:fatura_atual].page_view()">
+        <name>
+          <text>pre_[cartoes:fatura:fatura_atual].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[investimentos:resgate:detalhe_posicao_cdb].page_view()">
+        <name>
+          <text>pre_[investimentos:resgate:detalhe_posicao_cdb].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[cartoes:fatura:fatura_atual].page_view()">
+        <name>
+          <text>intplace_[cartoes:fatura:fatura_atual].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:pagamento:comprovante_pagamento].click_button(fechar)">
+        <name>
+          <text>pre_[cartoes:pagamento:comprovante_pagamento].click_button(fechar)</text>
+        </name>
+      </place>
+      <place id="intplace_[investimentos:resgate:input_valor_resgate].page_view()">
+        <name>
+          <text>intplace_[investimentos:resgate:input_valor_resgate].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[canais:home:menu_produtos].page_view()">
+        <name>
+          <text>pre_[canais:home:menu_produtos].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[canais:home:home].page_view()">
+        <name>
+          <text>pre_[canais:home:home].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:pagamento:opcoes_pagamento].page_view()">
+        <name>
+          <text>pre_[cartoes:pagamento:opcoes_pagamento].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[investimentos:resgate:comprovante_resgate].page_view()">
+        <name>
+          <text>pre_[investimentos:resgate:comprovante_resgate].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()">
+        <name>
+          <text>pre_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[investimentos:resgate:input_valor_resgate].page_view()">
+        <name>
+          <text>pre_[investimentos:resgate:input_valor_resgate].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()">
+        <name>
+          <text>intplace_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()</text>
+        </name>
+      </place>
+      <place id="intplace_[investimentos:home_investimentos:home_investimentos].page_view()">
+        <name>
+          <text>intplace_[investimentos:home_investimentos:home_investimentos].page_view()</text>
+        </name>
+      </place>
+      <place id="pre_[cartoes:pagamento:opcoes_pagamento].click_button(pagar_com_saldo)">
+        <name>
+          <text>pre_[cartoes:pagamento:opcoes_pagamento].click_button(pagar_com_saldo)</text>
+        </name>
+      </place>
+      <transition id="[cartoes:pagamento:comprovante_pagamento].click_button(fechar)">
+        <name>
+          <text>[cartoes:pagamento:comprovante_pagamento].click_button(fechar)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:pagamento:comprovante_pagamento].page_view()">
+        <name>
+          <text>[cartoes:pagamento:comprovante_pagamento].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:meus_investimentos:home_investimentos].click_button(ver_posicao)">
+        <name>
+          <text>[investimentos:meus_investimentos:home_investimentos].click_button(ver_posicao)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)">
+        <name>
+          <text>[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:meus_investimentos:carteira_renda_fixa].page_view()">
+        <name>
+          <text>[investimentos:meus_investimentos:carteira_renda_fixa].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:fatura:fatura_atual].click_button(voltar)">
+        <name>
+          <text>[cartoes:fatura:fatura_atual].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:home].click_button(menu_produtos)">
+        <name>
+          <text>[canais:home:home].click_button(menu_produtos)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:home_cartoes:home_cartoes].page_view()">
+        <name>
+          <text>[cartoes:home_cartoes:home_cartoes].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:home_cartoes:home_cartoes].click_button(fatura_atual)">
+        <name>
+          <text>[cartoes:home_cartoes:home_cartoes].click_button(fatura_atual)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:home_cartoes:home_cartoes].click_button(voltar)">
+        <name>
+          <text>[cartoes:home_cartoes:home_cartoes].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)">
+        <name>
+          <text>[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:resgate:detalhe_posicao_cdb].page_view()">
+        <name>
+          <text>[investimentos:resgate:detalhe_posicao_cdb].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:resgate:detalhe_posicao_cdb].click_button(resgatar)">
+        <name>
+          <text>[investimentos:resgate:detalhe_posicao_cdb].click_button(resgatar)</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:resgate:detalhe_posicao_cdb].click_button(voltar)">
+        <name>
+          <text>[investimentos:resgate:detalhe_posicao_cdb].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:meus_investimentos:carteira_renda_fixa].click_button(voltar)">
+        <name>
+          <text>[investimentos:meus_investimentos:carteira_renda_fixa].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="hid_17">
+        <name>
+          <text>hid_17</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="53671320-f23f-48ce-8c62-8f396866f45b"/>
+      </transition>
+      <transition id="[investimentos:resgate:comprovante_resgate].page_view()">
+        <name>
+          <text>[investimentos:resgate:comprovante_resgate].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:home].page_view()">
+        <name>
+          <text>[canais:home:home].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:menu_produtos].page_view()">
+        <name>
+          <text>[canais:home:menu_produtos].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:menu_produtos].click_button(investimentos)">
+        <name>
+          <text>[canais:home:menu_produtos].click_button(investimentos)</text>
+        </name>
+      </transition>
+      <transition id="[canais:home:menu_produtos].click_button(cartoes)">
+        <name>
+          <text>[canais:home:menu_produtos].click_button(cartoes)</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:resgate:comprovante_resgate].click_button(fechar)">
+        <name>
+          <text>[investimentos:resgate:comprovante_resgate].click_button(fechar)</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:resgate:input_valor_resgate].page_view()">
+        <name>
+          <text>[investimentos:resgate:input_valor_resgate].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:resgate:input_valor_resgate].click_button(voltar)">
+        <name>
+          <text>[investimentos:resgate:input_valor_resgate].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="hid_3">
+        <name>
+          <text>hid_3</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="427b7cdb-69f9-407c-b7a7-1a6f1f090ce7"/>
+      </transition>
+      <transition id="[investimentos:home_investimentos:home_investimentos].page_view()">
+        <name>
+          <text>[investimentos:home_investimentos:home_investimentos].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:resgate:input_valor_resgate].click_button(confirmar_resgate)">
+        <name>
+          <text>[investimentos:resgate:input_valor_resgate].click_button(confirmar_resgate)</text>
+        </name>
+      </transition>
+      <transition id="[investimentos:home_investimentos:home_investimentos].click_button(voltar)">
+        <name>
+          <text>[investimentos:home_investimentos:home_investimentos].click_button(voltar)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:pagamento:opcoes_pagamento].page_view()">
+        <name>
+          <text>[cartoes:pagamento:opcoes_pagamento].page_view()</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:pagamento:opcoes_pagamento].click_button(pagar_com_saldo)">
+        <name>
+          <text>[cartoes:pagamento:opcoes_pagamento].click_button(pagar_com_saldo)</text>
+        </name>
+      </transition>
+      <transition id="[cartoes:fatura:fatura_atual].page_view()">
+        <name>
+          <text>[cartoes:fatura:fatura_atual].page_view()</text>
+        </name>
+      </transition>
+      <arc id="2833550063120" source="intplace_[cartoes:fatura:fatura_atual].page_view()" target="[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)"/>
+      <arc id="2833549582864" source="pre_[canais:home:menu_produtos].page_view()" target="[canais:home:menu_produtos].page_view()"/>
+      <arc id="2833549587472" source="pre_[cartoes:home_cartoes:home_cartoes].page_view()" target="[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="2833550062608" source="[investimentos:meus_investimentos:home_investimentos].click_button(ver_posicao)" target="pre_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()"/>
+      <arc id="2833550062096" source="[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)" target="pre_[investimentos:resgate:detalhe_posicao_cdb].page_view()"/>
+      <arc id="2833550048272" source="[canais:home:menu_produtos].page_view()" target="intplace_[canais:home:menu_produtos].page_view()"/>
+      <arc id="2833550045712" source="pre_[investimentos:resgate:comprovante_resgate].click_button(fechar)" target="[investimentos:resgate:comprovante_resgate].click_button(fechar)"/>
+      <arc id="2833550064144" source="intplace_[cartoes:home_cartoes:home_cartoes].page_view()" target="[cartoes:home_cartoes:home_cartoes].click_button(voltar)"/>
+      <arc id="2833550063632" source="intplace_[investimentos:home_investimentos:home_investimentos].page_view()" target="[investimentos:home_investimentos:home_investimentos].click_button(voltar)"/>
+      <arc id="2833550050896" source="intplace_[canais:home:home].page_view()" target="hid_17"/>
+      <arc id="2833549587024" source="source0" target="hid_3"/>
+      <arc id="2833550056016" source="[cartoes:pagamento:comprovante_pagamento].page_view()" target="pre_[cartoes:pagamento:comprovante_pagamento].click_button(fechar)"/>
+      <arc id="2833550046864" source="pre_[investimentos:resgate:input_valor_resgate].page_view()" target="[investimentos:resgate:input_valor_resgate].page_view()"/>
+      <arc id="2833550064272" source="intplace_[investimentos:resgate:input_valor_resgate].page_view()" target="[investimentos:resgate:input_valor_resgate].click_button(voltar)"/>
+      <arc id="2833550061712" source="[cartoes:pagamento:comprovante_pagamento].click_button(fechar)" target="pre_[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="2833550063760" source="intplace_[canais:home:home].page_view()" target="[canais:home:home].click_button(menu_produtos)"/>
+      <arc id="2833550040720" source="pre_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()" target="[investimentos:meus_investimentos:carteira_renda_fixa].page_view()"/>
+      <arc id="2833550063248" source="intplace_[investimentos:resgate:input_valor_resgate].page_view()" target="[investimentos:resgate:input_valor_resgate].click_button(confirmar_resgate)"/>
+      <arc id="2833550033552" source="pre_[investimentos:home_investimentos:home_investimentos].page_view()" target="[investimentos:home_investimentos:home_investimentos].page_view()"/>
+      <arc id="2833549254736" source="[canais:home:menu_produtos].click_button(cartoes)" target="pre_[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="2833550062224" source="[investimentos:resgate:comprovante_resgate].click_button(fechar)" target="pre_[investimentos:home_investimentos:home_investimentos].page_view()"/>
+      <arc id="2833550054096" source="[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)" target="pre_[cartoes:pagamento:opcoes_pagamento].page_view()"/>
+      <arc id="2833550050000" source="[canais:home:home].page_view()" target="intplace_[canais:home:home].page_view()"/>
+      <arc id="2833550046416" source="pre_[investimentos:resgate:comprovante_resgate].page_view()" target="[investimentos:resgate:comprovante_resgate].page_view()"/>
+      <arc id="2833550051024" source="hid_17" target="sink0"/>
+      <arc id="2833549587152" source="hid_3" target="pre_[canais:home:home].page_view()"/>
+      <arc id="2833549585104" source="pre_[canais:home:home].page_view()" target="[canais:home:home].page_view()"/>
+      <arc id="2833550061264" source="intplace_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()" target="[investimentos:meus_investimentos:carteira_renda_fixa].click_button(voltar)"/>
+      <arc id="2833550059600" source="[investimentos:resgate:input_valor_resgate].click_button(confirmar_resgate)" target="pre_[investimentos:resgate:comprovante_resgate].page_view()"/>
+      <arc id="2833550061840" source="[cartoes:home_cartoes:home_cartoes].click_button(voltar)" target="pre_[canais:home:home].page_view()"/>
+      <arc id="2833550047696" source="[canais:home:home].click_button(menu_produtos)" target="pre_[canais:home:menu_produtos].page_view()"/>
+      <arc id="2833550062352" source="[investimentos:resgate:input_valor_resgate].click_button(voltar)" target="pre_[investimentos:resgate:detalhe_posicao_cdb].page_view()"/>
+      <arc id="2833550040272" source="pre_[cartoes:pagamento:comprovante_pagamento].page_view()" target="[cartoes:pagamento:comprovante_pagamento].page_view()"/>
+      <arc id="2833550042896" source="pre_[investimentos:resgate:detalhe_posicao_cdb].page_view()" target="[investimentos:resgate:detalhe_posicao_cdb].page_view()"/>
+      <arc id="2833550061328" source="[investimentos:meus_investimentos:carteira_renda_fixa].click_button(voltar)" target="pre_[investimentos:home_investimentos:home_investimentos].page_view()"/>
+      <arc id="2833550039824" source="pre_[cartoes:pagamento:comprovante_pagamento].click_button(fechar)" target="[cartoes:pagamento:comprovante_pagamento].click_button(fechar)"/>
+      <arc id="2833550062864" source="intplace_[investimentos:home_investimentos:home_investimentos].page_view()" target="[investimentos:meus_investimentos:home_investimentos].click_button(ver_posicao)"/>
+      <arc id="2833550063376" source="intplace_[investimentos:resgate:detalhe_posicao_cdb].page_view()" target="[investimentos:resgate:detalhe_posicao_cdb].click_button(voltar)"/>
+      <arc id="2833550064400" source="intplace_[cartoes:home_cartoes:home_cartoes].page_view()" target="[cartoes:home_cartoes:home_cartoes].click_button(fatura_atual)"/>
+      <arc id="2833550057680" source="[investimentos:resgate:detalhe_posicao_cdb].click_button(resgatar)" target="pre_[investimentos:resgate:input_valor_resgate].page_view()"/>
+      <arc id="2833550063888" source="intplace_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()" target="[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)"/>
+      <arc id="2833550054224" source="[cartoes:pagamento:opcoes_pagamento].page_view()" target="pre_[cartoes:pagamento:opcoes_pagamento].click_button(pagar_com_saldo)"/>
+      <arc id="2833550037840" source="pre_[cartoes:pagamento:opcoes_pagamento].page_view()" target="[cartoes:pagamento:opcoes_pagamento].page_view()"/>
+      <arc id="2833550051152" source="[cartoes:home_cartoes:home_cartoes].click_button(fatura_atual)" target="pre_[cartoes:fatura:fatura_atual].page_view()"/>
+      <arc id="2833550039376" source="pre_[cartoes:fatura:fatura_atual].page_view()" target="[cartoes:fatura:fatura_atual].page_view()"/>
+      <arc id="2833550063952" source="intplace_[cartoes:fatura:fatura_atual].page_view()" target="[cartoes:fatura:fatura_atual].click_button(voltar)"/>
+      <arc id="2833550059728" source="[investimentos:resgate:input_valor_resgate].page_view()" target="intplace_[investimentos:resgate:input_valor_resgate].page_view()"/>
+      <arc id="2833550064528" source="intplace_[investimentos:resgate:detalhe_posicao_cdb].page_view()" target="[investimentos:resgate:detalhe_posicao_cdb].click_button(resgatar)"/>
+      <arc id="2833550061968" source="[investimentos:home_investimentos:home_investimentos].click_button(voltar)" target="pre_[canais:home:home].page_view()"/>
+      <arc id="2833550061456" source="[cartoes:fatura:fatura_atual].click_button(voltar)" target="pre_[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="2833550063504" source="intplace_[canais:home:menu_produtos].page_view()" target="[canais:home:menu_produtos].click_button(cartoes)"/>
+      <arc id="2833550062480" source="[canais:home:menu_produtos].click_button(investimentos)" target="pre_[investimentos:home_investimentos:home_investimentos].page_view()"/>
+      <arc id="2833550062992" source="intplace_[canais:home:menu_produtos].page_view()" target="[canais:home:menu_produtos].click_button(investimentos)"/>
+      <arc id="2833550057808" source="[investimentos:resgate:detalhe_posicao_cdb].page_view()" target="intplace_[investimentos:resgate:detalhe_posicao_cdb].page_view()"/>
+      <arc id="2833550054352" source="[cartoes:pagamento:opcoes_pagamento].click_button(pagar_com_saldo)" target="pre_[cartoes:pagamento:comprovante_pagamento].page_view()"/>
+      <arc id="2833550054864" source="[cartoes:fatura:fatura_atual].page_view()" target="intplace_[cartoes:fatura:fatura_atual].page_view()"/>
+      <arc id="2833550059344" source="[investimentos:resgate:comprovante_resgate].page_view()" target="pre_[investimentos:resgate:comprovante_resgate].click_button(fechar)"/>
+      <arc id="2833550052816" source="[investimentos:home_investimentos:home_investimentos].page_view()" target="intplace_[investimentos:home_investimentos:home_investimentos].page_view()"/>
+      <arc id="2833550061584" source="[investimentos:resgate:detalhe_posicao_cdb].click_button(voltar)" target="pre_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()"/>
+      <arc id="2833550038480" source="pre_[cartoes:pagamento:opcoes_pagamento].click_button(pagar_com_saldo)" target="[cartoes:pagamento:opcoes_pagamento].click_button(pagar_com_saldo)"/>
+      <arc id="2833550051280" source="[cartoes:home_cartoes:home_cartoes].page_view()" target="intplace_[cartoes:home_cartoes:home_cartoes].page_view()"/>
+      <arc id="2833550056400" source="[investimentos:meus_investimentos:carteira_renda_fixa].page_view()" target="intplace_[investimentos:meus_investimentos:carteira_renda_fixa].page_view()"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink0">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>
