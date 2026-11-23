@@ -1,25 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <pnml>
-  <net id="imdf_net_1795315756.2472777" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+  <net id="imdf_net_1795407815.199838" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
     <name>
-      <text>imdf_net_1795315756.2472777</text>
+      <text>imdf_net_1795407815.199838</text>
     </name>
     <page id="n0">
-      <place id="sink">
-        <name>
-          <text>sink</text>
-        </name>
-      </place>
-      <place id="p_3">
-        <name>
-          <text>p_3</text>
-        </name>
-      </place>
-      <place id="p_5">
-        <name>
-          <text>p_5</text>
-        </name>
-      </place>
       <place id="source">
         <name>
           <text>source</text>
@@ -28,9 +13,24 @@
           <text>1</text>
         </initialMarking>
       </place>
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      </place>
       <place id="p_4">
         <name>
           <text>p_4</text>
+        </name>
+      </place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      </place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
         </name>
       </place>
       <place id="p_6">
@@ -63,76 +63,76 @@
           <text>p_11</text>
         </name>
       </place>
-      <transition id="84dbe163-3c3b-47df-bbd8-a55eb0caef1c">
-        <name>
-          <text>pix:view_home_pix</text>
-        </name>
-      </transition>
-      <transition id="2b3f1d4b-a0dd-4f5a-acb3-564e104b4d8c">
-        <name>
-          <text>canais:view_menu_produtos</text>
-        </name>
-      </transition>
-      <transition id="47650b50-7f29-45ea-b3ab-2a8d25e214ca">
-        <name>
-          <text>canais:click_menu_produtos_pix</text>
-        </name>
-      </transition>
-      <transition id="8a129935-3ade-43f1-aa51-98ca270f7c0f">
-        <name>
-          <text>pix:click_home_pix_pix_copia_e_cola</text>
-        </name>
-      </transition>
-      <transition id="c3ef643c-ebd5-491d-8641-e7d691f06583">
-        <name>
-          <text>pix:view_pix_copia_e_cola</text>
-        </name>
-      </transition>
-      <transition id="d3a80db4-d9df-4c74-a02f-b13c44bf887e">
-        <name>
-          <text>pix:click_pix_copia_e_cola_confirmar</text>
-        </name>
-      </transition>
-      <transition id="9e20326f-5a2a-40ee-a74f-b3702fab58b7">
-        <name>
-          <text>pix:view_comprovante_pix</text>
-        </name>
-      </transition>
-      <transition id="470744ba-bfdf-4823-b3fc-a5b1bd5d779a">
+      <transition id="cd95f248-efd4-4d4c-8f81-f13155dffed5">
         <name>
           <text>canais:view_home</text>
         </name>
       </transition>
-      <transition id="89695512-cc70-4601-8cd3-269d31e9bf7c">
+      <transition id="ad05df34-a234-45dd-83a4-590ab94a44df">
+        <name>
+          <text>canais:view_menu_produtos</text>
+        </name>
+      </transition>
+      <transition id="3ded849e-aa6e-4938-b71e-4427f8953819">
+        <name>
+          <text>pix:view_home_pix</text>
+        </name>
+      </transition>
+      <transition id="21fb1cc2-e577-4803-99e2-c8426482aa7f">
         <name>
           <text>canais:click_home_menu_produtos</text>
         </name>
       </transition>
-      <transition id="78bc334a-959f-43cd-9b08-228c1ed0c649">
+      <transition id="d1aea938-840b-4711-9cd1-0cd34373bbf5">
+        <name>
+          <text>canais:click_menu_produtos_pix</text>
+        </name>
+      </transition>
+      <transition id="5276029e-caf1-4104-9ef2-dfcea2bc914e">
+        <name>
+          <text>pix:click_home_pix_pix_copia_e_cola</text>
+        </name>
+      </transition>
+      <transition id="33170823-87a0-41fa-965c-87fbf05b8637">
+        <name>
+          <text>pix:view_pix_copia_e_cola</text>
+        </name>
+      </transition>
+      <transition id="445295e4-dd7a-43c3-a35e-1b1eac1284ab">
+        <name>
+          <text>pix:click_pix_copia_e_cola_confirmar</text>
+        </name>
+      </transition>
+      <transition id="2f96a518-30da-4182-939f-b87fa94cea50">
+        <name>
+          <text>pix:view_comprovante_pix</text>
+        </name>
+      </transition>
+      <transition id="31378f26-a588-473a-9802-725a6b4ccfac">
         <name>
           <text>pix:click_comprovante_pix_fechar</text>
         </name>
       </transition>
-      <arc id="140539762854048" source="470744ba-bfdf-4823-b3fc-a5b1bd5d779a" target="p_3"/>
-      <arc id="140539762856736" source="47650b50-7f29-45ea-b3ab-2a8d25e214ca" target="p_6"/>
-      <arc id="140539762857632" source="8a129935-3ade-43f1-aa51-98ca270f7c0f" target="p_8"/>
-      <arc id="140539762858528" source="d3a80db4-d9df-4c74-a02f-b13c44bf887e" target="p_10"/>
-      <arc id="140539762854832" source="2b3f1d4b-a0dd-4f5a-acb3-564e104b4d8c" target="p_5"/>
-      <arc id="140539762856624" source="p_5" target="47650b50-7f29-45ea-b3ab-2a8d25e214ca"/>
-      <arc id="140539762857520" source="p_7" target="8a129935-3ade-43f1-aa51-98ca270f7c0f"/>
-      <arc id="140539762858416" source="p_9" target="d3a80db4-d9df-4c74-a02f-b13c44bf887e"/>
-      <arc id="140539762859312" source="78bc334a-959f-43cd-9b08-228c1ed0c649" target="sink"/>
-      <arc id="140539762853824" source="source" target="470744ba-bfdf-4823-b3fc-a5b1bd5d779a"/>
-      <arc id="140539762855616" source="p_4" target="2b3f1d4b-a0dd-4f5a-acb3-564e104b4d8c"/>
-      <arc id="140539762859200" source="p_11" target="78bc334a-959f-43cd-9b08-228c1ed0c649"/>
-      <arc id="140539762856288" source="89695512-cc70-4601-8cd3-269d31e9bf7c" target="p_4"/>
-      <arc id="140539762857184" source="84dbe163-3c3b-47df-bbd8-a55eb0caef1c" target="p_7"/>
-      <arc id="140539762858080" source="c3ef643c-ebd5-491d-8641-e7d691f06583" target="p_9"/>
-      <arc id="140539762858976" source="9e20326f-5a2a-40ee-a74f-b3702fab58b7" target="p_11"/>
-      <arc id="140539762855280" source="p_3" target="89695512-cc70-4601-8cd3-269d31e9bf7c"/>
-      <arc id="140539762857072" source="p_6" target="84dbe163-3c3b-47df-bbd8-a55eb0caef1c"/>
-      <arc id="140539762857968" source="p_8" target="c3ef643c-ebd5-491d-8641-e7d691f06583"/>
-      <arc id="140539762858864" source="p_10" target="9e20326f-5a2a-40ee-a74f-b3702fab58b7"/>
+      <arc id="2956108591760" source="p_8" target="33170823-87a0-41fa-965c-87fbf05b8637"/>
+      <arc id="2956108586640" source="2f96a518-30da-4182-939f-b87fa94cea50" target="p_11"/>
+      <arc id="2956108583696" source="445295e4-dd7a-43c3-a35e-1b1eac1284ab" target="p_10"/>
+      <arc id="2956108588816" source="p_11" target="31378f26-a588-473a-9802-725a6b4ccfac"/>
+      <arc id="2956108584208" source="p_4" target="ad05df34-a234-45dd-83a4-590ab94a44df"/>
+      <arc id="2956108590096" source="ad05df34-a234-45dd-83a4-590ab94a44df" target="p_5"/>
+      <arc id="2956108586896" source="p_5" target="d1aea938-840b-4711-9cd1-0cd34373bbf5"/>
+      <arc id="2956108581008" source="d1aea938-840b-4711-9cd1-0cd34373bbf5" target="p_6"/>
+      <arc id="2956108580752" source="p_6" target="3ded849e-aa6e-4938-b71e-4427f8953819"/>
+      <arc id="2956108583952" source="33170823-87a0-41fa-965c-87fbf05b8637" target="p_9"/>
+      <arc id="2956108593424" source="31378f26-a588-473a-9802-725a6b4ccfac" target="sink"/>
+      <arc id="2956108585168" source="p_7" target="5276029e-caf1-4104-9ef2-dfcea2bc914e"/>
+      <arc id="2956102787152" source="source" target="cd95f248-efd4-4d4c-8f81-f13155dffed5"/>
+      <arc id="2956108584656" source="p_3" target="21fb1cc2-e577-4803-99e2-c8426482aa7f"/>
+      <arc id="2956108592336" source="21fb1cc2-e577-4803-99e2-c8426482aa7f" target="p_4"/>
+      <arc id="2956108583120" source="cd95f248-efd4-4d4c-8f81-f13155dffed5" target="p_3"/>
+      <arc id="2956108587728" source="3ded849e-aa6e-4938-b71e-4427f8953819" target="p_7"/>
+      <arc id="2956108592464" source="5276029e-caf1-4104-9ef2-dfcea2bc914e" target="p_8"/>
+      <arc id="2956108591568" source="p_10" target="2f96a518-30da-4182-939f-b87fa94cea50"/>
+      <arc id="2956108584336" source="p_9" target="445295e4-dd7a-43c3-a35e-1b1eac1284ab"/>
     </page>
     <finalmarkings>
       <marking>

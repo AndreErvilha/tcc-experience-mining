@@ -1,0 +1,377 @@
+{
+  "name": "v2.0",
+  "events": {
+    "defaults": {
+      "num_traces": 100,
+      "seed": 42,
+      "discovery_algo": "heuristics",
+      "discovery_mode": "both",
+      "start_session_at": 1
+    },
+    "output_events_csv_path": "dataset/processed/v2.0/total.csv",
+    "events_params": [
+      {
+        "id": "001",
+        "seed_csv_path": "dataset/raw/[001][cartao] pagar fatura com saldo/cartoes - pagar fatura com saldo completo.csv",
+        "min_events": 8
+      },
+      {
+        "id": "002",
+        "seed_csv_path": "dataset/raw/[002][cartao] pagar fatura copiar pix/cartoes - pagar fatura copiar pix.csv",
+        "min_events": 7
+      },
+      {
+        "id": "003",
+        "seed_csv_path": "dataset/raw/[003][cartao] pagar fatura parcelar/cartoes - pagar fatura parcelar.csv",
+        "min_events": 10
+      },
+      {
+        "id": "004",
+        "seed_csv_path": "dataset/raw/[004][cartao] historico de fatura cartao/cartoes - historico de fatura completo.csv",
+        "min_events": 7
+      },
+      {
+        "id": "005",
+        "seed_csv_path": "dataset/raw/[005][cartao-openfinance] trazer dinheiro e pagar fatura cartao/005.csv",
+        "min_events": 15
+      },
+      {
+        "id": "006",
+        "seed_csv_path": "dataset/raw/[006][PIX] Transferencia por meio de chave pix/006.csv",
+        "min_events": 10
+      },
+      {
+        "id": "007",
+        "seed_csv_path": "dataset/raw/[007][investimento] aplicação no CDB/007.csv",
+        "min_events": 10
+      },
+      {
+        "id": "008",
+        "seed_csv_path": "dataset/raw/[008][investimento] resgate aplicação CDB/008.csv",
+        "min_events": 10
+      },
+      {
+        "id": "009",
+        "seed_csv_path": "dataset/raw/[009][cartao-investimento] resgate CDB pagar fatura cartao/009.csv",
+        "min_events": 18
+      },
+      {
+        "id": "010",
+        "seed_csv_path": "dataset/raw/[010][cartao-pix] copia pix fatura depois paga/010.csv",
+        "min_events": 10
+      }
+    ]
+  },
+  "labeling": {
+    "output_labeling_csv_path": "dataset/processed/v2.0/total-rotulado.csv",
+    "labeling_params": [
+      {
+        "label_col": "is_fatura_paga_saldo",
+        "pattern": [
+          [
+            "[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)",
+            "[cartoes:pagamento:comprovante_pagamento].page_view()"
+          ]
+        ]
+      },
+      {
+        "label_col": "is_iniciou_pagar_saldo_sem_converter",
+        "contain": ["[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)"],
+        "not_pattern": [
+          [
+            "[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)",
+            "[cartoes:pagamento:comprovante_pagamento].page_view()"
+          ]
+        ]
+      },
+      {
+        "label_col": "is_pix_copiado",
+        "pattern": [
+          [
+            "[cartoes:pagamento:opcoes_pagamento].click_button(copiar_pix)",
+            "[cartoes:pagamento:sucesso_copia].page_view()"
+          ]
+        ]
+      },
+      {
+        "label_col": "is_iniciou_copiar_pix_sem_converter",
+        "contain": ["[cartoes:pagamento:opcoes_pagamento].click_button(copiar_pix)"],
+        "not_pattern": [
+          [
+            "[cartoes:pagamento:opcoes_pagamento].click_button(copiar_pix)",
+            "[cartoes:pagamento:sucesso_copia].page_view()"
+          ]
+        ]
+      },
+      {
+        "label_col": "is_fatura_parcelada",
+        "pattern": [
+          [
+            "[cartoes:fatura:fatura_atual].click_button(simular_parcelamento)",
+            "[cartoes:parcelamento:comprovante_parcelamento].page_view()"
+          ]
+        ]
+      },
+      {
+        "label_col": "is_iniciou_parcelamento_sem_converter",
+        "contain": ["[cartoes:fatura:fatura_atual].click_button(simular_parcelamento)"],
+        "not_pattern": [
+          [
+            "[cartoes:fatura:fatura_atual].click_button(simular_parcelamento)",
+            "[cartoes:parcelamento:comprovante_parcelamento].page_view()"
+          ]
+        ]
+      },
+      {
+        "label_col": "is_historico_visualizado",
+        "pattern": [
+          [
+            "[cartoes:historico:historico_faturas].click_button(mes_anterior)",
+            "[cartoes:historico:visualizacao_pdf].page_view()"
+          ]
+        ]
+      },
+      {
+        "label_col": "is_iniciou_historico_sem_converter",
+        "contain": ["[cartoes:historico:historico_faturas].click_button(mes_anterior)"],
+        "not_pattern": [
+          [
+            "[cartoes:historico:historico_faturas].click_button(mes_anterior)",
+            "[cartoes:historico:visualizacao_pdf].page_view()"
+          ]
+        ]
+      },
+      {
+        "label_col": "is_openfinance_fatura_paga",
+        "pattern": [
+          [
+            "[open_finance:home:home_open_finance].click_button(trazer_dinheiro)",
+            "[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()"
+          ],
+          [
+            "[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()",
+            "[cartoes:pagamento:comprovante_pagamento].page_view()"
+          ]
+        ],
+        "absorbs_label_cols": ["is_openfinance_pago", "is_fatura_paga_saldo"]
+      },
+      {
+        "label_col": "is_iniciou_openfinance_fatura_sem_converter",
+        "pattern": [
+          [
+            "[open_finance:home:home_open_finance].click_button(trazer_dinheiro)",
+            "[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()"
+          ],
+          [
+            "[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()",
+            "[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)"
+          ]
+        ],
+        "not_pattern": [
+          [
+            "[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()",
+            "[cartoes:pagamento:comprovante_pagamento].page_view()"
+          ]
+        ],
+        "absorbs_label_cols": [
+          "is_iniciou_openfinance_sem_converter",
+          "is_iniciou_pagar_saldo_sem_converter"
+        ]
+      },
+      {
+        "label_col": "is_openfinance_pago",
+        "pattern": [
+          [
+            "[open_finance:home:home_open_finance].click_button(trazer_dinheiro)",
+            "[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()"
+          ]
+        ]
+      },
+      {
+        "label_col": "is_iniciou_openfinance_sem_converter",
+        "contain": ["[open_finance:home:home_open_finance].click_button(trazer_dinheiro)"],
+        "not_pattern": [
+          [
+            "[open_finance:home:home_open_finance].click_button(trazer_dinheiro)",
+            "[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()"
+          ]
+        ]
+      },
+      {
+        "label_col": "is_pix_transferido",
+        "pattern": [
+          [
+            "[pix:transferencia:home_pix].click_button(transferir_chave)",
+            "[pix:transferencia:comprovante_pix].page_view()"
+          ]
+        ]
+      },
+      {
+        "label_col": "is_iniciou_pix_sem_converter",
+        "contain": ["[pix:transferencia:home_pix].click_button(transferir_chave)"],
+        "not_pattern": [
+          [
+            "[pix:transferencia:home_pix].click_button(transferir_chave)",
+            "[pix:transferencia:comprovante_pix].page_view()"
+          ]
+        ]
+      },
+      {
+        "label_col": "is_cdb_aplicado",
+        "pattern": [
+          [
+            "[investimentos:renda_fixa:home_investimentos].click_button(renda_fixa)",
+            "[investimentos:renda_fixa:comprovante_investimento].page_view()"
+          ]
+        ]
+      },
+      {
+        "label_col": "is_iniciou_cdb_sem_converter",
+        "contain": ["[investimentos:renda_fixa:home_investimentos].click_button(renda_fixa)"],
+        "not_pattern": [
+          [
+            "[investimentos:renda_fixa:home_investimentos].click_button(renda_fixa)",
+            "[investimentos:renda_fixa:comprovante_investimento].page_view()"
+          ]
+        ]
+      },
+      {
+        "label_col": "is_cdb_resgatado",
+        "pattern": [
+          [
+            "[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)",
+            "[investimentos:resgate:comprovante_resgate].page_view()"
+          ]
+        ]
+      },
+      {
+        "label_col": "is_iniciou_resgate_sem_converter",
+        "contain": ["[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)"],
+        "not_pattern": [
+          [
+            "[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)",
+            "[investimentos:resgate:comprovante_resgate].page_view()"
+          ]
+        ]
+      },
+      {
+        "label_col": "is_resgate_pago_fatura",
+        "pattern": [
+          [
+            "[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)",
+            "[investimentos:resgate:comprovante_resgate].page_view()"
+          ],
+          [
+            "[investimentos:resgate:comprovante_resgate].page_view()",
+            "[cartoes:pagamento:comprovante_pagamento].page_view()"
+          ]
+        ],
+        "absorbs_label_cols": ["is_cdb_resgatado", "is_fatura_paga_saldo"]
+      },
+      {
+        "label_col": "is_iniciou_resgate_pagar_fatura_sem_converter",
+        "pattern": [
+          [
+            "[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)",
+            "[investimentos:resgate:comprovante_resgate].page_view()"
+          ],
+          [
+            "[investimentos:resgate:comprovante_resgate].page_view()",
+            "[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)"
+          ]
+        ],
+        "not_pattern": [
+          [
+            "[investimentos:resgate:comprovante_resgate].page_view()",
+            "[cartoes:pagamento:comprovante_pagamento].page_view()"
+          ]
+        ],
+        "absorbs_label_cols": [
+          "is_iniciou_resgate_sem_converter",
+          "is_iniciou_pagar_saldo_sem_converter"
+        ]
+      },
+      {
+        "label_col": "is_fatura_paga_pix_copia_cola",
+        "pattern": [
+          [
+            "[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)",
+            "[pix:home:home_pix].click_button(pix_copia_e_cola)"
+          ],
+          [
+            "[pix:home:home_pix].click_button(pix_copia_e_cola)",
+            "[pix:pix_copia_e_cola:comprovante_pix].page_view()"
+          ]
+        ],
+        "absorbs_label_cols": ["is_copia_pix_paga"]
+      },
+      {
+        "label_col": "is_iniciou_fatura_pix_copia_cola_sem_converter",
+        "pattern": [
+          [
+            "[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)",
+            "[pix:home:home_pix].click_button(pix_copia_e_cola)"
+          ]
+        ],
+        "not_pattern": [
+          [
+            "[pix:home:home_pix].click_button(pix_copia_e_cola)",
+            "[pix:pix_copia_e_cola:comprovante_pix].page_view()"
+          ]
+        ],
+        "absorbs_label_cols": [
+          "is_iniciou_copia_pix_sem_converter",
+          "is_iniciou_pagar_saldo_sem_converter"
+        ]
+      },
+      {
+        "label_col": "is_copia_pix_paga",
+        "pattern": [
+          [
+            "[pix:home:home_pix].click_button(pix_copia_e_cola)",
+            "[pix:pix_copia_e_cola:comprovante_pix].page_view()"
+          ]
+        ]
+      },
+      {
+        "label_col": "is_iniciou_copia_pix_sem_converter",
+        "contain": ["[pix:home:home_pix].click_button(pix_copia_e_cola)"],
+        "not_pattern": [
+          [
+            "[pix:home:home_pix].click_button(pix_copia_e_cola)",
+            "[pix:pix_copia_e_cola:comprovante_pix].page_view()"
+          ]
+        ]
+      }
+    ]
+  },
+  "representations": {
+    "tfidf": {
+      "output_tfidf_dir_path": "data/v2.0/tfidf",
+      "tfidf_params": { "min_df": 1 }
+    },
+    "minilm": {
+      "output_minilm_dir_path": "data/v2.0/minilm",
+      "minilm_params": { "model_name": "all-MiniLM-L6-v2", "batch_size": 32 }
+    },
+    "gemini": {
+      "output_gemini_dir_path": "data/v2.0/gemini",
+      "gemini_params": { "model_name": "models/gemini-embedding-001", "batch_size": 32 }
+    }
+  },
+  "clusters": {
+    "kmeans": {
+      "output_clusters_dir_path": "clusters/v2.0",
+      "kmeans_params": { "auto_k": true, "seed": 42 }
+    },
+    "hdbscan": {
+      "output_clusters_dir_path": "clusters/v2.0",
+      "hdbscan_params": { "auto_grid": true, "metric": "euclidean" }
+    }
+  },
+  "metrics": { "enabled": true },
+  "shap": { "enabled": true, "surrogate": "xgboost", "seed": 42 },
+  "journeys_by_cluster": { "enabled": true, "tsne_seed": 42 },
+  "pm4py": { "dfg": true, "pnml": true },
+  "figures": { "enabled": true, "revised_titles": true, "highlight_model": null }
+}

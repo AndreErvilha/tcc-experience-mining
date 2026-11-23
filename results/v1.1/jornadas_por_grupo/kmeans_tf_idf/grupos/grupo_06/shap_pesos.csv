@@ -1,0 +1,12 @@
+﻿modelo;grupo;evento;shap_medio_no_grupo;shap_abs_medio_no_grupo;shap_medio_fora_do_grupo;pct_sessoes_do_grupo_com_evento;pct_sessoes_fora_com_evento;tfidf_medio_no_grupo;direcao
+kmeans_tf_idf;6;open_finance:view_home_open_finance;1.32443;1.32443;-0.63472;1.0;0.048;0.45066;empurra PARA o grupo (+)
+kmeans_tf_idf;6;open_finance:view_selecao_banco_consentido;1.18741;1.18741;-0.86761;1.0;0.037;0.44668;empurra PARA o grupo (+)
+kmeans_tf_idf;6;open_finance:click_home_open_finance_trazer_dinheiro;1.14813;1.17565;-0.42583;1.0;0.037;0.31977;empurra PARA o grupo (+)
+kmeans_tf_idf;6;open_finance:click_selecao_banco_consentido_confirmar_banco_origem;0.80548;0.80548;-0.60377;1.0;0.037;0.2901;empurra PARA o grupo (+)
+kmeans_tf_idf;6;cartoes:view_home_cartoes;0.11212;0.17506;-0.12881;0.688;0.626;0.07456;empurra PARA o grupo (+)
+kmeans_tf_idf;6;cartoes:click_fatura_atual_voltar;0.03978;0.06575;-0.03457;0.5;0.388;0.03407;empurra PARA o grupo (+)
+kmeans_tf_idf;6;cartoes:click_comprovante_pagamento_voltar;0.03606;0.0541;0.003;0.062;0.054;0.00806;empurra PARA o grupo (+)
+kmeans_tf_idf;6;open_finance:click_resumo_transacao_open_finance_voltar;0.02534;0.02566;2e-05;0.75;0.023;0.14024;empurra PARA o grupo (+)
+kmeans_tf_idf;6;cartoes:view_fatura_atual;0.01839;0.0254;-0.00385;0.5;0.436;0.04407;empurra PARA o grupo (+)
+kmeans_tf_idf;6;canais:click_menu_produtos_open_finance;0.0188;0.0194;0.00013;1.0;0.048;0.1399;empurra PARA o grupo (+)
+kmeans_tf_idf;6;canais:view_home;0.00063;0.0044;-0.00184;1.0;1.0;0.10465;empurra PARA o grupo (+)

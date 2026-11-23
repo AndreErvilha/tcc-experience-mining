@@ -51,13 +51,13 @@ scratch/
 # Segredos, chaves de API e variáveis de ambiente
 .env
 .env.*
+!.env.example
 *.key
 *.pem
 secrets/
 
 # Notas pessoais da defesa (não publicar)
-notas-defesa/**/*
-
+notas-defesa/
 # Backups locais de resultados
 backup/
 
@@ -68,3 +68,6 @@ openspec/
 CLAUDE.md
 CLAUDE.local.md
 openspec
+
+# Rotulagem de clusters por IA generativa (local)
+.ia-rotulos/

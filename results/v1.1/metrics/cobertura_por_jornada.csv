@@ -1,0 +1,15 @@
+﻿rotulo;sessoes;kmeans_tf_idf;kmeans_minilm;kmeans_gemini;hdbscan_tf_idf;hdbscan_minilm;hdbscan_gemini
+neutro;99;73.7;0.0;0.0;72.7;67.7;68.7
+fatura_paga_saldo;69;49.3;0.0;0.0;50.7;42.0;79.7
+cdb_resgatado;49;0.0;0.0;0.0;0.0;51.0;93.9
+copia_pix_paga;46;100.0;0.0;0.0;67.4;93.5;73.9
+pix_transferido;41;100.0;0.0;80.5;100.0;100.0;100.0
+cdb_aplicado;37;100.0;0.0;0.0;100.0;91.9;81.1
+fatura_parcelada;29;100.0;0.0;0.0;96.6;41.4;100.0
+openfinance_pago;29;96.6;0.0;0.0;96.6;0.0;0.0
+pix_copiado;21;81.0;0.0;0.0;76.2;0.0;0.0
+iniciou_pagar_saldo_sem_converter;19;0.0;0.0;0.0;0.0;0.0;47.4
+resgate_pago_fatura;15;0.0;0.0;0.0;0.0;0.0;0.0
+historico_visualizado;14;100.0;0.0;0.0;71.4;0.0;57.1
+openfinance_fatura_paga;12;0.0;0.0;0.0;0.0;0.0;0.0
+jornadas_com_cobertura_>=80%;13;7.0;0.0;1.0;4.0;3.0;4.0

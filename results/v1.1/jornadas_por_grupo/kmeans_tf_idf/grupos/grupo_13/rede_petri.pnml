@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1795410271.8393676" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1795410271.8393676</text>
+    </name>
+    <page id="n0">
+      <place id="p_22">
+        <name>
+          <text>p_22</text>
+        </name>
+      </place>
+      <place id="p_7">
+        <name>
+          <text>p_7</text>
+        </name>
+      </place>
+      <place id="p_8">
+        <name>
+          <text>p_8</text>
+        </name>
+      </place>
+      <place id="p_17">
+        <name>
+          <text>p_17</text>
+        </name>
+      </place>
+      <place id="p_18">
+        <name>
+          <text>p_18</text>
+        </name>
+      </place>
+      <place id="p_16">
+        <name>
+          <text>p_16</text>
+        </name>
+      </place>
+      <place id="p_21">
+        <name>
+          <text>p_21</text>
+        </name>
+      </place>
+      <place id="p_25">
+        <name>
+          <text>p_25</text>
+        </name>
+      </place>
+      <place id="p_14">
+        <name>
+          <text>p_14</text>
+        </name>
+      </place>
+      <place id="p_11">
+        <name>
+          <text>p_11</text>
+        </name>
+      </place>
+      <place id="p_15">
+        <name>
+          <text>p_15</text>
+        </name>
+      </place>
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      </place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      </place>
+      <place id="p_6">
+        <name>
+          <text>p_6</text>
+        </name>
+      </place>
+      <place id="p_9">
+        <name>
+          <text>p_9</text>
+        </name>
+      </place>
+      <place id="p_10">
+        <name>
+          <text>p_10</text>
+        </name>
+      </place>
+      <place id="p_24">
+        <name>
+          <text>p_24</text>
+        </name>
+      </place>
+      <transition id="656ebb11-ce36-453f-a07e-d242fd6370c5">
+        <name>
+          <text>investimentos:click_home_investimentos_renda_fixa</text>
+        </name>
+      </transition>
+      <transition id="bfc25002-3721-49db-8771-76d734d02c12">
+        <name>
+          <text>investimentos:view_detalhe_cdb_pos</text>
+        </name>
+      </transition>
+      <transition id="4233cd16-fdb1-4d7d-94fd-f3cbd095d786">
+        <name>
+          <text>investimentos:view_home_investimentos</text>
+        </name>
+      </transition>
+      <transition id="loop_4">
+        <name>
+          <text>loop_4</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="caba8050-5ac3-463b-bd65-1826b57ea8d3"/>
+      </transition>
+      <transition id="a658d250-dc04-4ac8-b0f3-8ce692cef742">
+        <name>
+          <text>canais:view_home</text>
+        </name>
+      </transition>
+      <transition id="0630eb00-1f7b-4163-b7fd-bd297fb7218e">
+        <name>
+          <text>canais:click_menu_produtos_cartoes</text>
+        </name>
+      </transition>
+      <transition id="efa7d761-3d89-4915-b6a4-91a2582333ef">
+        <name>
+          <text>canais:click_menu_produtos_investimentos</text>
+        </name>
+      </transition>
+      <transition id="59c36cf4-4f60-4a72-a96d-bd7858f10671">
+        <name>
+          <text>investimentos:click_carteira_renda_fixa_detalhar_cdb</text>
+        </name>
+      </transition>
+      <transition id="3a04f483-e374-42ba-99a0-bc60e40b2633">
+        <name>
+          <text>investimentos:click_detalhe_posicao_cdb_voltar</text>
+        </name>
+      </transition>
+      <transition id="skip_11">
+        <name>
+          <text>skip_11</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="786fffc9-86a4-439f-a7fa-95b43b5482fd"/>
+      </transition>
+      <transition id="2fe3dd55-3849-49df-95ef-ae8d8e7929e8">
+        <name>
+          <text>cartoes:click_home_cartoes_voltar</text>
+        </name>
+      </transition>
+      <transition id="5c3b8c16-adcc-46ef-b1ef-5d79e9ca85c1">
+        <name>
+          <text>investimentos:view_carteira_renda_fixa</text>
+        </name>
+      </transition>
+      <transition id="loop_6">
+        <name>
+          <text>loop_6</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="3fa3608f-b6e5-484f-af2b-61920cbb9a23"/>
+      </transition>
+      <transition id="fbb0e390-e19d-4efb-b095-b8b87662bd46">
+        <name>
+          <text>investimentos:click_detalhe_cdb_pos_voltar</text>
+        </name>
+      </transition>
+      <transition id="44799068-820b-4787-934e-76e70c1eb52e">
+        <name>
+          <text>investimentos:click_home_investimentos_ver_posicao</text>
+        </name>
+      </transition>
+      <transition id="tau_1">
+        <name>
+          <text>tau_1</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="e4e4171f-8bef-4a73-8b37-9edcc642c8f9"/>
+      </transition>
+      <transition id="8621ad10-9a26-4861-9baf-42b1c4aace10">
+        <name>
+          <text>canais:click_home_menu_produtos</text>
+        </name>
+      </transition>
+      <transition id="08f525f5-5cea-472b-a659-be9f5844fa24">
+        <name>
+          <text>canais:view_menu_produtos</text>
+        </name>
+      </transition>
+      <transition id="b633c96d-019f-49a7-9530-a95994695434">
+        <name>
+          <text>cartoes:view_home_cartoes</text>
+        </name>
+      </transition>
+      <transition id="ca811951-8693-4cd9-85cb-85bcbde93f9a">
+        <name>
+          <text>investimentos:click_carteira_renda_fixa_voltar</text>
+        </name>
+      </transition>
+      <transition id="9f36c881-4021-4415-a75c-618354c19b45">
+        <name>
+          <text>investimentos:click_home_investimentos_voltar</text>
+        </name>
+      </transition>
+      <transition id="4e081871-9214-4b2e-ba9c-cfcb65a9ffec">
+        <name>
+          <text>investimentos:view_detalhe_posicao_cdb</text>
+        </name>
+      </transition>
+      <arc id="3043116560400" source="fbb0e390-e19d-4efb-b095-b8b87662bd46" target="p_16"/>
+      <arc id="3043127930576" source="bfc25002-3721-49db-8771-76d734d02c12" target="p_18"/>
+      <arc id="3042038013456" source="p_9" target="efa7d761-3d89-4915-b6a4-91a2582333ef"/>
+      <arc id="3042038010512" source="p_10" target="b633c96d-019f-49a7-9530-a95994695434"/>
+      <arc id="3042038009616" source="2fe3dd55-3849-49df-95ef-ae8d8e7929e8" target="p_7"/>
+      <arc id="3042038007696" source="b633c96d-019f-49a7-9530-a95994695434" target="p_11"/>
+      <arc id="3042039754256" source="a658d250-dc04-4ac8-b0f3-8ce692cef742" target="p_6"/>
+      <arc id="3042039751056" source="8621ad10-9a26-4861-9baf-42b1c4aace10" target="p_8"/>
+      <arc id="3042038006160" source="p_11" target="2fe3dd55-3849-49df-95ef-ae8d8e7929e8"/>
+      <arc id="3043120153040" source="p_25" target="3a04f483-e374-42ba-99a0-bc60e40b2633"/>
+      <arc id="3043128406480" source="loop_6" target="p_14"/>
+      <arc id="3042038020880" source="656ebb11-ce36-453f-a07e-d242fd6370c5" target="p_17"/>
+      <arc id="3042030562064" source="p_18" target="fbb0e390-e19d-4efb-b095-b8b87662bd46"/>
+      <arc id="3043128171408" source="p_7" target="loop_4"/>
+      <arc id="3043128179728" source="p_15" target="44799068-820b-4787-934e-76e70c1eb52e"/>
+      <arc id="3043115365584" source="p_21" target="5c3b8c16-adcc-46ef-b1ef-5d79e9ca85c1"/>
+      <arc id="3043115447632" source="9f36c881-4021-4415-a75c-618354c19b45" target="p_7"/>
+      <arc id="3043118146896" source="3a04f483-e374-42ba-99a0-bc60e40b2633" target="p_21"/>
+      <arc id="3042038021648" source="4233cd16-fdb1-4d7d-94fd-f3cbd095d786" target="p_15"/>
+      <arc id="3043115366224" source="5c3b8c16-adcc-46ef-b1ef-5d79e9ca85c1" target="p_22"/>
+      <arc id="3042038021968" source="08f525f5-5cea-472b-a659-be9f5844fa24" target="p_9"/>
+      <arc id="3042038016208" source="p_9" target="0630eb00-1f7b-4163-b7fd-bd297fb7218e"/>
+      <arc id="3042038007760" source="p_8" target="08f525f5-5cea-472b-a659-be9f5844fa24"/>
+      <arc id="3043128177104" source="source" target="tau_1"/>
+      <arc id="3042035520336" source="44799068-820b-4787-934e-76e70c1eb52e" target="p_21"/>
+      <arc id="3042035518416" source="tau_1" target="p_5"/>
+      <arc id="3043128174928" source="p_5" target="a658d250-dc04-4ac8-b0f3-8ce692cef742"/>
+      <arc id="3042039757520" source="p_6" target="8621ad10-9a26-4861-9baf-42b1c4aace10"/>
+      <arc id="3042038018384" source="0630eb00-1f7b-4163-b7fd-bd297fb7218e" target="p_10"/>
+      <arc id="3043118147664" source="efa7d761-3d89-4915-b6a4-91a2582333ef" target="p_14"/>
+      <arc id="3042038010128" source="p_15" target="656ebb11-ce36-453f-a07e-d242fd6370c5"/>
+      <arc id="3043118139728" source="p_6" target="skip_11"/>
+      <arc id="3042038006416" source="p_14" target="4233cd16-fdb1-4d7d-94fd-f3cbd095d786"/>
+      <arc id="3043128408784" source="ca811951-8693-4cd9-85cb-85bcbde93f9a" target="p_16"/>
+      <arc id="3043128169232" source="p_16" target="loop_6"/>
+      <arc id="3043191827280" source="59c36cf4-4f60-4a72-a96d-bd7858f10671" target="p_24"/>
+      <arc id="3043129711440" source="4e081871-9214-4b2e-ba9c-cfcb65a9ffec" target="p_25"/>
+      <arc id="3042035526480" source="skip_11" target="sink"/>
+      <arc id="3043115359312" source="p_22" target="59c36cf4-4f60-4a72-a96d-bd7858f10671"/>
+      <arc id="3043129347152" source="p_24" target="4e081871-9214-4b2e-ba9c-cfcb65a9ffec"/>
+      <arc id="3043191704784" source="p_17" target="bfc25002-3721-49db-8771-76d734d02c12"/>
+      <arc id="3042035531088" source="p_15" target="9f36c881-4021-4415-a75c-618354c19b45"/>
+      <arc id="3043128178064" source="loop_4" target="p_5"/>
+      <arc id="3042035531216" source="p_22" target="ca811951-8693-4cd9-85cb-85bcbde93f9a"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

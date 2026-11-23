@@ -47,7 +47,9 @@ Este trabalho propõe e valida experimentalmente o framework de **Experience Min
 
 ```
 tcc-experience-mining/
-├── run_all.py                     # Orquestrador (reprodução de ponta a ponta)
+├── run_all.py                     # Ponto de entrada único (lê --config ou EM_CONFIG)
+├── .env.example                   # Modelo de variáveis de ambiente (EM_CONFIG, GEMINI_API_KEY)
+├── configs/                       # Configurações por versão e esquema (schema.json, v1.1.json, v2.0.json)
 ├── requirements.txt / requirements-lock.txt
 ├── dataset/
 │   ├── raw/                       # Logs-semente, Redes de Petri (.pnml) e playouts dos 10 cenários
@@ -55,23 +57,22 @@ tcc-experience-mining/
 │   │   ├── total.csv              # Massa entregue: 516 sessões, 28.786 eventos
 │   │   ├── total-rotulado.csv     # Rótulos da versão entregue (v1.0)
 │   │   └── total-rotulado-v1.1.csv  # Rótulos pela Tabela 1 revisada (entrada do pipeline)
-│   └── gerar_massas.py            # Gera e rotula a massa (pm4py-cli); na v1.1 rodamos só a rotulagem (--saida total-rotulado-v1.1.csv)
+│   └── gerar_massas.py            # Gera e rotula a massa via configuração JSON (sem flags CLI)
 ├── data/                          # Sessões em texto e vetores (TF-IDF, MiniLM, Gemini)
 ├── clusters/                      # Agrupamentos (K-Means e HDBSCAN × 3 representações)
-├── src/                           # Pipeline
-│   ├── events2vector.py           # Eventos → texto por sessão + flags + rótulo principal
-│   ├── tfidf_vectorizer.py, embeddings_vectorizer.py
-│   ├── kmeans_cluster.py, hdbscan_cluster.py
-│   ├── eval_metrics.py            # Silhouette, ARI, V-Measure, pureza
-│   ├── shap_explainer.py, shap_figures.py   # XAI (modelo substituto XGBoost + SHAP)
-│   ├── jornadas_por_grupo.py      # Sessões e resumo de cada grupo
-│   ├── jornadas_tabelas.py        # Sessões por jornada e cobertura por jornada
-│   ├── petri_por_grupo.py         # DFG e Rede de Petri de cada grupo (run_all.py --petri)
-│   ├── figuras_tcc.py             # Figuras de resultados
+├── experience_mining/             # Pacote modular do pipeline
+│   ├── configuracao.py            # Seções tipadas de configuração por passo
+│   ├── io.py                      # Leitura e gravação (CSV, JSON, .pkl legado, formato portátil)
+│   ├── orquestracao.py            # Classe Pipeline (passos em ordem)
+│   ├── nucleo/                    # Tabela 1 única, regras de rótulo e métricas
+│   └── passos/                    # Representações, agrupamentos, métricas, SHAP, jornadas, pm4py, figuras
+├── src/
 │   └── stream_inference.py        # Inferência em tempo de execução
 ├── analises/                      # Análises citadas na errata (ver analises/README.md)
-├── docs/                          # Documentação dos resultados (ver docs/README.md)
-├── tools/pm4py_cli/               # CLI própria de Process Mining, playout e rotulagem
+│   └── v1.1/comparacao_v1.0_v1.1.py
+├── tests/                         # Golden master e conferência independente do rótulo (pytest)
+├── docs/                          # Documentação dos resultados e da CLI (ver docs/README.md)
+├── tools/pm4py_cli/               # CLI própria de Process Mining, playout e rotulagem (ver docs/pm4py-cli.md)
 └── results/
     ├── summary_metrics.csv
     ├── metrics/                   # Métricas por modelo, cobertura por jornada, comparação v1.0 × v1.1
@@ -108,69 +109,67 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 3. Reprodução em 1 Clique
+### 3. Configuração
 
-Para rodar todo o pipeline de ponta a ponta (representações, rótulos, agrupamentos, métricas, SHAP, jornadas por grupo e figuras):
+Cada versão do experimento é descrita por um arquivo JSON validado contra [configs/schema.json](configs/schema.json):
+
+1. Copie `.env.example` para `.env` (nunca versione o `.env`):
+   ```bash
+   cp .env.example .env
+   ```
+2. Defina `EM_CONFIG` no `.env` (ou passe `--config <arquivo.json>` diretamente ao `run_all.py`; `--config` tem precedência sobre `EM_CONFIG`).
+3. Os artefatos gerados ficam isolados por versão (`dataset/processed/<name>/`, `data/<name>/`, `clusters/<name>/` e `results/<name>/`). Os arquivos da entrega v1.0 (`total.csv`, `data/v1.0/*.pkl`, `clusters/v1.0/*.pkl`) ficam intactos.
+
+### 4. Reprodução em 1 Clique
+
+Para reproduzir a v1.1 completa (usando `dataset/processed/total.csv` + `total-rotulado-v1.1.csv` e os `.pkl` de `data/v1.0/` e `clusters/v1.0/`, gravando em `data/v1.1/` e `results/v1.1/`):
+
+```bash
+python run_all.py --config configs/v1.1.json
+```
+
+Se `EM_CONFIG` estiver definida no ambiente ou no `.env`, basta rodar:
 
 ```bash
 python run_all.py
 ```
 
-Opções:
+Todas as opções (gerar ou carregar eventos/rótulos/representações/agrupamentos, ligar/desligar SHAP, escolher métricas/figuras, gerar DFG/Rede de Petri via `pm4py`, ajustar seeds ou títulos revisados) ficam declaradas no JSON da versão; o `run_all.py` valida esquema, formatos e contratos antes do primeiro passo.
 
-| Opção | O que faz |
-| :--- | :--- |
-| `--reusar-agrupamentos` | Não refaz vetorização nem agrupamento: usa `data/*.pkl` e `clusters/*.pkl` existentes. Refaz rótulos, métricas, SHAP, jornadas por grupo e figuras. Use para reproduzir os resultados do TCC sem chamar a API do Gemini nem baixar o MiniLM. |
-| `--rotular-massa` | Antes de tudo, rotula de novo `dataset/processed/total.csv` com o `dataset/gerar_massas.py` (Tabela 1 revisada). Requer o pm4py-cli. |
-| `--sem-shap` | Pula o SHAP (não depende dos rótulos; os pesos, os beeswarms e as figuras SHAP ficam como estão). |
-| `--sem-revisao` | Pula a comparação v1.0 × v1.1 e a conferência do rótulo (`analises/`). |
-| `--petri` | Gera também as Redes de Petri e os DFGs por grupo (requer pm4py e Graphviz; demorado). |
+> **Versões isoladas:** cada versão grava suas saídas em `dataset/processed/<name>/`, `data/<name>/`, `clusters/<name>/` e `results/<name>/` (sobrescrevíveis por `output_*_path` no modo gerar). Os arquivos originais entregues na v1.0 (`total.csv`, `data/v1.0/*.pkl`, `clusters/v1.0/*.pkl` e `results/`) permanecem intactos.
 
-> **Massa nova:** ao gerar outra massa com o `dataset/gerar_massas.py` (playout), o `data/gemini_embeddings.pkl` existente fica desatualizado. O `run_all.py` só gera o Gemini quando o arquivo não existe: apague-o ou gere-o de novo com o comando do Gemini antes de rodar.
+Etapas e saídas (dentro da pasta da versão `results/<name>/`):
 
-Etapas e saídas:
+1. `experience_mining/nucleo/rotulo.py` → `data/<name>/sessions_represented.csv` (sequência de eventos, flags e rótulo principal de cada sessão)
+2. `experience_mining/passos/representacao.py` e `agrupamento.py` → carrega `.pkl`/pasta portátil ou gera em `data/<name>/<rep>/` e `clusters/<name>/<algo>_<rep>/` (formato portátil sem rótulos dentro)
+3. `experience_mining/passos/metricas.py` → `results/<name>/metrics/metrics_<modelo>.json`
+4. `experience_mining/passos/shap_xai.py` → pesos SHAP de cada grupo nos 6 modelos (`results/<name>/jornadas_por_grupo/<modelo>/grupos/grupo_NN/shap_pesos.csv` e `shap_pesos_todos_modelos.csv`), Figuras 4 e 5 (`results/<name>/figures/shap_*`) e beeswarm de cada grupo
+5. `experience_mining/passos/jornadas_grupo.py` → `results/<name>/jornadas_por_grupo/<modelo>/` (sessões de cada grupo, `resumo_grupos.csv`, `matriz_grupos.png`, `espaco_semantico_tsne.png` e `_3d.png`)
+5.1 `experience_mining/passos/metricas.py` → `results/<name>/dados/jornadas_contagem.csv` e `results/<name>/metrics/cobertura_por_jornada.csv`; com `pm4py` habilitado (padrão), `experience_mining/passos/processos_pm4py.py` → `results/<name>/jornadas_por_grupo/<modelo>/grupos/grupo_NN/{dfg.png,dfg.dfg,rede_petri.*}`
+6. Consolidação → `results/<name>/summary_metrics.csv`; `experience_mining/passos/figuras.py` → `results/<name>/figures/`
 
-0. (opcional, `--rotular-massa`) `dataset/gerar_massas.py` → `dataset/processed/total-rotulado-v1.1.csv`: rotula todas as sessões pela Tabela 1 revisada, sem usar o cenário que as gerou (jornada simples: gatilho e, depois, a conversão; composta: etapa 1 e, depois, etapa 2). Requer o pm4py-cli (`tools/pm4py_cli`; sem instalar, `PYTHONPATH=tools/pm4py_cli/src`)
-1. `src/events2vector.py` → `data/sessions_represented.csv` (sequência de eventos, flags e rótulo principal de cada sessão)
-2. Vetorização (`tfidf_vectorizer.py`, `embeddings_vectorizer.py`) e agrupamento (`kmeans_cluster.py`, `hdbscan_cluster.py`) → `data/*.pkl`, `clusters/*.pkl` (os rótulos não entram aqui)
-3. `src/eval_metrics.py --labels data/sessions_represented.csv` → `results/metrics/metrics_<modelo>.json`
-4. `src/shap_explainer.py` → pesos SHAP de cada grupo nos 6 modelos (`results/jornadas_por_grupo/<modelo>/grupos/grupo_NN/shap_pesos.csv` e `shap_pesos_todos_modelos.csv`); `src/shap_figures.py` → Figuras 4 e 5 (`results/figures/shap_*`) e beeswarm de cada grupo
-5. `src/jornadas_por_grupo.py` → `results/jornadas_por_grupo/<modelo>/` (sessões de cada grupo, `resumo_grupos.csv`, `matriz_grupos.png`, `espaco_semantico_tsne.png` e `_3d.png`)
-5.1 `src/jornadas_tabelas.py` → `results/dados/jornadas_contagem.csv` e `results/metrics/cobertura_por_jornada.csv`; com `--petri`, `src/petri_por_grupo.py` → `results/jornadas_por_grupo/<modelo>/grupos/grupo_NN/{dfg.png,rede_petri.*}`
-6. `analises/rotulo_revisado.py` e `analises/conferir_rotulo_tabela1.py` → comparação v1.0 × v1.1 e conferência do rótulo em Python puro
-7. Consolidação → `results/summary_metrics.csv`; `src/figuras_tcc.py` → `results/figures/`
+Análises e verificações fora do `run_all.py`:
+- Comparação v1.0 × v1.1: `python analises/v1.1/comparacao_v1.0_v1.1.py`
+- Process Mining, playout reproduzível e análises exploratórias (`pm4py-cli`): ver [docs/pm4py-cli.md](docs/pm4py-cli.md)
+- Suíte de testes e conferência independente do rótulo: `pytest tests/`
 
-As figuras `comparison_metrics.png`, `matriz_associacao_clusters_labels.png` e `tsne_clusters_visualizacao.png` são geradas por `src/figuras_tcc.py` (na v1.0 não tinham script).
+As figuras `comparison_metrics.png`, `matriz_associacao_clusters_labels.png` e `tsne_clusters_visualizacao.png` são geradas por `experience_mining/passos/figuras.py` (na v1.0 não tinham script).
 
-Todo arquivo de `results/` tem script: a lista completa, arquivo por arquivo, está em [docs/resultados.md](docs/resultados.md). Para regenerar a pasta do zero com os agrupamentos do TCC: `python run_all.py --reusar-agrupamentos --petri`.
+Todo arquivo de resultado tem módulo/script listado em [docs/resultados.md](docs/resultados.md). Para regenerar a v1.1 completa com os agrupamentos do TCC: `python run_all.py --config configs/v1.1.json`.
 
 ---
 
-## 🔬 Execução Passo a Passo (Manual)
+## 🔬 Execução de Verificações e Streaming
 
-Se desejar inspecionar ou executar etapas individuais:
-
-1. **Extração de Sequências Textuais:**
+1. **Testes e conferência do rótulo (golden master):**
    ```bash
-   python src/events2vector.py --input dataset/processed/total-rotulado-v1.1.csv --output data/sessions_represented.csv
+   python -m pytest tests/
    ```
-2. **Vetorização TF-IDF:**
+2. **Comparação v1.0 × v1.1 (fora do pipeline padrão):**
    ```bash
-   python src/tfidf_vectorizer.py --input data/sessions_represented.csv --output data/tfidf_vectors.pkl
+   python analises/v1.1/comparacao_v1.0_v1.1.py
    ```
-3. **Agrupamento HDBSCAN + TF-IDF:**
-   ```bash
-   python src/hdbscan_cluster.py --input data/tfidf_vectors.pkl --output clusters/hdbscan_tf_idf.pkl --auto-grid
-   ```
-4. **Rótulo pela Tabela 1 e avaliação de métricas:**
-   ```bash
-   python src/eval_metrics.py --input clusters/hdbscan_tf_idf.pkl --output results/metrics/metrics_hdbscan_tf_idf.json --labels data/sessions_represented.csv
-   ```
-5. **Auditoria Causal SHAP:**
-   ```bash
-   python src/shap_explainer.py
-   ```
-6. **Inferência Contínua em Streaming:**
+3. **Inferência Contínua em Streaming:**
    ```bash
    python src/stream_inference.py
    ```

@@ -1,0 +1,5 @@
+﻿modelo;grupo;evento;shap_medio_no_grupo;shap_abs_medio_no_grupo;shap_medio_fora_do_grupo;pct_sessoes_do_grupo_com_evento;pct_sessoes_fora_com_evento;tfidf_medio_no_grupo;direcao
+hdbscan_gemini;16;investimentos:click_carteira_renda_fixa_detalhar_cdb;4.69716;4.69716;-2.58082;1.0;0.0;0.30909;empurra PARA o grupo (+)
+hdbscan_gemini;16;investimentos:view_home_investimentos;0.04509;0.04929;-0.04608;1.0;0.128;0.33107;empurra PARA o grupo (+)
+hdbscan_gemini;16;canais:click_menu_produtos_investimentos;0.03263;0.04528;-0.03722;1.0;0.128;0.12457;empurra PARA o grupo (+)
+hdbscan_gemini;16;investimentos:click_home_investimentos_ver_posicao;0.02866;0.02866;-0.02195;1.0;0.019;0.25068;empurra PARA o grupo (+)

@@ -1,0 +1,11 @@
+﻿modelo;grupo;evento;shap_medio_no_grupo;shap_abs_medio_no_grupo;shap_medio_fora_do_grupo;pct_sessoes_do_grupo_com_evento;pct_sessoes_fora_com_evento;tfidf_medio_no_grupo;direcao
+kmeans_minilm;3;pix:view_home_pix;3.35187;3.35187;-2.88113;1.0;0.036;0.37645;empurra PARA o grupo (+)
+kmeans_minilm;3;cartoes:view_fatura_atual;0.44398;0.47384;-0.14669;0.041;0.532;0.00757;empurra PARA o grupo (+)
+kmeans_minilm;3;canais:click_menu_produtos_pix;0.39819;0.40107;-0.08697;0.969;0.019;0.18085;empurra PARA o grupo (+)
+kmeans_minilm;3;pix:click_home_pix_voltar;0.05496;0.11647;-0.09906;0.753;0.024;0.14169;empurra PARA o grupo (+)
+kmeans_minilm;3;cartoes:click_fatura_atual_opcoes_pagamento;0.0718;0.0718;-0.15567;0.0;0.372;0.0;empurra PARA o grupo (+)
+kmeans_minilm;3;cartoes:click_fatura_atual_voltar;0.02471;0.04785;-0.03597;0.041;0.477;0.00801;empurra PARA o grupo (+)
+kmeans_minilm;3;canais:click_home_menu_produtos;0.00368;0.01569;-0.01061;1.0;1.0;0.08796;empurra PARA o grupo (+)
+kmeans_minilm;3;canais:click_menu_produtos_cartoes;0.01113;0.01409;-0.00174;0.155;0.74;0.0274;empurra PARA o grupo (+)
+kmeans_minilm;3;pix:click_home_pix_pix_copia_e_cola;4e-05;0.00962;0.00308;0.454;0.019;0.19328;empurra PARA o grupo (+)
+kmeans_minilm;3;cartoes:view_home_cartoes;0.00354;0.00802;-0.00962;0.155;0.74;0.03348;empurra PARA o grupo (+)

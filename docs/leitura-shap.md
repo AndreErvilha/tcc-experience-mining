@@ -1,6 +1,6 @@
 # Como ler o SHAP por grupo
 
-Pesos: `src/shap_explainer.py` (passo 5 do `run_all.py`). Beeswarms e Figuras 4 e 5: `src/shap_figures.py` (passo 5.1). Os 6 modelos foram analisados; o TCC entregue só citou o HDBSCAN + TF-IDF.
+Pesos e figuras (beeswarms e Figuras 4 e 5): `experience_mining/passos/shap_xai.py` (passos 5 e 5.1 do `run_all.py`). Os 6 modelos foram analisados; o TCC entregue só citou o HDBSCAN + TF-IDF.
 
 **Modelo substituto:** XGBoost multiclasse sobre a matriz TF-IDF (eventos), sem as sessões de ruído (`n_estimators=100`, `max_depth=4`, `learning_rate=0.1`, `random_state=42`, os mesmos do TCC). Os grupos do MiniLM e do Gemini também são explicados pelos eventos (projeção na matriz TF-IDF). A acurácia de treino do substituto de cada modelo está em `results/jornadas_por_grupo/shap_fidelidade_treino.csv`.
 

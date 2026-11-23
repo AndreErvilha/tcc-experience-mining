@@ -28,6 +28,9 @@ def _apply_contain_filter(values, df_event_log, mode):
     if missing:
         print(f"Aviso: Atividades/termos não encontrados no log (ignorados): {missing}")
     if not matched_list:
+        if mode == "contain":
+            print(f"Aviso: Nenhuma atividade fornecida está presente no log para o filtro '{mode}'. Retornando vazio.")
+            return df_event_log.iloc[0:0].copy()
         print(f"Aviso: Nenhuma atividade fornecida está presente no log para o filtro '{mode}'. Ignorando.")
         return df_event_log
 
@@ -55,11 +58,15 @@ def _apply_eventually_follows_filter(relation_pairs, df_event_log, retain):
         matched_a = [act for act in all_activities if clean_a.lower() in act.lower()] if clean_a not in all_activities else [clean_a]
         matched_b = [act for act in all_activities if clean_b.lower() in act.lower()] if clean_b not in all_activities else [clean_b]
 
-        if not matched_a:
-            print(f"Aviso: Atividade '{act_a}' não encontrada no log. Pulando par ({act_a} > {act_b}).")
-            continue
-        if not matched_b:
-            print(f"Aviso: Atividade '{act_b}' não encontrada no log. Pulando par ({act_a} > {act_b}).")
+        if not matched_a or not matched_b:
+            ausente = act_a if not matched_a else act_b
+            if retain:
+                print(
+                    f"Aviso: Atividade '{ausente}' não encontrada no log para filtro positivo "
+                    f"({act_a} > {act_b}). Retornando vazio."
+                )
+                return df_event_log.iloc[0:0].copy()
+            print(f"Aviso: Atividade '{ausente}' não encontrada no log. Pulando par negativo ({act_a} > {act_b}).")
             continue
 
         relations = [(a, b) for a in matched_a for b in matched_b]

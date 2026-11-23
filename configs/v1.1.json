@@ -1,0 +1,48 @@
+{
+  "name": "v1.1",
+  "events": {
+    "events_csv_path": "dataset/processed/total.csv"
+  },
+  "labeling": {
+    "labeling_csv_path": "dataset/processed/total-rotulado-v1.1.csv"
+  },
+  "representations": {
+    "tfidf": {
+      "tfidf_pkl_path": "data/v1.0/tfidf_vectors.pkl"
+    },
+    "minilm": {
+      "minilm_pkl_path": "data/v1.0/minilm_embeddings.pkl"
+    },
+    "gemini": {
+      "gemini_pkl_path": "data/v1.0/gemini_embeddings.pkl"
+    }
+  },
+  "clusters": {
+    "kmeans": {
+      "tfidf_pkl_path": "clusters/v1.0/kmeans_tf_idf.pkl",
+      "minilm_pkl_path": "clusters/v1.0/kmeans_minilm.pkl",
+      "gemini_pkl_path": "clusters/v1.0/kmeans_gemini.pkl"
+    },
+    "hdbscan": {
+      "tfidf_pkl_path": "clusters/v1.0/hdbscan_tf_idf.pkl",
+      "minilm_pkl_path": "clusters/v1.0/hdbscan_minilm.pkl",
+      "gemini_pkl_path": "clusters/v1.0/hdbscan_gemini.pkl"
+    }
+  },
+  "shap": {
+    "enabled": true,
+    "surrogate": "xgboost",
+    "seed": 42,
+    "colsample_sensitivity": {
+      "model": "hdbscan_tf_idf",
+      "cluster": 5,
+      "colsample_bytree": 0.3,
+      "output_filename": "colsample_cluster5.json"
+    }
+  },
+  "figures": {
+    "enabled": true,
+    "highlight_model": "hdbscan_tf_idf",
+    "shap_panel_clusters": [5, 3, 10, 0]
+  }
+}

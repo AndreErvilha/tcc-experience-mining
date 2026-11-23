@@ -1,0 +1,26 @@
+{
+  "cluster": 5,
+  "colsample_bytree": 0.3,
+  "top_eventos": [
+    {
+      "evento": "investimentos:click_carteira_renda_fixa_detalhar_cdb",
+      "shap_medio": 1.4546
+    },
+    {
+      "evento": "investimentos:click_detalhe_posicao_cdb_resgatar",
+      "shap_medio": 1.2329
+    },
+    {
+      "evento": "investimentos:click_home_investimentos_ver_posicao",
+      "shap_medio": 0.5734
+    },
+    {
+      "evento": "investimentos:view_input_valor_resgate",
+      "shap_medio": 0.4568
+    },
+    {
+      "evento": "investimentos:view_carteira_renda_fixa",
+      "shap_medio": 0.1913
+    }
+  ]
+}

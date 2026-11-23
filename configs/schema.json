@@ -1,0 +1,442 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Configuracao de versao do pipeline Experience Mining",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["events", "labeling", "representations", "clusters"],
+  "$defs": {
+    "nonEmptyStr": { "type": "string", "minLength": 1 },
+    "repLoadPkl": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "clusterLoad": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "tfidf_pkl_path": { "$ref": "#/$defs/nonEmptyStr" },
+        "minilm_pkl_path": { "$ref": "#/$defs/nonEmptyStr" },
+        "gemini_pkl_path": { "$ref": "#/$defs/nonEmptyStr" },
+        "tfidf_dir_path": { "$ref": "#/$defs/nonEmptyStr" },
+        "minilm_dir_path": { "$ref": "#/$defs/nonEmptyStr" },
+        "gemini_dir_path": { "$ref": "#/$defs/nonEmptyStr" },
+        "tfidf_npy_path": { "$ref": "#/$defs/nonEmptyStr" },
+        "minilm_npy_path": { "$ref": "#/$defs/nonEmptyStr" },
+        "gemini_npy_path": { "$ref": "#/$defs/nonEmptyStr" }
+      }
+    }
+  },
+  "properties": {
+    "name": { "$ref": "#/$defs/nonEmptyStr" },
+    "output_dir_path": { "$ref": "#/$defs/nonEmptyStr" },
+    "events": {
+      "type": "object",
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["events_csv_path"],
+          "properties": {
+            "events_csv_path": { "$ref": "#/$defs/nonEmptyStr" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["events_params"],
+          "properties": {
+            "defaults": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "num_traces": { "type": "integer", "minimum": 1 },
+                "seed": { "type": "integer" },
+                "discovery_algo": { "type": "string", "enum": ["heuristics", "inductive", "alpha"] },
+                "discovery_mode": { "type": "string", "enum": ["both", "petri", "dfg"] },
+                "min_events": { "type": ["integer", "null"], "minimum": 1 },
+                "start_session_at": { "type": "integer", "minimum": 1 }
+              }
+            },
+            "output_events_csv_path": { "$ref": "#/$defs/nonEmptyStr" },
+            "events_params": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["id", "seed_csv_path"],
+                "properties": {
+                  "id": { "$ref": "#/$defs/nonEmptyStr" },
+                  "seed_csv_path": { "$ref": "#/$defs/nonEmptyStr" },
+                  "num_traces": { "type": "integer", "minimum": 1 },
+                  "seed": { "type": "integer" },
+                  "discovery_algo": { "type": "string", "enum": ["heuristics", "inductive", "alpha"] },
+                  "discovery_mode": { "type": "string", "enum": ["both", "petri", "dfg"] },
+                  "min_events": { "type": ["integer", "null"], "minimum": 1 }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "labeling": {
+      "type": "object",
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["labeling_csv_path"],
+          "properties": {
+            "labeling_csv_path": { "$ref": "#/$defs/nonEmptyStr" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["labeling_params"],
+          "properties": {
+            "output_labeling_csv_path": { "$ref": "#/$defs/nonEmptyStr" },
+            "labeling_params": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["label_col"],
+                "properties": {
+                  "label_col": { "type": "string", "pattern": "^is_" },
+                  "pattern": {
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "minItems": 2,
+                      "maxItems": 2,
+                      "items": { "$ref": "#/$defs/nonEmptyStr" }
+                    }
+                  },
+                  "not_pattern": {
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "minItems": 2,
+                      "maxItems": 2,
+                      "items": { "$ref": "#/$defs/nonEmptyStr" }
+                    }
+                  },
+                  "contain": {
+                    "type": "array",
+                    "items": { "$ref": "#/$defs/nonEmptyStr" }
+                  },
+                  "exclude": {
+                    "type": "array",
+                    "items": { "$ref": "#/$defs/nonEmptyStr" }
+                  },
+                  "absorbs_label_cols": {
+                    "type": "array",
+                    "items": { "type": "string", "pattern": "^is_" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "representations": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "tfidf": {
+          "type": "object",
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["tfidf_pkl_path"],
+              "properties": { "tfidf_pkl_path": { "$ref": "#/$defs/nonEmptyStr" } }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["tfidf_dir_path"],
+              "properties": { "tfidf_dir_path": { "$ref": "#/$defs/nonEmptyStr" } }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["tfidf_npy_path"],
+              "properties": { "tfidf_npy_path": { "$ref": "#/$defs/nonEmptyStr" } }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["tfidf_params"],
+              "properties": {
+                "output_tfidf_dir_path": { "$ref": "#/$defs/nonEmptyStr" },
+                "tfidf_params": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "max_features": { "type": ["integer", "null"], "minimum": 1 },
+                    "min_df": { "type": "integer", "minimum": 1 }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "minilm": {
+          "type": "object",
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["minilm_pkl_path"],
+              "properties": { "minilm_pkl_path": { "$ref": "#/$defs/nonEmptyStr" } }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["minilm_dir_path"],
+              "properties": { "minilm_dir_path": { "$ref": "#/$defs/nonEmptyStr" } }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["minilm_npy_path"],
+              "properties": { "minilm_npy_path": { "$ref": "#/$defs/nonEmptyStr" } }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["minilm_params"],
+              "properties": {
+                "output_minilm_dir_path": { "$ref": "#/$defs/nonEmptyStr" },
+                "minilm_params": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "model_name": { "$ref": "#/$defs/nonEmptyStr" },
+                    "batch_size": { "type": "integer", "minimum": 1 },
+                    "device": { "$ref": "#/$defs/nonEmptyStr" }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "gemini": {
+          "type": "object",
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["gemini_pkl_path"],
+              "properties": { "gemini_pkl_path": { "$ref": "#/$defs/nonEmptyStr" } }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["gemini_dir_path"],
+              "properties": { "gemini_dir_path": { "$ref": "#/$defs/nonEmptyStr" } }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["gemini_npy_path"],
+              "properties": { "gemini_npy_path": { "$ref": "#/$defs/nonEmptyStr" } }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["gemini_params"],
+              "properties": {
+                "output_gemini_dir_path": { "$ref": "#/$defs/nonEmptyStr" },
+                "gemini_params": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "model_name": { "$ref": "#/$defs/nonEmptyStr" },
+                    "batch_size": { "type": "integer", "minimum": 1 }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "clusters": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "kmeans": {
+          "type": "object",
+          "oneOf": [
+            { "$ref": "#/$defs/clusterLoad" },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["kmeans_params"],
+              "properties": {
+                "output_clusters_dir_path": { "$ref": "#/$defs/nonEmptyStr" },
+                "kmeans_params": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "auto_k": { "type": "boolean" },
+                    "n_clusters": { "type": "integer", "minimum": 2 },
+                    "seed": { "type": "integer" }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "hdbscan": {
+          "type": "object",
+          "oneOf": [
+            { "$ref": "#/$defs/clusterLoad" },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["hdbscan_params"],
+              "properties": {
+                "output_clusters_dir_path": { "$ref": "#/$defs/nonEmptyStr" },
+                "hdbscan_params": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "auto_grid": { "type": "boolean" },
+                    "min_cluster_size": { "type": "integer", "minimum": 2 },
+                    "min_samples": { "type": ["integer", "null"], "minimum": 1 },
+                    "metric": { "type": "string", "enum": ["euclidean", "cosine", "manhattan"] }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "include": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "silhouette",
+              "ari",
+              "ari_clean",
+              "nmi",
+              "nmi_clean",
+              "homogeneity",
+              "completeness",
+              "v_measure",
+              "purity_macro_experience",
+              "coverage_by_journey"
+            ]
+          }
+        }
+      }
+    },
+    "shap": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "surrogate": { "type": "string", "enum": ["xgboost"] },
+        "seed": { "type": "integer" },
+        "colsample_sensitivity": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": ["model", "cluster"],
+          "properties": {
+            "model": {
+              "type": "string",
+              "enum": [
+                "kmeans_tf_idf",
+                "kmeans_minilm",
+                "kmeans_gemini",
+                "hdbscan_tf_idf",
+                "hdbscan_minilm",
+                "hdbscan_gemini"
+              ]
+            },
+            "cluster": { "type": "integer", "minimum": 0 },
+            "colsample_bytree": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 },
+            "top_n": { "type": "integer", "minimum": 1 },
+            "output_filename": { "$ref": "#/$defs/nonEmptyStr" }
+          }
+        }
+      }
+    },
+    "journeys_by_cluster": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "tsne_seed": { "type": "integer" }
+      }
+    },
+    "pm4py": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "dfg": { "type": "boolean" },
+        "pnml": { "type": "boolean" }
+      }
+    },
+    "figures": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "include": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "comparison_metrics",
+              "association_matrix",
+              "tsne",
+              "tsne_3d",
+              "shap_global",
+              "shap_panel",
+              "beeswarm"
+            ]
+          }
+        },
+        "revised_titles": { "type": "boolean" },
+        "highlight_model": {
+          "type": ["string", "null"],
+          "enum": [
+            "kmeans_tf_idf",
+            "kmeans_minilm",
+            "kmeans_gemini",
+            "hdbscan_tf_idf",
+            "hdbscan_minilm",
+            "hdbscan_gemini",
+            null
+          ]
+        },
+        "shap_panel_clusters": {
+          "type": ["array", "null"],
+          "minItems": 1,
+          "maxItems": 4,
+          "items": { "type": "integer", "minimum": 0 }
+        }
+      }
+    }
+  }
+}

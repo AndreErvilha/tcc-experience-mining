@@ -1,0 +1,4 @@
+﻿modelo;grupo;evento;shap_medio_no_grupo;shap_abs_medio_no_grupo;shap_medio_fora_do_grupo;pct_sessoes_do_grupo_com_evento;pct_sessoes_fora_com_evento;tfidf_medio_no_grupo;direcao
+hdbscan_tf_idf;12;canais:click_home_menu_produtos;3.80751;3.80751;-1.84361;1.0;1.0;0.3069;empurra PARA o grupo (+)
+hdbscan_tf_idf;12;cartoes:view_home_cartoes;0.41146;0.41146;-0.00439;1.0;0.547;0.44842;empurra PARA o grupo (+)
+hdbscan_tf_idf;12;canais:view_home;0.19079;0.19079;-0.01712;1.0;1.0;0.45633;empurra PARA o grupo (+)

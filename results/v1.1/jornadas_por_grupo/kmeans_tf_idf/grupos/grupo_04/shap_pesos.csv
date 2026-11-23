@@ -1,0 +1,4 @@
+﻿modelo;grupo;evento;shap_medio_no_grupo;shap_abs_medio_no_grupo;shap_medio_fora_do_grupo;pct_sessoes_do_grupo_com_evento;pct_sessoes_fora_com_evento;tfidf_medio_no_grupo;direcao
+kmeans_tf_idf;4;cartoes:view_detalhe_fatura;4.03147;4.03147;-2.06993;1.0;0.002;0.47902;empurra PARA o grupo (+)
+kmeans_tf_idf;4;cartoes:click_detalhe_fatura_voltar;0.78845;0.78845;-0.02523;1.0;0.002;0.27682;empurra PARA o grupo (+)
+kmeans_tf_idf;4;cartoes:view_historico_faturas;0.01635;0.02196;-0.0212;1.0;0.03;0.47693;empurra PARA o grupo (+)

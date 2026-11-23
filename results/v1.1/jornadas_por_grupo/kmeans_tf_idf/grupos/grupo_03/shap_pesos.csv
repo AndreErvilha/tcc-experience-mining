@@ -1,0 +1,4 @@
+﻿modelo;grupo;evento;shap_medio_no_grupo;shap_abs_medio_no_grupo;shap_medio_fora_do_grupo;pct_sessoes_do_grupo_com_evento;pct_sessoes_fora_com_evento;tfidf_medio_no_grupo;direcao
+kmeans_tf_idf;3;pix:click_input_chave_pix_continuar;4.63583;4.63583;-2.58424;1.0;0.0;0.2844;empurra PARA o grupo (+)
+kmeans_tf_idf;3;pix:click_home_pix_transferir_chave;0.02687;0.02687;-0.02416;1.0;0.004;0.28022;empurra PARA o grupo (+)
+kmeans_tf_idf;3;pix:click_home_pix_voltar;0.02173;0.02275;-0.01931;1.0;0.081;0.12232;empurra PARA o grupo (+)

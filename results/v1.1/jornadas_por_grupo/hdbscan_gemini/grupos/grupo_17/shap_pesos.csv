@@ -1,0 +1,11 @@
+﻿modelo;grupo;evento;shap_medio_no_grupo;shap_abs_medio_no_grupo;shap_medio_fora_do_grupo;pct_sessoes_do_grupo_com_evento;pct_sessoes_fora_com_evento;tfidf_medio_no_grupo;direcao
+hdbscan_gemini;17;investimentos:click_comprovante_investimento_fechar;3.84405;3.84405;-2.00951;1.0;0.037;0.19919;empurra PARA o grupo (+)
+hdbscan_gemini;17;canais:view_home;0.57481;0.69253;-0.03405;1.0;1.0;0.12138;empurra PARA o grupo (+)
+hdbscan_gemini;17;investimentos:view_simulador_cdb;-0.00087;0.1138;-0.07558;1.0;0.04;0.32943;afasta do grupo (-)
+hdbscan_gemini;17;investimentos:view_home_investimentos;0.08712;0.09205;-0.15695;1.0;0.2;0.35945;empurra PARA o grupo (+)
+hdbscan_gemini;17;investimentos:click_detalhe_cdb_pos_voltar;0.00711;0.08676;-0.06506;0.467;0.042;0.10459;empurra PARA o grupo (+)
+hdbscan_gemini;17;investimentos:click_simulador_cdb_avancar;0.02253;0.06835;-0.08184;1.0;0.04;0.27893;empurra PARA o grupo (+)
+hdbscan_gemini;17;investimentos:click_detalhe_cdb_pos_simular;0.03324;0.06769;0.0146;1.0;0.04;0.24743;empurra PARA o grupo (+)
+hdbscan_gemini;17;investimentos:click_home_investimentos_renda_fixa;0.01605;0.06518;-0.09848;1.0;0.045;0.29036;empurra PARA o grupo (+)
+hdbscan_gemini;17;investimentos:click_input_valor_investimento_voltar;0.01053;0.05761;-0.03752;0.467;0.032;0.09084;empurra PARA o grupo (+)
+hdbscan_gemini;17;canais:click_menu_produtos_investimentos;0.0245;0.02854;-0.0287;1.0;0.2;0.16619;empurra PARA o grupo (+)

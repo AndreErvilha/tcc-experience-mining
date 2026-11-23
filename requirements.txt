@@ -26,3 +26,5 @@ seaborn>=0.12.0
 # Utilitários
 tqdm>=4.65.0
 pypdf>=4.0.0
+jsonschema>=4.20.0
+python-dotenv>=1.0.0

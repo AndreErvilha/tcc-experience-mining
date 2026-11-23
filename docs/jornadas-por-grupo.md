@@ -1,6 +1,6 @@
 # Jornadas por grupo (`results/jornadas_por_grupo/`)
 
-Gerado por `src/jornadas_por_grupo.py` (passo 6 do `run_all.py`). Rótulo: `data/sessions_represented.csv` (Tabela 1 revisada; `dataset/gerar_massas.py` → `src/events2vector.py`).
+Gerado por `experience_mining/passos/jornadas_grupo.py` (passo 6 do `run_all.py`). Rótulo: `data/sessions_represented.csv` (Tabela 1 revisada; `dataset/gerar_massas.py` → `experience_mining/nucleo/rotulo.py`).
 
 Uma pasta por modelo (`kmeans_|hdbscan_` × `tf_idf|minilm|gemini`). Em cada uma:
 
@@ -11,8 +11,9 @@ Uma pasta por modelo (`kmeans_|hdbscan_` × `tf_idf|minilm|gemini`). Em cada uma
   - Ruído (HDBSCAN) na última linha. A legenda dos ids está no rodapé.
 - `espaco_semantico_tsne.png`: t-SNE 2D da representação do modelo (TF-IDF, MiniLM ou Gemini), colorido por grupo, com o número do grupo no centro dele; ruído em x. Grupos próximos no mapa têm sessões parecidas na representação.
 - `espaco_semantico_tsne_3d.png`: o mesmo mapa em 3 dimensões (matplotlib), visto de dois ângulos.
+- `shap_global.png`: importância global dos eventos na predição dos agrupamentos desse modelo (SHAP sobre o substituto XGBoost).
 - `petri_parametros.csv`: parâmetros do Inductive Miner por grupo.
-- `grupos/grupo_NN/` (e `grupos/ruido/` no HDBSCAN): `sessoes.csv`, `shap_pesos.csv` (`src/shap_explainer.py`; [leitura-shap.md](leitura-shap.md)), `dfg.png`, `rede_petri.png`/`.pnml` (`src/petri_por_grupo.py`, `run_all.py --petri`) e `beeswarm.png` (`src/shap_figures.py`).
+- `grupos/grupo_NN/` (e `grupos/ruido/` no HDBSCAN): `sessoes.csv`, `shap_pesos.csv` (`experience_mining/passos/shap_xai.py`; [leitura-shap.md](leitura-shap.md)), `dfg.png`, `dfg.dfg`, `rede_petri.png`/`.pnml` (`experience_mining/passos/processos_pm4py.py`, seção `pm4py` da configuração) e `beeswarm.png` (`experience_mining/passos/shap_xai.py`).
 
 Na raiz: `resumo_grupos.csv` (os 6 modelos), `shap_pesos_todos_modelos.csv` e `shap_fidelidade_treino.csv`.
 

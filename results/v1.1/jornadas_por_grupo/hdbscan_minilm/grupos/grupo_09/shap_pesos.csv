@@ -1,0 +1,13 @@
+﻿modelo;grupo;evento;shap_medio_no_grupo;shap_abs_medio_no_grupo;shap_medio_fora_do_grupo;pct_sessoes_do_grupo_com_evento;pct_sessoes_fora_com_evento;tfidf_medio_no_grupo;direcao
+hdbscan_minilm;9;investimentos:view_simulador_cdb;3.7357;3.7357;-2.69836;1.0;0.025;0.40607;empurra PARA o grupo (+)
+hdbscan_minilm;9;investimentos:click_comprovante_investimento_fechar;0.14911;0.27687;0.05081;0.926;0.025;0.14141;empurra PARA o grupo (+)
+hdbscan_minilm;9;investimentos:view_detalhe_cdb_pos;0.05206;0.19048;-0.06479;1.0;0.03;0.40888;empurra PARA o grupo (+)
+hdbscan_minilm;9;investimentos:click_input_valor_investimento_voltar;0.11557;0.18481;-0.06139;0.778;0.008;0.14225;empurra PARA o grupo (+)
+hdbscan_minilm;9;investimentos:click_home_investimentos_renda_fixa;0.11473;0.14704;-0.16637;1.0;0.03;0.27151;empurra PARA o grupo (+)
+hdbscan_minilm;9;canais:view_home;0.09574;0.13771;0.00737;1.0;1.0;0.07694;empurra PARA o grupo (+)
+hdbscan_minilm;9;investimentos:click_detalhe_cdb_pos_voltar;0.00691;0.05429;-0.10897;0.778;0.022;0.14404;empurra PARA o grupo (+)
+hdbscan_minilm;9;investimentos:click_detalhe_cdb_pos_simular;-0.00204;0.05228;0.01376;1.0;0.025;0.27767;afasta do grupo (-)
+hdbscan_minilm;9;investimentos:click_simulador_cdb_avancar;0.0166;0.04907;0.00198;1.0;0.025;0.26869;empurra PARA o grupo (+)
+hdbscan_minilm;9;canais:click_home_menu_produtos;0.01616;0.04394;0.00883;1.0;1.0;0.04858;empurra PARA o grupo (+)
+hdbscan_minilm;9;investimentos:view_home_investimentos;0.03504;0.03649;-0.00842;1.0;0.233;0.29345;empurra PARA o grupo (+)
+hdbscan_minilm;9;canais:click_menu_produtos_investimentos;0.00062;0.00907;-0.00775;1.0;0.233;0.11274;empurra PARA o grupo (+)

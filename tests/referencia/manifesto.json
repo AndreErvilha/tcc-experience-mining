@@ -1,0 +1,2330 @@
+{
+  "pipeline": {
+    "csv_json_sha256": {
+      "data/sessions_represented.csv": "628511757f350876ef8cb31285319ac78c27d4fd404474e16a82badf227c84c0",
+      "results/dados/colsample_cluster5.json": "6c0d3fe21f1f65ffc3d9013e2cf8083e95f87ee1eb6dcc88961e08e70981e18d",
+      "results/dados/jornadas_contagem.csv": "c50c9a23200b974025aa2c230c249d191bdccacbc6659205ac9e609ddaf726dc",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_00/sessoes.csv": "ded5a30c7ae7c357c1d75c27f618acb9a864046efc2e752df57b2363c16896b1",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_00/shap_pesos.csv": "2c93a172d316ee3216f3bb3205c1cd73adca3e812d0a81d45c505e063f35f704",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_01/sessoes.csv": "f3cbeb9cea73edeedcaf2c70d9003f89696a69fcfcde6928b4e74fa4df44932a",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_01/shap_pesos.csv": "caf61835d7f15cef59766b5271b268fd5e9b4d302def4e81f7788a206fb28151",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_02/sessoes.csv": "218c01e4d7655fb3f8459d0364d2d9f39a68672b1e3675663e8c3334539d72d3",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_02/shap_pesos.csv": "4bf6de3d210349e6cadc0fe3045ed4da7c874273538aed66ab0990f7a257f06c",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_03/sessoes.csv": "fe41d3548d2cf7c83f808e63f47bfebeb4244744cdd6ea1bf6e6513666f31fa3",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_03/shap_pesos.csv": "22ebd4b390a2b0da9fa30b296de0b51b72b21db43e98c2f7b16fb4adee731958",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_04/sessoes.csv": "19c0d27dfc11750a012be12e4a58579d01629963534eee96b7fc5654285e7f19",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_04/shap_pesos.csv": "2f851770707d12e09d1de52ca1b1bb66791e14c6aa85c18455e59291358b54c1",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_05/sessoes.csv": "abf4ebe955e64428916ecafafd35d28e5af5627cd47dd11e0f553c7fe9315b9f",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_05/shap_pesos.csv": "0f993d2ed593e0c736536a9c55357e37e7268d1f5e25a4c255bc4d5f7c01134f",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_06/sessoes.csv": "b62e33c609a4f76e6c599602a32ce8b078e2c581f2baba4bffc6938e13a7386e",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_06/shap_pesos.csv": "fb41bb107016fe12a3732c680aa876496c78af7d2307c57f9ad5f65ad4590908",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_07/sessoes.csv": "99a6b27042d7abcb70bae59a22f1ba8784f070f83227ca1624f7a81e39a5ece3",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_07/shap_pesos.csv": "60e3cb4f0f09df5e714e643cf18c172cba4d96a82fe842bcf0a1dfc9bf62d1d0",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_08/sessoes.csv": "3a7985e89d7494744ec5a3e20d5302109e9ff6e7a2dc19a6c087a81e303886f0",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_08/shap_pesos.csv": "8d5f9e24c9ff7493c2e7deb295050f4fa66ca12aac9dfef4ab27d391e1040073",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_09/sessoes.csv": "b68a36aa167978982b0a31a49bee27835d6d0e7db00b9ced00d2c942f2ac697f",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_09/shap_pesos.csv": "12ea9a3f744b95c7440762f2bf5cd07ca5f20273f435fbd326b63d8ad689c236",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_10/sessoes.csv": "927efeffdcea91e6d3fd182f2e9570a6b308c42f36d9e1efe0b155dc5acea834",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_10/shap_pesos.csv": "c399fb83c56f44577000fd5649be31f35e5e7800bce25ad7f40e7cb21c00768c",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_11/sessoes.csv": "f8782f2d88afd5e889f1d0a8e40301de5195fe202cfc091624d71541d1dbc8df",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_11/shap_pesos.csv": "4e8d06c002afcab75753ae1ba2a7163d549c05b59ab68de5adc3a670b2f8eb94",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_12/sessoes.csv": "b8e9cfbbca3c4ddbc3483250b0e0039589d2896aa94817e1f7bd183702ce09c0",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_12/shap_pesos.csv": "3fccfe1284ec4d73b48d907ea6b18be9e8a539d2bdc8dc22a8f3ef234e4c2745",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_13/sessoes.csv": "6e32fbcc9bcb7fb38c580eb22f2f6c73130f9c145160e645f4dcdef6d0a096f5",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_13/shap_pesos.csv": "193ff3815bf7a9e25c847519a659b8133b2e525b07872f9b562909659b0bec05",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_14/sessoes.csv": "2086b108fdd585ce31c5fd38bd0dc2f2ca6c5c048b80e07ae762264e1e3fa303",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_14/shap_pesos.csv": "d95483f96dfb9eda201118984c085ffc715762478a66d355f571577165e58e41",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_15/sessoes.csv": "e882a78241ca550319c662ec00f5e92a84b9b17590d939459d1b128a8ad76ef5",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_15/shap_pesos.csv": "0f787813e03fd1b155f896bdeeb4432ed2a654e5a69d8e89c7ca8ffc6f27597c",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_16/sessoes.csv": "468f596d35327ecebd5198e3d0e467d329585b24bf9cf14b4ae47e1dd8d7af4d",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_16/shap_pesos.csv": "01b599dc794777937767591f385e8e0b3b97ad949b0cc625cb8fa5be159739ce",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_17/sessoes.csv": "0d566ff72c04b9d6c105c79cfa0c4bf71f62e5e7a99756f0a7960a2bed22b54a",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_17/shap_pesos.csv": "09a1589b9f62fc653fb668b913ff16126ef938f7fbe13a910e71b822c6efe37a",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_18/sessoes.csv": "49cfe9d03820edb70d3dedcadb8b4eeb2e111b6d0f23f5c8de29ab8720c69540",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_18/shap_pesos.csv": "c46a1b67d00c26b830f8fec53da63d525bb13031aede1a31a27a010cb65dfe5a",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_19/sessoes.csv": "8b3dea678883bd10de69ed88591115c16128cb46738eb0aea7db823f338b4639",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_19/shap_pesos.csv": "4d885569e7836add589f12d2e4e08ffcd9ad03c6557055c1b7b6cd1fabc4c765",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_20/sessoes.csv": "6763a003c1f46613a9e661a29814e85e1ff9f8c89613644ab6309d7619abc2c5",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_20/shap_pesos.csv": "7b67e7b3d1fbcead506f44276cad16ccda90fdd6e9a1d17e6f169140a1acf5fd",
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/ruido/sessoes.csv": "4ab6071a65f462b03108e8675d4b4ca17d485397d2752206cdd1920b5d56afd7",
+      "results/jornadas_por_grupo/hdbscan_gemini/petri_parametros.csv": "6e1b21c2fb5aebbb4533eedf5864e5aae9856cd84683e782cab316b220972505",
+      "results/jornadas_por_grupo/hdbscan_gemini/resumo_grupos.csv": "cec10a8ab45c2259805753e15b0487eb44f1ae2e744b38d55b10cf9b70d1040e",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_00/sessoes.csv": "a069f0739bb56086dbc776d4a3dfe30014d66dd07996eefd864c7323a9a794ef",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_00/shap_pesos.csv": "52b481a962ea91f01dd74abdd9b5a16ae311bd12c8d29c1e5fff0d8f820a28c0",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_01/sessoes.csv": "28291b9df895c0e867aad84dc89128c37622bd458904d3e2f5afd538bc4ae1af",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_01/shap_pesos.csv": "6d78ddc21765cd8db62f7a8817752c2c3d989831552a2bfbd09b9472027c68c4",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_02/sessoes.csv": "7e673433eb2f072a3086bbd4bc6e1959324f7e043f6daa95b66155d96af61dd9",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_02/shap_pesos.csv": "f4d8b82dc344d6f394f098aff4e9d2296d6f8323e188043f1aa31bdf0e50aaf1",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_03/sessoes.csv": "b1a65d7ac057f8142bf8a4016cb6acd6360371eb185fec1a44d71338c32376a8",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_03/shap_pesos.csv": "4a8a1fce94a936b88673a81c1556fb6cf4749c1cce509926f01a90bdac0300c2",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_04/sessoes.csv": "ac9a085e0b3cb87ff58dce65ba2ee0c495524607f71a4e077a32519d11ac3299",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_04/shap_pesos.csv": "7867374f2889549d93e126ab25708c4c3bae9cd509940144c60844be128d9d7d",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_05/sessoes.csv": "6e8f6084f904a1058cea82f483cf20d33b6e6ae9714b9017d6a8f9d6cd88f564",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_05/shap_pesos.csv": "d995ee0df1822db7ceee67d4b8e517caf9954e0e4effe809599274b9e2f2a0c2",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_06/sessoes.csv": "5812187618c06a2bee1ca9a98db2d3b7e18b6e02a8b864bc46e9ccbedc71d4a8",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_06/shap_pesos.csv": "71444b51649934a5c038851d0d52426eead5f9ac6e174b38136f8d1076b00610",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_07/sessoes.csv": "0ff5fb3093f0938ae8a4202937ae9fc43b1fad54646a8436de6c7dd0ccd69156",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_07/shap_pesos.csv": "72e5e7e6fdc0beca9c2ea9e6782cbcb55036dc1bd55d0a7256e571d542906ccb",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_08/sessoes.csv": "8e7a2e63115ba6640fba4cb1d208b035fa49f43827da603176a0b2caf0d88a9e",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_08/shap_pesos.csv": "71530cf114d1400abd4f9b387cbedf5cc57a71565140dd7840b77ba127209a1a",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_09/sessoes.csv": "b3f43f98d6aff4198aa1ceb479dbba502ed193d7261f6d6aac89cf2c11bdfb2f",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_09/shap_pesos.csv": "62438690dfd8fc7802a5b5661e28c644291779fbe730b0dba91f1d1e6232ba48",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_10/sessoes.csv": "13197fc295874fcf105ecbc5470971311ac3d345673585375c56b1d7959e8b13",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_10/shap_pesos.csv": "d7bb157c7343714366f7f587d0160911137d196bd0e1223016e851b8cf66f928",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_11/sessoes.csv": "003162a9893e516cc6daaf63193254e53c42177b3d93beb9bdce55b2115ea2fc",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_11/shap_pesos.csv": "38e92d17dd3e47c302900d7cb0e2bf5e307fd0fa879eb0d45a061f66bd47f392",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_12/sessoes.csv": "b842cc7b5432ab71e81785d4d006bd6f28863bb82c07c11032ba0063a26c7d24",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_12/shap_pesos.csv": "d10b47986580a967b7a0fc20c10adea08be5a1c81da4209f07fb05d4694659ec",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_13/sessoes.csv": "6f21eef18b3c3974acdb5a712bbec79422095b87c4ec67a312b7625cbd914701",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_13/shap_pesos.csv": "e2e39fd0503080e38e83bc92451df072cf05bc0d42270d30d8fdb03cb9246e73",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_14/sessoes.csv": "678aa9781a5ee45e8cbaa7b632950ba39ea8d3953166f1bcbad3bdc379473732",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_14/shap_pesos.csv": "1373bb5fa227885db60115f1357ff1207d59d5ee68df1180aef47d8a4f5615d6",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_15/sessoes.csv": "f5f97c5d17922b96d484eb4c9d279f9b07c9ec5ad4e4eaab2e2165a72be0ab7e",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_15/shap_pesos.csv": "58d94b7ebe0931767171730ebdbb2a369243a06dda3a270211d7a84e19f7e905",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_16/sessoes.csv": "f997406bec9c7d0b5913dd84c906de105b1a33251e5988bd494b9575713d86f9",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_16/shap_pesos.csv": "f7df2eac972de581e0bef6e331e473df0cad789c6ceebaf9418aef94f0a93e7b",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_17/sessoes.csv": "31b7ebbb6f8aa9e18fc57ebe78c0897bbfeaa281a64273c7915db7957c9fd8d3",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_17/shap_pesos.csv": "c81863fbdb1e23561e39c328108385a1cc4b1f6a193b4caae56475fa0fc61d60",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_18/sessoes.csv": "076d917e579041bf7a13f99d5f60cd2df18a1d6908b89e7f7e260dabafb5b3d7",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_18/shap_pesos.csv": "e2714398329161703857a7cf1db0f67885f9a271d89ec50785f6b808e36298af",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_19/sessoes.csv": "aba5ac3da87a604d470c09f8750f1cf4acc06c15f606d39e1e787d16bb3c1c8c",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_19/shap_pesos.csv": "864e9b5e0e29dd9ff0fe54cfbedb825f331ab0414e1dc5067677d8d3edc1a5dc",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_20/sessoes.csv": "54120114c7b36a9ac3297893256a9e571076be2b011ba84470612e005e4dd104",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_20/shap_pesos.csv": "953148a60eeff339f5acc63efbb5918c0d9b3e596845fe1958d9aa25168bfe6b",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_21/sessoes.csv": "b3cd449952822657f99e7cd055adef899fc1699e328e23c6086d3b062074b92d",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_21/shap_pesos.csv": "868a92ffd436cd21025102aea9ceaede47598fa3365b2f3ec518642484554f89",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_22/sessoes.csv": "e414b3a5d965d437a751cacbf16afafc95747673213ece8e0f7893fe022b16d8",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_22/shap_pesos.csv": "d996e228b5aaa62d6351d4a193265def639cbda7e028d8120158d934682aba12",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_23/sessoes.csv": "77f67a74b6d50bb48e122cd33e25f1bf3d8994d503853d0e9d11d1a1e8833982",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_23/shap_pesos.csv": "b7f2198365d56510e58b8dec0822b3314616642ecd788fdb6525693059015b46",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_24/sessoes.csv": "d68d5aee78cbd8fa71386a1f5d748fe07834fef0e8d4b4bce87219491f717da3",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_24/shap_pesos.csv": "9311f7d3d653db542eb9b471e30103ecb63696d96db45f2f8bcb948a825ec17c",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_25/sessoes.csv": "6c8924dcd95b82c8627a5fce2cd43afe476d97b5a7a4f5019357151dff4d04af",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_25/shap_pesos.csv": "4cd493ee9cf0bbf635857981c8b6b48031573e181a15873b9344edf620f5a609",
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/ruido/sessoes.csv": "c00b5d02c2a9447088577ea4c70aa92288f13c000ce08aa4bb2ddae8c1503c14",
+      "results/jornadas_por_grupo/hdbscan_minilm/petri_parametros.csv": "d4892aaf29adca86ad32d6753e21d4b5c105ab519c8a28bf9f101bfa1b6c3a89",
+      "results/jornadas_por_grupo/hdbscan_minilm/resumo_grupos.csv": "ccf236f27e13d3a8421b1bf2b9dfbc821a214ab1124b381d0b8ac5087906886c",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_00/sessoes.csv": "846e9f380c9e1c20ed761a10858b01265fe94b0b2c0dc4091e4f6d70cb57cdf9",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_00/shap_pesos.csv": "538bc52a994cdb88b23cd9dae38e22373fbaf4e4684f280ed893a2ad1743b390",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_01/sessoes.csv": "44993049bd37122be302834491d32a5380d01d91264d313fa449cc018f180dd1",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_01/shap_pesos.csv": "ddc17b883b14df1966edc2359397f753cca0666fe4efd7aeda6740906b88e37b",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_02/sessoes.csv": "76c82120f71eebfd6784b3ad3116df245f827568e96d9b2ad3a8e2b9affc9042",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_02/shap_pesos.csv": "4eab0dc8b56cc5a40139bd8f1f588b63fcc80e3ab3fbf80ad5bf5ed6f84d9896",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_03/sessoes.csv": "5bf643444b9e6a0af3d0d8f973de7b2bb3bbbb74816de0919246d1602b856153",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_03/shap_pesos.csv": "f8e6f5abdbda2b690ce71876a125624152b2089ae8d80b60802cbaedc8d09716",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_04/sessoes.csv": "719f5971e4583352142d7446ff3c34ff67b1eaef37893ff42d5481cec100e2f1",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_04/shap_pesos.csv": "87991c02ae40d148671181cb451f7c69b13774ceb8860e3698774c0deead2173",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_05/sessoes.csv": "2985d9fac3e8b38429bb6438ae7158d1f8b29ca640d3cfd39e289b443d250a99",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_05/shap_pesos.csv": "f77af90acdfbee1ffcb09636c07c75cfe81cfecc9d40034b64bd6793c645b897",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_06/sessoes.csv": "078ecfcba4b643c7e2efbb4b280e8dc8350608894244bf36c36484544c0ee9e0",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_06/shap_pesos.csv": "06502cf2fd89f26893e1d03e3c44e8915bfca2b614c795ce9babf620177a0506",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_07/sessoes.csv": "4824b434be14da42f75c6623a06ddc21ff960cc26ba34aa66319856b55c896ec",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_07/shap_pesos.csv": "63946cb271a279867d4f6815d92fedd0e5ea946c997b17097a16b27dc2c74a07",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_08/sessoes.csv": "15e2afe2f7ebb0a489f4bba140da3165f4b31ba18d554e18de77cfa9cc73fe04",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_08/shap_pesos.csv": "592aedfdaa6fcfa06a4dd61fe576844b91d6d0025a3d6f25accdf7ddf853348a",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_09/sessoes.csv": "e8bfc7ff6ac2acf4ed0b54210dc2a81b71bc84fa5ca65804672a6f900a73d446",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_09/shap_pesos.csv": "3edbba4526686bbfef4070211802293bcc9443d8daee3d316aff7c2cdc8790d0",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_10/sessoes.csv": "b4cd621d6f7da979c7029642c2c01f2e2a255aea3cccdbf4ec512718547f8760",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_10/shap_pesos.csv": "035665b4dd5cb241f5dbbbebbc9db122362de99f88ae5e06ccd69926f99d0bc8",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_11/sessoes.csv": "ac310c86d75c165809dced50f63d616a5d3ab40ec262fcac59b7bec0e322d4d4",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_11/shap_pesos.csv": "e3a8230f397ab476c7bbdcdf0eefd5637794796efc6f88562da7b70dd942fbbc",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_12/sessoes.csv": "871293d407e0dac770caf44781a0f04681216e1688e4e1f92c0a451051ffa402",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_12/shap_pesos.csv": "9f36e7cb17c2ab87b9dfd54295f98624b95e7651512d2627080ae49419783fdb",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_13/sessoes.csv": "7e5063a4ddc36333dabb186f84d9ec907fc5a9245514403134e0f981e3892dc9",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_13/shap_pesos.csv": "f0261ba548af76256f662835cc591c0d578c7c39f7a932c9a9efa01f3f79b760",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/ruido/sessoes.csv": "7cc96415b2bd7e7625608d2b047ddfae12fc1413c31d2bec96a36e3899759950",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/petri_parametros.csv": "46506a6dc907ce84cf069c63f24c06df46a573a2fb81a9c104f752c47c3b4c4e",
+      "results/jornadas_por_grupo/hdbscan_tf_idf/resumo_grupos.csv": "444cfe37bbb988b33689a7f2241cd3a6bf174beacb6a2f578fded935e4cf6ece",
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_00/sessoes.csv": "3c0459edd230afa89ab034028e1ff1933ba92904032363cbfe46438f7e1e0ceb",
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_00/shap_pesos.csv": "03a9d5294c699b2b5d5b730d32b0c9c02615a90234f1b4484c9722d639c3efb9",
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_01/sessoes.csv": "993a0479cf6a9469a163b3db71f867a274c74e0407b9f172216954d5b2648687",
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_01/shap_pesos.csv": "20814007febe2cbe17f8822cdcfbd226f2a85e87f9cd6662d4ad286bea50ae57",
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_02/sessoes.csv": "4df2342b594e0aa3a7e23ad98a1eb36ee968ff151cd7e5cd3345df24fe2261c4",
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_02/shap_pesos.csv": "007a3546c9f6b1a980eb6d6dff6c8f2dce9213f8409e9f149b6af3fd2b155931",
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_03/sessoes.csv": "6ad63f2505bf9a12734a42cc568051ec25f9f3ef146320b5594c34de312add26",
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_03/shap_pesos.csv": "832a002f3b859c6c2dc7812698bce3d08d20377032110a014d5171f55c2efc00",
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_04/sessoes.csv": "0f3c816d31222d6519bafd7be438d83c74b0583ffc66175b5d3307632ebb33b6",
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_04/shap_pesos.csv": "1207ff109022dd87f1b6f33bfb93f7a9076501716dabd02e76ee39f68d261a80",
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_05/sessoes.csv": "56eabe5ae97b8e37c42457484ce90f20be12e3d4ca512443c145e5359d05f3ae",
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_05/shap_pesos.csv": "bf4188336ce0dad505783b16961823237380382d26757a14975a30d4d0160e83",
+      "results/jornadas_por_grupo/kmeans_gemini/petri_parametros.csv": "2f2732bffecc83f59f7b7588fd4950ba1f4255e83c61304c39e3db964becf423",
+      "results/jornadas_por_grupo/kmeans_gemini/resumo_grupos.csv": "431f7cbee4081023000ca5a618cbb863a882f1f4da7cbb71e83ee5ca194113d4",
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_00/sessoes.csv": "8d4a3f54ddf741f87fe0e7976454faa5b46af022d053b309889aad115988b18a",
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_00/shap_pesos.csv": "d28523319fa10bfae55e78872db7cb8dca042982de99309519145c4bdaf7b147",
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_01/sessoes.csv": "3f5c7299d9bb90014536c6ff55044b3889d1d74ce03c57776de076347a9fb5df",
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_01/shap_pesos.csv": "d1848aa4745855e5a776cad5141e4ea823cbf32cc55f083d3475ed613648ffef",
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_02/sessoes.csv": "685f68d6ff8580e0a86831f4733ebe1364c79a6b07b755a9d583b95d9002966a",
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_02/shap_pesos.csv": "0aa209284c28f3a8cee6aa0d3de4aba055128cbb15833de6fc14986eadb79e79",
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_03/sessoes.csv": "fc1f06ec5c92d356d2dee25b58b639377aac8c3279e8ba0d005be9553c847bfa",
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_03/shap_pesos.csv": "a9dfbc71da553804766ab50da7e0775cbe98274bef63fff9c1bbd392e1e9640b",
+      "results/jornadas_por_grupo/kmeans_minilm/petri_parametros.csv": "ced6678e3d1c7613cf3118a98bf57fd951ec8bd6f3639c88b4c195d4f2b4395d",
+      "results/jornadas_por_grupo/kmeans_minilm/resumo_grupos.csv": "d24884a3a86654126bdc36e8abb5c5c57480da05eb5a304ad1d3fd0ed99725d8",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_00/sessoes.csv": "3f20cd1d2260bc64f73af3c6d02a81a972e18e9356156e181cbf744961ed40aa",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_00/shap_pesos.csv": "df9f89d61a16d287f88208c93816b9796de8af0bdf02abcefd4a8b73565547a6",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_01/sessoes.csv": "1fa366662984abda7fea8784410c5911fa62dc3a1555bc2462f512a453e87e6a",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_01/shap_pesos.csv": "3462667e98316f177a4971bfc92f85e8c35bbd3f520312c5a8727e9c2b94b35b",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_02/sessoes.csv": "9c486de93ebb11d00f4bcbdc82abbef61b27cb71fc34428296de9fe12f5c0021",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_02/shap_pesos.csv": "1b51e2bd6724e2cb5ba6471d32ca51ecc3f8ab86631f0ffd1243fa1929e4cbf9",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_03/sessoes.csv": "a122f7497213ea617478c9567f669087547ac357dadc81606064ac1d96ecaaa2",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_03/shap_pesos.csv": "07709fe502ee1bbd867647dcddf0969deaded31b4abb05d3f0912093b320f1a6",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_04/sessoes.csv": "c4ca52c82277fecd80171f6500477b6ba31442aced8ecae1a36b06040973e01a",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_04/shap_pesos.csv": "0163a87744282fe5b0ecf9ee2ba71fa84e6f6bf18252347756e660534e16bde6",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_05/sessoes.csv": "a97ad9662d9aafc2d7d982207bbe182ce5742f0297dc41c9b721173ebe324639",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_05/shap_pesos.csv": "7ce25e737e8d8ed2dff447cfe796135d227965357a91690a2f18ef06f61aab69",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_06/sessoes.csv": "894eb29fc076554a3a4cfac65100311403d80bbc15f6e46056e30e49f6bb07fd",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_06/shap_pesos.csv": "79db74cef7b2e833d878c831334e098054a340e8c6ddd0565ab58f78ff233ee7",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_07/sessoes.csv": "cf7aa5589104bb71d7007a7122b614afd7b911be33c123920109ef7b2a69b461",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_07/shap_pesos.csv": "9f15aeeea5805210514d4452f1f814f314722825999b99cb0ada6c69d101cb0e",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_08/sessoes.csv": "41ca19faefbc052a6526cf44cbbed37f81b6c497644a0341c1528ff4e63376cd",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_08/shap_pesos.csv": "64a2c27b282dd8be2761b2e99e0e16cc150c9f25ffdb24d5302f4a615e74146c",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_09/sessoes.csv": "0ec4dad0554b776a9c97a5fb175989e8f18e23ce2a71dcbcfef4d664ce271d7a",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_09/shap_pesos.csv": "b67c6251b481b3658ff0037f62f84f67fd66d976b61f64bc2e99295e384ea691",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_10/sessoes.csv": "fd5a273199a4554172ae6b4c14253d952b3b3b440c314f465da42bc42416ca66",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_10/shap_pesos.csv": "0871745e2b7ac8b5c8684ea6923f4b7e3f464055713bee9513ad17e46fde6a1e",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_11/sessoes.csv": "3a5ee88616e50439e7be924671a873789d42ab4737170dc158ecbe3b12720260",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_11/shap_pesos.csv": "7a0352e6245c765457630e018876a22f5ef754a86668d7d2e10ce7f7734fd28f",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_12/sessoes.csv": "25399acbac80dad5a158fea3cc17264eb7bc8e6a5c21b13ae45aa8228a18879c",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_12/shap_pesos.csv": "a599f2fa15e47cfbc2044431d438196045918b0e6a1d7d9e39546a494defce95",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_13/sessoes.csv": "967a4be3261ce8f7550e8a8cba83f4ad9216cf39b2c4bcd19895d6e5b57c6399",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_13/shap_pesos.csv": "acee9a227733568c687bdd2b3490fa20ddd78ef4d491881ed2f208a0d4c24c0e",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_14/sessoes.csv": "abd80143ecead47381d4aff4885811bdd58de79ea881bbe64d4180cabd1c5b58",
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_14/shap_pesos.csv": "8937f126774b685789031b289d6d9e3dea07e87682057b9453a933fc96c1b9d7",
+      "results/jornadas_por_grupo/kmeans_tf_idf/petri_parametros.csv": "c7e1acd8bc6cd545238c47d9aa7f70d7c9ca29944ad2044d7da8cd618507f84e",
+      "results/jornadas_por_grupo/kmeans_tf_idf/resumo_grupos.csv": "bb11390a484395151b9f18ba98cc899a0d86aaef97457d60aec3c2ddc23d56b0",
+      "results/jornadas_por_grupo/resumo_grupos.csv": "279616266970c15032994069dc4c570a8a8ee316367666a7cc4cfc872c2fd205",
+      "results/jornadas_por_grupo/shap_fidelidade_treino.csv": "78110a15d1dc55c66fbf97f14dc3dea8f9482f21ae741d3134401feee507765c",
+      "results/jornadas_por_grupo/shap_pesos_todos_modelos.csv": "314a2441fbc83e77763ff63e8965d0d40154c64c5c018986a5fc5ec02c8d5194",
+      "results/metrics/cobertura_por_jornada.csv": "198ea7cb102ddcbf143f4ab9de4ecd9349b58d034a9c6d34db0f8a678a69558e",
+      "results/metrics/metrics_hdbscan_gemini.json": "c7d5fc46303cffb815972a1af8d8a87d283ea4afc1055270cc6fe7053144f29b",
+      "results/metrics/metrics_hdbscan_minilm.json": "4e1f4c1c70accacaae5833f18280ef658bc3e7ebc57c07a2caed09ad879070f2",
+      "results/metrics/metrics_hdbscan_tf_idf.json": "6e748ba62bb3083a49f5768da78b3ec0a66f5a89ac0a4b6eb97c6acafe606be4",
+      "results/metrics/metrics_kmeans_gemini.json": "a1c21734280ef9d6c43982058dae7c062a7238af0d7eb601a65bbc3f2c9b9c0a",
+      "results/metrics/metrics_kmeans_minilm.json": "23385f420bef7dc2ebe450d04fd0c2231db45656e2479b20c7d4a50e81c1f457",
+      "results/metrics/metrics_kmeans_tf_idf.json": "573386bd4691678c7a039cc5d56ee0447ecf1603843b9bfd2de1caf6fa90ae18",
+      "results/summary_metrics.csv": "a96a17606f77a23a56c14114a2e0681e0de8a6e3b261877d5275851a76214ea8"
+    },
+    "png_info": {
+      "results/figures/comparison_metrics.png": {
+        "altura": 900,
+        "largura": 1950,
+        "pixel_sha256": "85699fd41d6d6210d4ad54ba7eaafb67d8b7a5d3d81e242dc3b6d4a46f056947",
+        "pixel_estavel": true
+      },
+      "results/figures/matriz_associacao_clusters_labels.png": {
+        "altura": 1200,
+        "largura": 2100,
+        "pixel_sha256": "d4ed1fb0ab10e27fa66b99f4692d7e3d3e1837d0051355ec11f4ad5cbc897528",
+        "pixel_estavel": true
+      },
+      "results/figures/shap_beeswarm_panel_2x2.png": {
+        "altura": 1632,
+        "largura": 2950,
+        "pixel_sha256": "5de44a68b811d7b9ca3dfc63c79c5d4a28dea9961b348f94815089c3777d0a97",
+        "pixel_estavel": false
+      },
+      "results/figures/shap_summary_bar_plot_global.png": {
+        "altura": 1184,
+        "largura": 1786,
+        "pixel_sha256": "0fb0794487e8bbc97d1e26a54939d3afd8969d28bb0c9e9cb746e3371faf5073",
+        "pixel_estavel": true
+      },
+      "results/figures/tsne_clusters_visualizacao.png": {
+        "altura": 1200,
+        "largura": 1800,
+        "pixel_sha256": "b0510c02f06887343cffa8bd83c2592051e1cd8d4be99ed9724c83a9883ad3e7",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/espaco_semantico_tsne.png": {
+        "altura": 1275,
+        "largura": 1950,
+        "pixel_sha256": "5b0aaa7e41ea5a39cc88c3ef027df6afdce23e7109519089cf1362f4b457a00e",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/espaco_semantico_tsne_3d.png": {
+        "altura": 1275,
+        "largura": 2700,
+        "pixel_sha256": "dfda3b540727044986902e42b8647a0ffc1207a6b364bb8d65f1c9f0064fb328",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_00/beeswarm.png": {
+        "altura": 882,
+        "largura": 1467,
+        "pixel_sha256": "fcf9038cafcadd989a41226c9d9d240295add4534e6ba3dcae1d86ba59d90801",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_00/dfg.png": {
+        "altura": 347,
+        "largura": 5001,
+        "pixel_sha256": "b138086dfe213e5923f8ecbf86d62ec2b2b30fda43d19a892f49c1b398eb70de",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_00/rede_petri.png": {
+        "altura": 416,
+        "largura": 7778,
+        "pixel_sha256": "f57e285167e09944c39bf5bd8332d0055f24574832c32f7d58599252a6464613",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_01/beeswarm.png": {
+        "altura": 882,
+        "largura": 1482,
+        "pixel_sha256": "68cb7e86a4f7bbb7d635526930fa02e7c7ea9281eb475c4b01b490abedd1945f",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_01/dfg.png": {
+        "altura": 547,
+        "largura": 5353,
+        "pixel_sha256": "79f18e3d35c26355f604b8b1e9d3813af5f8c861e16caf5bb36bc69d1dd4624d",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_01/rede_petri.png": {
+        "altura": 512,
+        "largura": 7710,
+        "pixel_sha256": "870032ff2a16da50130f491c49ee26e96e3d62447283b59f81e23527851d12f4",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_02/beeswarm.png": {
+        "altura": 882,
+        "largura": 1441,
+        "pixel_sha256": "4f9c9e8dda60b2efa57bc1673c213433d7f2bb492156f878e84e25af66258690",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_02/dfg.png": {
+        "altura": 349,
+        "largura": 3178,
+        "pixel_sha256": "3a73609edff87670cafeed1577b53b3df0c99f3c5e4817bb41946b17a02fb31a",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_02/rede_petri.png": {
+        "altura": 436,
+        "largura": 4338,
+        "pixel_sha256": "8bde015efcd189dd66a25a812de0c8dd502255afc2b63f841fae74afb7816472",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_03/beeswarm.png": {
+        "altura": 882,
+        "largura": 1441,
+        "pixel_sha256": "f765ae68b5f22b2fbcfce717965089494944d341faba3f15fe9ef84244b0f066",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_03/dfg.png": {
+        "altura": 174,
+        "largura": 3186,
+        "pixel_sha256": "0c53ed3b7ee165edc09e8d5b56817e2f688c4c4ab6679398638a1756669c47b1",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_03/rede_petri.png": {
+        "altura": 148,
+        "largura": 3891,
+        "pixel_sha256": "c14c64b87316ee4f6094faf05ffd4eaea3cd5ca5c98d4abb547d1a8ca10ae10e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_04/beeswarm.png": {
+        "altura": 882,
+        "largura": 1441,
+        "pixel_sha256": "aeaf1cdcb2f51e4add9cec29608b8e209a5dd36bb54d98ea6cb86b517479de64",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_04/dfg.png": {
+        "altura": 106,
+        "largura": 3146,
+        "pixel_sha256": "89c31682b42cc17e1bb1a3f61ddf59aa268b588316a4a9f7b91b8aca88dffb59",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_04/rede_petri.png": {
+        "altura": 93,
+        "largura": 3891,
+        "pixel_sha256": "5b3636909fc724ff618d06270468b5ae022d336d17ca343cefab3c621b5b84c3",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_05/beeswarm.png": {
+        "altura": 882,
+        "largura": 1441,
+        "pixel_sha256": "f81792f6df8d984be4c67edf24e5f48e9fcd343f08d00d0dcad292ec2e801cc0",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_05/dfg.png": {
+        "altura": 310,
+        "largura": 4413,
+        "pixel_sha256": "fe026bfc50062312ee46ede1acda3ce2aa32ad485baaa4533821f39f1b24808b",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_05/rede_petri.png": {
+        "altura": 461,
+        "largura": 7208,
+        "pixel_sha256": "12c4c3bf4499909e4215956c8b826082c05047cf86a6aa1e399e4b836c820ea3",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_06/beeswarm.png": {
+        "altura": 882,
+        "largura": 1441,
+        "pixel_sha256": "0b26aba9f13a0d72b0092557cb31f852c7021d7de5e6068a21bcb84e33471365",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_06/dfg.png": {
+        "altura": 310,
+        "largura": 4524,
+        "pixel_sha256": "36937b09f1519222df24e59095dad05ff8cbd7476ab6c747a30caa9665cbddb5",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_06/rede_petri.png": {
+        "altura": 433,
+        "largura": 7208,
+        "pixel_sha256": "380ca4cfb548365c55b8f0c7079b27b153f19680171a805e3632380f1da47ccf",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_07/beeswarm.png": {
+        "altura": 882,
+        "largura": 1450,
+        "pixel_sha256": "849e32ec23c1c43fd0c438f796069928e92a48f46114852aa3d2aa20eb2b1773",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_07/dfg.png": {
+        "altura": 229,
+        "largura": 3785,
+        "pixel_sha256": "e207427bac681fffc1232757b6fc898d9d1e711fe41107c7a21e3a80b30ad84c",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_07/rede_petri.png": {
+        "altura": 249,
+        "largura": 4628,
+        "pixel_sha256": "af27eb85284d55fcca942e0142a0c4a8f4b2da26b977321eefc0d25ef2c8b2e4",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_08/beeswarm.png": {
+        "altura": 882,
+        "largura": 1457,
+        "pixel_sha256": "15e71c1ab8dcb21581516836fae41124f535098b5fbb673dd3af72dab6628320",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_08/dfg.png": {
+        "altura": 219,
+        "largura": 2133,
+        "pixel_sha256": "8142aa5136e3d5c725d4fca049bd70256a6cb5a54212a5b2c9f3a7f110eea74c",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_08/rede_petri.png": {
+        "altura": 227,
+        "largura": 2700,
+        "pixel_sha256": "f5ac6307deaf33cfc3438d4ffe78334dbfc69e76ca1898d0ed90a306aab7e926",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_09/beeswarm.png": {
+        "altura": 882,
+        "largura": 1458,
+        "pixel_sha256": "e191894445b34f49e68344e59396d611f0ea4e9636f3077dc657c643f911cba7",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_09/dfg.png": {
+        "altura": 408,
+        "largura": 4027,
+        "pixel_sha256": "162d945bdf56daae529e2cbb1bdeb8eae528ab30793b485dbe8af70cbaca47a0",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_09/rede_petri.png": {
+        "altura": 448,
+        "largura": 5914,
+        "pixel_sha256": "3ff45a29dbead5d335039768418e9460b0ec64cb19f306f0050b218a3ca4dbb4",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_10/beeswarm.png": {
+        "altura": 882,
+        "largura": 1447,
+        "pixel_sha256": "d7e4b52e4b9b76f93f88673fb28a9252a5e807a2f2a05486104ebc5cbe35ad26",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_10/dfg.png": {
+        "altura": 229,
+        "largura": 4002,
+        "pixel_sha256": "fd9c74f7c52e69cfd0f6882c706e69d71bb52cc1a3542a85d835ee5187831668",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_10/rede_petri.png": {
+        "altura": 249,
+        "largura": 5013,
+        "pixel_sha256": "05f2c95369023a78c667452c223e088f29916fb2c6de29c17b66ccb2ce3a6d7e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_11/beeswarm.png": {
+        "altura": 882,
+        "largura": 1443,
+        "pixel_sha256": "ba98ab13e4d296d479aab27ea894f276b899fac5b4d20bc18c4b05cd1ccc197d",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_11/dfg.png": {
+        "altura": 219,
+        "largura": 1931,
+        "pixel_sha256": "1df07b5e268d9feda6f294b3cd5278f0e7c43d21fb8eaab819082e2c9edbf29b",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_11/rede_petri.png": {
+        "altura": 227,
+        "largura": 2490,
+        "pixel_sha256": "cc4e8d1ba2d8015f17af6ae3ee40ad9e5f6fb156cd589cffe04feaded830c02e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_12/beeswarm.png": {
+        "altura": 882,
+        "largura": 1482,
+        "pixel_sha256": "b8277424de8b06e959b167c34581cf558f5c74e0d72efa6f853211b3485d0426",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_12/dfg.png": {
+        "altura": 340,
+        "largura": 4486,
+        "pixel_sha256": "82cedd678af46b6f4ffb311e93da690aa266122f0d92edd544fa3d4bd5563d2d",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_12/rede_petri.png": {
+        "altura": 418,
+        "largura": 6992,
+        "pixel_sha256": "3ff3a3afdc7cf684f0aca39e9d9db9285da4b4b1ca95ec3291910e622f967f09",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_13/beeswarm.png": {
+        "altura": 882,
+        "largura": 1477,
+        "pixel_sha256": "4091fd1c1c8f45a913012dfd863c733a84690090e0692d335478ac3afb3f90c5",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_13/dfg.png": {
+        "altura": 600,
+        "largura": 4433,
+        "pixel_sha256": "414b36ff1040de75b322fc9caa407ba1dda6b514dfa1b48fecb1dea2ecabf91d",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_13/rede_petri.png": {
+        "altura": 399,
+        "largura": 5540,
+        "pixel_sha256": "51a6468a42ea20f57fa7c84ddf8a5f6787408b95832607a581dd833709366b5a",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_14/beeswarm.png": {
+        "altura": 882,
+        "largura": 1474,
+        "pixel_sha256": "aecca82c7e343d4081c4844607232c53f34ef7903203e76d5621507ae66d5729",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_14/dfg.png": {
+        "altura": 229,
+        "largura": 3326,
+        "pixel_sha256": "eb0f7848f19ef339e1b5840b9500fe11e905544fba2809d2a41720cdd255052b",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_14/rede_petri.png": {
+        "altura": 249,
+        "largura": 4195,
+        "pixel_sha256": "2dec8ac23bab7bf583278640fac0cfae4d4846405d513ecf9dfad4a124750c23",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_15/beeswarm.png": {
+        "altura": 882,
+        "largura": 1439,
+        "pixel_sha256": "c2358257f5578d6395f09be489b5e85bedea815a5ffb86dccd6fc0ba687be88e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_15/dfg.png": {
+        "altura": 219,
+        "largura": 1931,
+        "pixel_sha256": "506b0ffc37826cf2f149c4848eef168644e77e3302831d4b4c0225038ba245cb",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_15/rede_petri.png": {
+        "altura": 227,
+        "largura": 2490,
+        "pixel_sha256": "3792fd6f76038a532847b3514a54f6e9d1190a9426699fd1d5b3d3aced3eb5cb",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_16/beeswarm.png": {
+        "altura": 882,
+        "largura": 1479,
+        "pixel_sha256": "c954f6535a8dae853dc92fafd98aea0adb81a64aa903a512c174a53ae77b8470",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_16/dfg.png": {
+        "altura": 347,
+        "largura": 5628,
+        "pixel_sha256": "b2268e94151b15c68d2eea6fa30727cca6910da9bfa15247b119abed0ca818e7",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_16/rede_petri.png": {
+        "altura": 361,
+        "largura": 8560,
+        "pixel_sha256": "3920f0074888917f21c6f724a6bb75d5040ab6e16605a493af8f6dec106489f0",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_17/beeswarm.png": {
+        "altura": 882,
+        "largura": 1481,
+        "pixel_sha256": "eaaee2bdd7d52bc3e11469b0e9bda51c292a6e28580bddee7b5279332c1b9fe9",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_17/dfg.png": {
+        "altura": 310,
+        "largura": 5475,
+        "pixel_sha256": "b99949d1753a81a78787dcfbed1b6bd7dd836f0a7dbf311a7be2c104381f5ee1",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_17/rede_petri.png": {
+        "altura": 496,
+        "largura": 8549,
+        "pixel_sha256": "09a7e8dd3c41d6bb8fb7a72047c5f4c5d8dc948812378f275410b020e44d4446",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_18/beeswarm.png": {
+        "altura": 882,
+        "largura": 1481,
+        "pixel_sha256": "b69fc2a1a4ab8d1dcd37f1d22b5a2b5ce93d8e217e67b27ddf452210e415f725",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_18/dfg.png": {
+        "altura": 310,
+        "largura": 5569,
+        "pixel_sha256": "065b0662ab55f86b803bb2937beac9848641b47f850f65438a7084b218d5c4c8",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_18/rede_petri.png": {
+        "altura": 429,
+        "largura": 8549,
+        "pixel_sha256": "a41ce6948c88c2296e647a1eb96960a2b30c001ddf7611bd86bfcf6e9b7249e8",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_19/beeswarm.png": {
+        "altura": 882,
+        "largura": 1439,
+        "pixel_sha256": "3a24f556f341aa8c1ed92349e07b9903f66735390d0b1531ff4cf4488ffb5c52",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_19/dfg.png": {
+        "altura": 229,
+        "largura": 2565,
+        "pixel_sha256": "586c1fc420d4be749ac2b5171cb634f06abb6617dfe9e66532281adbd9cf0542",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_19/rede_petri.png": {
+        "altura": 249,
+        "largura": 3272,
+        "pixel_sha256": "280f9f18335a36a23e78207d48ad34b4865fa47b3033386106c144d32d6e205b",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_20/beeswarm.png": {
+        "altura": 882,
+        "largura": 1443,
+        "pixel_sha256": "d463d21784208355eefbc799b2d530d4eca333b7d46b17be24bf1093217d1010",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_20/dfg.png": {
+        "altura": 229,
+        "largura": 2543,
+        "pixel_sha256": "6a9b246c4646d99df6947481c8e384aceaa1ea7911006ed4154ad398b90c5fd9",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_20/rede_petri.png": {
+        "altura": 249,
+        "largura": 3362,
+        "pixel_sha256": "81b7f1fe3b5ebdfad8d05c767e5c2337e7da7f3bc90d7a234941774fd81f7ab3",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/ruido/dfg.png": {
+        "altura": 1679,
+        "largura": 6206,
+        "pixel_sha256": "6b680f70aa3701d0b0d84373ee3dc9306266f4308d0fc437f00d3168e644d0be",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/ruido/rede_petri.png": {
+        "altura": 2499,
+        "largura": 10750,
+        "pixel_sha256": "1d9df3e1842bc8fd2249c50a7f4dae51b05568730ed3d73d9796d9069b9c306b",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/matriz_grupos_1de2.png": {
+        "altura": 1327,
+        "largura": 3309,
+        "pixel_sha256": "51735b7d15b8e16cc32abe593608496d38c6754df04817d9ef1775a4073b824c",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/matriz_grupos_2de2.png": {
+        "altura": 1327,
+        "largura": 3309,
+        "pixel_sha256": "51199c5869966b6c563d0b8fedc2857cb4c7290b67a678342d224986cee9ebfa",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/espaco_semantico_tsne.png": {
+        "altura": 1275,
+        "largura": 1950,
+        "pixel_sha256": "e2396d878785d18d644707366cb4b6e5f7eccafb1b64152fc989834ae5cfd21b",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/espaco_semantico_tsne_3d.png": {
+        "altura": 1275,
+        "largura": 2700,
+        "pixel_sha256": "be0ae1e8bfff2f046f411a5b8f67948a2f18fe36f1e893f3cb6c8fad4c25ec9e",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_00/beeswarm.png": {
+        "altura": 882,
+        "largura": 1441,
+        "pixel_sha256": "426c82d29ec98d405071a2d6bb5a973d62b024e8c01ee7d31394ec970b9311d8",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_00/dfg.png": {
+        "altura": 310,
+        "largura": 4568,
+        "pixel_sha256": "057d3fda443d3044adc86f06731014c624229aa1a3d0ee08fbd23f49e5c06c83",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_00/rede_petri.png": {
+        "altura": 459,
+        "largura": 7208,
+        "pixel_sha256": "50d03030bc2fc469f42c16773d43261f0dbc5d70543dd42a96095eea0e5646aa",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_01/beeswarm.png": {
+        "altura": 882,
+        "largura": 1451,
+        "pixel_sha256": "cf805b0198e331daddc106992c923e7ad97de4279373cbd9047dfe1810d6b9c3",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_01/dfg.png": {
+        "altura": 376,
+        "largura": 3990,
+        "pixel_sha256": "46f5922d1dae03fc67f5baeb1c04b87a333a78f3535454a3ebe4eb3e1669f135",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_01/rede_petri.png": {
+        "altura": 533,
+        "largura": 6251,
+        "pixel_sha256": "a502f51ed5dbb3acda7c849d0b86e6145003a9cce8627e544ff0ddcb0435d6b8",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_02/beeswarm.png": {
+        "altura": 882,
+        "largura": 1441,
+        "pixel_sha256": "9f96782757918f471be2bb129c09e15cda1dadac6c0ebab05d65405835d63e02",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_02/dfg.png": {
+        "altura": 106,
+        "largura": 3146,
+        "pixel_sha256": "89c31682b42cc17e1bb1a3f61ddf59aa268b588316a4a9f7b91b8aca88dffb59",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_02/rede_petri.png": {
+        "altura": 93,
+        "largura": 3891,
+        "pixel_sha256": "5b3636909fc724ff618d06270468b5ae022d336d17ca343cefab3c621b5b84c3",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_03/beeswarm.png": {
+        "altura": 882,
+        "largura": 1479,
+        "pixel_sha256": "3b2cb42f488195fca0e394cb8072b33af5d8db0939bef64674a428717bdb86e1",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_03/dfg.png": {
+        "altura": 434,
+        "largura": 2843,
+        "pixel_sha256": "79fc52e8253055b19082e63758ff6b25757f7550dc0140654c83c204c2d14e3e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_03/rede_petri.png": {
+        "altura": 252,
+        "largura": 3902,
+        "pixel_sha256": "9ab2b8d8e5d1f6bad159c59ac88cc0621707518880ead766181c90b40e4f99dc",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_04/beeswarm.png": {
+        "altura": 882,
+        "largura": 1457,
+        "pixel_sha256": "678be5d9220d8a6b1face8932f0976ec3d8ef5aa4736a1c745779f57f4474d5b",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_04/dfg.png": {
+        "altura": 219,
+        "largura": 2133,
+        "pixel_sha256": "8142aa5136e3d5c725d4fca049bd70256a6cb5a54212a5b2c9f3a7f110eea74c",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_04/rede_petri.png": {
+        "altura": 227,
+        "largura": 2700,
+        "pixel_sha256": "b18e1a4707b6db085dd1dff3821151847b2bf9d89cfc6af680dad48b580ba378",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_05/beeswarm.png": {
+        "altura": 882,
+        "largura": 1442,
+        "pixel_sha256": "0e1a3bd811721a7b2e066f6337f8c70b122ba9f3d030f99e4e37ee929d942921",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_05/dfg.png": {
+        "altura": 387,
+        "largura": 3389,
+        "pixel_sha256": "eff625a555fcff950d248db92872e9a53b40ce67c71ae20917f706c93873d924",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_05/rede_petri.png": {
+        "altura": 519,
+        "largura": 4588,
+        "pixel_sha256": "055bf3b168d1ba0bd153ed6c445607a38d998519d7bd1fe869c2f02bdc2b73fb",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_06/beeswarm.png": {
+        "altura": 882,
+        "largura": 1436,
+        "pixel_sha256": "9030b33bb1b9db7c1d97a44f19d52acd79f9d7068d03dbfc00af83c684b6cf45",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_06/dfg.png": {
+        "altura": 192,
+        "largura": 2122,
+        "pixel_sha256": "dcf6c535ef809c5dfce10bcecc127385bb0fa3f1f224e0c9d734e9ec1264a9bd",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_06/rede_petri.png": {
+        "altura": 221,
+        "largura": 2654,
+        "pixel_sha256": "3d18d4532e8ff963f0c6836ee41986b7b7253ac430d28535571f3ff6d37e6889",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_07/beeswarm.png": {
+        "altura": 882,
+        "largura": 1479,
+        "pixel_sha256": "dac4caa794f09dbf6faf07f5b25e7c44895e1fed9a2e922a9d4145f8fa088c17",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_07/dfg.png": {
+        "altura": 679,
+        "largura": 5469,
+        "pixel_sha256": "adb867200adb38b63c83abdcad440a58788e09b3e71f1f37f29994e537fbca2b",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_07/rede_petri.png": {
+        "altura": 672,
+        "largura": 8722,
+        "pixel_sha256": "0ed6a7481e947a210934a36725dae814e29f95404186ba10b2a62286dfbd433d",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_08/beeswarm.png": {
+        "altura": 882,
+        "largura": 1479,
+        "pixel_sha256": "17ae4fca4a2b78d2efe0e46133102a389c5bac0946abdf11d18091fc12ef0eda",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_08/dfg.png": {
+        "altura": 347,
+        "largura": 5419,
+        "pixel_sha256": "4195919fc79603dab011f9dd668fc3c411a638796f44f30922505d1a4ecaa627",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_08/rede_petri.png": {
+        "altura": 433,
+        "largura": 8560,
+        "pixel_sha256": "33d748d778e11e5c4ba8b564daeddc7e9504d06a7b4484cc7b89529a6b0107b3",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_09/beeswarm.png": {
+        "altura": 882,
+        "largura": 1481,
+        "pixel_sha256": "b10fa108c0ae0264d2ad6a8c3b45a11508742e3b337db70f6b9b8085f7ea1154",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_09/dfg.png": {
+        "altura": 310,
+        "largura": 5579,
+        "pixel_sha256": "40f80544cf21b421597ca7641f4fb836731843ba3636e20f082ea7c80deffb68",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_09/rede_petri.png": {
+        "altura": 433,
+        "largura": 8549,
+        "pixel_sha256": "8b4051a29c0964224aa0a74b9ef5065275d0de7533d8e22b7ff48854786ecc9a",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_10/beeswarm.png": {
+        "altura": 882,
+        "largura": 1481,
+        "pixel_sha256": "e7235318c1eb29c8cc21111163b6947a45879a909a1d5b419a207ef70bd01b0a",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_10/dfg.png": {
+        "altura": 310,
+        "largura": 5467,
+        "pixel_sha256": "127836f2fd372c42d367cf7e38c3b0678cfff4c86703e91acd8ebe6473e14b0f",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_10/rede_petri.png": {
+        "altura": 496,
+        "largura": 8549,
+        "pixel_sha256": "09a7e8dd3c41d6bb8fb7a72047c5f4c5d8dc948812378f275410b020e44d4446",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_11/beeswarm.png": {
+        "altura": 882,
+        "largura": 1484,
+        "pixel_sha256": "97646fd23e26daac19bf63ed9b6bc0e9405ca3a5e6b8bd4873be9f99e268010b",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_11/dfg.png": {
+        "altura": 547,
+        "largura": 5289,
+        "pixel_sha256": "a2d9eddf940ea6a8165bd161c89a218ea5a4a2eea0b6101f8038aa84919bdaaf",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_11/rede_petri.png": {
+        "altura": 512,
+        "largura": 7710,
+        "pixel_sha256": "15f2edb57d6aec9cad2bcfec1735f5f16027bf1e44a2ed033bddf56e5d8949ac",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_12/beeswarm.png": {
+        "altura": 882,
+        "largura": 1471,
+        "pixel_sha256": "7cd529d5c4bcb3a6e8a7156718334956e5bfc4ada553e713fa4b4df1c959cab7",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_12/dfg.png": {
+        "altura": 310,
+        "largura": 5460,
+        "pixel_sha256": "4aa5ac19b7666dae61a4c20f53494392c08c169cb8c2b7c4d2f0e47ae6000a0c",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_12/rede_petri.png": {
+        "altura": 433,
+        "largura": 8560,
+        "pixel_sha256": "03a225814c6e0cfeb894e73dc1745f4f7e79469c148f5d074e37ba41aaf1e21e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_13/beeswarm.png": {
+        "altura": 882,
+        "largura": 1479,
+        "pixel_sha256": "f0cc55c2d5269c17e9194af1ef1ab9e605e256e3990f552980255ead7f53cf3d",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_13/dfg.png": {
+        "altura": 679,
+        "largura": 5461,
+        "pixel_sha256": "ab11d47dd3d1fd6ef6d89d068db9071c96eada8789b2dcf6b5e6ac2938a4fdbb",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_13/rede_petri.png": {
+        "altura": 672,
+        "largura": 8722,
+        "pixel_sha256": "fb03952238c567f499abbe983a61d5f9d9d65f80ef6f61c713f8f1647b772a5e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_14/beeswarm.png": {
+        "altura": 882,
+        "largura": 1477,
+        "pixel_sha256": "0bbee46cf038563724a1e43eb84a4f24366c731c209ddaa88abc2624e0916cde",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_14/dfg.png": {
+        "altura": 679,
+        "largura": 5469,
+        "pixel_sha256": "9b89eb0f4c4b1406aa1afb3e04eaf4b769f63dab32cc74bb8988845839be216b",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_14/rede_petri.png": {
+        "altura": 672,
+        "largura": 8722,
+        "pixel_sha256": "0ed6a7481e947a210934a36725dae814e29f95404186ba10b2a62286dfbd433d",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_15/beeswarm.png": {
+        "altura": 882,
+        "largura": 1451,
+        "pixel_sha256": "079df223810436aa78419ea5a117a22227de82e09908cb8bb8725ef91f70f8ea",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_15/dfg.png": {
+        "altura": 434,
+        "largura": 2615,
+        "pixel_sha256": "26118415926e3c730476f4a26981e456509123a06c4528d03212a4a415cfbdcf",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_15/rede_petri.png": {
+        "altura": 252,
+        "largura": 3602,
+        "pixel_sha256": "66404b08aeba4ed03a88e3d4560e405688dcf9490f81067f76ccc5508b3b2c29",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_16/beeswarm.png": {
+        "altura": 882,
+        "largura": 1443,
+        "pixel_sha256": "00ee087eb16b20ef61dae6a26f38e0b57e56c6dd166120b988769d389b0a734e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_16/dfg.png": {
+        "altura": 219,
+        "largura": 1931,
+        "pixel_sha256": "1df07b5e268d9feda6f294b3cd5278f0e7c43d21fb8eaab819082e2c9edbf29b",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_16/rede_petri.png": {
+        "altura": 227,
+        "largura": 2490,
+        "pixel_sha256": "3792fd6f76038a532847b3514a54f6e9d1190a9426699fd1d5b3d3aced3eb5cb",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_17/beeswarm.png": {
+        "altura": 882,
+        "largura": 1443,
+        "pixel_sha256": "24aa81c6100ed484e5a68fe50cc5051ba713d66205ce52e19ebae12e22e8aaaa",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_17/dfg.png": {
+        "altura": 219,
+        "largura": 1931,
+        "pixel_sha256": "506b0ffc37826cf2f149c4848eef168644e77e3302831d4b4c0225038ba245cb",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_17/rede_petri.png": {
+        "altura": 227,
+        "largura": 2490,
+        "pixel_sha256": "cc4e8d1ba2d8015f17af6ae3ee40ad9e5f6fb156cd589cffe04feaded830c02e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_18/beeswarm.png": {
+        "altura": 882,
+        "largura": 1463,
+        "pixel_sha256": "d2e6eba24792636a12c9ab813a5125701bcb8eab240d876bc3d4dc10b65f000b",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_18/dfg.png": {
+        "altura": 434,
+        "largura": 2607,
+        "pixel_sha256": "023343b4a6524d876f54e21d0816e16c6666c7730abd09ac58a6feb533220b12",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_18/rede_petri.png": {
+        "altura": 252,
+        "largura": 3602,
+        "pixel_sha256": "66404b08aeba4ed03a88e3d4560e405688dcf9490f81067f76ccc5508b3b2c29",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_19/beeswarm.png": {
+        "altura": 882,
+        "largura": 1468,
+        "pixel_sha256": "6e198687a1b8fab7080e7edd6a5660dc3d35088a3ffa76b832759140efb37cc4",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_19/dfg.png": {
+        "altura": 310,
+        "largura": 4757,
+        "pixel_sha256": "b8c5022202a135b4efed66f6ee29a49b3c0a20544a57813ecb76d73765ce9ec9",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_19/rede_petri.png": {
+        "altura": 429,
+        "largura": 7606,
+        "pixel_sha256": "5d3d0f67c7d587b85501046a3d25ef9d607879db969c935b385183b67e7da415",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_20/beeswarm.png": {
+        "altura": 882,
+        "largura": 1467,
+        "pixel_sha256": "a822c61bdc342122d7cd379481f65cab180cb83f4cc7d1ff735da8c5bb2cda14",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_20/dfg.png": {
+        "altura": 310,
+        "largura": 4750,
+        "pixel_sha256": "c356753a60c0a3b63fa6e8dc9449234a5c10578eef80995d22c40cdad4557de4",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_20/rede_petri.png": {
+        "altura": 480,
+        "largura": 7606,
+        "pixel_sha256": "6134b06468ee48f2b1256de5261f90327f55b63291975d8c25d239a6bd2dfbbb",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_21/beeswarm.png": {
+        "altura": 882,
+        "largura": 1463,
+        "pixel_sha256": "3135189cfa3e4a5b51569452a2f0c8981bad9939276c911b194e63bbc861c573",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_21/dfg.png": {
+        "altura": 1332,
+        "largura": 5962,
+        "pixel_sha256": "b94c02b5d0779f0c8240b282e229a75ba46f40d804210f2d86ee262cce6d30fb",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_21/rede_petri.png": {
+        "altura": 1517,
+        "largura": 10128,
+        "pixel_sha256": "48e38ad0812b1ecd368c74220b7022c7d0c8d68524ba2855c63fa4e404342257",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_22/beeswarm.png": {
+        "altura": 882,
+        "largura": 1479,
+        "pixel_sha256": "9e080312cf81fc142305b4606b8c9b5d26336b6b97e0412b761826cf42484df4",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_22/dfg.png": {
+        "altura": 758,
+        "largura": 5381,
+        "pixel_sha256": "b5cb80aec8de68f56a69a186add51929b53c0ca259c3d4bb0f6748a917c8ef3c",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_22/rede_petri.png": {
+        "altura": 737,
+        "largura": 8939,
+        "pixel_sha256": "7d5d9e142068145bf716414ad47029f177334cd67e1ce4afaa821f7b21e04013",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_23/beeswarm.png": {
+        "altura": 882,
+        "largura": 1474,
+        "pixel_sha256": "288cd87a1dcf76da507febe5a9ae6f7f9fa842da6eb30f0a91014d7acee68172",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_23/dfg.png": {
+        "altura": 1172,
+        "largura": 5919,
+        "pixel_sha256": "53b55fa63fb4640f7392b5be9cc9950cfe59a9bb71e40ee41c661c092e99dbb1",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_23/rede_petri.png": {
+        "altura": 1571,
+        "largura": 9929,
+        "pixel_sha256": "67c30dfe30c254fa8700b7b44ca9f3b02b9bad337ff9bacb33d6d4d39c2ddd1d",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_24/beeswarm.png": {
+        "altura": 882,
+        "largura": 1464,
+        "pixel_sha256": "aaaf0082a35cc38dbe8221b28eb074e042850adb5880b9c007eab390d66c2669",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_24/dfg.png": {
+        "altura": 758,
+        "largura": 5414,
+        "pixel_sha256": "7d0c9ee4273eb9c5280f3025dc25ee11f5243492d3cba007559082862b544c94",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_24/rede_petri.png": {
+        "altura": 908,
+        "largura": 8616,
+        "pixel_sha256": "ab6ed67f30ffe12e4b461deff5366c2fd6a9976a1f311d2b59c0c9dbe6094b1d",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_25/beeswarm.png": {
+        "altura": 882,
+        "largura": 1479,
+        "pixel_sha256": "9ef5dc574fc96d93c0967b1b8157b73cd73a17a8ee97812368823317afe53fcd",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_25/dfg.png": {
+        "altura": 758,
+        "largura": 5413,
+        "pixel_sha256": "33f2182089c446ded77739265a895183581c87f35ed2fcd96d08c85f5745f96a",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_25/rede_petri.png": {
+        "altura": 692,
+        "largura": 8939,
+        "pixel_sha256": "c661479d7374d454e70cd061fc5e16175885a4a026445128b4f0484d062f0e36",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/ruido/dfg.png": {
+        "altura": 1797,
+        "largura": 6238,
+        "pixel_sha256": "926c80414eed6f78f82e2860fc16dffd8f96d8cc359d447bccb6d853c55abd9c",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/ruido/rede_petri.png": {
+        "altura": 2300,
+        "largura": 15288,
+        "pixel_sha256": "b5ea5a6c652132ef031458f0345aa891791445ff914b6a4057676d065ea5935a",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/matriz_grupos_1de2.png": {
+        "altura": 1575,
+        "largura": 3309,
+        "pixel_sha256": "d2bdb24a31c1f115561efca01ec028abdb6b819e598d45068ec58ed4c0809fc7",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/matriz_grupos_2de2.png": {
+        "altura": 1492,
+        "largura": 3309,
+        "pixel_sha256": "241187bc634a0f273f7b234e7dce536f07b90bb68438424f99115f5724228cb4",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/espaco_semantico_tsne.png": {
+        "altura": 1275,
+        "largura": 1950,
+        "pixel_sha256": "738cc5022a3772890089a7bd88b37d4075aa1fbef0eddf746b588f01ca3f5324",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/espaco_semantico_tsne_3d.png": {
+        "altura": 1275,
+        "largura": 2700,
+        "pixel_sha256": "6a86e5d5bad5c96e2e6c1b438e5df950e79bcf929c7a11b7d2c8bc6ec56eb5e0",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_00/beeswarm.png": {
+        "altura": 882,
+        "largura": 1441,
+        "pixel_sha256": "b3d088b76cbb0679822758383ff388fa017e64f8996d4f78dc775011f1b4f9ee",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_00/dfg.png": {
+        "altura": 310,
+        "largura": 4568,
+        "pixel_sha256": "c3b6276f4e7788f5e84370ec80440cd0f24a9fa3c9d341c5ba049dc026611fa2",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_00/rede_petri.png": {
+        "altura": 473,
+        "largura": 7208,
+        "pixel_sha256": "51080876998a4ded281547b74b045ef86e4fb86a35e0e93a249e90d5ecc6eaa0",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_01/beeswarm.png": {
+        "altura": 882,
+        "largura": 1476,
+        "pixel_sha256": "985526dbcbeb16aaa41bf9279b4a553bcff0b3888ba5cf6b0ceb4d3ff04faad5",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_01/dfg.png": {
+        "altura": 310,
+        "largura": 5635,
+        "pixel_sha256": "7d802bd12eebe3515c17b918b4f5987420d092d0630907d225d01e98dbc16de7",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_01/rede_petri.png": {
+        "altura": 431,
+        "largura": 8549,
+        "pixel_sha256": "58e8ec704121ccc9957306a7f944ef5519f47a7ad48dd6f09ce4987a16af1c7c",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_02/beeswarm.png": {
+        "altura": 882,
+        "largura": 1467,
+        "pixel_sha256": "48a170c062e47de2103d09b93b4d4e9dc538f41e82824e2c48fe9edf0486e898",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_02/dfg.png": {
+        "altura": 310,
+        "largura": 4869,
+        "pixel_sha256": "de9c4b962864c7440b54b6eb1a7ac07e9eef31593870a610c32cc30f67aeed94",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_02/rede_petri.png": {
+        "altura": 478,
+        "largura": 7606,
+        "pixel_sha256": "65984801eddf72da98e75166c8d89a4abf305a129c36fcc661cb5554903e0872",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_03/beeswarm.png": {
+        "altura": 882,
+        "largura": 1443,
+        "pixel_sha256": "beb5730a2c920b9293333b41297d4f606db0dc0fcacae52a53fef2ce97e9457e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_03/dfg.png": {
+        "altura": 229,
+        "largura": 3285,
+        "pixel_sha256": "d3f5452dcc2b151f27c421af3dd822e1e8a2675a6524e24bd201f9834df3610e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_03/rede_petri.png": {
+        "altura": 249,
+        "largura": 4181,
+        "pixel_sha256": "c09beebbdbe87557375f20e850542458ca717aa3937ae8548d6d1f07c7076363",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_04/beeswarm.png": {
+        "altura": 882,
+        "largura": 1447,
+        "pixel_sha256": "3e3e0945cb6510947f982ed4f86a9e92e56601dd7dc11e4865e4c3f4f060f97b",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_04/dfg.png": {
+        "altura": 229,
+        "largura": 4010,
+        "pixel_sha256": "0f441fc27e5255d6ce191c1a4dac51b261dbc9691fda1cdc985785e945a1d59c",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_04/rede_petri.png": {
+        "altura": 249,
+        "largura": 5013,
+        "pixel_sha256": "05f2c95369023a78c667452c223e088f29916fb2c6de29c17b66ccb2ce3a6d7e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_05/beeswarm.png": {
+        "altura": 882,
+        "largura": 1477,
+        "pixel_sha256": "89f0c45f756095ef70761e11e1a040a249db6ac00ecb4de4899a2d580f0a2f77",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_05/dfg.png": {
+        "altura": 679,
+        "largura": 5685,
+        "pixel_sha256": "74cf0426f035c06e720794b09b82c6ee6db4e6cbec31bc06eb613e54d4709e77",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_05/rede_petri.png": {
+        "altura": 661,
+        "largura": 8722,
+        "pixel_sha256": "ea6bf1d5083ef1018435c56a882969120f255905c5ccc1c8ee0d037f0ba29062",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_06/beeswarm.png": {
+        "altura": 882,
+        "largura": 1455,
+        "pixel_sha256": "cef96d7c6b7f8dbe278554ecdecfede08079173eacc02c6833e7e2fe28c854da",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_06/dfg.png": {
+        "altura": 547,
+        "largura": 5289,
+        "pixel_sha256": "c99ca981bf298bc5bd65edbb64875bbec24efe67cb12f7cee4b6f349bb5c69fc",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_06/rede_petri.png": {
+        "altura": 512,
+        "largura": 7710,
+        "pixel_sha256": "d1fa6d1d96deb51cdf3ff2141179b6c5651a5b611f3f89fb4cc691c99a5e2188",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_07/beeswarm.png": {
+        "altura": 882,
+        "largura": 1441,
+        "pixel_sha256": "04880de17242838d7f7a5a3c08934b0ea15cbfd0e98ee0eb597b6b6f23259023",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_07/dfg.png": {
+        "altura": 387,
+        "largura": 3372,
+        "pixel_sha256": "192365780e0b9a1b2160e327e2af7a15b292e645e78b9aa213c4b1c6400ede26",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_07/rede_petri.png": {
+        "altura": 519,
+        "largura": 4588,
+        "pixel_sha256": "e02c4738718ef0432495c96dad4e9c354b0ca950296221ac38a184c0b0b05246",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_08/beeswarm.png": {
+        "altura": 882,
+        "largura": 1436,
+        "pixel_sha256": "1392c8a63ac8bf967ee936fd63c1e6907d839a8f57cc51c28df72e0ef66ce5d8",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_08/dfg.png": {
+        "altura": 360,
+        "largura": 3362,
+        "pixel_sha256": "9719f6ad8771d87866b272314897edb8c7e2ec1440758e3a5bc9edecea5a48ba",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_08/rede_petri.png": {
+        "altura": 353,
+        "largura": 4055,
+        "pixel_sha256": "786950ccc8a975fea5b6ff400b588eb389dcea78fdb153aa2b9ddc4938ca2cbc",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_09/beeswarm.png": {
+        "altura": 882,
+        "largura": 1458,
+        "pixel_sha256": "37764a512e625b891dc2ce9813dd7c5adeb97c51c56bbfa79bdbea624aaf83ce",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_09/dfg.png": {
+        "altura": 229,
+        "largura": 4013,
+        "pixel_sha256": "3bb8ed23bd2ad6e51713bfc829c045730fafc6db638f2e55a13a693d5fb7ed09",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_09/rede_petri.png": {
+        "altura": 249,
+        "largura": 5001,
+        "pixel_sha256": "c32ffad5cc1de71d0b6ef93eeb41b5ff6608bae25200aa00467d14650cfe9846",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_10/beeswarm.png": {
+        "altura": 882,
+        "largura": 1464,
+        "pixel_sha256": "43e3bfbf84e8dea2f97c7c3cc30c2dd26b3aa8ca8583d5ff64ee39ec447614f1",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_10/dfg.png": {
+        "altura": 498,
+        "largura": 4550,
+        "pixel_sha256": "a74010721318d3d70f878a616f207e181bb960d4f5bb0ca1c949d9f34054afa3",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_10/rede_petri.png": {
+        "altura": 560,
+        "largura": 6565,
+        "pixel_sha256": "65c644188d36361d2b0d98d0f13d1412a37291853c6b92d4821e1f5f9ffe6b33",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_11/beeswarm.png": {
+        "altura": 882,
+        "largura": 1451,
+        "pixel_sha256": "64ca214b35f13581f3b45a190d00925e247245818f851f61377136884d10f07c",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_11/dfg.png": {
+        "altura": 229,
+        "largura": 2565,
+        "pixel_sha256": "382b650b48bdf734f86cf20c6373a518d1c0df57e9dcf7de0c6a5fdb20c0ea6f",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_11/rede_petri.png": {
+        "altura": 249,
+        "largura": 3272,
+        "pixel_sha256": "280f9f18335a36a23e78207d48ad34b4865fa47b3033386106c144d32d6e205b",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_12/beeswarm.png": {
+        "altura": 882,
+        "largura": 1439,
+        "pixel_sha256": "968ec985f55397c694f593d5aee5e9afa496125b3c2d9e1a6013c535572bf3a7",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_12/dfg.png": {
+        "altura": 219,
+        "largura": 1931,
+        "pixel_sha256": "506b0ffc37826cf2f149c4848eef168644e77e3302831d4b4c0225038ba245cb",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_12/rede_petri.png": {
+        "altura": 227,
+        "largura": 2490,
+        "pixel_sha256": "3792fd6f76038a532847b3514a54f6e9d1190a9426699fd1d5b3d3aced3eb5cb",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_13/beeswarm.png": {
+        "altura": 882,
+        "largura": 1421,
+        "pixel_sha256": "7b509a2754912a18a0e3f93bea5fb4562dc8d0aaea44f833ae61352b560fae1e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_13/dfg.png": {
+        "altura": 219,
+        "largura": 1931,
+        "pixel_sha256": "1df07b5e268d9feda6f294b3cd5278f0e7c43d21fb8eaab819082e2c9edbf29b",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_13/rede_petri.png": {
+        "altura": 227,
+        "largura": 2490,
+        "pixel_sha256": "cc4e8d1ba2d8015f17af6ae3ee40ad9e5f6fb156cd589cffe04feaded830c02e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/ruido/dfg.png": {
+        "altura": 1680,
+        "largura": 6115,
+        "pixel_sha256": "f41b0a81e3a915103ef474dc9b7d6966f3b4830163db78578e5614e0b600a81e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/ruido/rede_petri.png": {
+        "altura": 1708,
+        "largura": 10206,
+        "pixel_sha256": "202e29d28558940f6cc709509ca4daf31552620a7f801278ed2aea9e7acf6638",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/matriz_grupos.png": {
+        "altura": 1657,
+        "largura": 3309,
+        "pixel_sha256": "31703176230659efde3536e789d1b547d045cd6036eb288dc7131da16f3c93fb",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/espaco_semantico_tsne.png": {
+        "altura": 1275,
+        "largura": 1950,
+        "pixel_sha256": "6733d7c658af08e080d29d6a25643f3c576ae6b74c51a44746cbeb5bb587dc23",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/espaco_semantico_tsne_3d.png": {
+        "altura": 1275,
+        "largura": 2700,
+        "pixel_sha256": "0cf2dc3540c9dff8919ec3bbc82f067a5cb9078745bf0a4a83a7c19c5c4040ed",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_00/beeswarm.png": {
+        "altura": 882,
+        "largura": 1463,
+        "pixel_sha256": "57b44aea1853c3487989a0b34f3c38eea02a62959daa0c4c229fc03e2314e161",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_00/dfg.png": {
+        "altura": 1680,
+        "largura": 6067,
+        "pixel_sha256": "c7a46b613de0c615ebc666778339a0ac34c60354709eaa33a66caae09b72bcbb",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_00/rede_petri.png": {
+        "altura": 1317,
+        "largura": 12274,
+        "pixel_sha256": "e638916e1ec91e30e71e5f4fabc6c994d347bc7edf59aca942674de4b358d294",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_01/beeswarm.png": {
+        "altura": 882,
+        "largura": 1441,
+        "pixel_sha256": "8c5c08c4d5f1cff669dda160a67876796bf8ebc5b175db3d359329f688c66e3e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_01/dfg.png": {
+        "altura": 728,
+        "largura": 5013,
+        "pixel_sha256": "e15fc9f14d13d178ea80aa80c2e042ae83158eed1d82b16fb709008b7d17132c",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_01/rede_petri.png": {
+        "altura": 911,
+        "largura": 10547,
+        "pixel_sha256": "8c03dfa1e11628740acf22641b06fdd5c6717a5df2268d38509ccc946db2aa54",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_02/beeswarm.png": {
+        "altura": 882,
+        "largura": 1489,
+        "pixel_sha256": "bfff2bf30d3d48c8a709ec1ec4dc855f67e978f651ea56575cdaa7eff58c3329",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_02/dfg.png": {
+        "altura": 547,
+        "largura": 5355,
+        "pixel_sha256": "a6bacbaaedd45adb90edf9b177cf45a0295e816fad57380a12a68df335647b9c",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_02/rede_petri.png": {
+        "altura": 512,
+        "largura": 7710,
+        "pixel_sha256": "2bf15f2caad7bcf82ba9e214b4fd60cc4ddf05c93d7c63338c8d87baf3ac7c50",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_03/beeswarm.png": {
+        "altura": 882,
+        "largura": 1481,
+        "pixel_sha256": "4250f6fabf836574d180732f30cc5d2cfd627c7efe90d2ed1723281374a9eda0",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_03/dfg.png": {
+        "altura": 871,
+        "largura": 5852,
+        "pixel_sha256": "5175669f5574f3966bfea7a5c745885638933ab355e22cdafc1056865dd25925",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_03/rede_petri.png": {
+        "altura": 1015,
+        "largura": 8749,
+        "pixel_sha256": "e32e4db722b39802a1c7ed3e839cbd8857218e63dffacd4386818361af6b725f",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_04/beeswarm.png": {
+        "altura": 882,
+        "largura": 1477,
+        "pixel_sha256": "09f6cfe1dca39f5a6e62547bffa509f6c50044660003bf38f93ec8bb0070b0d6",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_04/dfg.png": {
+        "altura": 1204,
+        "largura": 5364,
+        "pixel_sha256": "b5c5b070bf27ced4756b1df3b7454edb12c488d8e490651820b974d1947d43a1",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_04/rede_petri.png": {
+        "altura": 800,
+        "largura": 10476,
+        "pixel_sha256": "133f57e032a8f486551805fb552c6db613fc9047f3dcf37eb235205cfa58ddd2",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_05/beeswarm.png": {
+        "altura": 882,
+        "largura": 1438,
+        "pixel_sha256": "736fef53c8f618b5c7f115cf54b4af761e9561a7830031105a3a6991189baa1c",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_05/dfg.png": {
+        "altura": 692,
+        "largura": 5038,
+        "pixel_sha256": "2981f7fc5ced86a89fb0e050a4c6f33c7a731ba390a39dcf5aac49334aa8f2ed",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_05/rede_petri.png": {
+        "altura": 689,
+        "largura": 11665,
+        "pixel_sha256": "ec78fdbf39ab57c161764b47023393d725077b5c7873e002303c41cf7457d607",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/matriz_grupos.png": {
+        "altura": 915,
+        "largura": 3309,
+        "pixel_sha256": "7e2e2db839f270546ffbce522ba7b82f2b374bc0e989a344118dbcf4e875f135",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/espaco_semantico_tsne.png": {
+        "altura": 1275,
+        "largura": 1950,
+        "pixel_sha256": "e8909c35e413ae4affbf0501359131e8b64a3cf772fdecf5dd172bf188302f66",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/espaco_semantico_tsne_3d.png": {
+        "altura": 1275,
+        "largura": 2700,
+        "pixel_sha256": "f012575f32e32b993b30e3d90aeb272b40c08f12a5dd35cb44b93430077f7c27",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_00/beeswarm.png": {
+        "altura": 882,
+        "largura": 1455,
+        "pixel_sha256": "7327c7cdc25b799d7f71fdd33da5fc915c5b0a438f9907b309a80e8c1823e693",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_00/dfg.png": {
+        "altura": 1680,
+        "largura": 6111,
+        "pixel_sha256": "cb95120d66f694bdeb67eb399f8382f5710efcaa39b9cc07256767bd7cdb81f9",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_00/rede_petri.png": {
+        "altura": 2059,
+        "largura": 14050,
+        "pixel_sha256": "556e193e6c3a39d3d53454bb931a7ac31a74788beeecfa6c4a316d353689ecdc",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_01/beeswarm.png": {
+        "altura": 882,
+        "largura": 1479,
+        "pixel_sha256": "3b53be3f745ba751b527d3e11b818bab3aa4f06d76cb5a16e6ab4ca0907cc513",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_01/dfg.png": {
+        "altura": 871,
+        "largura": 5851,
+        "pixel_sha256": "b8575438397c56e1f9676b8bbbd3916affa38bf4e375b0e5b9b4cdc994fe536c",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_01/rede_petri.png": {
+        "altura": 1003,
+        "largura": 8902,
+        "pixel_sha256": "65c6fe340d2638ad6b22bd08fbb137cba5f04af328bf3aa3c4f8d9071a1d2f09",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_02/beeswarm.png": {
+        "altura": 882,
+        "largura": 1482,
+        "pixel_sha256": "41a761708b631f83e9336b999cb5e2fd9a3e9d1fee80b60561918ea477c13817",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_02/dfg.png": {
+        "altura": 547,
+        "largura": 5305,
+        "pixel_sha256": "ce9a6ef81332121cc879b5e706f19e6e41eb6a5393b5af1caded4e620df4d6ec",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_02/rede_petri.png": {
+        "altura": 512,
+        "largura": 7710,
+        "pixel_sha256": "b136248a3b03bee07934b1f5699d409a90ab5e397cd9291c7334bebda52a5f41",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_03/beeswarm.png": {
+        "altura": 882,
+        "largura": 1463,
+        "pixel_sha256": "6738e6d2b3eaf163bc9881b1001b45118fbc4317bca557d3afa036a839ac68fb",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_03/dfg.png": {
+        "altura": 692,
+        "largura": 5116,
+        "pixel_sha256": "84cecd1fb27a9c85198f9f64635abf5b3f08dc6b90fb47d0a1057026d6bb2f12",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_03/rede_petri.png": {
+        "altura": 648,
+        "largura": 12148,
+        "pixel_sha256": "cd67b0971998ded489ecedd69aa21bdc41a7f5ebdd6d63c7eaf0fd95f1243b42",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/matriz_grupos.png": {
+        "altura": 750,
+        "largura": 3309,
+        "pixel_sha256": "5bcabcd2dce32649def920dbcd247b0678613b1ff9c785f9fd525005be89f012",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/espaco_semantico_tsne.png": {
+        "altura": 1275,
+        "largura": 1950,
+        "pixel_sha256": "a071a7bae5a06af2e72a352dcbad87765df214cf7e5db6d4b43ddd5abe985af5",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/espaco_semantico_tsne_3d.png": {
+        "altura": 1275,
+        "largura": 2700,
+        "pixel_sha256": "ff16cd97e10e8f44db132cc92845b7dd6f0f282ccce3754a535e7d7790443b10",
+        "pixel_estavel": true
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_00/beeswarm.png": {
+        "altura": 882,
+        "largura": 1463,
+        "pixel_sha256": "0946f2d021285ac61cae507efd030dc4633d27270f8e73105ed120820845ec99",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_00/dfg.png": {
+        "altura": 664,
+        "largura": 3479,
+        "pixel_sha256": "89b107163de5c72a58afeb813f5f2da88523f6413412687a01b0a407148c0b37",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_00/rede_petri.png": {
+        "altura": 672,
+        "largura": 7670,
+        "pixel_sha256": "3a4ee137cf26315192297ca9f297a62d7ead13559b9e905fe71b1fc3593d1690",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_01/beeswarm.png": {
+        "altura": 882,
+        "largura": 1479,
+        "pixel_sha256": "6d3f5688f28ce349a08b294ff095ac22f5d6fdd081bd72466a210586304ffa5f",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_01/dfg.png": {
+        "altura": 679,
+        "largura": 5685,
+        "pixel_sha256": "c0cc94edcbeafc41f3029e915462318fe2c8676f3646623fa942f50fb3b30155",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_01/rede_petri.png": {
+        "altura": 661,
+        "largura": 8722,
+        "pixel_sha256": "383dca9f297673f0bedb42fba804bbe0bec46ab6787b56884d149d967d5aa8df",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_02/beeswarm.png": {
+        "altura": 882,
+        "largura": 1474,
+        "pixel_sha256": "456d4d686ac28d7ef816fc6de7d8498847508983315f3b2fbc086175e429d468",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_02/dfg.png": {
+        "altura": 770,
+        "largura": 4271,
+        "pixel_sha256": "fe4d3ecf437add45f650a60c0a90cc50b9bd2240c97b4e4e3ce49db94db10dfa",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_02/rede_petri.png": {
+        "altura": 833,
+        "largura": 8088,
+        "pixel_sha256": "de5b5f9f47b7da721aedf515ba50496459f6ea1168137cc027ac85fba57c8800",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_03/beeswarm.png": {
+        "altura": 882,
+        "largura": 1441,
+        "pixel_sha256": "2df403bd68a1c74df26eb078c945c82ac1422e9097153b1aefb2a3dc88b8e02c",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_03/dfg.png": {
+        "altura": 310,
+        "largura": 4568,
+        "pixel_sha256": "262e2681674cf49121d14905561170bb91d5f050e468067e09593c6e84ad84b9",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_03/rede_petri.png": {
+        "altura": 431,
+        "largura": 7208,
+        "pixel_sha256": "d6a27285993b9a3b51d242bdcdbd9222f40a3189ae26cc856673e8e53c9905a1",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_04/beeswarm.png": {
+        "altura": 882,
+        "largura": 1439,
+        "pixel_sha256": "c7e021eed8a1d76729eeb4c80d00bdef33566457407031e40604b62ef8c0b25f",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_04/dfg.png": {
+        "altura": 229,
+        "largura": 4034,
+        "pixel_sha256": "4298ca8dbe97dcc95ee1cd056ac8268c7f0f617aa708d148cc8089e9b0fa33be",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_04/rede_petri.png": {
+        "altura": 249,
+        "largura": 5013,
+        "pixel_sha256": "05f2c95369023a78c667452c223e088f29916fb2c6de29c17b66ccb2ce3a6d7e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_05/beeswarm.png": {
+        "altura": 882,
+        "largura": 1471,
+        "pixel_sha256": "84cf2953be07c79fbfed6cbecb2abee89e188297419c75794c91081f8f81e1fa",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_05/dfg.png": {
+        "altura": 758,
+        "largura": 5553,
+        "pixel_sha256": "d7e04dc4fac49b7165253e4b7756515604b0d18c4285a0eed0a812c832008da2",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_05/rede_petri.png": {
+        "altura": 672,
+        "largura": 8939,
+        "pixel_sha256": "6f42479456612342822f5f1848abdd52efb75d8bb373aa7948c5cda37a816c5e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_06/beeswarm.png": {
+        "altura": 882,
+        "largura": 1489,
+        "pixel_sha256": "ed3d61328389465844bedb8c78d1852a7536d11413ca2dba9c44a40bbdd1efa8",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_06/dfg.png": {
+        "altura": 547,
+        "largura": 5289,
+        "pixel_sha256": "03a2248b5c5789e9c1ddae92d006bd7edc6d920f9ab0de62035c591f2b01bfb7",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_06/rede_petri.png": {
+        "altura": 564,
+        "largura": 7710,
+        "pixel_sha256": "8b821b4998c2cd1aac2708453283850ee069757a5b13e87118944d28f4836754",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_07/beeswarm.png": {
+        "altura": 882,
+        "largura": 1467,
+        "pixel_sha256": "104f32ffba27a6f4f2ae6c4dc439dabe33100b323e63da8a3ad1c3f2917da9b3",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_07/dfg.png": {
+        "altura": 310,
+        "largura": 4869,
+        "pixel_sha256": "65094b9418bf0d501e213bfd90f656157635eb0ff681e21eabfd0838a6d79b78",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_07/rede_petri.png": {
+        "altura": 476,
+        "largura": 7606,
+        "pixel_sha256": "74df18821a263803cf4090293f880c12b39ce00961c1d94975f8408ecf50066f",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_08/beeswarm.png": {
+        "altura": 882,
+        "largura": 1476,
+        "pixel_sha256": "0bc015f39a9cf504adf9d71e76cd97c5440a056f20bbc02455f261f0e8d7a24e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_08/dfg.png": {
+        "altura": 310,
+        "largura": 5635,
+        "pixel_sha256": "72a69141fd5a797bc4a704192dc19a7450fd986b01b026585035cbb8322d48cf",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_08/rede_petri.png": {
+        "altura": 495,
+        "largura": 8549,
+        "pixel_sha256": "fc5c4556a765064d156040e09648342ece66f7f13c816cf38419b8d874e2beec",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_09/beeswarm.png": {
+        "altura": 882,
+        "largura": 1458,
+        "pixel_sha256": "ef97039d8cdf6c1097f8f3a852c871d96e423e6176bdef136809ae71ab4f3e73",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_09/dfg.png": {
+        "altura": 229,
+        "largura": 4013,
+        "pixel_sha256": "45e1418c4a2eb86a3633e22b0350542d9c5bbb71d41ae5b0f8493d1f25a0defd",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_09/rede_petri.png": {
+        "altura": 249,
+        "largura": 5001,
+        "pixel_sha256": "c32ffad5cc1de71d0b6ef93eeb41b5ff6608bae25200aa00467d14650cfe9846",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_10/beeswarm.png": {
+        "altura": 882,
+        "largura": 1443,
+        "pixel_sha256": "b9a6ef5067e55b7650f2093cbf6769bca67fd82689c8c93d7688142b5d827fe2",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_10/dfg.png": {
+        "altura": 229,
+        "largura": 3285,
+        "pixel_sha256": "d3f5452dcc2b151f27c421af3dd822e1e8a2675a6524e24bd201f9834df3610e",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_10/rede_petri.png": {
+        "altura": 249,
+        "largura": 4181,
+        "pixel_sha256": "c09beebbdbe87557375f20e850542458ca717aa3937ae8548d6d1f07c7076363",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_11/beeswarm.png": {
+        "altura": 882,
+        "largura": 1464,
+        "pixel_sha256": "719d004f507f3c767ae1b3596645767fb890169c3393de1b9924f8f7ab8d69d2",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_11/dfg.png": {
+        "altura": 899,
+        "largura": 6413,
+        "pixel_sha256": "abb5fa499554bac21141b84f1529a12f85839014b964a33b49cba9f869f5a6d2",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_11/rede_petri.png": {
+        "altura": 988,
+        "largura": 9872,
+        "pixel_sha256": "ad3bccd7f2a2068dabd7f0b6fd1559a39df95cddb6ce79c2266b23fd0974f4c6",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_12/beeswarm.png": {
+        "altura": 882,
+        "largura": 1462,
+        "pixel_sha256": "72329279805e4beb44daf03d9f3d7e686668a4efb0339f52d9e74fb6f99873cb",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_12/dfg.png": {
+        "altura": 547,
+        "largura": 5289,
+        "pixel_sha256": "9c830823c2bb9df106fa75c98fc98d286bb26f5d56c133f168a1cba5cd08510d",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_12/rede_petri.png": {
+        "altura": 557,
+        "largura": 7710,
+        "pixel_sha256": "c18a6a6012ac5559ad09746236e29bbb45f0607c7f3bfe052a821f74abb47791",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_13/beeswarm.png": {
+        "altura": 882,
+        "largura": 1479,
+        "pixel_sha256": "0d5b2c9b1a3db0eefe1fc57893c4b9bdb67a498c978895db9575400f95c3a699",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_13/dfg.png": {
+        "altura": 508,
+        "largura": 3752,
+        "pixel_sha256": "63abc3edaeaaa0c01f42cea53cf33f5acb3aa3610872f8bbd0279f787e8ad3e4",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_13/rede_petri.png": {
+        "altura": 459,
+        "largura": 4651,
+        "pixel_sha256": "4f00b0260a73ce50866a191004f354d10ef1e640eb05df1ad5768c899699aeea",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_14/beeswarm.png": {
+        "altura": 882,
+        "largura": 1443,
+        "pixel_sha256": "ee6529760f83104918489130b690c7f44c0887a0dd4cad83ea1ad86548f6aa9f",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_14/dfg.png": {
+        "altura": 480,
+        "largura": 3181,
+        "pixel_sha256": "167f78b5b9fe76baf66e62129bcf5a46f5d86d8f7a667656199b99e224b305d6",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_14/rede_petri.png": {
+        "altura": 385,
+        "largura": 4118,
+        "pixel_sha256": "b9b6423a6daf0a660635e2f0b8925fa94e523c4a539b4fa19bdb6393d5e323cb",
+        "pixel_estavel": false
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/matriz_grupos.png": {
+        "altura": 1657,
+        "largura": 3309,
+        "pixel_sha256": "dc8306426c9931374c95194d0444b03b8acea09ef872dbef055314d9dd2bc98d",
+        "pixel_estavel": true
+      }
+    },
+    "pnml_info": {
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_00/rede_petri.pnml": {
+        "places": 25,
+        "transitions": 33
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_01/rede_petri.pnml": {
+        "places": 27,
+        "transitions": 35
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_02/rede_petri.pnml": {
+        "places": 18,
+        "transitions": 20
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_03/rede_petri.pnml": {
+        "places": 12,
+        "transitions": 11
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_04/rede_petri.pnml": {
+        "places": 12,
+        "transitions": 10
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_05/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_06/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_07/rede_petri.pnml": {
+        "places": 14,
+        "transitions": 15
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_08/rede_petri.pnml": {
+        "places": 9,
+        "transitions": 8
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_09/rede_petri.pnml": {
+        "places": 23,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_10/rede_petri.pnml": {
+        "places": 15,
+        "transitions": 17
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_11/rede_petri.pnml": {
+        "places": 9,
+        "transitions": 8
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_12/rede_petri.pnml": {
+        "places": 23,
+        "transitions": 31
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_13/rede_petri.pnml": {
+        "places": 18,
+        "transitions": 21
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_14/rede_petri.pnml": {
+        "places": 13,
+        "transitions": 14
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_15/rede_petri.pnml": {
+        "places": 9,
+        "transitions": 8
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_16/rede_petri.pnml": {
+        "places": 25,
+        "transitions": 33
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_17/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_18/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_19/rede_petri.pnml": {
+        "places": 11,
+        "transitions": 11
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/grupo_20/rede_petri.pnml": {
+        "places": 11,
+        "transitions": 11
+      },
+      "results/jornadas_por_grupo/hdbscan_gemini/grupos/ruido/rede_petri.pnml": {
+        "places": 89,
+        "transitions": 133
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_00/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_01/rede_petri.pnml": {
+        "places": 26,
+        "transitions": 31
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_02/rede_petri.pnml": {
+        "places": 12,
+        "transitions": 10
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_03/rede_petri.pnml": {
+        "places": 14,
+        "transitions": 15
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_04/rede_petri.pnml": {
+        "places": 9,
+        "transitions": 8
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_05/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 23
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_06/rede_petri.pnml": {
+        "places": 13,
+        "transitions": 12
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_07/rede_petri.pnml": {
+        "places": 32,
+        "transitions": 42
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_08/rede_petri.pnml": {
+        "places": 25,
+        "transitions": 33
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_09/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_10/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_11/rede_petri.pnml": {
+        "places": 27,
+        "transitions": 35
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_12/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_13/rede_petri.pnml": {
+        "places": 32,
+        "transitions": 42
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_14/rede_petri.pnml": {
+        "places": 32,
+        "transitions": 42
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_15/rede_petri.pnml": {
+        "places": 14,
+        "transitions": 15
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_16/rede_petri.pnml": {
+        "places": 9,
+        "transitions": 8
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_17/rede_petri.pnml": {
+        "places": 9,
+        "transitions": 8
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_18/rede_petri.pnml": {
+        "places": 14,
+        "transitions": 15
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_19/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_20/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_21/rede_petri.pnml": {
+        "places": 63,
+        "transitions": 92
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_22/rede_petri.pnml": {
+        "places": 34,
+        "transitions": 47
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_23/rede_petri.pnml": {
+        "places": 62,
+        "transitions": 87
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_24/rede_petri.pnml": {
+        "places": 40,
+        "transitions": 52
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/grupo_25/rede_petri.pnml": {
+        "places": 34,
+        "transitions": 47
+      },
+      "results/jornadas_por_grupo/hdbscan_minilm/grupos/ruido/rede_petri.pnml": {
+        "places": 96,
+        "transitions": 141
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_00/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_01/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_02/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_03/rede_petri.pnml": {
+        "places": 13,
+        "transitions": 14
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_04/rede_petri.pnml": {
+        "places": 15,
+        "transitions": 17
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_05/rede_petri.pnml": {
+        "places": 32,
+        "transitions": 42
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_06/rede_petri.pnml": {
+        "places": 27,
+        "transitions": 35
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_07/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 23
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_08/rede_petri.pnml": {
+        "places": 19,
+        "transitions": 18
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_09/rede_petri.pnml": {
+        "places": 15,
+        "transitions": 17
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_10/rede_petri.pnml": {
+        "places": 23,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_11/rede_petri.pnml": {
+        "places": 11,
+        "transitions": 11
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_12/rede_petri.pnml": {
+        "places": 9,
+        "transitions": 8
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/grupo_13/rede_petri.pnml": {
+        "places": 9,
+        "transitions": 8
+      },
+      "results/jornadas_por_grupo/hdbscan_tf_idf/grupos/ruido/rede_petri.pnml": {
+        "places": 69,
+        "transitions": 108
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_00/rede_petri.pnml": {
+        "places": 59,
+        "transitions": 86
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_01/rede_petri.pnml": {
+        "places": 39,
+        "transitions": 55
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_02/rede_petri.pnml": {
+        "places": 27,
+        "transitions": 35
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_03/rede_petri.pnml": {
+        "places": 44,
+        "transitions": 62
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_04/rede_petri.pnml": {
+        "places": 49,
+        "transitions": 65
+      },
+      "results/jornadas_por_grupo/kmeans_gemini/grupos/grupo_05/rede_petri.pnml": {
+        "places": 43,
+        "transitions": 62
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_00/rede_petri.pnml": {
+        "places": 82,
+        "transitions": 123
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_01/rede_petri.pnml": {
+        "places": 44,
+        "transitions": 62
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_02/rede_petri.pnml": {
+        "places": 27,
+        "transitions": 35
+      },
+      "results/jornadas_por_grupo/kmeans_minilm/grupos/grupo_03/rede_petri.pnml": {
+        "places": 41,
+        "transitions": 61
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_00/rede_petri.pnml": {
+        "places": 29,
+        "transitions": 38
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_01/rede_petri.pnml": {
+        "places": 32,
+        "transitions": 42
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_02/rede_petri.pnml": {
+        "places": 42,
+        "transitions": 58
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_03/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_04/rede_petri.pnml": {
+        "places": 15,
+        "transitions": 17
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_05/rede_petri.pnml": {
+        "places": 34,
+        "transitions": 47
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_06/rede_petri.pnml": {
+        "places": 27,
+        "transitions": 35
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_07/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_08/rede_petri.pnml": {
+        "places": 22,
+        "transitions": 29
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_09/rede_petri.pnml": {
+        "places": 15,
+        "transitions": 17
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_10/rede_petri.pnml": {
+        "places": 13,
+        "transitions": 14
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_11/rede_petri.pnml": {
+        "places": 47,
+        "transitions": 62
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_12/rede_petri.pnml": {
+        "places": 27,
+        "transitions": 35
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_13/rede_petri.pnml": {
+        "places": 19,
+        "transitions": 22
+      },
+      "results/jornadas_por_grupo/kmeans_tf_idf/grupos/grupo_14/rede_petri.pnml": {
+        "places": 18,
+        "transitions": 21
+      }
+    }
+  },
+  "analise_v1_1": {
+    "csv_json_sha256": {
+      "results/dados/migracao_rotulos.csv": "c57a03f680065e886ca3090a4611c53255a3501595f4c7df906040587fa5feb4",
+      "results/dados/sessoes_rotulo_revisado.csv": "a4e9fd467412e51f5c340589963a7910f8a85025e461a750680efa0a9d9a8168",
+      "results/metrics/comparacao_v1.0_v1.1.csv": "2624d5066e7fb07468cbf92f832534a52675cac0255ec21e47dd33b81abbd738"
+    },
+    "png_info": {
+      "results/dados/migracao_rotulos.png": {
+        "altura": 1452,
+        "largura": 2635,
+        "pixel_sha256": "2accbda02b1be85367868805bca8f0addc710a93b4f4dd436b9e760a8d9af1e5",
+        "pixel_estavel": true
+      },
+      "results/figures/comparacao_v1.0_v1.1.png": {
+        "altura": 788,
+        "largura": 2168,
+        "pixel_sha256": "6b1b6891a4fffafe27845a30b66fcc51e7b0e5cf0b55781930c71b2364f32f31",
+        "pixel_estavel": true
+      }
+    },
+    "pnml_info": {}
+  },
+  "conferencia_rotulos": {
+    "csv_json_sha256": {
+      "results/dados/conferencia_rotulos.csv": "55e2e45549234671f049c2298719279b617591f0c52997ffdb3f487fbbfbeb6d"
+    },
+    "png_info": {},
+    "pnml_info": {}
+  }
+}

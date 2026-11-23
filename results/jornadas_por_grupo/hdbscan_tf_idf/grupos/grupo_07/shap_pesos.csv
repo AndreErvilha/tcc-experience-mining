@@ -1,0 +1,2 @@
+﻿modelo;grupo;evento;shap_medio_no_grupo;shap_abs_medio_no_grupo;shap_medio_fora_do_grupo;pct_sessoes_do_grupo_com_evento;pct_sessoes_fora_com_evento;tfidf_medio_no_grupo;direcao
+hdbscan_tf_idf;7;pix:click_home_pix_pix_copia_e_cola;4.40021;4.40021;-2.02983;1.0;0.036;0.50207;empurra PARA o grupo (+)

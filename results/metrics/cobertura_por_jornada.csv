@@ -5,8 +5,8 @@ cdb_resgatado;49;0.0;0.0;0.0;0.0;51.0;93.9
 copia_pix_paga;46;100.0;0.0;0.0;67.4;93.5;73.9
 pix_transferido;41;100.0;0.0;80.5;100.0;100.0;100.0
 cdb_aplicado;37;100.0;0.0;0.0;100.0;91.9;81.1
-openfinance_pago;29;96.6;0.0;0.0;96.6;0.0;0.0
 fatura_parcelada;29;100.0;0.0;0.0;96.6;41.4;100.0
+openfinance_pago;29;96.6;0.0;0.0;96.6;0.0;0.0
 pix_copiado;21;81.0;0.0;0.0;76.2;0.0;0.0
 iniciou_pagar_saldo_sem_converter;19;0.0;0.0;0.0;0.0;0.0;47.4
 resgate_pago_fatura;15;0.0;0.0;0.0;0.0;0.0;0.0

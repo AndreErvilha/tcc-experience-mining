@@ -1,0 +1,13 @@
+﻿modelo;grupo;evento;shap_medio_no_grupo;shap_abs_medio_no_grupo;shap_medio_fora_do_grupo;pct_sessoes_do_grupo_com_evento;pct_sessoes_fora_com_evento;tfidf_medio_no_grupo;direcao
+hdbscan_minilm;19;cartoes:click_comprovante_parcelamento_fechar;2.38479;2.38479;-1.23031;1.0;0.016;0.17115;empurra PARA o grupo (+)
+hdbscan_minilm;19;cartoes:click_fatura_atual_simular_parcelamento;0.71864;0.71864;-0.64707;1.0;0.018;0.35554;empurra PARA o grupo (+)
+hdbscan_minilm;19;cartoes:view_fatura_atual;0.65532;0.65532;-0.12901;1.0;0.345;0.30325;empurra PARA o grupo (+)
+hdbscan_minilm;19;cartoes:view_slider_parcelas;0.12049;0.51658;-0.59973;1.0;0.018;0.46616;empurra PARA o grupo (+)
+hdbscan_minilm;19;cartoes:click_fatura_atual_opcoes_pagamento;0.31134;0.31134;0.02392;0.0;0.249;0.0;empurra PARA o grupo (+)
+hdbscan_minilm;19;cartoes:click_slider_parcelas_continuar;0.10638;0.21671;0.05198;1.0;0.018;0.2789;empurra PARA o grupo (+)
+hdbscan_minilm;19;cartoes:click_fatura_atual_voltar;0.09149;0.15248;-0.03653;0.857;0.319;0.14002;empurra PARA o grupo (+)
+hdbscan_minilm;19;canais:click_home_menu_produtos;0.12985;0.1384;0.04901;1.0;1.0;0.04587;empurra PARA o grupo (+)
+hdbscan_minilm;19;cartoes:view_opcoes_pagamento;0.10483;0.10483;0.01045;0.0;0.249;0.0;empurra PARA o grupo (+)
+hdbscan_minilm;19;cartoes:view_home_cartoes;0.00961;0.02918;-0.01449;1.0;0.527;0.23831;empurra PARA o grupo (+)
+hdbscan_minilm;19;canais:view_home;0.01194;0.02086;-0.00137;1.0;1.0;0.07469;empurra PARA o grupo (+)
+hdbscan_minilm;19;cartoes:click_resumo_juros_voltar;-0.00012;0.01301;-0.01782;0.714;0.018;0.12029;afasta do grupo (-)

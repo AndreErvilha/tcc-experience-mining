@@ -1,0 +1,23 @@
+﻿modelo;grupo;grupo_nome;sessoes;jornada_dominante;pct_jornada_dominante;pct_sucesso;n_jornadas_distintas;composicao;mediana_eventos
+hdbscan_gemini;-1;ruído;100;neutro;0.21;0.63;19;"neutro 21 (21%); resgate_pago_fatura 15 (15%); fatura_paga_saldo 13 (13%); cdb_aplicado 7 (7%); historico_visualizado 6 (6%); iniciou_pagar_saldo_sem_converter 5 (5%); openfinance_pago 4 (4%); copia_pix_paga 4 (4%); iniciou_historico_sem_converter 3 (3%); iniciou_openfinance_sem_converter 3 (3%); openfinance_fatura_paga 3 (3%); cdb_resgatado 3 (3%); fatura_paga_saldo+cdb_resgatado 3 (3%); pix_copiado 2 (2%); iniciou_pix_sem_converter 2 (2%); iniciou_cdb_sem_converter 2 (2%); fatura_paga_pix_copia_cola 2 (2%); fatura_paga_saldo+openfinance_pago 1 (1%); iniciou_resgate_sem_converter 1 (1%)";48
+hdbscan_gemini;0;grupo 0;32;fatura_parcelada;0.906;0.906;3;"fatura_parcelada 29 (91%); iniciou_parcelamento_sem_converter 2 (6%); neutro 1 (3%)";52
+hdbscan_gemini;1;grupo 1;39;openfinance_pago;0.641;1.0;4;"openfinance_pago 25 (64%); openfinance_fatura_paga 9 (23%); fatura_paga_saldo+openfinance_pago 4 (10%); fatura_paga_saldo 1 (3%)";117
+hdbscan_gemini;2;grupo 2;19;copia_pix_paga;1.0;1.0;1;copia_pix_paga 19 (100%);12
+hdbscan_gemini;3;grupo 3;6;copia_pix_paga;1.0;1.0;1;copia_pix_paga 6 (100%);14
+hdbscan_gemini;4;grupo 4;9;copia_pix_paga;1.0;1.0;1;copia_pix_paga 9 (100%);10
+hdbscan_gemini;5;grupo 5;20;pix_transferido;0.85;0.85;2;"pix_transferido 17 (85%); iniciou_pix_sem_converter 3 (15%)";29
+hdbscan_gemini;6;grupo 6;25;pix_transferido;0.96;0.96;2;"pix_transferido 24 (96%); iniciou_pix_sem_converter 1 (4%)";93
+hdbscan_gemini;7;grupo 7;7;iniciou_pagar_saldo_sem_converter;0.714;0.0;2;"iniciou_pagar_saldo_sem_converter 5 (71%); neutro 2 (29%)";25
+hdbscan_gemini;8;grupo 8;6;neutro;1.0;0.0;1;neutro 6 (100%);13
+hdbscan_gemini;9;grupo 9;31;pix_copiado;0.613;1.0;3;"pix_copiado 19 (61%); copia_pix_paga 8 (26%); fatura_paga_pix_copia_cola 4 (13%)";34
+hdbscan_gemini;10;grupo 10;8;historico_visualizado;1.0;1.0;1;historico_visualizado 8 (100%);69
+hdbscan_gemini;11;grupo 11;29;neutro;1.0;0.0;1;neutro 29 (100%);7
+hdbscan_gemini;12;grupo 12;55;fatura_paga_saldo;1.0;1.0;1;fatura_paga_saldo 55 (100%);43
+hdbscan_gemini;13;grupo 13;10;neutro;0.7;0.0;2;"neutro 7 (70%); iniciou_cdb_sem_converter 3 (30%)";11
+hdbscan_gemini;14;grupo 14;9;iniciou_pagar_saldo_sem_converter;1.0;0.0;1;iniciou_pagar_saldo_sem_converter 9 (100%);19
+hdbscan_gemini;15;grupo 15;13;neutro;1.0;0.0;1;neutro 13 (100%);13
+hdbscan_gemini;16;grupo 16;48;cdb_resgatado;0.958;0.958;2;"cdb_resgatado 46 (96%); iniciou_resgate_sem_converter 2 (4%)";54
+hdbscan_gemini;17;grupo 17;15;cdb_aplicado;1.0;1.0;1;cdb_aplicado 15 (100%);27
+hdbscan_gemini;18;grupo 18;15;cdb_aplicado;1.0;1.0;1;cdb_aplicado 15 (100%);83
+hdbscan_gemini;19;grupo 19;13;neutro;1.0;0.0;1;neutro 13 (100%);17
+hdbscan_gemini;20;grupo 20;7;neutro;1.0;0.0;1;neutro 7 (100%);11

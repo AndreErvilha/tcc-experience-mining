@@ -8,9 +8,29 @@ from pm4py.algo.simulation.playout.petri_net import algorithm as playout_handler
 from pm4py.algo.simulation.playout.petri_net.variants import stochastic_playout
 from jornada_ux.modules.utils import prepare_event_log, resolve_output_file_path, check_overwrite
 
+def _ativar_ordem_deterministica():
+    """Reprodutibilidade: o pm4py monta a lista de transições habilitadas a partir de um set,
+    cuja ordem muda a cada execução (hash por id do objeto). Com a ordem variando, a mesma
+    semente sorteia transições diferentes. Aqui a lista é ordenada por nome/rótulo antes do sorteio."""
+    from pm4py.objects.stochastic_petri import utils as stochastic_utils
+    if getattr(stochastic_utils.pick_transition, "_ordenado", False):
+        return
+    original = stochastic_utils.pick_transition
+
+    def chave(t):
+        return (1, "", "") if t is None else (0, str(t.name), str(t.label))
+
+    def pick_transition_ordenado(et, smap):
+        return original(sorted(et, key=chave), smap)
+
+    pick_transition_ordenado._ordenado = True
+    stochastic_utils.pick_transition = pick_transition_ordenado
+
+
 def run_playout(args):
     # 1. Configurar sementes para reprodutibilidade
     print(f"Configurando semente de aleatoriedade: {args.seed}")
+    _ativar_ordem_deterministica()
     random.seed(args.seed)
     np.random.seed(args.seed)
 
