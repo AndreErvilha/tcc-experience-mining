@@ -1,0 +1,16 @@
+﻿modelo;grupo;grupo_nome;sessoes;jornada_dominante;pct_jornada_dominante;pct_sucesso;n_jornadas_distintas;composicao;mediana_eventos
+kmeans_tf_idf;0;grupo 0;53;copia_pix_paga;0.868;0.906;4;"copia_pix_paga 46 (87%); neutro 3 (6%); iniciou_pix_sem_converter 2 (4%); fatura_paga_pix_copia_cola 2 (4%)";14
+kmeans_tf_idf;1;grupo 1;64;cdb_resgatado;0.766;0.969;5;"cdb_resgatado 49 (77%); resgate_pago_fatura 9 (14%); fatura_paga_saldo+cdb_resgatado 3 (5%); iniciou_resgate_sem_converter 2 (3%); fatura_paga_saldo 1 (2%)";68
+kmeans_tf_idf;2;grupo 2;45;fatura_paga_saldo;0.511;0.689;4;"fatura_paga_saldo 23 (51%); iniciou_pagar_saldo_sem_converter 14 (31%); pix_copiado 4 (9%); fatura_paga_pix_copia_cola 4 (9%)";49
+kmeans_tf_idf;3;grupo 3;45;pix_transferido;0.911;0.911;2;"pix_transferido 41 (91%); iniciou_pix_sem_converter 4 (9%)";59
+kmeans_tf_idf;4;grupo 4;16;historico_visualizado;0.875;0.875;2;"historico_visualizado 14 (88%); iniciou_historico_sem_converter 2 (12%)";60
+kmeans_tf_idf;5;grupo 5;39;fatura_paga_saldo;0.872;1.0;2;"fatura_paga_saldo 34 (87%); resgate_pago_fatura 5 (13%)";43
+kmeans_tf_idf;6;grupo 6;32;openfinance_pago;0.875;0.938;3;"openfinance_pago 28 (88%); iniciou_openfinance_sem_converter 2 (6%); openfinance_fatura_paga 2 (6%)";59
+kmeans_tf_idf;7;grupo 7;31;fatura_parcelada;0.935;0.935;2;"fatura_parcelada 29 (94%); iniciou_parcelamento_sem_converter 2 (6%)";53
+kmeans_tf_idf;8;grupo 8;40;cdb_aplicado;0.925;0.925;2;"cdb_aplicado 37 (92%); iniciou_cdb_sem_converter 3 (8%)";48
+kmeans_tf_idf;9;grupo 9;17;pix_copiado;1.0;1.0;1;pix_copiado 17 (100%);55
+kmeans_tf_idf;10;grupo 10;15;neutro;0.933;0.0;2;"neutro 14 (93%); iniciou_historico_sem_converter 1 (7%)";17
+kmeans_tf_idf;11;grupo 11;35;neutro;0.657;0.171;6;"neutro 23 (66%); iniciou_pagar_saldo_sem_converter 5 (14%); fatura_paga_saldo 4 (11%); openfinance_pago 1 (3%); iniciou_openfinance_sem_converter 1 (3%); resgate_pago_fatura 1 (3%)";21
+kmeans_tf_idf;12;grupo 12;22;openfinance_fatura_paga;0.455;1.0;3;"openfinance_fatura_paga 10 (45%); fatura_paga_saldo 7 (32%); fatura_paga_saldo+openfinance_pago 5 (23%)";128
+kmeans_tf_idf;13;grupo 13;16;neutro;0.812;0.0;3;"neutro 13 (81%); iniciou_cdb_sem_converter 2 (12%); iniciou_resgate_sem_converter 1 (6%)";12
+kmeans_tf_idf;14;grupo 14;46;neutro;1.0;0.0;1;neutro 46 (100%);7

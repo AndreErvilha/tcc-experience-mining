@@ -30,14 +30,16 @@ Este trabalho propõe e valida experimentalmente o framework de **Experience Min
 
 | Experimento | Representação | Algoritmo | $K$ | Ruído (%) | Silhouette | ARI (s/ ruído) | V-Measure | Pureza por Macro-Exp. |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **HDBSCAN + Gemini** | Gemini (3072D) | HDBSCAN | 21 | 19.4% | 0.3793 | 0.6434 | 0.8355 | **97.68%** 🏆 |
-| **HDBSCAN + TF-IDF** | TF-IDF | HDBSCAN | 14 | 26.9% | **0.6477** 🏆 | **0.7469** 🏆 | **0.8886** 🏆 | 95.61% |
-| **HDBSCAN + MiniLM** | MiniLM (384D) | HDBSCAN | 26 | 24.0% | 0.5426 | 0.4148 | 0.7027 | 92.68% |
-| **K-Means + Gemini** | Gemini (3072D) | K-Means | 6 | 0.0% | 0.2942 | 0.4213 | 0.6173 | 91.65% |
-| **K-Means + TF-IDF** | TF-IDF | K-Means | 15 | 0.0% | 0.4923 | 0.5917 | 0.8014 | 91.42% |
-| **K-Means + MiniLM** | MiniLM (384D) | K-Means | 4 | 0.0% | 0.4037 | 0.2239 | 0.4882 | 87.24% |
+| **HDBSCAN + Gemini** | Gemini (3072D) | HDBSCAN | 21 | 19.4% | 0.3793 | 0.6538 | 0.8346 | **97.63%** 🏆 |
+| **HDBSCAN + TF-IDF** | TF-IDF | HDBSCAN | 14 | 26.9% | **0.6477** 🏆 | **0.7268** 🏆 | **0.8851** 🏆 | 95.41% |
+| **HDBSCAN + MiniLM** | MiniLM (384D) | HDBSCAN | 26 | 24.0% | 0.5426 | 0.4258 | 0.7183 | 92.76% |
+| **K-Means + Gemini** | Gemini (3072D) | K-Means | 6 | 0.0% | 0.2942 | 0.4911 | 0.6590 | 91.37% |
+| **K-Means + TF-IDF** | TF-IDF | K-Means | 15 | 0.0% | 0.4923 | 0.6076 | 0.7971 | 91.13% |
+| **K-Means + MiniLM** | MiniLM (384D) | K-Means | 4 | 0.0% | 0.4037 | 0.2377 | 0.5078 | 90.17% |
 
-> **Achado de Produto Crítico:** O algoritmo isolou espontaneamente o **Cluster 5 (CDB $\rightarrow$ Fatura)** com 63 sessões e 96,8% de pureza real, evidenciando uma jornada de atrito com 18 passos redundantes onde o usuário resgata renda fixa para quitar o cartão. A pesquisa fundamenta o redesenho (*BPR*) para a funcionalidade de *Resgate Automático com Quitação em 2 Cliques*.
+**Versão 1.1 (revisão pós-entrega).** Os agrupamentos, o ruído e o Silhouette são os do TCC entregue (tag `v1.0-entrega`). ARI, V-Measure e Pureza usam o rótulo da **Tabela 1 revisada**: 12 jornadas definidas a partir do modelo de cada cenário, cada uma com gatilho e conversão; 005, 009 e 010 são compostas (`dataset/gerar_massas.py`). Comparação com a versão entregue: `results/metrics/comparacao_v1.0_v1.1.csv`. Cobertura por jornada: `results/metrics/cobertura_por_jornada.csv`. Sessões por jornada: `results/dados/jornadas_contagem.csv`.
+
+> **Achado de produto (revisado):** os agrupamentos isolam sem regras as jornadas de um produto (pagamento de fatura, PIX, aplicação e resgate de CDB, parcelamento). As jornadas compostas, que cruzam produtos (Open Finance + fatura, resgate de CDB + fatura, fatura + PIX copia e cola), têm de 6 a 15 sessões e não formam grupo próprio em nenhum modelo. O Cluster 5 do HDBSCAN + TF-IDF é o grupo de resgate de CDB (ver a errata).
 
 ---
 
@@ -45,45 +47,37 @@ Este trabalho propõe e valida experimentalmente o framework de **Experience Min
 
 ```
 tcc-experience-mining/
-├── README.md                      # Documentação oficial
-├── requirements.txt               # Dependências pinadas para reproducibilidade
-├── run_all.py                     # Orquestrador mestre (1-click reproduction)
-├── LICENSE                        # Licença MIT
-├── CITATION.cff                   # Citação acadêmica formal
-│
-├── dataset/                       # Corpus experimental
-│   ├── raw/                       # Redes de Petri (.pnml), DFGs e logs sementes das 10 jornadas
-│   ├── processed/                 # total-rotulado.csv (516 sessões com ground truth)
-│   └── gerar_massas.py            # Gerador estocástico e rotulador via pm4py-cli
-│
-├── data/                          # Dados vetorizados pré-calculados
-│   ├── sessions_represented.csv   # Sequências textuais de eventos
-│   ├── tfidf_vectors.pkl          # Vetores TF-IDF
-│   ├── minilm_embeddings.pkl      # Embeddings Sentence-BERT (384D)
-│   └── gemini_embeddings.pkl      # Embeddings Gemini (3072D)
-│
-├── src/                           # Pipeline modular em Python
-│   ├── events2vector.py           # Converte eventos em sequências textuais
-│   ├── tfidf_vectorizer.py        # Vetorização TF-IDF
-│   ├── embeddings_vectorizer.py   # Vetorização neural MiniLM e Gemini
-│   ├── kmeans_cluster.py          # Agrupamento K-Means com busca de K
-│   ├── hdbscan_cluster.py         # Agrupamento HDBSCAN com grid search
-│   ├── eval_metrics.py            # Avaliação de métricas (Silhouette, ARI, Pureza)
-│   ├── shap_explainer.py          # XAI: XGBoost surrogate e valores SHAP
-│   └── stream_inference.py        # Inferência em tempo de execução (<1 ms)
-│
-├── tools/
-│   └── pm4py_cli/                 # CLI própria de Process Mining e Playout
-│
-├── results/                       # Métricas e saídas computadas
-│   ├── summary_metrics.csv        # Tabela comparativa consolidada
-│   ├── metrics/                   # JSONs individuais por experimento
-│   └── figures/                   # As 5 figuras oficiais em 300 DPI
-│
-└── paper/                         # Dissertação Oficial em LaTeX
-    ├── tcc.tex                    # Código-fonte LaTeX formatado
-    ├── tcc_referencias.bib        # Bibliografia em ABNT
-    └── tcc.pdf                    # Artigo final compilado
+├── run_all.py                     # Orquestrador (reprodução de ponta a ponta)
+├── requirements.txt / requirements-lock.txt
+├── dataset/
+│   ├── raw/                       # Logs-semente, Redes de Petri (.pnml) e playouts dos 10 cenários
+│   ├── processed/
+│   │   ├── total.csv              # Massa entregue: 516 sessões, 28.786 eventos
+│   │   ├── total-rotulado.csv     # Rótulos da versão entregue (v1.0)
+│   │   └── total-rotulado-v1.1.csv  # Rótulos pela Tabela 1 revisada (entrada do pipeline)
+│   └── gerar_massas.py            # Gera e rotula a massa (pm4py-cli); na v1.1 rodamos só a rotulagem (--saida total-rotulado-v1.1.csv)
+├── data/                          # Sessões em texto e vetores (TF-IDF, MiniLM, Gemini)
+├── clusters/                      # Agrupamentos (K-Means e HDBSCAN × 3 representações)
+├── src/                           # Pipeline
+│   ├── events2vector.py           # Eventos → texto por sessão + flags + rótulo principal
+│   ├── tfidf_vectorizer.py, embeddings_vectorizer.py
+│   ├── kmeans_cluster.py, hdbscan_cluster.py
+│   ├── eval_metrics.py            # Silhouette, ARI, V-Measure, pureza
+│   ├── shap_explainer.py, shap_figures.py   # XAI (modelo substituto XGBoost + SHAP)
+│   ├── jornadas_por_grupo.py      # Sessões e resumo de cada grupo
+│   ├── jornadas_tabelas.py        # Sessões por jornada e cobertura por jornada
+│   ├── petri_por_grupo.py         # DFG e Rede de Petri de cada grupo (run_all.py --petri)
+│   ├── figuras_tcc.py             # Figuras de resultados
+│   └── stream_inference.py        # Inferência em tempo de execução
+├── analises/                      # Análises citadas na errata (ver analises/README.md)
+├── docs/                          # Documentação dos resultados (ver docs/README.md)
+├── tools/pm4py_cli/               # CLI própria de Process Mining, playout e rotulagem
+└── results/
+    ├── summary_metrics.csv
+    ├── metrics/                   # Métricas por modelo, cobertura por jornada, comparação v1.0 × v1.1
+    ├── figures/                   # Figuras de resultados e SHAP
+    ├── dados/                     # Sessões por jornada, conferência e migração dos rótulos
+    └── jornadas_por_grupo/        # Por modelo: resumo, matriz, mapa t-SNE e grupos/grupo_NN/ (sessões, pesos SHAP, beeswarm, DFG, Petri)
 ```
 
 ---
@@ -116,13 +110,39 @@ pip install -r requirements.txt
 
 ### 3. Reprodução em 1 Clique
 
-Para rodar todo o pipeline de ponta a ponta, regenerar todas as representações, clusterizações, métricas e o modelo SHAP:
+Para rodar todo o pipeline de ponta a ponta (representações, rótulos, agrupamentos, métricas, SHAP, jornadas por grupo e figuras):
 
 ```bash
 python run_all.py
 ```
 
-O script executará todos os passos, salvará as métricas em `results/metrics/` e exibirá a tabela final consolidada no terminal.
+Opções:
+
+| Opção | O que faz |
+| :--- | :--- |
+| `--reusar-agrupamentos` | Não refaz vetorização nem agrupamento: usa `data/*.pkl` e `clusters/*.pkl` existentes. Refaz rótulos, métricas, SHAP, jornadas por grupo e figuras. Use para reproduzir os resultados do TCC sem chamar a API do Gemini nem baixar o MiniLM. |
+| `--rotular-massa` | Antes de tudo, rotula de novo `dataset/processed/total.csv` com o `dataset/gerar_massas.py` (Tabela 1 revisada). Requer o pm4py-cli. |
+| `--sem-shap` | Pula o SHAP (não depende dos rótulos; os pesos, os beeswarms e as figuras SHAP ficam como estão). |
+| `--sem-revisao` | Pula a comparação v1.0 × v1.1 e a conferência do rótulo (`analises/`). |
+| `--petri` | Gera também as Redes de Petri e os DFGs por grupo (requer pm4py e Graphviz; demorado). |
+
+> **Massa nova:** ao gerar outra massa com o `dataset/gerar_massas.py` (playout), o `data/gemini_embeddings.pkl` existente fica desatualizado. O `run_all.py` só gera o Gemini quando o arquivo não existe: apague-o ou gere-o de novo com o comando do Gemini antes de rodar.
+
+Etapas e saídas:
+
+0. (opcional, `--rotular-massa`) `dataset/gerar_massas.py` → `dataset/processed/total-rotulado-v1.1.csv`: rotula todas as sessões pela Tabela 1 revisada, sem usar o cenário que as gerou (jornada simples: gatilho e, depois, a conversão; composta: etapa 1 e, depois, etapa 2). Requer o pm4py-cli (`tools/pm4py_cli`; sem instalar, `PYTHONPATH=tools/pm4py_cli/src`)
+1. `src/events2vector.py` → `data/sessions_represented.csv` (sequência de eventos, flags e rótulo principal de cada sessão)
+2. Vetorização (`tfidf_vectorizer.py`, `embeddings_vectorizer.py`) e agrupamento (`kmeans_cluster.py`, `hdbscan_cluster.py`) → `data/*.pkl`, `clusters/*.pkl` (os rótulos não entram aqui)
+3. `src/eval_metrics.py --labels data/sessions_represented.csv` → `results/metrics/metrics_<modelo>.json`
+4. `src/shap_explainer.py` → pesos SHAP de cada grupo nos 6 modelos (`results/jornadas_por_grupo/<modelo>/grupos/grupo_NN/shap_pesos.csv` e `shap_pesos_todos_modelos.csv`); `src/shap_figures.py` → Figuras 4 e 5 (`results/figures/shap_*`) e beeswarm de cada grupo
+5. `src/jornadas_por_grupo.py` → `results/jornadas_por_grupo/<modelo>/` (sessões de cada grupo, `resumo_grupos.csv`, `matriz_grupos.png`, `espaco_semantico_tsne.png` e `_3d.png`)
+5.1 `src/jornadas_tabelas.py` → `results/dados/jornadas_contagem.csv` e `results/metrics/cobertura_por_jornada.csv`; com `--petri`, `src/petri_por_grupo.py` → `results/jornadas_por_grupo/<modelo>/grupos/grupo_NN/{dfg.png,rede_petri.*}`
+6. `analises/rotulo_revisado.py` e `analises/conferir_rotulo_tabela1.py` → comparação v1.0 × v1.1 e conferência do rótulo em Python puro
+7. Consolidação → `results/summary_metrics.csv`; `src/figuras_tcc.py` → `results/figures/`
+
+As figuras `comparison_metrics.png`, `matriz_associacao_clusters_labels.png` e `tsne_clusters_visualizacao.png` são geradas por `src/figuras_tcc.py` (na v1.0 não tinham script).
+
+Todo arquivo de `results/` tem script: a lista completa, arquivo por arquivo, está em [docs/resultados.md](docs/resultados.md). Para regenerar a pasta do zero com os agrupamentos do TCC: `python run_all.py --reusar-agrupamentos --petri`.
 
 ---
 
@@ -132,7 +152,7 @@ Se desejar inspecionar ou executar etapas individuais:
 
 1. **Extração de Sequências Textuais:**
    ```bash
-   python src/events2vector.py --input dataset/processed/total-rotulado.csv --output data/sessions_represented.csv
+   python src/events2vector.py --input dataset/processed/total-rotulado-v1.1.csv --output data/sessions_represented.csv
    ```
 2. **Vetorização TF-IDF:**
    ```bash
@@ -142,9 +162,9 @@ Se desejar inspecionar ou executar etapas individuais:
    ```bash
    python src/hdbscan_cluster.py --input data/tfidf_vectors.pkl --output clusters/hdbscan_tf_idf.pkl --auto-grid
    ```
-4. **Avaliação de Métricas:**
+4. **Rótulo pela Tabela 1 e avaliação de métricas:**
    ```bash
-   python src/eval_metrics.py --input clusters/hdbscan_tf_idf.pkl --output results/metrics/metrics_hdbscan_tf_idf.json
+   python src/eval_metrics.py --input clusters/hdbscan_tf_idf.pkl --output results/metrics/metrics_hdbscan_tf_idf.json --labels data/sessions_represented.csv
    ```
 5. **Auditoria Causal SHAP:**
    ```bash
@@ -154,6 +174,18 @@ Se desejar inspecionar ou executar etapas individuais:
    ```bash
    python src/stream_inference.py
    ```
+
+---
+
+## ⚠️ Limitações conhecidas
+
+- **Massa sintética** gerada por playout de Redes de Petri descobertas de **uma sessão-semente por cenário**, escrita pelo autor. As jornadas compostas ficaram com poucas sessões (005: 12, 009: 15, 010: 6), insuficientes para formar grupo por densidade.
+- **33 das 516 sessões começam na home do PIX**: o CSV-semente do cenário 010 tem uma segunda sessão incompleta, e o playout reproduziu esse início. As sessões foram mantidas.
+- **MiniLM (`all-MiniLM-L6-v2`) lê no máximo 256 subtokens**: 71% das sessões são cortadas, e o modelo lê cerca de 19 dos 37 eventos de uma sessão típica (`analises/desvios_e_truncamento.py`).
+- **TF-IDF e o vetor de presença não consideram a ordem dos eventos.**
+- **SHAP explica um modelo substituto** (XGBoost sobre TF-IDF), não o agrupamento diretamente; indica eventos associados aos grupos, não causas (`analises/diag_shap.py`).
+- **Pureza por Macro-Experiência** mede só a homogeneidade sucesso × abandono e exclui o ruído; por isso a avaliação inclui a cobertura por jornada.
+- **Geração da massa na v1.0 não era reproduzível** (ordem de sorteio do playout); corrigido em `tools/pm4py_cli`. Os resultados da v1.1 são reproduzíveis porque a massa entregue está versionada.
 
 ---
 

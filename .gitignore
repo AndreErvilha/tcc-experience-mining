@@ -47,3 +47,24 @@ Thumbs.db
 
 # Scripts temporários / Scratch
 scratch/
+
+# Segredos, chaves de API e variáveis de ambiente
+.env
+.env.*
+*.key
+*.pem
+secrets/
+
+# Notas pessoais da defesa (não publicar)
+notas-defesa/**/*
+
+# Backups locais de resultados
+backup/
+
+# Contexto do Claude Code e OpenSpec (local, não publicar)
+.claude/
+.agents/
+openspec/
+CLAUDE.md
+CLAUDE.local.md
+openspec

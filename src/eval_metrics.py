@@ -138,9 +138,17 @@ def main():
     parser = argparse.ArgumentParser(description='Calcula metricas de avaliacao de clusterizacao.')
     parser.add_argument('--input', required=True, help='Arquivo de resultados de cluster (.pkl ou .npy)')
     parser.add_argument('--output', default=None, help='Arquivo JSON para salvar o relatorio')
+    parser.add_argument('--labels', default=None, help='CSV com cd_sessao, primary_label e experience que substitui os rotulos gravados no .pkl (ex.: data/sessions_represented.csv, para avaliar .pkl antigos com o rotulo atual)')
     args = parser.parse_args()
     
     data = load_cluster_result(args.input)
+    if args.labels:
+        import pandas as pd
+        rot = pd.read_csv(args.labels).set_index('cd_sessao')
+        ids = list(data['session_ids'])
+        data['primary_labels'] = rot.loc[ids, 'primary_label'].tolist()
+        data['experiences'] = rot.loc[ids, 'experience'].tolist()
+        print(f'[*] Rotulos de avaliacao: {args.labels}')
     metrics = evaluate_clustering(data)
     
     out = args.output

@@ -6,14 +6,14 @@
   "noise_count": 0,
   "noise_ratio": 0.0,
   "silhouette_score": 0.2942400872707367,
-  "ari_all": 0.4213237030874778,
-  "nmi_all": 0.6173322202042513,
-  "ari_clean": 0.4213237030874778,
-  "nmi_clean": 0.6173322202042513,
-  "homogeneity": 0.5234352105768036,
-  "completeness": 0.752280984471871,
-  "v_measure": 0.6173322202042512,
-  "purity_real_experience": 0.9164733178654292,
+  "ari_all": 0.4911439129747158,
+  "nmi_all": 0.6590061794674626,
+  "ari_clean": 0.4911439129747158,
+  "nmi_clean": 0.6590061794674626,
+  "homogeneity": 0.542575769526004,
+  "completeness": 0.8390582624096653,
+  "v_measure": 0.6590061794674628,
+  "purity_real_experience": 0.9136690647482014,
   "cluster_purity_details": {
     "0": {
       "size": 140,
@@ -40,10 +40,10 @@
       "purity": 0.9622641509433962
     },
     "4": {
-      "size": 41,
+      "size": 27,
       "success": 11,
-      "negative": 30,
-      "purity": 0.7317073170731707
+      "negative": 16,
+      "purity": 0.5925925925925926
     },
     "5": {
       "size": 37,

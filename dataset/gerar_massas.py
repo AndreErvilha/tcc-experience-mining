@@ -1,3 +1,25 @@
+# gerar_massas.py
+# Gera a massa sintética (descoberta -> playout -> consolidação) e rotula cada sessão.
+# Só rotular a massa existente (dataset/processed/total.csv), sem gerar sessões novas:
+#   python dataset/gerar_massas.py --skip_discovery_original --skip_playout --skip_discovery_simulado \
+#       --usar_total_existente --saida <arquivo>.csv
+#   -> dataset/processed/<arquivo>.csv
+# Na revisão pós-entrega (v1.1), rodamos esse comando com --saida total-rotulado-v1.1.csv
+# (o run_all.py --rotular-massa faz o mesmo).
+# Requer o pm4py-cli (tools/pm4py_cli): instalado, ou PYTHONPATH=tools/pm4py_cli/src.
+#
+# Rótulos (Tabela 1 revisada, a partir do modelo de cada cenário):
+#   - toda conversão que os modelos permitem é uma jornada; as compostas são sequências delas;
+#   - jornada simples: sucesso = gatilho e, depois dele, a conversão; abandono = gatilho sem a conversão depois;
+#   - jornada composta (005, 009, 010): sucesso = etapa 1 e, depois dela, a etapa 2; abandono = concluiu a
+#     etapa 1, começou a etapa 2 (005 e 009: abriu as opções de pagamento depois) e não a concluiu;
+#   - 011 (PIX copia e cola avulso) e 012 (Open Finance avulso) são os caminhos simples que os modelos
+#     da 010 e da 005 permitem; ficam no cenário de origem.
+#   "pattern": pares [A, B] passados ao pm4py-cli como --pattern A B (eventually-follows); vários pares = "E".
+#   "not_pattern": pares que NÃO podem ocorrer. "contain": lista "OU".
+# Versão entregue (v1.0): o sucesso usava só o evento de conversão (a 009 ficava igual à 001) e o
+# abandono não verificava o gatilho. Ver a errata.
+# (O playout da v1.0 não era determinístico com --seed; corrigido em tools/pm4py_cli/.../playout.py.)
 import argparse
 import os
 from pathlib import Path
@@ -24,15 +46,21 @@ CENARIOS_CONFIG = [
         "min_events": 8,
         "labels": [
             {
+                # 001 · Pagar fatura com saldo: gatilho e, depois dele, a conversão
                 "label_col": "is_fatura_paga_saldo",
-                "contain": ["[cartoes:pagamento:comprovante_pagamento].page_view()"],
-                "exclude": [],
+                "pattern": [
+                    ["[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)",
+                     "[cartoes:pagamento:comprovante_pagamento].page_view()"]
+                ],
             },
             {
-                # Entrou nas opções de pagamento, mas não chegou ao comprovante
+                # 001 · abandono: gatilho sem a conversão depois dele
                 "label_col": "is_iniciou_pagar_saldo_sem_converter",
-                "contain": ["[cartoes:pagamento:opcoes_pagamento].page_view()"],
-                "exclude": ["[cartoes:pagamento:comprovante_pagamento].page_view()"],
+                "contain": ["[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)"],
+                "not_pattern": [
+                    ["[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)",
+                     "[cartoes:pagamento:comprovante_pagamento].page_view()"]
+                ],
             },
         ],
     },
@@ -44,15 +72,21 @@ CENARIOS_CONFIG = [
         "min_events": 7,
         "labels": [
             {
+                # 002 · Copiar o PIX da fatura: gatilho e, depois dele, a conversão
                 "label_col": "is_pix_copiado",
-                "contain": ["[cartoes:pagamento:sucesso_copia].page_view()"],
-                "exclude": [],
+                "pattern": [
+                    ["[cartoes:pagamento:opcoes_pagamento].click_button(copiar_pix)",
+                     "[cartoes:pagamento:sucesso_copia].page_view()"]
+                ],
             },
             {
-                # Entrou nas opções de pagamento, mas não chegou à tela de sucesso da cópia
+                # 002 · abandono: gatilho sem a conversão depois dele
                 "label_col": "is_iniciou_copiar_pix_sem_converter",
-                "contain": ["[cartoes:pagamento:opcoes_pagamento].page_view()"],
-                "exclude": ["[cartoes:pagamento:sucesso_copia].page_view()"],
+                "contain": ["[cartoes:pagamento:opcoes_pagamento].click_button(copiar_pix)"],
+                "not_pattern": [
+                    ["[cartoes:pagamento:opcoes_pagamento].click_button(copiar_pix)",
+                     "[cartoes:pagamento:sucesso_copia].page_view()"]
+                ],
             },
         ],
     },
@@ -64,15 +98,21 @@ CENARIOS_CONFIG = [
         "min_events": 10,
         "labels": [
             {
+                # 003 · Parcelar a fatura: gatilho e, depois dele, a conversão
                 "label_col": "is_fatura_parcelada",
-                "contain": ["[cartoes:parcelamento:comprovante_parcelamento].page_view()"],
-                "exclude": [],
+                "pattern": [
+                    ["[cartoes:fatura:fatura_atual].click_button(simular_parcelamento)",
+                     "[cartoes:parcelamento:comprovante_parcelamento].page_view()"]
+                ],
             },
             {
-                # Abriu o slider de parcelas, mas não chegou ao comprovante de parcelamento
+                # 003 · abandono: gatilho sem a conversão depois dele
                 "label_col": "is_iniciou_parcelamento_sem_converter",
-                "contain": ["[cartoes:parcelamento:slider_parcelas].page_view()"],
-                "exclude": ["[cartoes:parcelamento:comprovante_parcelamento].page_view()"],
+                "contain": ["[cartoes:fatura:fatura_atual].click_button(simular_parcelamento)"],
+                "not_pattern": [
+                    ["[cartoes:fatura:fatura_atual].click_button(simular_parcelamento)",
+                     "[cartoes:parcelamento:comprovante_parcelamento].page_view()"]
+                ],
             },
         ],
     },
@@ -84,15 +124,21 @@ CENARIOS_CONFIG = [
         "min_events": 7,
         "labels": [
             {
+                # 004 · Histórico de faturas em PDF: gatilho e, depois dele, a conversão
                 "label_col": "is_historico_visualizado",
-                "contain": ["[cartoes:historico:visualizacao_pdf].page_view()"],
-                "exclude": [],
+                "pattern": [
+                    ["[cartoes:historico:historico_faturas].click_button(mes_anterior)",
+                     "[cartoes:historico:visualizacao_pdf].page_view()"]
+                ],
             },
             {
-                # Acessou o histórico de faturas, mas não chegou à visualização do PDF
+                # 004 · abandono: gatilho sem a conversão depois dele
                 "label_col": "is_iniciou_historico_sem_converter",
-                "contain": ["[cartoes:historico:historico_faturas].page_view()"],
-                "exclude": ["[cartoes:historico:visualizacao_pdf].page_view()"],
+                "contain": ["[cartoes:historico:historico_faturas].click_button(mes_anterior)"],
+                "not_pattern": [
+                    ["[cartoes:historico:historico_faturas].click_button(mes_anterior)",
+                     "[cartoes:historico:visualizacao_pdf].page_view()"]
+                ],
             },
         ],
     },
@@ -104,15 +150,45 @@ CENARIOS_CONFIG = [
         "min_events": 15,
         "labels": [
             {
-                "label_col": "is_openfinance_pago",
-                "contain": ["[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()"],
-                "exclude": [],
+                # 005 · Trazer dinheiro (Open Finance) e pagar a fatura (composta): etapa 1 e, depois dela, a etapa 2
+                "label_col": "is_openfinance_fatura_paga",
+                "pattern": [
+                    ["[open_finance:home:home_open_finance].click_button(trazer_dinheiro)",
+                     "[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()"],
+                    ["[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()",
+                     "[cartoes:pagamento:comprovante_pagamento].page_view()"]
+                ],
             },
             {
-                # Selecionou o banco de origem, mas não concluiu a transferência via Open Finance
+                # 005 · abandono: trouxe o dinheiro, abriu as opções de pagamento depois e não pagou
+                "label_col": "is_iniciou_openfinance_fatura_sem_converter",
+                "pattern": [
+                    ["[open_finance:home:home_open_finance].click_button(trazer_dinheiro)",
+                     "[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()"],
+                    ["[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()",
+                     "[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)"]
+                ],
+                "not_pattern": [
+                    ["[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()",
+                     "[cartoes:pagamento:comprovante_pagamento].page_view()"]
+                ],
+            },
+            {
+                # 012 · Trazer dinheiro (Open Finance) avulso: gatilho e, depois dele, a conversão
+                "label_col": "is_openfinance_pago",
+                "pattern": [
+                    ["[open_finance:home:home_open_finance].click_button(trazer_dinheiro)",
+                     "[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()"]
+                ],
+            },
+            {
+                # 012 · abandono: gatilho sem a conversão depois dele
                 "label_col": "is_iniciou_openfinance_sem_converter",
-                "contain": ["[open_finance:trazer_dinheiro:selecao_banco_consentido].page_view()"],
-                "exclude": ["[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()"],
+                "contain": ["[open_finance:home:home_open_finance].click_button(trazer_dinheiro)"],
+                "not_pattern": [
+                    ["[open_finance:home:home_open_finance].click_button(trazer_dinheiro)",
+                     "[open_finance:trazer_dinheiro:comprovante_pix_open_finance].page_view()"]
+                ],
             },
         ],
     },
@@ -124,15 +200,21 @@ CENARIOS_CONFIG = [
         "min_events": 10,
         "labels": [
             {
+                # 006 · PIX por chave: gatilho e, depois dele, a conversão
                 "label_col": "is_pix_transferido",
-                "contain": ["[pix:transferencia:comprovante_pix].page_view()"],
-                "exclude": [],
+                "pattern": [
+                    ["[pix:transferencia:home_pix].click_button(transferir_chave)",
+                     "[pix:transferencia:comprovante_pix].page_view()"]
+                ],
             },
             {
-                # Digitou a chave PIX, mas não chegou ao comprovante de transferência
+                # 006 · abandono: gatilho sem a conversão depois dele
                 "label_col": "is_iniciou_pix_sem_converter",
-                "contain": ["[pix:transferencia:input_chave_pix].page_view()"],
-                "exclude": ["[pix:transferencia:comprovante_pix].page_view()"],
+                "contain": ["[pix:transferencia:home_pix].click_button(transferir_chave)"],
+                "not_pattern": [
+                    ["[pix:transferencia:home_pix].click_button(transferir_chave)",
+                     "[pix:transferencia:comprovante_pix].page_view()"]
+                ],
             },
         ],
     },
@@ -144,15 +226,21 @@ CENARIOS_CONFIG = [
         "min_events": 10,
         "labels": [
             {
+                # 007 · Aplicar em CDB: gatilho e, depois dele, a conversão
                 "label_col": "is_cdb_aplicado",
-                "contain": ["[investimentos:renda_fixa:comprovante_investimento].page_view()"],
-                "exclude": [],
+                "pattern": [
+                    ["[investimentos:renda_fixa:home_investimentos].click_button(renda_fixa)",
+                     "[investimentos:renda_fixa:comprovante_investimento].page_view()"]
+                ],
             },
             {
-                # Acessou o detalhe do CDB, mas não chegou ao comprovante de aplicação
+                # 007 · abandono: gatilho sem a conversão depois dele
                 "label_col": "is_iniciou_cdb_sem_converter",
-                "contain": ["[investimentos:renda_fixa:detalhe_cdb_pos].page_view()"],
-                "exclude": ["[investimentos:renda_fixa:comprovante_investimento].page_view()"],
+                "contain": ["[investimentos:renda_fixa:home_investimentos].click_button(renda_fixa)"],
+                "not_pattern": [
+                    ["[investimentos:renda_fixa:home_investimentos].click_button(renda_fixa)",
+                     "[investimentos:renda_fixa:comprovante_investimento].page_view()"]
+                ],
             },
         ],
     },
@@ -164,15 +252,21 @@ CENARIOS_CONFIG = [
         "min_events": 10,
         "labels": [
             {
+                # 008 · Resgatar CDB: gatilho e, depois dele, a conversão
                 "label_col": "is_cdb_resgatado",
-                "contain": ["[investimentos:resgate:comprovante_resgate].page_view()"],
-                "exclude": [],
+                "pattern": [
+                    ["[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)",
+                     "[investimentos:resgate:comprovante_resgate].page_view()"]
+                ],
             },
             {
-                # Acessou o detalhe da posição CDB, mas não chegou ao comprovante de resgate
+                # 008 · abandono: gatilho sem a conversão depois dele
                 "label_col": "is_iniciou_resgate_sem_converter",
-                "contain": ["[investimentos:resgate:detalhe_posicao_cdb].page_view()"],
-                "exclude": ["[investimentos:resgate:comprovante_resgate].page_view()"],
+                "contain": ["[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)"],
+                "not_pattern": [
+                    ["[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)",
+                     "[investimentos:resgate:comprovante_resgate].page_view()"]
+                ],
             },
         ],
     },
@@ -184,15 +278,28 @@ CENARIOS_CONFIG = [
         "min_events": 18,
         "labels": [
             {
+                # 009 · Resgatar CDB e pagar a fatura (composta): etapa 1 e, depois dela, a etapa 2
                 "label_col": "is_resgate_pago_fatura",
-                "contain": ["[cartoes:pagamento:comprovante_pagamento].page_view()"],
-                "exclude": [],
+                "pattern": [
+                    ["[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)",
+                     "[investimentos:resgate:comprovante_resgate].page_view()"],
+                    ["[investimentos:resgate:comprovante_resgate].page_view()",
+                     "[cartoes:pagamento:comprovante_pagamento].page_view()"]
+                ],
             },
             {
-                # Iniciou o resgate do CDB, mas não chegou ao comprovante de pagamento da fatura
+                # 009 · abandono: resgatou, abriu as opções de pagamento depois e não pagou
                 "label_col": "is_iniciou_resgate_pagar_fatura_sem_converter",
-                "contain": ["[investimentos:resgate:detalhe_posicao_cdb].page_view()"],
-                "exclude": ["[cartoes:pagamento:comprovante_pagamento].page_view()"],
+                "pattern": [
+                    ["[investimentos:meus_investimentos:carteira_renda_fixa].click_button(detalhar_cdb)",
+                     "[investimentos:resgate:comprovante_resgate].page_view()"],
+                    ["[investimentos:resgate:comprovante_resgate].page_view()",
+                     "[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)"]
+                ],
+                "not_pattern": [
+                    ["[investimentos:resgate:comprovante_resgate].page_view()",
+                     "[cartoes:pagamento:comprovante_pagamento].page_view()"]
+                ],
             },
         ],
     },
@@ -204,15 +311,43 @@ CENARIOS_CONFIG = [
         "min_events": 10,
         "labels": [
             {
-                "label_col": "is_copia_pix_paga",
-                "contain": ["[pix:pix_copia_e_cola:comprovante_pix].page_view()"],
-                "exclude": [],
+                # 010 · Ver a fatura e pagar pelo PIX copia e cola (composta): etapa 1 e, depois dela, a etapa 2
+                "label_col": "is_fatura_paga_pix_copia_cola",
+                "pattern": [
+                    ["[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)",
+                     "[pix:home:home_pix].click_button(pix_copia_e_cola)"],
+                    ["[pix:home:home_pix].click_button(pix_copia_e_cola)",
+                     "[pix:pix_copia_e_cola:comprovante_pix].page_view()"]
+                ],
             },
             {
-                # Entrou na tela de PIX copia e cola, mas não chegou ao comprovante
+                # 010 · abandono: viu as opções da fatura, entrou no PIX copia e cola e não pagou
+                "label_col": "is_iniciou_fatura_pix_copia_cola_sem_converter",
+                "pattern": [
+                    ["[cartoes:fatura:fatura_atual].click_button(opcoes_pagamento)",
+                     "[pix:home:home_pix].click_button(pix_copia_e_cola)"]
+                ],
+                "not_pattern": [
+                    ["[pix:home:home_pix].click_button(pix_copia_e_cola)",
+                     "[pix:pix_copia_e_cola:comprovante_pix].page_view()"]
+                ],
+            },
+            {
+                # 011 · PIX copia e cola avulso: gatilho e, depois dele, a conversão
+                "label_col": "is_copia_pix_paga",
+                "pattern": [
+                    ["[pix:home:home_pix].click_button(pix_copia_e_cola)",
+                     "[pix:pix_copia_e_cola:comprovante_pix].page_view()"]
+                ],
+            },
+            {
+                # 011 · abandono: gatilho sem a conversão depois dele
                 "label_col": "is_iniciou_copia_pix_sem_converter",
-                "contain": ["[pix:pix_copia_e_cola:pix_copia_e_cola].page_view()"],
-                "exclude": ["[pix:pix_copia_e_cola:comprovante_pix].page_view()"],
+                "contain": ["[pix:home:home_pix].click_button(pix_copia_e_cola)"],
+                "not_pattern": [
+                    ["[pix:home:home_pix].click_button(pix_copia_e_cola)",
+                     "[pix:pix_copia_e_cola:comprovante_pix].page_view()"]
+                ],
             },
         ],
     },
@@ -247,6 +382,7 @@ def run_command(cmd_args, dry_run=False, cwd=None):
     res = subprocess.run(cmd_args, cwd=cwd)
     if res.returncode != 0:
         print(f"[ERRO] O comando falhou com código de saída: {res.returncode}")
+        sys.exit(res.returncode)  # um rótulo que falha não pode passar em silêncio
     return res.returncode
 
 
@@ -322,6 +458,15 @@ def main():
     parser.add_argument(
         "--skip_total", action="store_true", default=False,
         help="Pula a consolidação de todos os cenários em total.csv e respectivo discovery."
+    )
+    parser.add_argument(
+        "--usar_total_existente", action="store_true", default=False,
+        help="Não reconstrói o total a partir dos cenários; rotula o dataset/processed/total.csv existente "
+             "(as mesmas sessões do TCC)."
+    )
+    parser.add_argument(
+        "--saida", default="total-rotulado.csv",
+        help="Nome do CSV rotulado gravado em dataset/processed/ (ex.: total-rotulado-v1.1.csv)."
     )
     parser.add_argument(
         "--dry_run", action="store_true", default=False,
@@ -426,7 +571,7 @@ def main():
             run_command(cmd_disc_sim, dry_run=args.dry_run)
 
         # 4. LABELING
-        if not args.skip_labeling:
+        if not args.skip_labeling and not args.usar_total_existente:  # com o total existente, só o total é rotulado
             for lbl in cenario.get("labels", []):
                 label_col = args.label_col or lbl.get("label_col") or "label"
                 contain_list = args.contain if args.contain is not None else lbl.get("contain", [])
@@ -457,6 +602,11 @@ def main():
                     cmd_label.append("--exclude")
                     cmd_label.extend([str(e) for e in exclude_list])
 
+                for a, b in lbl.get("pattern", []) or []:
+                    cmd_label.extend(["--pattern", str(a), str(b)])
+                for a, b in lbl.get("not_pattern", []) or []:
+                    cmd_label.extend(["--not_pattern", str(a), str(b)])
+
                 run_command(cmd_label, dry_run=args.dry_run)
 
             labeled_csv_paths.append(labeled_csv)
@@ -469,7 +619,7 @@ def main():
 
         total_dir = BASE_DIR / "processed" if (BASE_DIR / "processed").exists() else BASE_DIR / "total"
         total_dir.mkdir(parents=True, exist_ok=True)
-        total_csv_path = total_dir / "total.csv"
+        total_csv_path = total_dir / "total-nova.csv"
 
         dfs = []
         total_filtradas = 0
@@ -496,6 +646,9 @@ def main():
         if total_filtradas > 0:
             print(f"\nTotal de sessões removidas pelo filtro min_events: {total_filtradas}")
 
+        if args.usar_total_existente:
+            dfs = []
+            print("Usando o total.csv existente (mesmas sessões do TCC); consolidação e discovery do total puladas.")
         if dfs:
             df_total = pd.concat(dfs, ignore_index=True)
             df_total.to_csv(total_csv_path, index=False)
@@ -514,24 +667,26 @@ def main():
                 "--yes",
             ]
             run_command(cmd_total_disc, dry_run=args.dry_run)
-        else:
+        elif not args.usar_total_existente:
             print("[AVISO] Nenhum CSV simulado foi encontrado para consolidar total.csv.")
 
         # Rotulagem no consolidado
         base_name = "total"
         out_dir = total_dir / "output"
         labeling_path = out_dir / "labeling"
-        simulated_csv = total_dir / "total.csv"
+        simulated_csv = total_dir / ("total.csv" if args.usar_total_existente else "total-nova.csv")
         labeled_csv = labeling_path / f"{base_name}-rotulado.csv"
 
         if not args.skip_labeling and simulated_csv.exists():
+            primeiro = True
             for cenario in cenarios:
                 for lbl in cenario.get("labels", []):
                     label_col = args.label_col or lbl.get("label_col") or "label"
                     contain_list = args.contain if args.contain is not None else lbl.get("contain", [])
                     exclude_list = args.exclude if args.exclude is not None else lbl.get("exclude", [])
 
-                    csv_origem = labeled_csv if labeled_csv.exists() else simulated_csv
+                    csv_origem = simulated_csv if primeiro else labeled_csv
+                    primeiro = False
 
                     print(f"\n>>> [Total] Labeling '{label_col}' no arquivo consolidado")
                     cmd_label = pm4py_base_cmd + [
@@ -551,7 +706,19 @@ def main():
                         cmd_label.append("--exclude")
                         cmd_label.extend([str(e) for e in exclude_list])
 
+                    for a, b in lbl.get("pattern", []) or []:
+                        cmd_label.extend(["--pattern", str(a), str(b)])
+                    for a, b in lbl.get("not_pattern", []) or []:
+                        cmd_label.extend(["--not_pattern", str(a), str(b)])
+
                     run_command(cmd_label, dry_run=args.dry_run)
+
+            if not args.dry_run and not labeled_csv.exists():
+                sys.exit(f"[ERRO] Rotulagem não gerou {labeled_csv}")
+            if not args.dry_run and labeled_csv.exists():
+                destino = total_dir / args.saida
+                shutil.copyfile(labeled_csv, destino)
+                print(f"\nMassa rotulada copiada para {destino} (entrada do run_all.py)")
 
     print("\n" + "=" * 80)
     print("PIPELINE CONCLUÍDO COM SUCESSO!")

@@ -6,14 +6,14 @@
   "noise_count": 124,
   "noise_ratio": 0.24031007751937986,
   "silhouette_score": 0.5425573587417603,
-  "ari_all": 0.24801540860644727,
-  "nmi_all": 0.5946808172708388,
-  "ari_clean": 0.41476418602207304,
-  "nmi_clean": 0.7027057208423708,
-  "homogeneity": 0.8087211224509356,
-  "completeness": 0.6212640955783792,
-  "v_measure": 0.7027057208423707,
-  "purity_real_experience": 0.9267515923566879,
+  "ari_all": 0.23622389259718726,
+  "nmi_all": 0.600457523427383,
+  "ari_clean": 0.4257869767115415,
+  "nmi_clean": 0.7183101796380179,
+  "homogeneity": 0.8045050860289669,
+  "completeness": 0.6487977969946203,
+  "v_measure": 0.7183101796380181,
+  "purity_real_experience": 0.9276315789473685,
   "cluster_purity_details": {
     "0": {
       "size": 47,
@@ -99,18 +99,6 @@
       "negative": 1,
       "purity": 0.9166666666666666
     },
-    "15": {
-      "size": 7,
-      "success": 0,
-      "negative": 7,
-      "purity": 1.0
-    },
-    "18": {
-      "size": 2,
-      "success": 0,
-      "negative": 2,
-      "purity": 1.0
-    },
     "19": {
       "size": 7,
       "success": 7,
@@ -124,10 +112,10 @@
       "purity": 0.8333333333333334
     },
     "21": {
-      "size": 12,
+      "size": 11,
       "success": 11,
-      "negative": 1,
-      "purity": 0.9166666666666666
+      "negative": 0,
+      "purity": 1.0
     },
     "22": {
       "size": 9,

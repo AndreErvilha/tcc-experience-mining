@@ -1,0 +1,23 @@
+# Versões do ambiente em que os experimentos do TCC foram executados
+# (registradas a partir do ambiente virtual original, Python 3.11.9).
+# Para reproduzir os números do TCC, prefira este arquivo ao requirements.txt:
+#   pip install -r requirements-lock.txt
+#
+# A revisão pós-entrega (analysis/revisao-pos-entrega e src/shap_figures.py) também foi
+# conferida com shap 0.54.1 e xgboost 3.4.1: as assinaturas SHAP batem com
+# results/xai_shap/shap_cluster_signatures.json.
+numpy==2.4.6
+pandas==3.0.5
+scikit-learn==1.9.0
+hdbscan==0.8.44
+xgboost==3.2.0
+shap==0.51.0
+sentence-transformers==6.0.0
+transformers==5.16.1
+torch==2.13.0
+google-generativeai==0.8.6
+pm4py==2.7.23.6
+matplotlib==3.11.1
+seaborn==0.13.2
+tqdm==4.70.0
+pypdf==6.16.2

@@ -21,7 +21,7 @@ def get_minilm_embeddings(texts, batch_size=32, device='cpu'):
     )
     return embeddings.astype(np.float32)
 
-def get_gemini_embeddings(texts, api_key=None, model_name='models/text-embedding-004', batch_size=50):
+def get_gemini_embeddings(texts, api_key=None, model_name='models/gemini-embedding-001', batch_size=50):
     print(f'[*] Configurando Gemini API ({model_name})...')
     import google.generativeai as genai
     
@@ -63,7 +63,7 @@ def get_gemini_embeddings(texts, api_key=None, model_name='models/text-embedding
     norms[norms == 0] = 1.0
     return X / norms
 
-def vectorize_embeddings(input_csv: str, output_path: str, method: str = 'minilm', api_key: str = None, batch_size: int = 32):
+def vectorize_embeddings(input_csv: str, output_path: str, method: str = 'minilm', api_key: str = None, batch_size: int = 32, model_name: str = 'models/gemini-embedding-001'):
     print(f'[*] Carregando sessoes de: {input_csv}')
     df = pd.read_csv(input_csv)
     
@@ -76,7 +76,7 @@ def vectorize_embeddings(input_csv: str, output_path: str, method: str = 'minilm
         X = get_minilm_embeddings(texts, batch_size=batch_size)
         vec_name = 'Embedding-MiniLM-L6-v2'
     elif method == 'gemini':
-        X = get_gemini_embeddings(texts, api_key=api_key, batch_size=batch_size)
+        X = get_gemini_embeddings(texts, api_key=api_key, model_name=model_name, batch_size=batch_size)
         vec_name = 'Embedding-Gemini'
     else:
         raise ValueError(f'Metodo desconhecido: {method}. Use minilm ou gemini.')
@@ -109,13 +109,14 @@ def main():
     parser.add_argument('--method', choices=['minilm', 'gemini'], default='minilm', help='Modelo de embedding')
     parser.add_argument('--api-key', default=None, help='Chave Gemini API se method=gemini')
     parser.add_argument('--batch-size', type=int, default=32, help='Tamanho do batch')
+    parser.add_argument('--model-name', default='models/gemini-embedding-001', help='Modelo Gemini (o TCC usou models/gemini-embedding-001, 3072D)')
     args = parser.parse_args()
     
     out = args.output
     if out is None:
         out = f'data/{args.method}_embeddings.pkl'
         
-    vectorize_embeddings(args.input, out, method=args.method, api_key=args.api_key, batch_size=args.batch_size)
+    vectorize_embeddings(args.input, out, method=args.method, api_key=args.api_key, batch_size=args.batch_size, model_name=args.model_name)
 
 if __name__ == '__main__':
     main()

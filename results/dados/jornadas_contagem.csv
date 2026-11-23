@@ -1,0 +1,13 @@
+﻿jornada;nome;cenario_origem;sessoes_do_cenario;concluiram;nao_concluiram;rotulo_principal
+001;Pagar fatura com saldo;001;45;104;52;69
+002;Copiar o PIX da fatura;002;48;21;0;21
+003;Parcelar a fatura;003;40;29;2;29
+004;Histórico de faturas em PDF;004;47;14;3;14
+005;Trazer dinheiro (Open Finance) e pagar a fatura;005;65;12;4;12
+006;PIX por chave;006;50;41;6;41
+007;Aplicar em CDB;007;44;37;5;37
+008;Resgatar CDB;008;48;67;4;49
+009;Resgatar CDB e pagar a fatura;009;62;15;0;15
+010;Ver a fatura e pagar pelo PIX copia e cola;010;67;6;0;6
+011;PIX copia e cola avulso;010;67;52;0;46
+012;Trazer dinheiro (Open Finance) avulso;005;65;46;4;29

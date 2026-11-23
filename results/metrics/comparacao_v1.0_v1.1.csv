@@ -1,0 +1,7 @@
+﻿modelo;nome;grupos;ruido_pct;ari_clean_antes;nmi_clean_antes;homogeneity_antes;completeness_antes;v_measure_antes;pureza_jornada_antes;purity_real_experience_antes;ari_clean_depois;nmi_clean_depois;homogeneity_depois;completeness_depois;v_measure_depois;pureza_jornada_depois;purity_real_experience_depois
+kmeans_tf_idf;K-Means + TF-IDF;15;0.0;0.5917;0.8014;0.8324;0.7727;0.8014;0.8605;0.9142;0.6076;0.7971;0.7975;0.7966;0.7971;0.8217;0.9113
+kmeans_minilm;K-Means + MiniLM;4;0.0;0.2239;0.4882;0.3631;0.7451;0.4882;0.3915;0.8724;0.2377;0.5078;0.3689;0.8146;0.5078;0.3837;0.9017
+kmeans_gemini;K-Means + Gemini;6;0.0;0.4213;0.6173;0.5234;0.7523;0.6173;0.5891;0.9165;0.4911;0.659;0.5426;0.8391;0.659;0.6047;0.9137
+hdbscan_tf_idf;HDBSCAN + TF-IDF;14;26.9;0.7469;0.8886;0.9046;0.8731;0.8886;0.9231;0.9561;0.7268;0.8851;0.8946;0.8759;0.8851;0.9204;0.9541
+hdbscan_minilm;HDBSCAN + MiniLM;26;24.0;0.4148;0.7027;0.8087;0.6213;0.7027;0.824;0.9268;0.4258;0.7183;0.8045;0.6488;0.7183;0.8342;0.9276
+hdbscan_gemini;HDBSCAN + Gemini;21;19.4;0.6434;0.8355;0.9102;0.7721;0.8355;0.9038;0.9768;0.6538;0.8346;0.8942;0.7825;0.8346;0.9038;0.9763

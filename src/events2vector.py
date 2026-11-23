@@ -26,15 +26,41 @@ def format_event_token(row, include_product=True):
         return f'{prod}:{token}'
     return token
 
+# Jornadas compostas (Tabela 1 revisada) e as jornadas simples que elas contem
+COMPOSTAS = {
+    'openfinance_fatura_paga': ['openfinance_pago', 'fatura_paga_saldo'],          # 005 = 012 -> 001
+    'resgate_pago_fatura': ['cdb_resgatado', 'fatura_paga_saldo'],                 # 009 = 008 -> 001
+    'fatura_paga_pix_copia_cola': ['copia_pix_paga'],                              # 010 = fatura -> 011
+}
+ABANDONO_COMPOSTAS = {
+    'iniciou_openfinance_fatura_sem_converter': ['iniciou_openfinance_sem_converter', 'iniciou_pagar_saldo_sem_converter'],
+    'iniciou_resgate_pagar_fatura_sem_converter': ['iniciou_resgate_sem_converter', 'iniciou_pagar_saldo_sem_converter'],
+    'iniciou_fatura_pix_copia_cola_sem_converter': ['iniciou_copia_pix_sem_converter', 'iniciou_pagar_saldo_sem_converter'],
+}
+
+
 def extract_primary_label(label_series):
+    """Rotulo principal da sessao a partir das flags is_* (Tabela 1 revisada).
+    - Jornadas concluidas; as compostas tem prioridade e dispensam as simples que contem
+      (ex.: 005 concluida -> nao entram 012 nem 001).
+    - Duas ou mais jornadas sem composta que as cubra: os nomes unidos por "+", na ordem das colunas.
+    - Nenhuma concluida: os abandonos, com a mesma prioridade das compostas; nenhum: "neutro".
+    (Ate a versao entregue, o rotulo era a primeira flag de sucesso na ordem das colunas; ver a errata.)"""
     is_cols = [c for c in label_series.index if c.startswith('is_')]
     active = [c.replace('is_', '') for c in is_cols if label_series[c] == 1]
+    success = [a for a in active if 'sem_converter' not in a]
+    for comp, partes in COMPOSTAS.items():
+        if comp in success:
+            success = [a for a in success if a not in partes]
+    if success:
+        return '+'.join(success)
+    for comp, partes in ABANDONO_COMPOSTAS.items():
+        if comp in active:
+            active = [a for a in active if a not in partes]
     if active:
-        success = [a for a in active if 'sem_converter' not in a]
-        if success:
-            return success[0]
-        return active[0]
+        return '+'.join(active)
     return 'neutro'
+
 
 def process_dataset(csv_path: str, output_csv: str = None, include_product: bool = True):
     print(f'[*] Carregando dataset de eventos: {csv_path}')
