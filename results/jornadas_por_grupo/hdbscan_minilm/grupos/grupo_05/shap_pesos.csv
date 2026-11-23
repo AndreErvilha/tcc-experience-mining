@@ -1,9 +1,0 @@
-﻿modelo;grupo;evento;shap_medio_no_grupo;shap_abs_medio_no_grupo;shap_medio_fora_do_grupo;pct_sessoes_do_grupo_com_evento;pct_sessoes_fora_com_evento;tfidf_medio_no_grupo;direcao
-hdbscan_minilm;5;pix:click_home_pix_pix_copia_e_cola;4.5991;4.5991;-2.57922;1.0;0.068;0.47549;empurra PARA o grupo (+)
-hdbscan_minilm;5;canais:click_menu_produtos_pix;0.19281;0.25344;0.01657;1.0;0.198;0.16725;empurra PARA o grupo (+)
-hdbscan_minilm;5;canais:click_home_menu_produtos;0.05193;0.22829;-0.03459;1.0;1.0;0.11003;empurra PARA o grupo (+)
-hdbscan_minilm;5;pix:click_comprovante_pix_fechar;0.07453;0.11402;-0.0212;1.0;0.179;0.1731;empurra PARA o grupo (+)
-hdbscan_minilm;5;canais:click_menu_produtos_cartoes;-0.01687;0.09044;-0.00774;0.478;0.539;0.06726;afasta do grupo (-)
-hdbscan_minilm;5;pix:click_pix_copia_e_cola_confirmar;0.00408;0.0399;-0.03685;1.0;0.068;0.20977;empurra PARA o grupo (+)
-hdbscan_minilm;5;cartoes:view_home_cartoes;0.01511;0.03033;-0.02212;0.478;0.539;0.07031;empurra PARA o grupo (+)
-hdbscan_minilm;5;pix:click_home_pix_voltar;0.0053;0.0053;0.0003;0.348;0.19;0.05009;empurra PARA o grupo (+)

@@ -1,3 +1,0 @@
-﻿modelo;grupo;evento;shap_medio_no_grupo;shap_abs_medio_no_grupo;shap_medio_fora_do_grupo;pct_sessoes_do_grupo_com_evento;pct_sessoes_fora_com_evento;tfidf_medio_no_grupo;direcao
-hdbscan_tf_idf;1;investimentos:click_home_investimentos_renda_fixa;4.26222;4.26222;-2.51925;1.0;0.0;0.29668;empurra PARA o grupo (+)
-hdbscan_tf_idf;1;investimentos:view_home_investimentos;0.03964;0.04179;-0.02922;1.0;0.194;0.32442;empurra PARA o grupo (+)

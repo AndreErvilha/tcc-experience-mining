@@ -37,7 +37,7 @@ Este trabalho propõe e valida experimentalmente o framework de **Experience Min
 | **K-Means + TF-IDF** | TF-IDF | K-Means | 15 | 0.0% | 0.4923 | 0.6076 | 0.7971 | 91.13% |
 | **K-Means + MiniLM** | MiniLM (384D) | K-Means | 4 | 0.0% | 0.4037 | 0.2377 | 0.5078 | 90.17% |
 
-**Versão 1.1 (revisão pós-entrega).** Os agrupamentos, o ruído e o Silhouette são os do TCC entregue (tag `v1.0-entrega`). ARI, V-Measure e Pureza usam o rótulo da **Tabela 1 revisada**: 12 jornadas definidas a partir do modelo de cada cenário, cada uma com gatilho e conversão; 005, 009 e 010 são compostas (`dataset/gerar_massas.py`). Comparação com a versão entregue: `results/metrics/comparacao_v1.0_v1.1.csv`. Cobertura por jornada: `results/metrics/cobertura_por_jornada.csv`. Sessões por jornada: `results/dados/jornadas_contagem.csv`.
+**Versão 1.1 (revisão pós-entrega).** Os agrupamentos, o ruído e o Silhouette são os do TCC entregue (tag `v1.0-entrega`). ARI, V-Measure e Pureza usam o rótulo da **Tabela 1 revisada**: 12 jornadas definidas a partir do modelo de cada cenário, cada uma com gatilho e conversão; 005, 009 e 010 são compostas (`dataset/gerar_massas.py`). Comparação com a versão entregue: `results/v1.1/metrics/comparacao_v1.0_v1.1.csv` e `results/v1.1/figures/migracao_rotulos.png`. Cobertura por jornada: `results/v1.1/metrics/cobertura_por_jornada.csv`. Sessões por jornada: `results/v1.1/dados/jornadas_contagem.csv`.
 
 > **Achado de produto (revisado):** os agrupamentos isolam sem regras as jornadas de um produto (pagamento de fatura, PIX, aplicação e resgate de CDB, parcelamento). As jornadas compostas, que cruzam produtos (Open Finance + fatura, resgate de CDB + fatura, fatura + PIX copia e cola), têm de 6 a 15 sessões e não formam grupo próprio em nenhum modelo. O Cluster 5 do HDBSCAN + TF-IDF é o grupo de resgate de CDB (ver a errata).
 
@@ -73,12 +73,12 @@ tcc-experience-mining/
 ├── tests/                         # Golden master e conferência independente do rótulo (pytest)
 ├── docs/                          # Documentação dos resultados e da CLI (ver docs/README.md)
 ├── tools/pm4py_cli/               # CLI própria de Process Mining, playout e rotulagem (ver docs/pm4py-cli.md)
-└── results/
+└── results/<versao>/                # Resultados isolados por versão (ex.: v1.1/)
     ├── summary_metrics.csv
     ├── metrics/                   # Métricas por modelo, cobertura por jornada, comparação v1.0 × v1.1
-    ├── figures/                   # Figuras de resultados e SHAP
+    ├── figures/                   # Figuras de resultados, migração de rótulos e SHAP
     ├── dados/                     # Sessões por jornada, conferência e migração dos rótulos
-    └── jornadas_por_grupo/        # Por modelo: resumo, matriz, mapa t-SNE e grupos/grupo_NN/ (sessões, pesos SHAP, beeswarm, DFG, Petri)
+    └── jornadas_por_grupo/        # Por modelo: resumo, matriz, mapa t-SNE, shap_global e grupos/grupo_NN/ (sessões, pesos SHAP, beeswarm, DFG, Petri)
 ```
 
 ---
@@ -136,7 +136,7 @@ python run_all.py
 
 Todas as opções (gerar ou carregar eventos/rótulos/representações/agrupamentos, ligar/desligar SHAP, escolher métricas/figuras, gerar DFG/Rede de Petri via `pm4py`, ajustar seeds ou títulos revisados) ficam declaradas no JSON da versão; o `run_all.py` valida esquema, formatos e contratos antes do primeiro passo.
 
-> **Versões isoladas:** cada versão grava suas saídas em `dataset/processed/<name>/`, `data/<name>/`, `clusters/<name>/` e `results/<name>/` (sobrescrevíveis por `output_*_path` no modo gerar). Os arquivos originais entregues na v1.0 (`total.csv`, `data/v1.0/*.pkl`, `clusters/v1.0/*.pkl` e `results/`) permanecem intactos.
+> **Versões isoladas:** cada versão grava suas saídas em `dataset/processed/<name>/`, `data/<name>/`, `clusters/<name>/` e `results/<name>/` (sobrescrevíveis por `output_*_path` no modo gerar). Os arquivos originais entregues na v1.0 (`total.csv`, `data/v1.0/*.pkl`, `clusters/v1.0/*.pkl` e a tag `v1.0-entrega`) permanecem intactos.
 
 Etapas e saídas (dentro da pasta da versão `results/<name>/`):
 

@@ -72,7 +72,7 @@ def test_metricas_nucleo_batem_com_referencia(tmp_path):
         cl_eval["experiences"] = rot.loc[ids, "experience"].tolist()
 
         obtido = avaliar_agrupamento(cl_eval)
-        esperado = ler_json(ROOT / "results" / "metrics" / f"metrics_{m}.json")
+        esperado = ler_json(ROOT / "results" / "v1.1" / "metrics" / f"metrics_{m}.json")
         assert json.loads(json.dumps(obtido)) == esperado, f"Divergencia em {m}"
 
     sessions_df = pd.read_csv(ROOT / "data" / "v1.1" / "sessions_represented.csv")

@@ -14,7 +14,7 @@ ANALISE_V1_1_REL = {
     "results/metrics/comparacao_v1.0_v1.1.csv",
     "results/figures/comparacao_v1.0_v1.1.png",
     "results/dados/migracao_rotulos.csv",
-    "results/dados/migracao_rotulos.png",
+    "results/figures/migracao_rotulos.png",
     "results/dados/sessoes_rotulo_revisado.csv",
 }
 CONFERENCIA_REL = {

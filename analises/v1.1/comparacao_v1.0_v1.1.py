@@ -2,14 +2,14 @@
 
 Rótulo entregue (v1): flags de dataset/processed/total-rotulado.csv (dataset/gerar_massas.py, só o evento de
 conversão) e rótulo principal = primeira flag de sucesso na ordem das colunas (src/events2vector.py até a v1).
-Rótulo revisado (v1.1): data/sessions_represented.csv, gerado a partir do dataset/processed/total-rotulado-v1.1.csv
-(dataset/gerar_massas.py --saida total-rotulado-v1.1.csv, Tabela 1 revisada) pelo src/events2vector.py.
-Os agrupamentos (clusters/*.pkl) são os mesmos. Na figura da migração, os rótulos aparecem pelo id da jornada
+Rótulo revisado (v1.1): data/v1.1/sessions_represented.csv, gerado a partir do dataset/processed/total-rotulado-v1.1.csv
+(Tabela 1 revisada).
+Os agrupamentos (clusters/v1.0/*.pkl) são os mesmos. Na figura da migração, os rótulos aparecem pelo id da jornada
 de cada versão (na v1.0, openfinance_pago era a 005 e copia_pix_paga a 010; na v1.1 são a 012 e a 011).
-Conferido em 22/11/2026: o "antes" calculado aqui reproduz exatamente os results/metrics/*.json entregues.
+Conferido em 22/11/2026: o "antes" calculado aqui reproduz exatamente os results/v1.1/metrics/*.json entregues.
 
-Saídas: results/metrics/comparacao_v1.0_v1.1.csv, results/figures/comparacao_v1.0_v1.1.png e
-results/dados/{sessoes_rotulo_revisado.csv, migracao_rotulos.csv/.png}.
+Saídas: results/v1.1/metrics/comparacao_v1.0_v1.1.csv, results/v1.1/figures/{comparacao_v1.0_v1.1.png, migracao_rotulos.png} e
+results/v1.1/dados/{sessoes_rotulo_revisado.csv, migracao_rotulos.csv}.
 Uso (da raiz do repositório): python analises/v1.1/comparacao_v1.0_v1.1.py
 """
 import os
@@ -38,7 +38,10 @@ from experience_mining.nucleo.jornadas import (  # noqa: E402
     tipo_rotulo,
 )
 
-OUT = "results/dados/"
+OUT_BASE = "results/v1.1"
+OUT = f"{OUT_BASE}/dados/"
+OUT_METRICS = f"{OUT_BASE}/metrics/"
+OUT_FIGURES = f"{OUT_BASE}/figures/"
 CURTO = {"kmeans_tf_idf": "KM\nTF-IDF", "kmeans_minilm": "KM\nMiniLM", "kmeans_gemini": "KM\nGemini",
          "hdbscan_tf_idf": "HD\nTF-IDF", "hdbscan_minilm": "HD\nMiniLM", "hdbscan_gemini": "HD\nGemini"}
 
@@ -115,7 +118,7 @@ def fig_metricas(df):
              fontsize=8, color=TINTA2, ha="left")
     fig.suptitle("Avaliação dos agrupamentos: rótulo v1.0 × rótulo v1.1",
                  x=0.01, ha="left", fontsize=12, fontweight="bold", color=TINTA, y=1.06)
-    fig.savefig("results/figures/comparacao_v1.0_v1.1.png", dpi=160, bbox_inches="tight")
+    fig.savefig(f"{OUT_FIGURES}comparacao_v1.0_v1.1.png", dpi=160, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -153,8 +156,8 @@ def heatmap(tab, caminho, titulo, rodape, rotulo_linhas=None, pct_por_linha=True
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    os.makedirs("results/metrics", exist_ok=True)
-    os.makedirs("results/figures", exist_ok=True)
+    os.makedirs(OUT_METRICS, exist_ok=True)
+    os.makedirs(OUT_FIGURES, exist_ok=True)
     rev = pd.read_csv(REVISADO)[["cd_sessao", "primary_label", "experience", "num_events"]].rename(
         columns={"primary_label": "primary_label_revisado", "experience": "experience_revisado"})
     orig = rotulo_v1(V1).reset_index()
@@ -166,7 +169,7 @@ def main():
     mig = mig.reindex(index=colunas_completas(list(mig.index), "v1.0"), columns=colunas_completas(list(mig.columns)),
                       fill_value=0)
     mig.to_csv(OUT + "migracao_rotulos.csv", sep=";", encoding="utf-8-sig")
-    heatmap(mig, OUT + "migracao_rotulos.png", "Rótulo v1.0 (linhas) × rótulo v1.1 (colunas)",
+    heatmap(mig, OUT_FIGURES + "migracao_rotulos.png", "Rótulo v1.0 (linhas) × rótulo v1.1 (colunas)",
             "Linhas: v1.0 (10 jornadas) · colunas: v1.1 (12 jornadas; 001+008 = concluiu as duas sem formar composta) · "
             "número = sessões; cor = % da linha; cinza claro = nenhuma sessão.\n"
             f"Mudaram de rótulo: {(df.primary_label_original != df.primary_label_revisado).sum()} de {len(df)} sessões.")
@@ -184,7 +187,7 @@ def main():
                      **{f"{k}_antes": round(v, 4) for k, v in antes.items()},
                      **{f"{k}_depois": round(v, 4) for k, v in depois.items()}})
     met = pd.DataFrame(mets)
-    met.to_csv("results/metrics/comparacao_v1.0_v1.1.csv", sep=";", index=False, encoding="utf-8-sig")
+    met.to_csv(f"{OUT_METRICS}comparacao_v1.0_v1.1.csv", sep=";", index=False, encoding="utf-8-sig")
     fig_metricas(met)
 
     print("Sessões que mudaram de rótulo:", (df.primary_label_original != df.primary_label_revisado).sum())

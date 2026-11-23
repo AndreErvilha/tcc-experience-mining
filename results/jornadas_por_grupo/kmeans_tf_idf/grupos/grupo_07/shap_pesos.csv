@@ -1,3 +1,0 @@
-﻿modelo;grupo;evento;shap_medio_no_grupo;shap_abs_medio_no_grupo;shap_medio_fora_do_grupo;pct_sessoes_do_grupo_com_evento;pct_sessoes_fora_com_evento;tfidf_medio_no_grupo;direcao
-kmeans_tf_idf;7;cartoes:click_fatura_atual_simular_parcelamento;4.68446;4.68446;-2.32048;1.0;0.0;0.33927;empurra PARA o grupo (+)
-kmeans_tf_idf;7;canais:click_home_menu_produtos;0.01536;0.02807;-0.00832;1.0;1.0;0.04929;empurra PARA o grupo (+)

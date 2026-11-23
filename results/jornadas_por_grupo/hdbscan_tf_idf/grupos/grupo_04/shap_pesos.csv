@@ -1,4 +1,0 @@
-﻿modelo;grupo;evento;shap_medio_no_grupo;shap_abs_medio_no_grupo;shap_medio_fora_do_grupo;pct_sessoes_do_grupo_com_evento;pct_sessoes_fora_com_evento;tfidf_medio_no_grupo;direcao
-hdbscan_tf_idf;4;cartoes:click_detalhe_fatura_gerar_pdf;3.59474;3.59474;-1.74971;1.0;0.0;0.21353;empurra PARA o grupo (+)
-hdbscan_tf_idf;4;cartoes:view_historico_faturas;0.80353;0.80353;-0.03487;1.0;0.041;0.49563;empurra PARA o grupo (+)
-hdbscan_tf_idf;4;cartoes:click_detalhe_fatura_voltar;0.03742;0.04736;-0.04944;1.0;0.003;0.28763;empurra PARA o grupo (+)

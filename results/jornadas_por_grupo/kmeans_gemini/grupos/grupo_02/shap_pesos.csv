@@ -1,7 +1,0 @@
-﻿modelo;grupo;evento;shap_medio_no_grupo;shap_abs_medio_no_grupo;shap_medio_fora_do_grupo;pct_sessoes_do_grupo_com_evento;pct_sessoes_fora_com_evento;tfidf_medio_no_grupo;direcao
-kmeans_gemini;2;open_finance:click_home_open_finance_trazer_dinheiro;2.76527;2.76527;-1.95228;1.0;0.004;0.27516;empurra PARA o grupo (+)
-kmeans_gemini;2;open_finance:view_home_open_finance;2.02986;2.02986;-1.331;1.0;0.015;0.40603;empurra PARA o grupo (+)
-kmeans_gemini;2;canais:click_menu_produtos_open_finance;0.00387;0.04149;-0.06727;1.0;0.015;0.13862;empurra PARA o grupo (+)
-kmeans_gemini;2;cartoes:click_fatura_atual_opcoes_pagamento;0.00332;0.01743;-0.00553;0.458;0.286;0.04411;empurra PARA o grupo (+)
-kmeans_gemini;2;cartoes:click_comprovante_pagamento_voltar;0.00242;0.01144;0.0011;0.333;0.026;0.08409;empurra PARA o grupo (+)
-kmeans_gemini;2;open_finance:click_selecao_banco_consentido_confirmar_banco_origem;0.00236;0.01007;-0.01444;1.0;0.004;0.24283;empurra PARA o grupo (+)

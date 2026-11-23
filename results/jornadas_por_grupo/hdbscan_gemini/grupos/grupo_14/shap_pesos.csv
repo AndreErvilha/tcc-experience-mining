@@ -1,8 +1,0 @@
-﻿modelo;grupo;evento;shap_medio_no_grupo;shap_abs_medio_no_grupo;shap_medio_fora_do_grupo;pct_sessoes_do_grupo_com_evento;pct_sessoes_fora_com_evento;tfidf_medio_no_grupo;direcao
-hdbscan_gemini;14;cartoes:view_fatura_atual;3.62009;3.62009;-1.60656;1.0;0.396;0.51817;empurra PARA o grupo (+)
-hdbscan_gemini;14;canais:view_home;0.54696;0.63693;-0.1535;1.0;1.0;0.20485;empurra PARA o grupo (+)
-hdbscan_gemini;14;cartoes:click_fatura_atual_voltar;0.10021;0.15006;-0.09948;1.0;0.356;0.335;empurra PARA o grupo (+)
-hdbscan_gemini;14;cartoes:click_opcoes_pagamento_pagar_com_saldo;0.04187;0.04187;-0.00062;0.0;0.17;0.0;empurra PARA o grupo (+)
-hdbscan_gemini;14;cartoes:click_opcoes_pagamento_voltar;0.03863;0.04028;-0.05862;1.0;0.197;0.28661;empurra PARA o grupo (+)
-hdbscan_gemini;14;canais:click_home_menu_produtos;0.03991;0.03991;-0.01685;1.0;1.0;0.10708;empurra PARA o grupo (+)
-hdbscan_gemini;14;cartoes:view_home_cartoes;0.01123;0.02159;-0.01061;1.0;0.577;0.41074;empurra PARA o grupo (+)

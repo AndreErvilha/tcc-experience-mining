@@ -90,14 +90,14 @@ def comparar_saida_com_referencia(
 def test_referencia_passa_sobre_saida_atual():
     manifesto = carregar_manifesto()
     comparar_saida_com_referencia(
-        ROOT / "results",
+        ROOT / "results" / "v1.1",
         ROOT / "data" / "v1.1" / "sessions_represented.csv",
         manifesto,
         grupo="pipeline",
         incluir_petri=True,
     )
     comparar_saida_com_referencia(
-        ROOT / "results",
+        ROOT / "results" / "v1.1",
         ROOT / "data" / "v1.1" / "sessions_represented.csv",
         manifesto,
         grupo="analise_v1_1",
@@ -108,9 +108,9 @@ def test_golden_master_detecta_divergencia(tmp_path):
     manifesto = carregar_manifesto()
     res_dir = tmp_path / "results"
     (res_dir / "metrics").mkdir(parents=True)
-    shutil.copy2(ROOT / "results" / "summary_metrics.csv", res_dir / "summary_metrics.csv")
+    shutil.copy2(ROOT / "results" / "v1.1" / "summary_metrics.csv", res_dir / "summary_metrics.csv")
     shutil.copy2(
-        ROOT / "results" / "metrics" / "metrics_hdbscan_tf_idf.json",
+        ROOT / "results" / "v1.1" / "metrics" / "metrics_hdbscan_tf_idf.json",
         res_dir / "metrics" / "metrics_hdbscan_tf_idf.json",
     )
 
@@ -175,7 +175,7 @@ def test_analise_v1_1_em_pasta_temporaria(tmp_path):
     assert res.returncode == 0, f"Analise v1.1 falhou:\n{res.stdout}\n{res.stderr}"
 
     comparar_saida_com_referencia(
-        tmp_path / "results",
+        tmp_path / "results" / "v1.1",
         tmp_path / "data" / "v1.1" / "sessions_represented.csv",
         manifesto,
         grupo="analise_v1_1",

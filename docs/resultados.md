@@ -1,6 +1,6 @@
 # O que tem em `results/` e quem gera
 
-Cada versão gravada pelo `run_all.py` escreve na sua pasta (`results/<name>`, padrão em [configs/](../configs/)). Para regenerar a v1.1 completa em `results/v1.1/`, mantendo os agrupamentos do TCC e preservando `results/` da defesa:
+Cada versão gravada pelo `run_all.py` escreve na sua pasta (`results/<name>`, padrão em [configs/](../configs/)). Para regenerar a v1.1 completa em `results/v1.1/` (a v1.0 entregue está preservada na tag `v1.0-entrega`):
 
 ```bash
 python run_all.py --config configs/v1.1.json
@@ -21,7 +21,7 @@ O SHAP depende das versões de `xgboost` e `shap` (ver `requirements-lock.txt`);
 | `jornadas_por_grupo/<modelo>/grupos/*/sessoes.csv`, `resumo_grupos.csv`, `matriz_grupos*.png`, `espaco_semantico_tsne.png`, `espaco_semantico_tsne_3d.png` | `experience_mining/passos/jornadas_grupo.py` | 6 |
 | `dados/jornadas_contagem.csv`, `metrics/cobertura_por_jornada.csv` | `experience_mining/passos/metricas.py` | 6.1 |
 | `jornadas_por_grupo/<modelo>/grupos/*/dfg.png`, `dfg.dfg`, `rede_petri.png`, `rede_petri.pnml`, `<modelo>/petri_parametros.csv` | `experience_mining/passos/processos_pm4py.py` | 6.2 (`pm4py`) |
-| `metrics/comparacao_v1.0_v1.1.csv`, `figures/comparacao_v1.0_v1.1.png`, `dados/migracao_rotulos.*`, `dados/sessoes_rotulo_revisado.csv` | `analises/v1.1/comparacao_v1.0_v1.1.py` | Fora do `run_all.py` (análise v1.1) |
+| `metrics/comparacao_v1.0_v1.1.csv`, `figures/comparacao_v1.0_v1.1.png`, `figures/migracao_rotulos.png`, `dados/migracao_rotulos.csv`, `dados/sessoes_rotulo_revisado.csv` | `analises/v1.1/comparacao_v1.0_v1.1.py` | Fora do `run_all.py` (análise v1.1) |
 | `summary_metrics.csv` | `experience_mining/passos/metricas.py` | 7 |
 | `figures/comparison_metrics.png` *(todos os modelos)*; `figures/matriz_associacao_clusters_labels.png` e `figures/tsne_clusters_visualizacao.png` *(destaque `figures.highlight_model`; em `v1.1` = `hdbscan_tf_idf`)* | `experience_mining/passos/figuras.py` | 8 |
 

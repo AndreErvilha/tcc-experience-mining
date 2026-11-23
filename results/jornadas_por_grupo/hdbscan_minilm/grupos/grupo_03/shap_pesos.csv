@@ -1,8 +1,0 @@
-﻿modelo;grupo;evento;shap_medio_no_grupo;shap_abs_medio_no_grupo;shap_medio_fora_do_grupo;pct_sessoes_do_grupo_com_evento;pct_sessoes_fora_com_evento;tfidf_medio_no_grupo;direcao
-hdbscan_minilm;3;investimentos:view_home_investimentos;3.93619;3.93619;-1.6771;1.0;0.271;0.56971;empurra PARA o grupo (+)
-hdbscan_minilm;3;canais:click_menu_produtos_investimentos;0.5352;0.59896;-0.16427;1.0;0.271;0.28485;empurra PARA o grupo (+)
-hdbscan_minilm;3;investimentos:view_carteira_renda_fixa;0.02173;0.03425;-0.01878;0.75;0.156;0.26525;empurra PARA o grupo (+)
-hdbscan_minilm;3;canais:view_home;0.02607;0.02646;-0.02142;1.0;1.0;0.24548;empurra PARA o grupo (+)
-hdbscan_minilm;3;canais:click_home_menu_produtos;0.00438;0.0079;-0.00159;1.0;1.0;0.12274;empurra PARA o grupo (+)
-hdbscan_minilm;3;investimentos:click_home_investimentos_ver_posicao;0.00264;0.00464;-0.00324;0.75;0.156;0.26525;empurra PARA o grupo (+)
-hdbscan_minilm;3;investimentos:click_carteira_renda_fixa_voltar;0.00171;0.00297;-0.00209;0.75;0.12;0.28654;empurra PARA o grupo (+)

@@ -1,7 +1,0 @@
-﻿modelo;acuracia_treino_pct;sessoes_sem_ruido
-kmeans_tf_idf;100.0;516
-kmeans_minilm;100.0;516
-kmeans_gemini;99.81;516
-hdbscan_tf_idf;100.0;377
-hdbscan_minilm;98.72;392
-hdbscan_gemini;100.0;416

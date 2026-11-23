@@ -2305,16 +2305,16 @@
       "results/metrics/comparacao_v1.0_v1.1.csv": "2624d5066e7fb07468cbf92f832534a52675cac0255ec21e47dd33b81abbd738"
     },
     "png_info": {
-      "results/dados/migracao_rotulos.png": {
-        "altura": 1452,
-        "largura": 2635,
-        "pixel_sha256": "2accbda02b1be85367868805bca8f0addc710a93b4f4dd436b9e760a8d9af1e5",
-        "pixel_estavel": true
-      },
       "results/figures/comparacao_v1.0_v1.1.png": {
         "altura": 788,
         "largura": 2168,
         "pixel_sha256": "6b1b6891a4fffafe27845a30b66fcc51e7b0e5cf0b55781930c71b2364f32f31",
+        "pixel_estavel": true
+      },
+      "results/figures/migracao_rotulos.png": {
+        "altura": 1452,
+        "largura": 2635,
+        "pixel_sha256": "2accbda02b1be85367868805bca8f0addc710a93b4f4dd436b9e760a8d9af1e5",
         "pixel_estavel": true
       }
     },

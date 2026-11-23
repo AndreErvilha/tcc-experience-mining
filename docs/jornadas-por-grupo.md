@@ -1,6 +1,6 @@
-# Jornadas por grupo (`results/jornadas_por_grupo/`)
+# Jornadas por grupo (`results/<name>/jornadas_por_grupo/`)
 
-Gerado por `experience_mining/passos/jornadas_grupo.py` (passo 6 do `run_all.py`). Rótulo: `data/sessions_represented.csv` (Tabela 1 revisada; `dataset/gerar_massas.py` → `experience_mining/nucleo/rotulo.py`).
+Gerado por `experience_mining/passos/jornadas_grupo.py` (passo 6 do `run_all.py`). Rótulo: `data/<name>/sessions_represented.csv` (Tabela 1 revisada; `dataset/gerar_massas.py` → `experience_mining/nucleo/rotulo.py`).
 
 Uma pasta por modelo (`kmeans_|hdbscan_` × `tf_idf|minilm|gemini`). Em cada uma:
 
