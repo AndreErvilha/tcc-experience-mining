@@ -1,0 +1,4 @@
+modelo;jornada;grupo_curto;sessoes_curto;mediana_eventos_curto;sucesso_curto;grupo_longo;sessoes_longo;mediana_eventos_longo;sucesso_longo;razao_esforco;marcador_shap_longo;pct_no_grupo;pct_fora
+hdbscan_gemini;pix_transferido;5;20;29;0.85;6;25;93;0.96;3.2;pix:click_revisao_pix_voltar;1.0;0.015
+hdbscan_gemini;cdb_aplicado;17;15;27;1.0;18;15;83;1.0;3.1;investimentos:click_simulador_cdb_voltar;1.0;0.012
+hdbscan_minilm;copia_pix_paga;2;9;10;1.0;5;23;20;1.0;2.0;pix:click_home_pix_pix_copia_e_cola;1.0;0.068

@@ -1,0 +1,17 @@
+sessao_a;sessao_b;rotulo_a;rotulo_b;num_events;cos_gemini;mesmo_grupo_hdbscan_gemini;mesmo_grupo_kmeans_gemini
+SESS_027;SESS_047;iniciou_pagar_saldo_sem_converter;iniciou_pagar_saldo_sem_converter;19;0.9974;True;True
+SESS_748;SESS_833;cdb_resgatado;cdb_resgatado;37;0.9967;True;True
+SESS_703;SESS_802;cdb_resgatado;cdb_resgatado;25;0.9983;True;True
+SESS_760;SESS_773;cdb_resgatado;cdb_resgatado;31;0.9981;True;True
+SESS_604;SESS_666;cdb_aplicado;cdb_aplicado;21;0.9978;True;True
+SESS_020;SESS_089;fatura_paga_saldo;fatura_paga_saldo;25;0.9975;True;True
+SESS_020;SESS_892;fatura_paga_saldo;fatura_paga_saldo;25;0.9966;True;True
+SESS_089;SESS_892;fatura_paga_saldo;fatura_paga_saldo;25;0.9973;True;True
+SESS_060;SESS_097;fatura_paga_saldo;fatura_paga_saldo;21;0.9962;True;False
+SESS_116;SESS_201;neutro;neutro;17;0.9961;False;True
+SESS_133;SESS_844;neutro;neutro;21;0.9984;True;True
+SESS_133;SESS_867;neutro;neutro;21;0.9968;True;True
+SESS_844;SESS_867;neutro;neutro;21;0.9966;True;True
+SESS_366;SESS_391;neutro;neutro;21;0.9982;True;True
+SESS_645;SESS_662;cdb_aplicado;cdb_aplicado;27;0.9961;True;True
+SESS_513;SESS_541;iniciou_pix_sem_converter;iniciou_pix_sem_converter;17;0.9951;True;True
